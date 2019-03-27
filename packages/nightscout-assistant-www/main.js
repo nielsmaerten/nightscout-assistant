@@ -49,17 +49,19 @@ function initializeFirebase() {
 function initializeFirebaseUI() {
     // FirebaseUI config.
     var uiConfig = {
-        signInSuccessUrl: 'https://localhost:3000',
+        signInSuccessUrl: 'https://nielsmaerten.github.io/nightscout-assistant',
         signInOptions: [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID
         ],
         // tosUrl and privacyPolicyUrl accept either url string or a callback
         // function.
         // Terms of service url/callback.
-        tosUrl: 'https://nielsmaerten.github.io/nightscout-assistant/',
+        tosUrl: function () {
+            document.getElementById("tos").classList.remove("hidden")
+        },
         // Privacy policy url/callback.
         privacyPolicyUrl: function () {
-            window.location.assign('https://nielsmaerten.github.io/nightscout-assistant/');
+            document.getElementById("tos").classList.remove("hidden")
         }
     };
 
