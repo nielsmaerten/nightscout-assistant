@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Nightscout for Google Assistant</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 </head>
+
 <body>
-    
+    <div id="firebaseui-auth-container"></div>
+    <div id="nightscout-settings" class="hidden">
+        <form onsubmit="return updateNightscoutSettings(event)">
+            <input type="text" id="nightscout-url" placeholder="Nightscout URL">
+            <button type="submit">Save</button>
+        </form>
+        <p id="status"></p>
+    </div>
+    <script src="main.js"></script>
 </body>
+
 </html>
