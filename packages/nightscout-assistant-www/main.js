@@ -8,12 +8,13 @@ firebase.auth().onAuthStateChanged(function (user) {
         userEmail = user.email;
         showNightscoutSettings();
     } else {
+        document.getElementById("authentication").classList.remove("is-hidden");
         initializeFirebaseUI();
     }
 });
 
 function showNightscoutSettings() {
-    document.getElementById("nightscout-settings").classList.remove("hidden");
+    document.getElementById("nightscout-settings").classList.remove("is-hidden");
     firebase.firestore().collection("users").doc(userEmail).get().then(function (snapshot) {
         if (snapshot.exists) {
             var data = snapshot.data()
@@ -28,8 +29,7 @@ function updateNightscoutSettings(e) {
         nsUrl: document.getElementById("nightscout-url").value
     })
         .then(function (e) {
-            document.getElementById("status").innerText =
-                "Done! Now ask your Google Assistant: 'Hey Google, ask Unofficial Nightscout what my glucose is'"
+            document.getElementById("success").classList.remove("is-hidden")
         })
     return false;
 }
@@ -56,13 +56,9 @@ function initializeFirebaseUI() {
         // tosUrl and privacyPolicyUrl accept either url string or a callback
         // function.
         // Terms of service url/callback.
-        tosUrl: function () {
-            document.getElementById("tos").classList.remove("hidden")
-        },
+        tosUrl: "https://nielsmaerten.github.io/nightscout-assistant/terms.html",
         // Privacy policy url/callback.
-        privacyPolicyUrl: function () {
-            document.getElementById("tos").classList.remove("hidden")
-        }
+        privacyPolicyUrl: "https://nielsmaerten.github.io/nightscout-assistant/terms.html"
     };
 
     // Initialize the FirebaseUI Widget using Firebase.
