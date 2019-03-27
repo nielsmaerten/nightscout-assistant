@@ -2,28 +2,85 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Nightscout for Google Assistant</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
-    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nightscout for Google Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 </head>
 
 <body>
-    <div id="firebaseui-auth-container"></div>
-    <div id="nightscout-settings" class="hidden">
-        <form onsubmit="return updateNightscoutSettings(event)">
-            <input type="text" id="nightscout-url" placeholder="Nightscout URL">
-            <button type="submit">Save</button>
-        </form>
-        <p id="status"></p>
+  <section id="demonstration" class="mt-5 mx-10">
+    <div class="columns">
+      <div class="column is-offset-one-quarter is-half">
+        <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <img src="img/assistant.png" alt="Google Assistant logo">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Hey Google,</strong>
+                  <br>
+                  ask <em>Unofficial Nightscout</em> what my glucose is
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <img src="img/nightscout.png" alt="Nightscout logo">
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Nightscout</strong>
+                  <br>
+                  120 and slowly rising as of 4 minutes ago
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
     </div>
-    <script src="main.js"></script>
+
+  </section>
+
+  <section id="authentication" class="container is-hidden">
+    <p class="has-text-centered mt-8">Connect your Nightscout site to get started:</p>
+    <div id="firebaseui-auth-container"></div>
+  </section>
+
+  <section id="nightscout-settings" class="is-hidden mt-8 mx-10">
+    <p>Connect your Nightscout site to Google Assistant:</p>
+    <form onsubmit="return updateNightscoutSettings(event)">
+      <div class="flex is-half is-offset-one-quarter">
+        <input class="input" type="text" id="nightscout-url" placeholder="Nightscout URL">
+        <button class="button is-primary ml-4" type="submit">Save</button>
+      </div>
+    </form>
+    <p id="success" class="mt-4 is-hidden">
+      <strong>Done!</strong> Now you can ask Google Assistant:<br>
+      <em>Hey Google, talk to Unofficial Nightscout</em>
+    </p>
+  </section>
+
+  <script src="main.js"></script>
 </body>
 
 </html>
