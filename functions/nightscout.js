@@ -9,19 +9,19 @@ module.exports = async userEmail => {
 
   return new Promise(async (resolve, reject) => {
     // TODO: hash email so we don't have to store addresses in our db
-    userEmail = userEmail.replace("@", "").replace(".", "");
 
     const snapshot = await admin
       .app()
-      .database()
-      .ref("users/" + userEmail + "/ns")
-      .once("value");
+      .firestore()
+      .collection("users")
+      .doc(userEmail)
+      .get();
 
-    const nsUrl = snapshot.exists() ? snapshot.val().url : null;
+    const nsUrl = snapshot.exists ? snapshot.data().nsUrl : null;
     if (!nsUrl) {
       resolve(
         "Looks like you haven't linked your Nightscout site yet. " +
-        "To continue, visit https://github.com/nielsmaerten/nightscout-assistant"
+        "To continue, visit https://nielsmaerten.github.io/nightscout-assistant"
       );
     } else {
       fetch(nsUrl + "/api/v1/entries/current.json")
@@ -31,7 +31,7 @@ module.exports = async userEmail => {
         })
         .catch(() => {
           resolve(
-            "Sorry, I couldn't reach your Nightscout site. Check if you've entered the correct URL on https://github.com/nielsmaerten/nightscout-assistant"
+            "Sorry, I couldn't reach your Nightscout site. Check if you've entered the correct URL on https://nielsmaerten.github.io/nightscout-assistant"
           );
         });
     }
