@@ -1,28 +1,30 @@
-const functions = require('firebase-functions');
-const nightscout = require('./nightscout')
-const { dialogflow, SignIn } = require('actions-on-google');
+const functions = require("firebase-functions");
+const nightscout = require("./nightscout");
+const { dialogflow, SignIn } = require("actions-on-google");
 
 const app = dialogflow({
-  // Example clientId :)
-  clientId: "348868123018-imkge00ovotkf89nq48hj0h00aesubuk.apps.googleusercontent.com"
+  clientId:
+    "348868123018-imkge00ovotkf89nq48hj0h00aesubuk.apps.googleusercontent.com"
 });
 
-app.intent("Glucose status", async conv => {
+app.intent("Glucose Status", async conv => {
   if (conv.user.profile.token === undefined) {
-    conv.ask(new SignIn("To access your glucose"))
+    conv.ask(new SignIn("To access your glucose"));
   } else {
-    const userEmail = conv.user.email
-    const nsResponse = await nightscout(userEmail)
-    conv.close(nsResponse)
+    const userEmail = conv.user.email;
+    const nsResponse = await nightscout(userEmail);
+    conv.close(nsResponse);
   }
 });
 
-app.intent('Sign In', (conv, params, signin) => {
+app.intent("Sign In", (conv, params, signin) => {
   if (signin.status === "OK") {
-    conv.close("Now, you can try asking: 'Hey Google, ask Unofficial Nightscout what my glucose is'")
+    conv.close(
+      "Now, you can try asking: 'Hey Google, ask Unofficial Nightscout what my glucose is'"
+    );
   } else {
-    conv.close()
+    conv.close();
   }
 });
 
-exports.glucoseStatus = functions.https.onRequest(app)
+exports.glucoseStatus = functions.https.onRequest(app);
