@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Nightscout for Google Assistant</title>
+  <title>Nightscout Status</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
@@ -17,7 +17,9 @@
 
 <body>
   <section id="demonstration" class="mt-5 mx-10">
-    <div class="columns">
+    <h1>Nightscout Status</h1>
+    <h2>The (unofficial) Nightscout action for the Google Assistant</h2>
+    <div class="columns mt-5">
       <div class="column is-offset-one-quarter is-half">
         <div class="box">
           <article class="media">
@@ -31,7 +33,7 @@
                 <p>
                   <strong>Hey Google,</strong>
                   <br>
-                  ask <em>Unofficial Nightscout</em> what my glucose is
+                  ask <em>Nightscout Status</em> what my glucose is
                 </p>
               </div>
             </div>
@@ -47,7 +49,7 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>Nightscout</strong>
+                  <strong>Nightscout Status</strong>
                   <br>
                   120 and slowly rising as of 4 minutes ago
                 </p>
@@ -67,23 +69,23 @@
   </section>
 
   <section id="nightscout-settings" class="is-hidden mt-8 mx-10">
-    <p>Connect your Nightscout site to Google Assistant:</p>
+    <p>Connect your Nightscout site:</p>
     <form onsubmit="return updateNightscoutSettings(event)">
       <div class="flex is-half is-offset-one-quarter">
-        <input class="input" type="text" id="nightscout-url" placeholder="Nightscout URL">
+        <input class="input" type="text" id="nightscout-url" placeholder="https://MY-NS-SITE.herokuapp.com">
         <button class="button is-primary ml-4" type="submit">Save</button>
       </div>
     </form>
     <p id="success" class="mt-4 is-hidden">
-      <strong>Done!</strong> Now you can ask Google Assistant:<br>
-      <em>Hey Google, talk to Unofficial Nightscout</em>
+      <strong>Done!</strong> Now try asking Google Assistant:<br>
+      <em>Hey Google, talk to Nightscout Status</em>
     </p>
     <p class="text-xs is-pulled-right mt-8 has-text-right">
       <a href="terms.html">Terms of Service and Privacy Policy</a>
       <br>
       Google Assistant is a trademark of Google Inc.
       <br>
-      This site is not affiliated with <a href="http://www.nightscout.info/">the Nightscout Project</a> 
+      Not affiliated with <a href="http://www.nightscout.info/">the Nightscout Project</a> 
     </p>
   </section>
 
