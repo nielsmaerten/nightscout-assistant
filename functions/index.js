@@ -20,7 +20,7 @@ app.intent("Glucose Status", async conv => {
 app.intent("Sign In", (conv, params, signin) => {
   if (signin.status === "OK") {
     conv.close(
-      "Now, you can try asking: 'Hey Google, ask Unofficial Nightscout what my glucose is'"
+      "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'"
     );
   } else {
     conv.close();
