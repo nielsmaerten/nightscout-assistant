@@ -21,7 +21,7 @@ module.exports = async userEmail => {
     if (!nsUrl) {
       resolve(
         "Looks like you haven't linked your Nightscout site yet. " +
-        "To continue, visit https://nielsmaerten.github.io/nightscout-assistant"
+        "To continue, visit http://tiny.cc/nightscoutstatus"
       );
     } else {
       fetch(nsUrl + "/api/v1/entries/current.json")
@@ -31,7 +31,7 @@ module.exports = async userEmail => {
         })
         .catch(() => {
           resolve(
-            "Sorry, I couldn't reach your Nightscout site. Check if you've entered the correct URL on https://nielsmaerten.github.io/nightscout-assistant"
+            "Sorry, I couldn't reach your Nightscout site. Check if you've entered the correct URL on http://tiny.cc/nightscoutstatus"
           );
         });
     }
