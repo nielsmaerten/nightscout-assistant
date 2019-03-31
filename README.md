@@ -1,4 +1,4 @@
-# Nightscout for Google Assistant
+# Nightscout for Google Home & Google Assistant
 
 ## Ask Google about your glucose:
 > "Hey Google, talk to Nightscout Status"  
