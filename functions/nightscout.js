@@ -1,6 +1,5 @@
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
-const r = require("url");
 const moment = require("moment")
 module.exports = async userEmail => {
   if (admin.apps.length === 0) {
