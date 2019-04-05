@@ -20,7 +20,7 @@ module.exports = async userEmail => {
     if (!nsUrl) {
       resolve(
         "Looks like you haven't linked your Nightscout site yet. " +
-        "To continue, visit http://git.io/nightscoutstatus"
+          "To continue, visit http://git.io/nightscoutstatus"
       );
     } else {
       const unit = snapshot.data().unit || "mg/dl";
@@ -40,7 +40,7 @@ module.exports = async userEmail => {
 
 function formatResponse(d, unit) {
   const ago = moment(d.dateString).fromNow();
-  const value = unit === "mg/dl" ? d.sgv : Math.round(d.sgv / 18 * 10) / 10;
+  const value = unit === "mg/dl" ? d.sgv : Math.round((d.sgv / 18) * 10) / 10;
   let trend;
   switch (d.direction) {
     case "DoubleUp":
