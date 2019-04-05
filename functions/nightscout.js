@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
-const moment = require("moment")
+const moment = require("moment");
 module.exports = async userEmail => {
   if (admin.apps.length === 0) {
     admin.initializeApp();
@@ -23,10 +23,11 @@ module.exports = async userEmail => {
         "To continue, visit http://git.io/nightscoutstatus"
       );
     } else {
+      const unit = snapshot.data().unit || "mg/dl";
       fetch(nsUrl + "/api/v1/entries/current.json")
         .then(res => res.json())
         .then(json => {
-          resolve(formatResponse(json[0]));
+          resolve(formatResponse(json[0], unit));
         })
         .catch(() => {
           resolve(
@@ -37,34 +38,35 @@ module.exports = async userEmail => {
   });
 };
 
-function formatResponse(d) {
+function formatResponse(d, unit) {
   const ago = moment(d.dateString).fromNow();
+  const value = unit === "mg/dl" ? d.sgv : Math.round(d.sgv / 18 * 10) / 10;
   let trend;
   switch (d.direction) {
     case "DoubleUp":
-      trend = "rising fast"
+      trend = "rising fast";
       break;
     case "SingleUp":
-      trend = "increasing"
+      trend = "increasing";
       break;
     case "FortyFiveUp":
-      trend = "increasing slowly"
+      trend = "increasing slowly";
       break;
     case "Flat":
-      trend = "stable"
+      trend = "stable";
       break;
     case "FortyFiveDown":
-      trend = "decreasing slowly"
+      trend = "decreasing slowly";
       break;
     case "SingleDown":
-      trend = "decreasing"
+      trend = "decreasing";
       break;
     case "DoubleDown":
-      trend = "dropping fast"
+      trend = "dropping fast";
       break;
     default:
-      trend = "Unknown direction"
+      trend = "Unknown direction";
       break;
   }
-  return `${d.sgv} and ${trend} as of ${ago}.`;
+  return `${value} and ${trend} as of ${ago}.`;
 }
