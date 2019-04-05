@@ -19,6 +19,7 @@ function showNightscoutSettings() {
         if (snapshot.exists) {
             var data = snapshot.data()
             document.getElementById("nightscout-url").value = data.nsUrl;
+            document.getElementById("nightscout-unit").value = data.unit;
         }
     })
 }
@@ -26,7 +27,8 @@ function showNightscoutSettings() {
 function updateNightscoutSettings(e) {
     e.preventDefault();
     firebase.firestore().collection("users").doc(userEmail).set({
-        nsUrl: document.getElementById("nightscout-url").value
+        nsUrl: document.getElementById("nightscout-url").value,
+        unit: document.getElementById("nightscout-unit").value
     })
         .then(function (e) {
             document.getElementById("success").classList.remove("is-hidden")

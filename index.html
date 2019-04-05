@@ -70,12 +70,30 @@
   </section>
 
   <section id="nightscout-settings" class="is-hidden mt-8 mx-10">
-    <p>Connect your Nightscout site:</p>
     <form onsubmit="return updateNightscoutSettings(event)">
-      <div class="flex is-half is-offset-one-quarter">
-        <input class="input" type="text" id="nightscout-url" placeholder="https://MY-NS-SITE.herokuapp.com">
-        <button class="button is-primary ml-4" type="submit">Save</button>
+      <div class="columns">
+
+        <div class="column is-two-thirds">
+          <label class="label">Your Nightscout site</label>
+          <div class="control">
+            <input class="input" type="text" id="nightscout-url" placeholder="https://MY-NS-SITE.herokuapp.com">
+          </div>
+        </div>
+
+        <div class="column">
+          <label class="label">Unit</label>
+          <div class="control">
+            <div class="select">
+              <select id="nightscout-unit">
+                <option value="mg/dl">mg/dl</option>
+                <option value="mmol/l">mmol/l</option>
+              </select>
+            </div>
+            <button class="button is-primary" type="submit">Save</button>
+          </div>
+        </div>
       </div>
+
     </form>
     <div class="mt-1 text-sm"><a onclick="signOut()">Sign out</a></div>
     <p id="success" class="mt-4 is-hidden">
