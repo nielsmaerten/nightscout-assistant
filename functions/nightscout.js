@@ -1,6 +1,7 @@
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
 const moment = require("moment");
+const URL = require("url").URL;
 module.exports = async userEmail => {
   if (admin.apps.length === 0) {
     admin.initializeApp();
@@ -24,7 +25,12 @@ module.exports = async userEmail => {
       );
     } else {
       const unit = snapshot.data().unit || "mg/dl";
-      fetch(nsUrl + "/api/v1/entries/current.json")
+      const apiSecret = snapshot.data().secretHash;
+      fetch(new URL("/api/v1/entries/current.json", nsUrl), {
+        headers: {
+          "API-SECRET": apiSecret
+        }
+      })
         .then(res => res.json())
         .then(json => {
           resolve(formatResponse(json[0], unit));
