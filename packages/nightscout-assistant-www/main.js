@@ -24,13 +24,24 @@ function showNightscoutSettings() {
     })
 }
 
+function toggleApiSecretInfo() {
+    document.getElementById("api-secret-info").classList.toggle("is-hidden");
+}
+
 function updateNightscoutSettings(e) {
     e.preventDefault();
-    firebase.firestore().collection("users").doc(userEmail).set({
+    var apiSecret = document.getElementById("nightscout-api-secret").value;
+    var settings = {
         nsUrl: document.getElementById("nightscout-url").value,
         unit: document.getElementById("nightscout-unit").value
-    })
-        .then(function (e) {
+    }
+    if (apiSecret != null && apiSecret.length > 0) {
+        var secretHash = new jsSHA("SHA-1", "TEXT");
+        secretHash.update(apiSecret);
+        settings.secretHash = secretHash.getHash("HEX");
+    }
+    firebase.firestore().collection("users").doc(userEmail).update(settings);
+        .then(function () {
             document.getElementById("success").classList.remove("is-hidden")
         })
     return false;
@@ -70,7 +81,7 @@ function initializeFirebaseUI() {
 }
 
 function signOut() {
-    firebase.auth().signOut().then(function() {
+    firebase.auth().signOut().then(function () {
         window.location.reload();
     });
 }
