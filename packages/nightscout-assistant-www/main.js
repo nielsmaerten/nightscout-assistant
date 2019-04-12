@@ -40,7 +40,7 @@ function updateNightscoutSettings(e) {
         secretHash.update(apiSecret);
         settings.secretHash = secretHash.getHash("HEX");
     }
-    firebase.firestore().collection("users").doc(userEmail).update(settings);
+    firebase.firestore().collection("users").doc(userEmail).update(settings)
         .then(function () {
             document.getElementById("success").classList.remove("is-hidden")
         })
