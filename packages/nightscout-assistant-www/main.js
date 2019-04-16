@@ -55,7 +55,7 @@ function updateNightscoutSettings(e) {
     .firestore()
     .collection("users")
     .doc(userEmail)
-    .update(settings)
+    .set(settings, {merge: true})
     .then(function() {
       document.getElementById("success").classList.remove("is-hidden");
     });
