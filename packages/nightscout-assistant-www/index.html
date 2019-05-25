@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68993648-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-68993648-4');
+  </script>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="google-site-verification" content="nj9BAOU7mycvTrX7Sz0mV8bKezmZn3gEalb1CzF2d8Y" />
@@ -100,7 +109,8 @@
         <div class="column">
           <label class="label">API Secret <span class="text-xs has-text-grey-light">(optional)</span></label>
           <div class="control">
-            <input placeholder="(unchanged)" onfocus="toggleApiSecretInfo(true)" class="input" type="password" id="nightscout-api-secret" />
+            <input placeholder="(unchanged)" onfocus="toggleApiSecretInfo(true)" class="input" type="password"
+              id="nightscout-api-secret" />
           </div>
         </div>
       </div>
@@ -136,7 +146,8 @@
     <div class="columns">
       <div class="column">
         <p class="text-xs">
-          <a href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant/?utm_source=share&utm_medium=web2x">
+          <a
+            href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant/?utm_source=share&utm_medium=web2x">
             Help & FAQ</a>
           <br />
           <a href="https://github.com/nielsmaerten/nightscout-assistant/issues">Bug reports; feature requests</a>
