@@ -1,7 +1,9 @@
+// @ts-check
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
 const moment = require("moment");
 const URL = require("url").URL;
+const { i18next } = require("./i18n");
 
 // Export a function that processes a user email into
 // a response (string) that can be passed back to DialogFlow
@@ -28,10 +30,7 @@ module.exports = async userEmail => {
     // Exit if no NS url has been provided yet
     const nsUrl = snapshot.exists ? snapshot.data().nsUrl : null;
     if (!nsUrl) {
-      resolve(
-        `Looks like you haven't linked your Nightscout site yet.
-         To continue, visit http://git.io/nightscoutstatus`
-      );
+      resolve(i18next.t("errors.noNsSite"));
     } else {
       try {
         // Get settings
@@ -78,39 +77,13 @@ function formatResponse(d, unit) {
   const value = d.sgv || d.mbg;
   const bg = unit === "mg/dl" ? value : Math.round((value / 18) * 10) / 10;
   if (isNaN(bg)) {
-    return "Hmmm. I could not find a recent glucose reading.";
+    return i18next.t("errors.noBgReading");
   }
-  let trend;
-  switch (d.direction) {
-    case "DoubleUp":
-      trend = "rising fast";
-      break;
-    case "SingleUp":
-      trend = "increasing";
-      break;
-    case "FortyFiveUp":
-      trend = "increasing slowly";
-      break;
-    case "Flat":
-      trend = "stable";
-      break;
-    case "FortyFiveDown":
-      trend = "decreasing slowly";
-      break;
-    case "SingleDown":
-      trend = "decreasing";
-      break;
-    case "DoubleDown":
-      trend = "dropping fast";
-      break;
-    default:
-      trend = null;
-      break;
-  }
+  let trend = i18next.t("trends." + d.direction, { defaultValue: null });
 
   return trend === null
-    ? `${bg} as of ${ago}.`
-    : `${bg} and ${trend} as of ${ago}.`;
+    ? i18next.t("answers.noTrend", { bg, ago })
+    : i18next.t("answers.withTrend", { bg, trend, ago });
 }
 
 function handleError(error, userEmail, nsUrl) {
@@ -120,28 +93,26 @@ function handleError(error, userEmail, nsUrl) {
 
   // Invalid URL format
   if (errorMsg.startsWith("Invalid URL:")) {
-    return `<speak>Sorry, the Nightscout URL you gave me doesn't appear to be valid. 
-            Can you check on http://git.io/nightscoutstatus ?
-            <break time="600ms"/>
-            Make sure your url starts with http.</speak>`;
+    return `<speak>
+      ${i18next.t("errors.invalidUrl.p1")}
+      <break time="600ms"/>
+      ${i18next.t("errors.invalidUrl.p2")}
+      </speak>`;
   }
 
   // Not found
   if (errorMsg.startsWith("HTTP 404:")) {
-    return `Sorry, I couldn't find your Nightscout site. 
-            Check if you've entered the correct URL on http://git.io/nightscoutstatus`;
+    return i18next.t("errors.notFound");
   }
 
   // Unauthorized
   if (errorMsg.startsWith("HTTP 401:")) {
-    return `Sorry, it looks like I don't have permission to access your Nightscout site.
-            Try entering your API secret on http://git.io/nightscoutstatus`;
+    return i18next.t("errors.unauthorized");
   }
 
   // NS site crashed
   if (errorMsg.startsWith("HTTP 5")) {
-    return `Sorry, there seems to be a problem with your Nightscout site. 
-            I wasn't able to get your status.`;
+    return i18next.t("errors.nsSiteError");
   }
 }
 
