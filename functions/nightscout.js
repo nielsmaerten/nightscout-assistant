@@ -51,14 +51,19 @@ module.exports = async userEmail => {
 
         // Exit if the request failed
         if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText} - ${apiUrl}`);
+          throw new Error(
+            `HTTP ${response.status}: ${response.statusText} - ${apiUrl}`
+          );
         }
 
         // Parse JSON response
-        const json = await response.json();
+        const json = (await response.json())[0];
+
+        // Validate dateString
+        checkDateString(json.dateString, nsUrl, userEmail);
 
         // Format the response into a pronounceable answer
-        resolve(formatResponse(json[0], unit));
+        resolve(formatResponse(json, unit));
         //
         //
       } catch (e) {
@@ -70,10 +75,10 @@ module.exports = async userEmail => {
 
 function formatResponse(d, unit) {
   const ago = moment(d.dateString).fromNow();
-  const reading = d.sgv || d.mbg;
-  const value = unit === "mg/dl" ? reading : Math.round((reading / 18) * 10) / 10;
-  if (isNaN(value)) {
-    return "Hmmm. I could not find a recent glucose reading."
+  const value = d.sgv || d.mbg;
+  const bg = unit === "mg/dl" ? value : Math.round((value / 18) * 10) / 10;
+  if (isNaN(bg)) {
+    return "Hmmm. I could not find a recent glucose reading.";
   }
   let trend;
   switch (d.direction) {
@@ -104,8 +109,8 @@ function formatResponse(d, unit) {
   }
 
   return trend === null
-    ? `${value} as of ${ago}.`
-    : `${value} and ${trend} as of ${ago}.`;
+    ? `${bg} as of ${ago}.`
+    : `${bg} and ${trend} as of ${ago}.`;
 }
 
 function handleError(error, userEmail, nsUrl) {
@@ -137,5 +142,19 @@ function handleError(error, userEmail, nsUrl) {
   if (errorMsg.startsWith("HTTP 5")) {
     return `Sorry, there seems to be a problem with your Nightscout site. 
             I wasn't able to get your status.`;
+  }
+}
+
+/**
+ * I occasionally see warnings from MomentJS
+ * about improperly formatted dateStrings.
+ * This method is just to help track these cases so
+ * I can figure out what's causing it.
+ */
+function checkDateString(d, nsUrl, userEmail) {
+  let regex = /\d{4}-[01]\d-[0-3]\dT[0-2]\d:[0-5]\d:[0-5]\d\.\d+/;
+  if (!String(d).match(regex)) {
+    let msg = `Improperly formatted timestamp: ${d}; Url: ${nsUrl}; User: ${userEmail}`;
+    console.warn(msg);
   }
 }
