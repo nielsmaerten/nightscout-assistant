@@ -70,7 +70,11 @@ module.exports = async userEmail => {
 
 function formatResponse(d, unit) {
   const ago = moment(d.dateString).fromNow();
-  const value = unit === "mg/dl" ? d.sgv : Math.round((d.sgv / 18) * 10) / 10;
+  const reading = d.sgv || d.mbg;
+  const value = unit === "mg/dl" ? reading : Math.round((reading / 18) * 10) / 10;
+  if (isNaN(value)) {
+    return "Hmmm. I could not find a recent glucose reading."
+  }
   let trend;
   switch (d.direction) {
     case "DoubleUp":
@@ -95,10 +99,13 @@ function formatResponse(d, unit) {
       trend = "dropping fast";
       break;
     default:
-      trend = "Unknown direction";
+      trend = null;
       break;
   }
-  return `${value} and ${trend} as of ${ago}.`;
+
+  return trend === null
+    ? `${value} as of ${ago}.`
+    : `${value} and ${trend} as of ${ago}.`;
 }
 
 function handleError(error, userEmail, nsUrl) {
