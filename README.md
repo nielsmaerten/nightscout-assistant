@@ -1,5 +1,7 @@
 # Nightscout for Google Home & Google Assistant
 
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/nightscout-status/localized.svg)](https://crowdin.com/project/nightscout-status)
+
 ## Ask Google about your glucose:
 > "Hey Google, talk to Nightscout Status"  
 >> "Your blood sugar is 109 and stable as of 4 minutes ago."
