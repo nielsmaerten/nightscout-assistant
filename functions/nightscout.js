@@ -51,7 +51,7 @@ module.exports = async userEmail => {
 
         // Exit if the request failed
         if (!response.ok) {
-          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+          throw new Error(`HTTP ${response.status}: ${response.statusText} - ${apiUrl}`);
         }
 
         // Parse JSON response
@@ -122,7 +122,7 @@ function handleError(error, userEmail, nsUrl) {
 
   // Unauthorized
   if (errorMsg.startsWith("HTTP 401:")) {
-    return `Sorry, it looks like I don't have permission to view your Nightscout site.
+    return `Sorry, it looks like I don't have permission to access your Nightscout site.
             Try entering your API secret on http://git.io/nightscoutstatus`;
   }
 
