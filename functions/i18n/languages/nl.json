@@ -2,16 +2,16 @@
     "translation": {
         "signIn": {
             "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose"
+            "request": "Om je glucose te bekijken"
         },
         "errors": {
-            "noNsSite": "Looks like you haven't linked your Nightscout site yet. To continue, visit {{- homepageUrl}}",
-            "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+            "noNsSite": "Het lijkt erop dat je Nightscout site nog niet is gekoppeld. Om verder te gaan, bezoek {{- homepageUrl}}",
+            "noBgReading": "Hmmm. Ik kon geen recente glucosemeting vinden.",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "Sorry, de Nightscout URL die je hebt opgegeven lijkt ongeldig. Kan je even nakijken op {{- homepageUrl}} ?",
+                "p2": "Zorg ervoor dat je URL begint het http."
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
+            "notFound": "Sorry, ik kon je Nightscout site niet vinden. Controleer of je de juiste URL hebt op {{- homepageUrl}}",
             "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
             "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
         },
