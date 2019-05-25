@@ -26,7 +26,9 @@ module.exports = async userEmail => {
     } else {
       const unit = snapshot.data().unit || "mg/dl";
       const apiSecret = snapshot.data().secretHash;
-      fetch(new URL("/api/v1/entries/current.json", nsUrl), {
+      const apiUrl = new URL(nsUrl);
+      apiUrl.pathname = "/api/v1/entries/current.json";
+      fetch(apiUrl, {
         headers: {
           "API-SECRET": apiSecret
         }
