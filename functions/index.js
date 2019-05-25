@@ -1,6 +1,8 @@
+// @ts-check
 const functions = require("firebase-functions");
 const nightscout = require("./nightscout");
 const { dialogflow, SignIn } = require("actions-on-google");
+const { i18next, initLocale } = require("./i18n");
 
 const app = dialogflow({
   clientId:
@@ -8,8 +10,9 @@ const app = dialogflow({
 });
 
 app.intent("Glucose Status", async conv => {
+  await initLocale(conv.user.locale);
   if (conv.user.profile.token === undefined) {
-    conv.ask(new SignIn("To access your glucose"));
+    conv.ask(new SignIn(i18next.t("signIn.request")));
   } else {
     const userEmail = conv.user.email;
     const nsResponse = await nightscout(userEmail);
@@ -17,11 +20,10 @@ app.intent("Glucose Status", async conv => {
   }
 });
 
-app.intent("Sign In", (conv, params, signin) => {
+app.intent("Sign In", async (conv, params, signin) => {
+  await initLocale(conv.user.locale);
   if (signin.status === "OK") {
-    conv.close(
-      "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'"
-    );
+    conv.close(i18next.t("signIn.completed"));
   } else {
     conv.close();
   }
