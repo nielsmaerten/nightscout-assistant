@@ -59,7 +59,7 @@ module.exports = async userEmail => {
         const json = (await response.json())[0];
 
         // Validate dateString
-        checkDateString(json.dateString, nsUrl, userEmail);
+        // checkDateString(json.dateString, nsUrl, userEmail);
 
         // Format the response into a pronounceable answer
         resolve(formatResponse(json, unit));
@@ -73,7 +73,7 @@ module.exports = async userEmail => {
 };
 
 function formatResponse(d, unit) {
-  const ago = moment(d.dateString).fromNow();
+  const ago = moment(d.date).fromNow();
   const value = d.sgv || d.mbg;
   const bg = unit === "mg/dl" ? value : Math.round((value / 18) * 10) / 10;
   if (isNaN(bg)) {

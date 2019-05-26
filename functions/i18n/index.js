@@ -5,7 +5,7 @@ module.exports.i18next = i18next;
 module.exports.initLocale = async function (locale) {
     await i18next.init({
         lng: locale,
-        debug: true,
+        debug: false,
         interpolation: {
             defaultVariables: {
                 homepageUrl: "http://git.io/nightscoutstatus"
