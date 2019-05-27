@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Nu kan je zeggen: \"Hey Google, vraag Nightscout Status wat mijn bloedsuiker is\"",
             "request": "Om je glucose te bekijken"
         },
         "errors": {
@@ -12,21 +12,21 @@
                 "p2": "Zorg ervoor dat je URL begint het http."
             },
             "notFound": "Sorry, ik kon je Nightscout site niet vinden. Controleer of je de juiste URL hebt op {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "unauthorized": "Sorry, blijkbaar heb ik geen toelating om je Nightscout site te bekijken. Kan je je API-geheim opgeven op {{- homepageUrl}} ?",
+            "nsSiteError": "Sorry, er lijkt een probleem te zijn met uw Nightscout site. Ik kon uw status niet ophalen."
         },
         "trends": {
-            "DoubleUp": "rising fast",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
-            "Flat": "stable",
-            "FortyFiveDown": "decreasing slowly",
-            "SingleDown": "decreasing",
-            "DoubleDown": "dropping fast"
+            "DoubleUp": "snel stijgend",
+            "SingleUp": "stijgend",
+            "FortyFiveUp": "langzaam stijgend",
+            "Flat": "stabiel",
+            "FortyFiveDown": "langzaam dalende",
+            "SingleDown": "dalende",
+            "DoubleDown": "snel dalend"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}"
+            "noTrend": "{{bg}} sinds {{ago}}",
+            "withTrend": "{{bg}} en {{trend}} sinds {{ago}}"
         }
     }
 }
