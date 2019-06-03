@@ -43,11 +43,11 @@
             "actions-directory": {
                 "description": {
                     "short": "Ta reda på din aktuella blodsockernivå från Nightscout",
-                    "full": "Fråga Google Assistant om min aktuella blodsockernivå."
+                    "full": "Fråga Google Assistant om din aktuella blodsockernivå."
                 },
                 "sample-invocations": [
                     "Ok Google, prata med Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, fråga Nightscout Status om mitt blodsocker"
                 ]
             }
         }
