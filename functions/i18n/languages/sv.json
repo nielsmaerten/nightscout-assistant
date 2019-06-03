@@ -37,8 +37,8 @@
                 "How am I doing?",
                 "What's my glucose?",
                 "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Kolla mitt socker.",
+                "Kontrollera mitt blodsocker"
             ],
             "actions-directory": {
                 "description": {
