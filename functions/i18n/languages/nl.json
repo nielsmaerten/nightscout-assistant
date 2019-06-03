@@ -30,13 +30,13 @@
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
+                "Hoeveel is mijn suiker?",
+                "Hoe laag sta ik?",
+                "Hoe hoog sta ik?",
+                "Wat is mijn status?",
                 "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
+                "Wat is mijn glucose?",
+                "Hoeveel is mijn bloedsuiker?",
                 "Check my glucose.",
                 "Check my blood sugar"
             ],
