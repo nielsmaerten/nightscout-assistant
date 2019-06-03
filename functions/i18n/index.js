@@ -12,7 +12,8 @@ module.exports.initLocale = async function (locale) {
             }
         },
         resources: {
-            en: require("./languages/en.json")
+            en: require("./languages/en.json"),
+            sv: require("./languages/sv.json")
         }
     })
 }
