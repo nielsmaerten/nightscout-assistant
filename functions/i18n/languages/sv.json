@@ -1,0 +1,32 @@
+{
+    "translation": {
+        "signIn": {
+            "completed": "Nu kan du prova att fråga: 'Hey Google, fråga Nightscout Status vad mitt blodsocker är'",
+            "request": "För att få reda på ditt blodsocker"
+        },
+        "errors": {
+            "noNsSite": "Ser ut som om du inte har länkat din Nightscout sida än. För att fortsätta, besök {{- homepageUrl}}",
+            "noBgReading": "Hmmm. Jag kunde inte hitta något avläst blodsocker.",
+            "invalidUrl": {
+                "p1": "Ledsen, men Nightscout länken du angett verkar inte vara giltig. Kan du kontrollera länken på {{- homepageUrl}} ?",
+                "p2": "Kontrollera så att länken börjar med http."
+            },
+            "notFound": "Ledsen, men jag kunde inte hitta din Nightscout sida. Kontrollera att du har angivit rätt URL på {{- homepageUrl}}",
+            "unauthorized": "Ledsen, det ser ut som att jag inte har tillåtelse att kontakta din Nightscout sida. Prova att ange din API secret på {{- homepageUrl}}",
+            "nsSiteError": "Ledsen, det ser ut som att det var ett problem med din Nightscout sida. Jag kunde inte hämta din status."
+        },
+        "trends": {
+            "DoubleUp": "stiger fort",
+            "SingleUp": "stigande",
+            "FortyFiveUp": "stiger långsamt",
+            "Flat": "stabilt",
+            "FortyFiveDown": "sjunker långsamt",
+            "SingleDown": "sjunkande",
+            "DoubleDown": "sjunker snabbt"
+        },
+        "answers": {
+            "noTrend": "{{bg}} för {{ago}} sedan",
+            "withTrend": "{{bg}} och {{trend}} för {{ago}} sedan"
+        }
+    }
+}

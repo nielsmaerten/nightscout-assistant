@@ -1,0 +1,32 @@
+{
+    "translation": {
+        "signIn": {
+            "completed": "Nu kan je zeggen: \"Hey Google, vraag Nightscout Status wat mijn bloedsuiker is\"",
+            "request": "Om je glucose te bekijken"
+        },
+        "errors": {
+            "noNsSite": "Het lijkt erop dat je Nightscout site nog niet is gekoppeld. Om verder te gaan, bezoek {{- homepageUrl}}",
+            "noBgReading": "Hmmm. Ik kon geen recente glucosemeting vinden.",
+            "invalidUrl": {
+                "p1": "Sorry, de Nightscout URL die je hebt opgegeven lijkt ongeldig. Kan je even nakijken op {{- homepageUrl}} ?",
+                "p2": "Zorg ervoor dat je URL begint het http."
+            },
+            "notFound": "Sorry, ik kon je Nightscout site niet vinden. Controleer of je de juiste URL hebt op {{- homepageUrl}}",
+            "unauthorized": "Sorry, blijkbaar heb ik geen toelating om je Nightscout site te bekijken. Kan je je API-geheim opgeven op {{- homepageUrl}} ?",
+            "nsSiteError": "Sorry, er lijkt een probleem te zijn met uw Nightscout site. Ik kon uw status niet ophalen."
+        },
+        "trends": {
+            "DoubleUp": "snel stijgend",
+            "SingleUp": "stijgend",
+            "FortyFiveUp": "langzaam stijgend",
+            "Flat": "stabiel",
+            "FortyFiveDown": "langzaam dalende",
+            "SingleDown": "dalende",
+            "DoubleDown": "snel dalend"
+        },
+        "answers": {
+            "noTrend": "{{bg}} sinds {{ago}}",
+            "withTrend": "{{bg}} en {{trend}} sinds {{ago}}"
+        }
+    }
+}
