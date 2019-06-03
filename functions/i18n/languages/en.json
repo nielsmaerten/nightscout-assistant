@@ -27,6 +27,17 @@
         "answers": {
             "noTrend": "{{bg}} as of {{ago}}",
             "withTrend": "{{bg}} and {{trend}} as of {{ago}}"
+        }, 
+        "invocations": {
+            "1": "How is my sugar?",
+            "2": "How low am I?",
+            "3": "How high am I?",
+            "4": "What is my status?",
+            "5": "How am I doing?",
+            "6": "What's my glucose?",
+            "7": "What's my blood sugar?",
+            "8": "Check my glucose.",
+            "9": "Check my blood sugar"
         }
     }
 }
