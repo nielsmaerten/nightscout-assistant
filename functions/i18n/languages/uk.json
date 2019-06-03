@@ -27,6 +27,29 @@
         "answers": {
             "noTrend": "{{bg}} as of {{ago}}",
             "withTrend": "{{bg}} and {{trend}} as of {{ago}}"
+        },
+        "google-assistant": {
+            "invocations": [
+                "How is my sugar?",
+                "How low am I?",
+                "How high am I?",
+                "What is my status?",
+                "How am I doing?",
+                "What's my glucose?",
+                "What's my blood sugar?",
+                "Check my glucose.",
+                "Check my blood sugar"
+            ],
+            "actions-directory": {
+                "description": {
+                    "short": "Check your current glucose level from Nightscout",
+                    "full": "Ask the Google Assistant about your current glucose level."
+                },
+                "sample-invocations": [
+                    "Ok Google, talk to Nightscout Status",
+                    "Ok Google, ask Nightscout Status what my glucose is"
+                ]
+            }
         }
     }
 }
