@@ -26,7 +26,7 @@
         },
         "answers": {
             "noTrend": "{{bg}} {{ago}}",
-            "withTrend": "{{bg}} och {{trend}} för {{ago}} sedan"
+            "withTrend": "{{bg}} och {{trend}} {{ago}}"
         }
     }
 }
