@@ -37,12 +37,12 @@
                 "How am I doing?",
                 "Wat is mijn glucose?",
                 "Hoeveel is mijn bloedsuiker?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Controleer mijn glucose.",
+                "Controleer mijn bloedsuiker"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
+                    "short": "Vraag Nightscout hoeveel je bloedsuikerspiegel is",
                     "full": "Ask the Google Assistant about your current glucose level."
                 },
                 "sample-invocations": [
