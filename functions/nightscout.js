@@ -1,7 +1,6 @@
 // @ts-check
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
-const moment = require("moment");
 const URL = require("url").URL;
 const { i18next } = require("./i18n");
 
@@ -42,6 +41,7 @@ module.exports = async userEmail => {
         apiUrl.pathname = "/api/v1/entries/current.json";
 
         // Call the API
+        // @ts-ignore
         const response = await fetch(apiUrl, {
           headers: {
             "API-SECRET": apiSecret
@@ -73,6 +73,8 @@ module.exports = async userEmail => {
 };
 
 function formatResponse(d, unit) {
+  let moment = require("moment");
+  moment.locale(i18next.language);
   const ago = moment(d.date).fromNow();
   const value = d.sgv || d.mbg;
   const bg = unit === "mg/dl" ? value : Math.round((value / 18) * 10) / 10;
