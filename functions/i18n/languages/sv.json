@@ -25,8 +25,8 @@
             "DoubleDown": "sjunker snabbt"
         },
         "answers": {
-            "noTrend": "{{bg}} för {{ago}} sedan",
-            "withTrend": "{{bg}} och {{trend}} för {{ago}} sedan"
+            "noTrend": "{{bg}} {{ago}}",
+            "withTrend": "{{bg}} och {{trend}} {{ago}}"
         }
     }
 }
