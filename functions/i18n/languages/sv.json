@@ -27,6 +27,29 @@
         "answers": {
             "noTrend": "{{bg}} {{ago}}",
             "withTrend": "{{bg}} och {{trend}} {{ago}}"
+        },
+        "google-assistant": {
+            "invocations": [
+                "Hur är sockret?",
+                "Hur lågt?",
+                "Hur högt?",
+                "Min status?",
+                "Hur ligger jag till?",
+                "Hur är mitt socker?",
+                "Hur är mitt blodsocker?",
+                "Kolla mitt socker.",
+                "Kontrollera mitt blodsocker"
+            ],
+            "actions-directory": {
+                "description": {
+                    "short": "Ta reda på din aktuella blodsockernivå från Nightscout",
+                    "full": "Fråga Google Assistant om din aktuella blodsockernivå."
+                },
+                "sample-invocations": [
+                    "Ok Google, prata med Nightscout Status",
+                    "Ok Google, fråga Nightscout Status om mitt blodsocker"
+                ]
+            }
         }
     }
 }
