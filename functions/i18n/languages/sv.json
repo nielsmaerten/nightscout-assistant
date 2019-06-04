@@ -30,13 +30,13 @@
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
-                "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
+                "Hur är sockret?",
+                "Hur lågt?",
+                "Hur högt?",
+                "Min status?",
+                "Hur ligger jag till?",
+                "Hur är mitt socker?",
+                "Hur är mitt blodsocker?",
                 "Kolla mitt socker.",
                 "Kontrollera mitt blodsocker"
             ],
