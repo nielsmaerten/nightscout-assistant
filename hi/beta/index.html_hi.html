@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68993648-4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-68993648-4');
+  </script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="google-site-verification" content="nj9BAOU7mycvTrX7Sz0mV8bKezmZn3gEalb1CzF2d8Y" />
+  <meta name="google-site-verification" content="khlkdcxNa36gGno36Zcx0tqBZ-ACKdomIUlbp52Yuag" />
+  <title>Nightscout for Google Home and Assistant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <section id="demonstration" class="mt-5 mx-10">
+    <h1>Nightscout Status - <strong>Bèta</strong></h1>
+    <h2 class="mb-1">Try out new features and/or languages before anyone else</h2>
+    <div class="columns mt-5">
+      <div class="column is-offset-one-quarter is-half">
+        <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <img src="../img/nightscout.png" alt="Nightscout logo" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Hello,</strong>
+                  <br>
+                  Thank you for your interest in Nightscout Status (Bèta)!
+                  <p>
+                    You're trying out new stuff, so there may be bugs along the way.
+                    These can be reported through
+                    <a href="https://github.com/nielsmaerten/nightscout-assistant/issues">Github</a>
+                    and/or
+                    <a
+                      href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant">Reddit</a>.
+
+                  </p>
+                  <p></p>
+                  <p>
+                    <a href="https://assistant.google.com/services/a/uid/000000513a29198a?hl=en">Click this link</a> 
+                    on your mobile device to enter bèta. You can opt-out any time.
+                  </p>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="box">
+          <article class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <img src="./1f30f.png" alt="Nightscout logo" />
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Testing in a Non-English language?</strong> <br>
+                  Maybe the invocation "Nightscout Status" does not translate well to your language. <br>
+                  <ul>
+                    <li>If possible, speak the invocation repeatedly, in different real-world scenarios
+                      (i.e., with noise in the background, or at different distances from the device).</li>
+                    <li>Try asking people of different genders or with different accents to invoke Nightscout
+                      Status.
+                    </li>
+                    <li>
+                      If the invocation is not consistently recognized, 
+                      reach out to me and we will try to find a better one!
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="mx-10 mt-10">
+    <div class="columns">
+      <div class="column">
+        <p class="text-xs">
+          <a
+            href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant/?utm_source=share&utm_medium=web2x">
+            Help & FAQ</a>
+          <br />
+          <a href="https://github.com/nielsmaerten/nightscout-assistant/issues">Bug reports; feature requests</a>
+        </p>
+      </div>
+      <div class="column">
+        <p class="text-xs has-text-right">
+          <a id="tos" class="is-hidden" href="terms.html">Terms of Service and Privacy Policy <br /></a>
+          Google Assistant is a trademark of Google Inc.
+          <br />
+          Not affiliated with
+          <a href="http://www.nightscout.info/">the Nightscout Project</a>
+          <br />
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Github corner -->
+  <div>
+    <a href="https://github.com/nielsmaerten/nightscout-assistant" class="github-corner"
+      aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250"
+        style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path
+          d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+          fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path
+          d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+          fill="currentColor" class="octo-body"></path>
+      </svg></a>
+    <style>
+      .github-corner:hover .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+      }
+
+      @keyframes octocat-wave {
+
+        0%,
+        100% {
+          transform: rotate(0);
+        }
+
+        20%,
+        60% {
+          transform: rotate(-25deg);
+        }
+
+        40%,
+        80% {
+          transform: rotate(10deg);
+        }
+      }
+
+      @media (max-width: 500px) {
+        .github-corner:hover .octo-arm {
+          animation: none;
+        }
+
+        .github-corner .octo-arm {
+          animation: octocat-wave 560ms ease-in-out;
+        }
+      }
+    </style>
+  </div>
+</body>
+
+</html>
