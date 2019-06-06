@@ -1,13 +1,24 @@
 initializeFirebase();
 
 var userEmail = null;
+var gaEnabled = false;
 
-firebase.auth().onAuthStateChanged(function(user) {
+firebase.auth().onAuthStateChanged(function (user) {
   if (user) {
     // User is signed in.
     userEmail = user.email;
     showNightscoutSettings();
     document.getElementById("tos").classList.remove("is-hidden");
+
+    // Enable Google Analytics
+    if (!gaEnabled) {
+      gaEnabled = true
+      var gaScript = document.createElement("script")
+      gaScript.src = "https://www.googletagmanager.com/gtag/js?id=UA-68993648-4";
+      document.head.appendChild(gaScript)
+    }
+
+
   } else {
     document.getElementById("authentication").classList.remove("is-hidden");
     initializeFirebaseUI();
@@ -21,7 +32,7 @@ function showNightscoutSettings() {
     .collection("users")
     .doc(userEmail)
     .get()
-    .then(function(snapshot) {
+    .then(function (snapshot) {
       if (snapshot.exists) {
         var data = snapshot.data();
         document.getElementById("nightscout-url").value = data.nsUrl;
@@ -55,8 +66,8 @@ function updateNightscoutSettings(e) {
     .firestore()
     .collection("users")
     .doc(userEmail)
-    .set(settings, {merge: true})
-    .then(function() {
+    .set(settings, { merge: true })
+    .then(function () {
       document.getElementById("success").classList.remove("is-hidden");
     });
   return false;
@@ -98,7 +109,7 @@ function signOut() {
   firebase
     .auth()
     .signOut()
-    .then(function() {
+    .then(function () {
       window.location.reload();
     });
 }
