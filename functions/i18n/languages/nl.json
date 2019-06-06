@@ -13,7 +13,7 @@
             },
             "notFound": "Sorry, ik kon je Nightscout site niet vinden. Controleer of je de juiste URL hebt op {{- homepageUrl}}",
             "unauthorized": "Sorry, blijkbaar heb ik geen toelating om je Nightscout site te bekijken. Kan je je API-geheim opgeven op {{- homepageUrl}} ?",
-            "nsSiteError": "Sorry, er lijkt een probleem te zijn met je Nightscout site. Ik kon uw bloedsuiker niet ophalen."
+            "nsSiteError": "Sorry, er lijkt een probleem te zijn met je Nightscout site. Ik kon je bloedsuiker niet ophalen."
         },
         "trends": {
             "DoubleUp": "snel stijgend",
@@ -42,12 +42,12 @@
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Vraag Nightscout hoeveel je bloedsuikerspiegel is",
+                    "short": "Vraag Nightscout wat je bloedsuikerspiegel is",
                     "full": "Vraag de Google Assistant naar je bloedsuikerspiegel."
                 },
                 "sample-invocations": [
                     "Ok Google, praat met Nightscout Status",
-                    "Ok Google, vraag de Nightscout Status hoeveel mijn glucose is"
+                    "Ok Google, vraag de Nightscout Status wat mijn glucose is"
                 ]
             }
         }
