@@ -30,7 +30,7 @@
 <body>
   <section id="demonstration" class="mt-5 mx-10">
     <h1>Nightscout Status</h1>
-    <h2 class="mb-1">Nightscout for Google Home &amp; Google Assistant (unofficial)</h2>
+    <h2 class="mb-1">Nightscout för Google Home &amp; Google Assistenten (ej officiell)</h2>
     <a title="Crowdin" target="_blank" href="https://crowdin.com/project/nightscout-status">
       <img src="https://d322cqt584bo4o.cloudfront.net/nightscout-status/localized.svg">
     </a>
@@ -48,7 +48,7 @@
                 <p>
                   <strong>Hey Google,</strong>
                   <br />
-                  ask <em>Nightscout Status</em> what my glucose is
+                  fråga <em>Nightscout Status</em> vad mitt blodsocker är
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@
                 <p>
                   <strong>Nightscout Status</strong>
                   <br />
-                  120 and slowly rising as of 4 minutes ago
+                  6.7 och stiger längsamt för 4 minuter sedan
                 </p>
               </div>
             </div>
@@ -78,7 +78,7 @@
 
   <section id="authentication" class="container is-hidden">
     <p class="has-text-centered mt-8">
-      Connect your Nightscout site to get started:
+      Anslut din Nightscoutsida för att komma igång:
     </p>
     <div id="firebaseui-auth-container"></div>
   </section>
@@ -88,7 +88,7 @@
       <div class="columns">
         <!-- Nightscout url input -->
         <div class="column is-three-fifths">
-          <label class="label">Your Nightscout site</label>
+          <label class="label">Din Nightscoutsida</label>
           <div class="control">
             <input class="input" type="text" id="nightscout-url" placeholder="https://MY-NS-SITE.herokuapp.com" />
           </div>
@@ -96,7 +96,7 @@
 
         <!-- Unit input -->
         <div class="column">
-          <label class="label">Unit</label>
+          <label class="label">Enhet</label>
           <div class="control">
             <div class="select is-fullwidth">
               <select id="nightscout-unit">
@@ -109,7 +109,7 @@
 
         <!-- API secret input -->
         <div class="column">
-          <label class="label">API Secret <span class="text-xs has-text-grey-light">(optional)</span></label>
+          <label class="label">API Secret <span class="text-xs has-text-grey-light">(valfritt)</span></label>
           <div class="control">
             <input placeholder="(unchanged)" onfocus="toggleApiSecretInfo(true)" class="input" type="password"
               id="nightscout-api-secret" />
@@ -119,24 +119,24 @@
 
       <article class="message is-hidden" id="api-secret-info">
         <div class="message-header">
-          <p class="text-sm">Do I have to enter my API Secret ?</p>
+          <p class="text-sm">Måste jag ange min API Secret ?</p>
           <button type="button" class="delete" aria-label="delete" onclick="toggleApiSecretInfo(false)"></button>
         </div>
         <div class="message-body">
           <p class="text-sm">
-            This is only needed if your Nightscout site is
+            Detta behövs bara om din Nightscoutsida är
             <a target="_blank"
-              href="http://www.nightscout.info/wiki/welcome/website-features/0-9-features/authentication-roles">read
-              protected</a>. <br />
-            (for example if
+              href="http://www.nightscout.info/wiki/welcome/website-features/0-9-features/authentication-roles">läs
+              skyddad (read protected)</a>. <br />
+            (t.ex. om
             <span class="is-family-code has-text-info">AUTH_DEFAULT_ROLES</span>
-            is set to
+            är satt till
             <span class="is-family-code has-text-info">denied</span>)
           </p>
         </div>
       </article>
-      <button class="button is-primary" type="submit">Save</button>
-      <button class="button is-secondary" onclick="signOut()">Sign out</button>
+      <button class="button is-primary" type="submit">Spara</button>
+      <button class="button is-secondary" onclick="signOut()">Logga ut</button>
     </form>
     <p id="success" class="mt-4 is-hidden">
       <strong>Done!</strong> Now try asking Google Assistant:<br />
