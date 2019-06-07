@@ -2,4 +2,5 @@ files:
   - source: '*.html'
     ignore:
       - /lang/
+      - /beta/
     translation: /lang/%two_letters_code%/%original_file_name%
