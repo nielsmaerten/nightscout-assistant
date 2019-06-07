@@ -2,8 +2,7 @@
 <html>
 
 <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68993648-4"></script>
+  <!-- Google Analytics is configured, but not enabled until after user gives consent -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
@@ -15,45 +14,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="google-site-verification" content="nj9BAOU7mycvTrX7Sz0mV8bKezmZn3gEalb1CzF2d8Y" />
   <meta name="google-site-verification" content="khlkdcxNa36gGno36Zcx0tqBZ-ACKdomIUlbp52Yuag" />
-  <title>Nightscout for Google Home and Assistant</title>
+  <title>Nightscout voor Google Home en Assistant</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsSHA/2.3.1/sha1.js"
+    integrity="sha256-jzw2Wr5YCoGy7p3KfbURQK0NHirbDadS/ihnburOhlY=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.7.4/tailwind.min.css" rel="stylesheet" />
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
 </head>
 
 <body>
   <section id="demonstration" class="mt-5 mx-10">
-    <h1>Nightscout Status - <strong>Bèta</strong></h1>
-    <h2 class="mb-1">Try out new features and/or languages before anyone else</h2>
+    <h1>Nightscout Status</h1>
+    <h2 class="mb-1">Nightscout voor Google Home &amp; Google Assistant (officieus)</h2>
+    <div class="columns">
+      <div class="column">
+        <a title="Crowdin" target="_blank" href="https://crowdin.com/project/nightscout-status">
+          <img src="https://d322cqt584bo4o.cloudfront.net/nightscout-status/localized.svg">
+        </a>
+      </div>
+      <div class="column has-text-right">
+        <a class="button is-light is-rounded is-small" href="/">English</a>
+        <a class="button is-light is-rounded is-small" href="/lang/sv">Svenska</a>
+      </div>
+    </div>
     <div class="columns mt-5">
       <div class="column is-offset-one-quarter is-half">
         <div class="box">
           <article class="media">
             <div class="media-left">
               <figure class="image is-64x64">
-                <img src="../img/nightscout.png" alt="Nightscout logo" />
+                <img src="/img/assistant.png" alt="Google Assistant logo" />
               </figure>
             </div>
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>Hello,</strong>
-                  <br>
-                  Thank you for your interest in Nightscout Status (Bèta)!
-                  <p>
-                    You're trying out new stuff, so there may be bugs along the way.
-                    These can be reported through
-                    <a href="https://github.com/nielsmaerten/nightscout-assistant/issues">Github</a>
-                    and/or
-                    <a
-                      href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant">Reddit</a>.
-
-                  </p>
-                  <p></p>
-                  <p>
-                    <a href="https://assistant.google.com/services/a/uid/000000513a29198a?hl=en">Click this link</a> 
-                    on your mobile device to enter bèta. You can opt-out any time.
-                  </p>
+                  <strong>Hey Google,</strong>
+                  <br />
+                  ask <em>Nightscout Status</em> what my glucose is
                 </p>
               </div>
             </div>
@@ -63,25 +66,15 @@
           <article class="media">
             <div class="media-left">
               <figure class="image is-64x64">
-                <img src="./1f30f.png" alt="Nightscout logo" />
+                <img src="/img/nightscout.png" alt="Nightscout logo" />
               </figure>
             </div>
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>Testing in a Non-English language?</strong> <br>
-                  Maybe the invocation "Nightscout Status" does not translate well to your language. <br>
-                  <ul>
-                    <li>If possible, speak the invocation repeatedly, in different real-world scenarios
-                      (i.e., with noise in the background, or at different distances from the device).</li>
-                    <li>Try asking people of different genders or with different accents to invoke Nightscout
-                      Status.
-                    </li>
-                    <li>
-                      If the invocation is not consistently recognized, 
-                      reach out to me and we will try to find a better one!
-                    </li>
-                  </ul>
+                  <strong>Nightscout Status</strong>
+                  <br />
+                  120 and slowly rising as of 4 minutes ago
                 </p>
               </div>
             </div>
@@ -91,6 +84,70 @@
     </div>
   </section>
 
+  <section id="authentication" class="container is-hidden">
+    <p class="has-text-centered mt-8">
+      Verbind je Nightscout site:
+    </p>
+    <div id="firebaseui-auth-container"></div>
+  </section>
+
+  <section id="nightscout-settings" class="is-hidden mt-8 mx-10">
+    <form onsubmit="return updateNightscoutSettings(event)">
+      <div class="columns">
+        <!-- Nightscout url input -->
+        <div class="column is-three-fifths">
+          <label class="label">Je Nightscout site</label>
+          <div class="control">
+            <input class="input" type="text" id="nightscout-url" placeholder="https://MY-NS-SITE.herokuapp.com" />
+          </div>
+        </div>
+
+        <!-- Unit input -->
+        <div class="column">
+          <label class="label">Eenheid</label>
+          <div class="control">
+            <div class="select is-fullwidth">
+              <select id="nightscout-unit">
+                <option value="mg/dl">mg/dl</option>
+                <option value="mmol/l">mmol/l</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- API secret input -->
+        <div class="column">
+          <label class="label">API Secret<span class="text-xs has-text-grey-light">(optioneel)</span></label>
+          <div class="control">
+            <input placeholder="(ongewijzigd)" onfocus="toggleApiSecretInfo(true)" class="input" type="password"
+              id="nightscout-api-secret" />
+          </div>
+        </div>
+      </div>
+
+      <article class="message is-hidden" id="api-secret-info">
+        <div class="message-header">
+          <p class="text-sm">Moet ik mijn API Secret opgeven?</p>
+          <button type="button" class="delete" aria-label="delete" onclick="toggleApiSecretInfo(false)"></button>
+        </div>
+        <div class="message-body">
+          <p class="text-sm">
+            Dit is enkel nodig als je Nightscout site
+            <a target="_blank"
+              href="http://www.nightscout.info/wiki/welcome/website-features/0-9-features/authentication-roles">beveiligd is tegen publiek lezen              </a>. <br />            
+(bijvoorbeeld als              <span class="is-family-code has-text-info">AUTH_DEFAULT_ROLES</span>            op            
+<span class="is-family-code has-text-info">denied</span> is ingesteld)
+          </p>
+        </div>
+      </article>
+      <button class="button is-primary" type="submit">Bewaren</button>
+      <button class="button is-secondary" onclick="signOut()">Afmelden</button>
+    </form>
+    <p id="success" class="mt-4 is-hidden">
+      <strong>Klaar!</strong> Probeer nu Google Assistant te vragen:<br />
+      <em>Hey Google, praat met Nightscout Status</em>
+    </p>
+  </section>
 
   <footer class="mx-10 mt-10">
     <div class="columns">
@@ -98,17 +155,17 @@
         <p class="text-xs">
           <a
             href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant/?utm_source=share&utm_medium=web2x">
-            Help & FAQ</a>
+            Help & vaak gestelde vragen</a>
           <br />
-          <a href="https://github.com/nielsmaerten/nightscout-assistant/issues">Bug reports; feature requests</a>
+          <a href="https://github.com/nielsmaerten/nightscout-assistant/issues">Bugs of suggesties</a>
         </p>
       </div>
       <div class="column">
         <p class="text-xs has-text-right">
-          <a id="tos" class="is-hidden" href="terms.html">Terms of Service and Privacy Policy <br /></a>
-          Google Assistant is a trademark of Google Inc.
+          <a id="tos" class="is-hidden" href="terms.html">Gebruikersovereenkomst en Privacybeleid<br /></a>
+          Google Assistant is een handelsmerk van Google Inc.
           <br />
-          Not affiliated with
+          Niet geassocieerd met
           <a href="http://www.nightscout.info/">the Nightscout Project</a>
           <br />
         </p>
@@ -163,6 +220,8 @@
       }
     </style>
   </div>
+
+  <script src="/main.js"></script>
 </body>
 
 </html>
