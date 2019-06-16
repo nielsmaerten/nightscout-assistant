@@ -5,7 +5,8 @@
         v-for="lang in $store.state.languages.available"
         :key="lang.code"
         :value="lang.code"
-      >{{ lang.name }}</option>
+        >{{ lang.name }}</option
+      >
     </select>
   </div>
 </template>
@@ -23,8 +24,6 @@ export default {
       this.$store.dispatch("changeLanguage", newLanguage);
     }
   },
-  methods: {
-  }
+  methods: {}
 };
-
 </script>

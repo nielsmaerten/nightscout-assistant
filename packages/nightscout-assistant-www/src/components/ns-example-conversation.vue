@@ -12,14 +12,17 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>{{$t("index.example-conversation.hey-google")}}</strong>
+                  <strong>{{
+                    $t("index.example-conversation.hey-google")
+                  }}</strong>
                   <br />
-                  <i18next 
-                  path="index.example-conversation.ask-google" 
-                  tag="span">
-                  <em>{{$t("common.invocation")}}</em>
+                  <i18next
+                    path="index.example-conversation.ask-google"
+                    tag="span"
+                  >
+                    <em>{{ $t("common.invocation") }}</em>
                   </i18next>
-                 </p>
+                </p>
               </div>
             </div>
           </article>
@@ -34,9 +37,9 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>{{$t("common.invocation")}}</strong>
+                  <strong>{{ $t("common.invocation") }}</strong>
                   <br />
-                  {{$t("index.example-conversation.nightscout-status-resp")}}
+                  {{ $t("index.example-conversation.nightscout-status-resp") }}
                 </p>
               </div>
             </div>
