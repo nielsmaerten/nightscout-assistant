@@ -1,8 +1,8 @@
 <template>
   <div class="mt-5 mx-10">
-    <h1>Nightscout Status</h1>
+    <h1>{{$t("index.header.title")}}</h1>
     <h2 class="mb-1">
-      Nightscout for Google Home &amp; Google Assistant (unofficial)
+      {{$t("index.header.subtitle")}}
     </h2>
     <div class="has-text-right">
       <language-selector></language-selector>

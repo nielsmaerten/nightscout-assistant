@@ -21,6 +21,6 @@ const i18n = new VueI18Next(i18next);
 new Vue({
   router,
   store,
-  i18n: i18n,
+  i18n,
   render: h => h(App)
 }).$mount("#app");
