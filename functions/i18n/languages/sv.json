@@ -1,8 +1,9 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Nu kan du prova att fråga: 'Hey Google, fråga Nightscout Status vad mitt blodsocker är'",
-            "request": "För att få reda på ditt blodsocker"
+            "completed": "Nu kan du prova att fråga: 'Hey Google, fråga Nightscout Status vad mitt blodsocker är'.",
+            "request": "För att få reda på ditt blodsocker",
+            "healthDisclaimer": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal."
         },
         "errors": {
             "noNsSite": "Ser ut som om du inte har länkat din Nightscout sida än. För att fortsätta, besök {{- homepageUrl}}",

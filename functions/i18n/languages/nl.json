@@ -2,7 +2,8 @@
     "translation": {
         "signIn": {
             "completed": "Nu kan je zeggen: \"Hey Google, vraag Nightscout Status hoeveel mijn bloedsuiker is\"",
-            "request": "Om je glucose te bekijken"
+            "request": "Om je glucose te bekijken",
+            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
         },
         "errors": {
             "noNsSite": "Het lijkt erop dat je Nightscout site nog niet is gekoppeld. Om verder te gaan, bezoek {{- homepageUrl}}",
