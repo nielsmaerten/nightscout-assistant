@@ -1,7 +1,7 @@
 <template>
   <section id="authentication" class="container">
     <p class="has-text-centered mt-8">
-      Connect your Nightscout site to get started:
+      {{$t("index.settings.connect")}}
     </p>
     <div id="firebaseui-auth-container"></div>
   </section>

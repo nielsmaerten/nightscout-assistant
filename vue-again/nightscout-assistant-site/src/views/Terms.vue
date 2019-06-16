@@ -10,7 +10,9 @@
         <span class="mr-5">{{$t("terms.privacy-policy.title")}}</span>
       </h2>
 
-      <p>{{$t('terms.privacy-policy.intro')}}</p>
+      <i18next path="terms.privacy-policy.intro" tag="p">
+            https://nielsmaerten.github.io/nightscout-assistant
+          </i18next>
 
       <strong>{{$t('terms.privacy-policy.collection-title')}}</strong>
       <p>{{$t('terms.privacy-policy.collection-desc')}}</p>
@@ -19,13 +21,18 @@
       <p>{{$t('terms.privacy-policy.use-desc')}}</p>
 
       <strong>{{$t('terms.privacy-policy.sharing-title')}}</strong>
-      <p>{{$t('terms.privacy-policy.sharing-desc')}}</p>
+      <p v-html="$t('terms.privacy-policy.sharing-desc')"></p>
 
       <strong>{{$t('terms.privacy-policy.deleting-title')}}</strong>
-      <p>{{$t('terms.privacy-policy.deleting-desc')}}</p>
+      <i18next path="terms.privacy-policy.deleting-desc" tag="p">
+            <a href="https://myaccount.google.com/permissions">{{$t("terms.privacy-policy.deleting-google-account")}}</a>
+          </i18next>
 
       <strong>{{$t('terms.privacy-policy.analytics-title')}}</strong>
-      <p>{{$t('terms.privacy-policy.analytics-desc')}}</p>
+      <i18next path="terms.privacy-policy.analytics-desc" tag="p">
+            <span>https://nielsmaerten.github.io/nightscout-assistant</span>
+            <a href="https://tools.google.com/dlpage/gaoptout/">https://tools.google.com/dlpage/gaoptout/</a>
+          </i18next>
 
       <h2 class="mb-4 mt-10 text-base">{{$t('terms.health.title')}}</h2>
       <p>{{$t('terms.health.disclaimer')}}</p>
@@ -53,13 +60,18 @@
       </p>
       <p class="has-text-right text-xs">
         <br>{{$t("common.google-tm")}}
-        <br>{{$t("common.nightscout-no-affl")}}
+        <br>
+        <i18next path="common.nightscout-no-affl">
+            <a href="http://nightscout.info">
+            {{$t("common.nightscout-project")}}
+            </a>
+          </i18next>
       </p>
     </section>
   </div>
 </template>
 
-<style>
+<style scoped>
 p {
   margin-bottom: .7em;
 }

@@ -12,9 +12,14 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>Hey Google,</strong>
-                  <br />ask <em>Nightscout Status</em> what my glucose is
-                </p>
+                  <strong>{{$t("index.example-conversation.hey-google")}}</strong>
+                  <br />
+                  <i18next 
+                  path="index.example-conversation.ask-google" 
+                  tag="span">
+                  <em>{{$t("common.invocation")}}</em>
+                  </i18next>
+                 </p>
               </div>
             </div>
           </article>
@@ -29,8 +34,9 @@
             <div class="media-content">
               <div class="content">
                 <p>
-                  <strong>Nightscout Status</strong>
-                  <br />120 and slowly rising as of 4 minutes ago
+                  <strong>{{$t("common.invocation")}}</strong>
+                  <br />
+                  {{$t("index.example-conversation.nightscout-status-resp")}}
                 </p>
               </div>
             </div>

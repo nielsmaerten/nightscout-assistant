@@ -4,7 +4,7 @@
       <div class="columns">
         <!-- Nightscout url input -->
         <div class="column is-three-fifths">
-          <label class="label">Your Nightscout site</label>
+          <label class="label">{{$t("index.settings.your-site")}}</label>
           <div class="control">
             <input
               class="input"
@@ -12,18 +12,18 @@
               id="nightscout-url"
               v-model="user.settings.nsUrl"
               placeholder="https://MY-NS-SITE.herokuapp.com"
-            />
+            >
           </div>
         </div>
 
         <!-- Unit input -->
         <div class="column">
-          <label class="label">Unit</label>
+          <label class="label">{{$t("index.settings.unit")}}</label>
           <div class="control">
             <div class="select is-fullwidth">
               <select id="nightscout-unit" v-model="user.settings.unit">
-                <option value="mg/dl">mg/dl</option>
-                <option value="mmol/l">mmol/l</option>
+                <option value="mg/dl">{{$t("index.settings.mg-dl")}}</option>
+                <option value="mmol/l">{{$t("index.settings.mmol-l")}}</option>
               </select>
             </div>
           </div>
@@ -32,8 +32,10 @@
         <!-- API secret input -->
         <div class="column">
           <label class="label">
-            API Secret
-            <span class="text-xs has-text-grey-light">(optional)</span>
+            {{$t("index.settings.api-secret")}}
+            <span
+              class="text-xs has-text-grey-light"
+            >{{$t("index.settings.optional")}}</span>
           </label>
           <div class="control">
             <input
@@ -43,14 +45,14 @@
               class="input"
               type="password"
               id="nightscout-api-secret"
-            />
+            >
           </div>
         </div>
       </div>
 
       <article class="message" v-show="showApiSecretInfo" id="api-secret-info">
         <div class="message-header">
-          <p class="text-sm">Do I have to enter my API Secret ?</p>
+          <p class="text-sm">{{$t("index.settings.api-secret-info.title")}}</p>
           <button
             type="button"
             class="delete"
@@ -60,29 +62,32 @@
         </div>
         <div class="message-body">
           <p class="text-sm">
-            This is only needed if your Nightscout site is
-            <a
-              target="_blank"
-              href="http://www.nightscout.info/wiki/welcome/website-features/0-9-features/authentication-roles"
-            >
-              read protected </a
-            >. <br />(for example if
-            <span class="is-family-code has-text-info">AUTH_DEFAULT_ROLES</span>
-            is set to
-            <span class="is-family-code has-text-info">denied</span>)
+            <i18next path="index.settings.api-secret-info.info">
+              <span class="is-family-code has-text-info">AUTH_DEFAULT_ROLES</span>
+              <span class="is-family-code has-text-info">denied</span>
+            </i18next>
           </p>
         </div>
       </article>
-      <button class="button is-primary" type="submit">Save</button>
-      <button class="button is-secondary ml-3" @click="signOut">
-        Sign out
-      </button>
+      <button class="button is-primary" type="submit">{{$t("index.settings.save")}}</button>
+      <button class="button is-secondary ml-3" @click="signOut">{{$t("index.settings.sign-out")}}</button>
     </form>
     <p id="success" class="mt-4" v-show="saveSuccess">
-      <strong>Done!</strong> Now try asking Google Assistant:
-      <br />
-      <em>Hey Google, talk to Nightscout Status</em>
+      <strong>{{$t("index.settings.done")}}</strong>
+      {{$t("index.settings.success-msg")}}
+      <br>
+      <em>{{$t("common.full-invocation")}}</em>
     </p>
+
+    <article class="message is-warning is-small mt-2">
+      <div class="message-body">
+        <i18next path="index.settings.hint">
+          <a href="https://support.google.com/googlehome/answer/7029585?co=GENIE.Platform%3DAndroid&hl=en">
+          {{$t("index.settings.hint-routines")}}</a>
+          <br>
+        </i18next>
+      </div>
+    </article>
   </section>
 </template>
 
