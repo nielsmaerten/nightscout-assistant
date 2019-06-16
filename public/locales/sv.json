@@ -48,21 +48,21 @@
             "title": "Integritetspolicy",
             "intro": "Detta dokument beskriver informationen som samlas in av Nightscout Status, {{0}} (\"Tjänsten\" eller \"Mjukvaran\") och hur denna information behandlas.",
             "collection-title": "Vilken information samlas in?",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-            "use-title": "How is this information used?",
-            "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
-            "sharing-title": "Sharing of information",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
+            "collection-desc": "Tjänsten är beroende av 2 saker för att fungera: E-postadressen till ditt Googlekonto (för att veta att det är du som frågar), och adressen till din Nightscoutsida (för att hämta ditt blodsockervärde och läsa upp det för dig).",
+            "use-title": "Hur behandlas informationen?",
+            "use-desc": "När du använder tjänsten via Google Assistenten (d.v.s genom att säga: 'Hey Google, prata med Nightscout Status), används din E-postadress för att se om det finns en Nightscoutsida kopplad till den. Om så är fallet, hämtas ditt blodsockervärde från din Nightscoutsida.",
+            "sharing-title": "Spridning och delning av information",
+            "sharing-desc": "Din E-postadress och/eller din Nightscoutsida (URL) kommer <strong>aldrig</strong> delas eller spridas till tredje part. Informationen används endast för att tjänsten ska veta från vilken Nightscoutsida informationen ska hämtas ifrån. Data från din Nightscoutsida sparas inte, inte ens i loggfiler. ",
+            "deleting-title": "Radera dina uppgifter",
+            "deleting-desc": "Du kan närsomhelst välja att neka åtkomst: Genom att logga in, ta bort din Nightscout URL och trycka på Spara. Du kan också radera Nightscout Status från ditt {{0}}.",
+            "deleting-google-account": "Googlekonto",
             "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "analytics-desc": "När du har loggat in på denna sida, sparas anonym statistik om ditt besök med hjälp av en cookie (Google Analytics). Cookien aktiveras först efter att du har godkänt denna Integritetspolicy. Analytics används för att bättre förstå hur sidan används, hur den hittats och från vilket geografiskt område. Detta gäller endast {{0}}, inte användandet av tjänsten i sig. Om du vill välja bort (opt-out) från Google Analytics cookie, kan detta göras genom att besöka sidan {{1}}"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "Friskrivningsklausul för sjukvård",
+            "disclaimer": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal. Om du har frågor om behandling eller behöver råd, kom ihåg att alltid fråga din läkare!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Licens och Användarvillkor"
     }
 }
