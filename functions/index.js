@@ -23,7 +23,14 @@ app.intent("Glucose Status", async conv => {
 app.intent("Sign In", async (conv, params, signin) => {
   await initLocale(conv.user.locale);
   if (signin.status === "OK") {
-    conv.close(i18next.t("signIn.completed"));
+    let completionText = `
+    <speak>
+    ${i18next.t("signIn.healthDisclaimer")}
+    <break time="500ms"/>
+    ${i18next.t("signIn.completed")}
+    </speak>
+    `
+    conv.close(completionText);
   } else {
     conv.close();
   }
