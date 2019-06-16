@@ -41,7 +41,7 @@
           </label>
           <div class="control">
             <input
-              placeholder="(unchanged)"
+              :placeholder="$t('index.settings.unchanged')"
               v-model="user.settings.apiSecret"
               @focus="showApiSecretInfo = true"
               class="input"
