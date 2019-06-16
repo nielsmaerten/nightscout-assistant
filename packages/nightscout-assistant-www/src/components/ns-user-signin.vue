@@ -1,15 +1,14 @@
 <template>
   <section id="authentication" class="container">
     <p class="has-text-centered mt-8">
-      {{$t("index.settings.connect")}}
+      {{ $t("index.settings.connect") }}
     </p>
     <div id="firebaseui-auth-container"></div>
   </section>
 </template>
 
 <script>
-import store from "@/store";
-import router from "@/router"
+import router from "@/router";
 export default {
   name: "ns-user-settings",
   mounted: initializeFirebaseUI

@@ -49,10 +49,9 @@ const store = new Vuex.Store({
   },
   actions: {
     async changeLanguage(context, lng) {
-      await i18next.changeLanguage(lng)
+      await i18next.changeLanguage(lng);
       context.commit("setLanguage", lng);
       history.replaceState(undefined, undefined, "#lng=" + lng);
-
     }
   }
 });
