@@ -1,3 +1,3 @@
 module.exports = {
-    publicPath: 'nightscout-assistant/'
-}
+  publicPath: "nightscout-assistant/"
+};
