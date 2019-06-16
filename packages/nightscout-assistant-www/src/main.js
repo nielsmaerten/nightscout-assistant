@@ -13,7 +13,7 @@ i18next.use(XHR).init({
   fallbackLng: "en",
   defaultNS: "translation",
   backend: {
-    loadPath: location.href.replace(/[^/]*$/, "") + "locales/{{lng}}.json"
+    loadPath: location.origin + "/nightscout-assistant/locales/{{lng}}.json"
   }
 });
 const i18n = new VueI18Next(i18next);
