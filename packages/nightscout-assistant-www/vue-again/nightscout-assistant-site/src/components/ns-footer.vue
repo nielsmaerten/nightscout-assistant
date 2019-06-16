@@ -6,23 +6,27 @@
           <a
             href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant/?utm_source=share&utm_medium=web2x"
           >
-            Help & FAQ</a
+            {{$t("index.footer.help-faq")}}</a
           >
           <br />
           <a href="https://github.com/nielsmaerten/nightscout-assistant/issues"
-            >Bug reports; feature requests</a
+            >{{$t("index.footer.bugs")}}</a
           >
         </p>
       </div>
       <div class="column">
         <p class="text-xs has-text-right">
-          <a id="tos" v-if="$store.state.user.isAuthenticated" href="terms.html"
-            >Terms of Service and Privacy Policy <br
-          /></a>
-          Google Assistant is a trademark of Google Inc.
+          <router-link to="/terms">
+          {{$t("index.footer.tos")}}
+          </router-link>
+          <br>
+          {{$t("common.google-tm")}}
           <br />
-          Not affiliated with
-          <a href="http://www.nightscout.info/">the Nightscout Project</a>
+          <i18next path="common.nightscout-no-affl">
+            <a href="http://nightscout.info">
+            {{$t("common.nightscout-project")}}
+            </a>
+          </i18next>
           <br />
         </p>
       </div>
