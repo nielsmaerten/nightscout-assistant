@@ -13,13 +13,12 @@
 </template>
 
 <script>
-import { debuglog } from 'util';
 export default {
   name: "language-selector",
   methods: {
     changeLanguage(e) {
       // Changing the route will cause the router to update the langauge
-      this.$router.push( `/${e.target.value}/${this.$route.name}/`);
+      this.$router.push(`/${e.target.value}/${this.$route.name}/`);
     }
   }
 };

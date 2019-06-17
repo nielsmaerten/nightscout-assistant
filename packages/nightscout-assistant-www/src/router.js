@@ -33,13 +33,13 @@ const router = new Router({
       component: Terms
     }
   ]
-})
+});
 
 router.beforeEach((to, from, next) => {
-  if (store.state.languages.active !== to.params.lng){
+  if (store.state.languages.active !== to.params.lng) {
     store.dispatch("changeLanguage", to.params.lng);
   }
-  next()
-})
+  next();
+});
 
 export default router;
