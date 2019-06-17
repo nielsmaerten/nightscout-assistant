@@ -6,13 +6,9 @@
 
 <script>
 import store from "@/store";
-import detectLng from "./detect-language";
 
 export default {
   created() {
-    // Detect and set language
-    store.dispatch("changeLanguage", detectLng());
-
     if (firebase.apps.length > 0) return;
     // Initialize Firebase
     var config = {

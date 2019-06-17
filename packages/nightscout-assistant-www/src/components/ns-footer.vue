@@ -17,7 +17,7 @@
       </div>
       <div class="column">
         <p class="text-xs has-text-right">
-          <router-link to="/terms">
+          <router-link :to="`/${$store.state.languages.active}/terms`">
             {{ $t("index.footer.tos") }}
           </router-link>
           <br />
