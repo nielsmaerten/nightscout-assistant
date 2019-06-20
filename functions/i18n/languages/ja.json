@@ -12,8 +12,8 @@
                 "p1": "申し訳ありません。指定されたNightscoutのURLは無効です。こちらを確認してください。{{- homepageUrl}}",
                 "p2": "Make sure your url starts with http."
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
+            "notFound": "Nightscoutに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
+            "unauthorized": "Nightscoutにアクセスする権限がありません。APISECRETを{{- homepageUrl}} に入力してください。",
             "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
         },
         "trends": {
