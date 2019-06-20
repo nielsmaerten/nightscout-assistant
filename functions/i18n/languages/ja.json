@@ -10,31 +10,31 @@
             "noBgReading": "血糖値が読み取れません。",
             "invalidUrl": {
                 "p1": "申し訳ありません。指定されたNightscoutのURLは無効です。こちらを確認してください。{{- homepageUrl}}",
-                "p2": "Make sure your url starts with http."
+                "p2": "Urlがhttpから始まっている事を確認してください。"
             },
             "notFound": "Nightscoutに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
             "unauthorized": "Nightscoutにアクセスする権限がありません。APISECRETを{{- homepageUrl}} に入力してください。",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "nsSiteError": "Nightscoutに問題がある可能性があります。Nightscoutのステータスが取得できません。"
         },
         "trends": {
             "DoubleUp": "rising fast",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
-            "Flat": "stable",
-            "FortyFiveDown": "decreasing slowly",
-            "SingleDown": "decreasing",
-            "DoubleDown": "dropping fast"
+            "SingleUp": "上昇",
+            "FortyFiveUp": "上昇",
+            "Flat": "安定",
+            "FortyFiveDown": "ゆるやかに下降",
+            "SingleDown": "下降",
+            "DoubleDown": "急下降"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}"
+            "noTrend": "{{bg}}:{{ago}} 分前",
+            "withTrend": "{{bg}},{{trend}}:{{ago}} 分前"
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
+                "血糖値の値は？",
+                "どれぐらい血糖値が低いですか？",
+                "どれぐらい血糖値が高いですか？",
+                "私のステータスは？",
                 "How am I doing?",
                 "What's my glucose?",
                 "What's my blood sugar?",
