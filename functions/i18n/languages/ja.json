@@ -18,12 +18,12 @@
         },
         "trends": {
             "DoubleUp": "rising fast",
-            "SingleUp": "上昇",
-            "FortyFiveUp": "上昇",
-            "Flat": "安定",
-            "FortyFiveDown": "ゆるやかに下降",
-            "SingleDown": "下降",
-            "DoubleDown": "急下降"
+            "SingleUp": "上がっています。",
+            "FortyFiveUp": "ゆるやかに上がっています。",
+            "Flat": "安定しています。",
+            "FortyFiveDown": "ゆるやかに下がっています。",
+            "SingleDown": "下がっています。",
+            "DoubleDown": "急に下がっています。"
         },
         "answers": {
             "noTrend": "{{bg}}:{{ago}} 分前",
