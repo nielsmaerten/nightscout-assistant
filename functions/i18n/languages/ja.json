@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "あなたは質問する事ができます。: 'Ok Google, Nightscoutの血糖値は'",
             "request": "血糖値を見る",
             "healthDisclaimer": "注意：Nightscoutステータスによる情報は、医療機関等の診断に代わるものではありません。"
         },
@@ -35,20 +35,20 @@
                 "どれぐらい血糖値が低いですか？",
                 "どれぐらい血糖値が高いですか？",
                 "私のステータスは？",
-                "How am I doing?",
-                "What's my glucose?",
+                "どうですか？",
+                "血糖値は？",
                 "What's my blood sugar?",
                 "Check my glucose.",
                 "Check my blood sugar"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Nightscoutから血糖値を確認してください。",
+                    "full": "血糖値をGoogle　Assistantに確認してください。"
                 },
                 "sample-invocations": [
                     "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, Nightscoutの血糖値は"
                 ]
             }
         }
