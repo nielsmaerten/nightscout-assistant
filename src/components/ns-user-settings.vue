@@ -10,6 +10,7 @@
               class="input"
               type="text"
               id="nightscout-url"
+              required
               v-model="user.settings.nsUrl"
               placeholder="https://MY-NS-SITE.herokuapp.com"
             />
@@ -21,7 +22,7 @@
           <label class="label">{{ $t("index.settings.unit") }}</label>
           <div class="control">
             <div class="select is-fullwidth">
-              <select id="nightscout-unit" v-model="user.settings.unit">
+              <select required id="nightscout-unit" v-model="user.settings.unit">
                 <option value="mg/dl">{{ $t("index.settings.mg-dl") }}</option>
                 <option value="mmol/l">{{
                   $t("index.settings.mmol-l")
