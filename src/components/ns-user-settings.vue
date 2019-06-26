@@ -10,7 +10,6 @@
               class="input"
               type="text"
               id="nightscout-url"
-              required
               v-model="user.settings.nsUrl"
               placeholder="https://MY-NS-SITE.herokuapp.com"
             />
