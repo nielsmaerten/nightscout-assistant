@@ -6,7 +6,8 @@
             "healthDisclaimer": "注意：Nightscoutステータスによる情報は、医療機関等の診断に代わるものではありません。"
         },
         "errors": {
-            "noNsSite": "まだNightscoutへ接続が出来ていないようです。続けるにはこのURLへアクセスしてください。{{- homepageUrl}}",
+            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
+            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
             "noBgReading": "血糖値が読み取れません。",
             "invalidUrl": {
                 "p1": "申し訳ありません。指定されたNightscoutのURLは無効です。こちらを確認してください。{{- homepageUrl}}",
@@ -26,8 +27,8 @@
             "DoubleDown": "急に下がっています。"
         },
         "answers": {
-            "noTrend": "{{bg}}:{{ago}} 分前",
-            "withTrend": "{{bg}},{{trend}}:{{ago}} 分前"
+            "noTrend": "{{bg}} as of {{ago}}.",
+            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
         },
         "google-assistant": {
             "invocations": [
