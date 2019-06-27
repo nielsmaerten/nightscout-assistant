@@ -43,7 +43,7 @@ app.intent("Glucose Status", async conv => {
     );
 
     // Health Disclaimer: spoken on the first successful query
-    let healthDisclaimer = "";
+    let healthDisclaimer = null;
     if (nightscoutStatus.success && !userProfile.hasHeardHealthDisclaimer) {
       healthDisclaimer = t("signIn.healthDisclaimer");
     }
@@ -53,12 +53,13 @@ app.intent("Glucose Status", async conv => {
       `<speak>
     ${nightscoutStatus.response}
     <break time="500ms"/>
-    ${healthDisclaimer}
+    ${healthDisclaimer || ""}
     </speak>`
     );
 
     // Update the profile if we said the health disclaimer
-    if (healthDisclaimer !== "") {
+    if (healthDisclaimer) {
+      console.log("Marking health disclaimer said for", userEmail);
       userProfile.hasHeardHealthDisclaimer = true;
       await nightscout.updateUserProfile(userProfile, userEmail);
     }
