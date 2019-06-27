@@ -44,9 +44,8 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
         // Format the response into a pronounceable answer
         const convResponse = formatResponse(json, unit, t);
         resolve({ response: convResponse, success: true });
-
       } catch (e) {
-        const errorResponse = handleError(e, userEmail, nsUrl, t)
+        const errorResponse = handleError(e, userEmail, nsUrl, t);
         resolve({ response: errorResponse, success: false });
       }
     }
@@ -61,12 +60,17 @@ const getUserProfile = async userEmail => {
     .doc(userEmail)
     .get();
 
-  return snapshot.data()
-}
+  return snapshot.data();
+};
 
 const updateUserProfile = async (userProfile, userEmail) => {
-  await admin.app().firestore().collection("users").doc(userEmail).update(userProfile)
-}
+  await admin
+    .app()
+    .firestore()
+    .collection("users")
+    .doc(userEmail)
+    .update(userProfile);
+};
 
 function formatResponse(d, unit, t) {
   // Init a localized version of moment
@@ -88,7 +92,7 @@ function formatResponse(d, unit, t) {
   if (trend) {
     return t("answers.withTrend", { bg, trend, ago });
   } else {
-    return t("answers.noTrend", { bg, ago })
+    return t("answers.noTrend", { bg, ago });
   }
 }
 
@@ -107,7 +111,10 @@ function handleError(error, userEmail, nsUrl, t) {
   }
 
   // Not found
-  if (errorMsg.startsWith("HTTP 404:") || errorMsg.indexOf("ENOTFOUND") !== -1) {
+  if (
+    errorMsg.startsWith("HTTP 404:") ||
+    errorMsg.indexOf("ENOTFOUND") !== -1
+  ) {
     return t("errors.notFound");
   }
 
@@ -122,11 +129,11 @@ function handleError(error, userEmail, nsUrl, t) {
   }
 
   // Unknown error
-  return t("errors.unknown-error")
+  return t("errors.unknown-error");
 }
 
 module.exports = {
   getNightscoutStatus,
   getUserProfile,
   updateUserProfile
-}
+};

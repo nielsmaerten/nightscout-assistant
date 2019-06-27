@@ -4,7 +4,7 @@ const admin = require("firebase-admin");
 const nightscout = require("./nightscout");
 const { dialogflow, SignIn } = require("actions-on-google");
 const { i18next, initLocale } = require("./i18n");
-const config = functions.config().dialogflow || require("./config")
+const config = functions.config().dialogflow || require("./config");
 
 // Set dialogflow client ID
 const app = dialogflow({
@@ -22,7 +22,7 @@ if (admin.apps.length === 0) {
 app.intent("Glucose Status", async conv => {
   // Get t function for this user's locale
   await initializedLocale;
-  const t = i18next.getFixedT(conv.user.locale)
+  const t = i18next.getFixedT(conv.user.locale);
 
   // Check: does the user have an active account?
   if (conv.user.profile.token === undefined) {
@@ -36,7 +36,11 @@ app.intent("Glucose Status", async conv => {
     const userProfile = await nightscout.getUserProfile(userEmail);
 
     // Get current glucose from Nightscout
-    const nightscoutStatus = await nightscout.getNightscoutStatus(userProfile, userEmail, t);
+    const nightscoutStatus = await nightscout.getNightscoutStatus(
+      userProfile,
+      userEmail,
+      t
+    );
 
     // Health Disclaimer: spoken on the first successful query
     let healthDisclaimer = "";
@@ -45,8 +49,8 @@ app.intent("Glucose Status", async conv => {
     }
 
     // Speak the response and end the conversation
-    conv.close(`
-    <speak>
+    conv.close(
+      `<speak>
     ${nightscoutStatus.response}
     <break time="500ms"/>
     ${healthDisclaimer}
@@ -58,14 +62,13 @@ app.intent("Glucose Status", async conv => {
       userProfile.hasHeardHealthDisclaimer = true;
       await nightscout.updateUserProfile(userProfile, userEmail);
     }
-
   }
 });
 
 app.intent("Sign In", async (conv, params, signIn) => {
   // Get t function for this user's locale
   await initializedLocale;
-  const t = i18next.getFixedT(conv.user.locale)
+  const t = i18next.getFixedT(conv.user.locale);
 
   // @ts-ignore
   // Quit if user didn't sign in
@@ -75,7 +78,7 @@ app.intent("Sign In", async (conv, params, signIn) => {
     // ASSISTANT SAYS: "Great, your new account is set up. You'll get a confirmation email soon."
 
     // Get user's profile form db
-    const userEmail = conv.user.email
+    const userEmail = conv.user.email;
     const userProfile = await nightscout.getUserProfile(userEmail);
 
     // Has the user already set up an account?
@@ -87,14 +90,14 @@ app.intent("Sign In", async (conv, params, signIn) => {
       // 'Returning' user. Say health disclaimer again, and end conversation
       // by saying how to invoke it next time.
       conv.close(
-      `<speak>
+        `<speak>
       ${t("signIn.healthDisclaimer")}
       <break time="500ms"/>
       ${t("signIn.completed")}
       </speak>`
-    )
-    userProfile.hasHeardHealthDisclaimer = true;
-    await nightscout.updateUserProfile(userProfile, userEmail)
+      );
+      userProfile.hasHeardHealthDisclaimer = true;
+      await nightscout.updateUserProfile(userProfile, userEmail);
     }
   }
 });
