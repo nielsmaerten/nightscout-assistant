@@ -107,7 +107,7 @@ function handleError(error, userEmail, nsUrl, t) {
   }
 
   // Not found
-  if (errorMsg.startsWith("HTTP 404:")) {
+  if (errorMsg.startsWith("HTTP 404:") || errorMsg.indexOf("ENOTFOUND") !== -1) {
     return t("errors.notFound");
   }
 
@@ -120,6 +120,9 @@ function handleError(error, userEmail, nsUrl, t) {
   if (errorMsg.startsWith("HTTP 5")) {
     return t("errors.nsSiteError");
   }
+
+  // Unknown error
+  return t("errors.unknown-error")
 }
 
 module.exports = {

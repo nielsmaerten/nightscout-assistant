@@ -6,6 +6,7 @@
             "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
         },
         "errors": {
+            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
             "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
             "noBgReading": "Hmmm. I could not find a recent glucose reading.",
             "invalidUrl": {
