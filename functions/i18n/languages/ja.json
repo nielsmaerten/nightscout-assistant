@@ -1,54 +1,55 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose",
-            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+            "completed": "あなたは質問する事ができます。: 'Ok Google, Nightscoutの血糖値は'",
+            "request": "血糖値を見る",
+            "healthDisclaimer": "注意：Nightscoutステータスによる情報は、医療機関等の診断に代わるものではありません。"
         },
         "errors": {
-            "noNsSite": "Looks like you haven't linked your Nightscout site yet. To continue, visit {{- homepageUrl}}",
-            "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
+            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
+            "noBgReading": "血糖値が読み取れません。",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "申し訳ありません。指定されたNightscoutのURLは無効です。こちらを確認してください。{{- homepageUrl}}",
+                "p2": "Urlがhttpから始まっている事を確認してください。"
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "notFound": "Nightscoutに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
+            "unauthorized": "Nightscoutにアクセスする権限がありません。APISECRETを{{- homepageUrl}} に入力してください。",
+            "nsSiteError": "Nightscoutに問題がある可能性があります。Nightscoutのステータスが取得できません。"
         },
         "trends": {
             "DoubleUp": "rising fast",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
-            "Flat": "stable",
-            "FortyFiveDown": "decreasing slowly",
-            "SingleDown": "decreasing",
-            "DoubleDown": "dropping fast"
+            "SingleUp": "上がっています。",
+            "FortyFiveUp": "ゆるやかに上がっています。",
+            "Flat": "安定しています。",
+            "FortyFiveDown": "ゆるやかに下がっています。",
+            "SingleDown": "下がっています。",
+            "DoubleDown": "急に下がっています。"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}"
+            "noTrend": "{{bg}} as of {{ago}}.",
+            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
-                "How am I doing?",
-                "What's my glucose?",
+                "血糖値の値は？",
+                "どれぐらい血糖値が低いですか？",
+                "どれぐらい血糖値が高いですか？",
+                "私のステータスは？",
+                "どうですか？",
+                "血糖値は？",
                 "What's my blood sugar?",
                 "Check my glucose.",
                 "Check my blood sugar"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Nightscoutから血糖値を確認してください。",
+                    "full": "血糖値をGoogle　Assistantに確認してください。"
                 },
                 "sample-invocations": [
                     "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, Nightscoutの血糖値は"
                 ]
             }
         }
