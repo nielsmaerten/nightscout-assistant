@@ -1,37 +1,37 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
+        "google-tm": "Google Assistant is een handelsmerk van Google Inc.",
+        "nightscout-no-affl": "Niet geaffilieerd met {{0}}",
         "nightscout-project": "the Nightscout Project",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "full-invocation": "Hey Google, praat met $t(common.invocation)"
     },
     "index": {
         "header": {
             "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "subtitle": "Nightscout voor Google Home & Google Assistant (niet-officieel)"
         },
         "example-conversation": {
             "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
+            "ask-google": "vraag {{0}} hoeveel mijn glucose is",
+            "nightscout-status-resp": "120 en langzaam stijgend sinds 4 minuten geleden"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
+            "connect": "Verbind je Nightscout site om te beginnen:",
+            "your-site": "Jouw Nightscout site",
+            "unit": "Eenheid",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "api-secret": "API wachtwoord",
+            "optional": "(optioneel)",
+            "unchanged": "(ongewijzigd)",
+            "save": "Opslaan",
+            "sign-out": "Afmelden",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Moet ik mijn API-geheim invoeren?",
+                "info": "Dit is alleen nodig als je Nightscout site niet publiek is (read-protected). (Bijvoorbeeld als {{0}} is ingesteld op {{1}})"
             },
-            "done": "Done!",
+            "done": "Klaar!",
             "success-msg": "Now try asking Google Assistant:",
             "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
             "hint-routines": "Routines"
