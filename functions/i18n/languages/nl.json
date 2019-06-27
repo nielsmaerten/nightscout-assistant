@@ -3,11 +3,11 @@
         "signIn": {
             "completed": "Nu kan je zeggen: \"Hey Google, vraag Nightscout Status hoeveel mijn bloedsuiker is\"",
             "request": "Om je glucose te bekijken",
-            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+            "healthDisclaimer": "Vergeet niet dat de informatie die Nightscout Status verstrekt, geen vervanging is voor het advies van een arts."
         },
         "errors": {
-            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
-            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
+            "unknown-error": "Sorry, er is een onbekende fout opgetreden. Dit wordt zo snel mogelijk onderzocht.",
+            "noNsSite": "Voor ik je glucose kan controleren, heb ik de URL van je Nightscout site nodig. Je kan deze invoeren op {{- homepageUrl}}",
             "noBgReading": "Hmmm. Ik kon geen recente glucosemeting vinden.",
             "invalidUrl": {
                 "p1": "Sorry, de Nightscout URL die je hebt opgegeven lijkt ongeldig. Kan je even nakijken op {{- homepageUrl}} ?",
@@ -27,8 +27,8 @@
             "DoubleDown": "snel dalend"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}.",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+            "noTrend": "{{bg}} sinds {{ago}}.",
+            "withTrend": "{{bg}} en {{trend}} sinds {{ago}}."
         },
         "google-assistant": {
             "invocations": [
