@@ -6,7 +6,7 @@
             "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
         },
         "errors": {
-            "noNsSite": "Looks like you haven't linked your Nightscout site yet. To continue, visit {{- homepageUrl}}",
+            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
             "noBgReading": "Hmmm. I could not find a recent glucose reading.",
             "invalidUrl": {
                 "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
@@ -26,8 +26,8 @@
             "DoubleDown": "dropping fast"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}"
+            "noTrend": "{{bg}} as of {{ago}}.",
+            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
         },
         "google-assistant": {
             "invocations": [
