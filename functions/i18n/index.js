@@ -2,9 +2,8 @@ const i18next = require("i18next").default;
 
 module.exports.i18next = i18next;
 
-module.exports.initLocale = async function (locale) {
+module.exports.initLocale = async function () {
     await i18next.init({
-        lng: locale,
         debug: false,
         interpolation: {
             defaultVariables: {
