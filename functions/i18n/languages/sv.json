@@ -6,7 +6,8 @@
             "healthDisclaimer": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal."
         },
         "errors": {
-            "noNsSite": "Ser ut som om du inte har länkat din Nightscout sida än. För att fortsätta, besök {{- homepageUrl}}",
+            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
+            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
             "noBgReading": "Hmmm. Jag kunde inte hitta något avläst blodsocker.",
             "invalidUrl": {
                 "p1": "Ledsen, men Nightscout länken du angett verkar inte vara giltig. Kan du kontrollera länken på {{- homepageUrl}} ?",
@@ -26,8 +27,8 @@
             "DoubleDown": "sjunker snabbt"
         },
         "answers": {
-            "noTrend": "{{bg}} {{ago}}",
-            "withTrend": "{{bg}} och {{trend}} {{ago}}"
+            "noTrend": "{{bg}} as of {{ago}}.",
+            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
         },
         "google-assistant": {
             "invocations": [
