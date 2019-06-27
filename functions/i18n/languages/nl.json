@@ -1,13 +1,13 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Nu kan je zeggen: \"Hey Google, vraag Nightscout Status hoeveel mijn bloedsuiker is\"",
+            "completed": "Nu kan je zeggen: \"Hey Google, vraag Nightscout Status wat mijn bloedsuiker is\".",
             "request": "Om je glucose te bekijken",
             "healthDisclaimer": "Vergeet niet dat de informatie die Nightscout Status verstrekt, geen vervanging is voor het advies van een arts."
         },
         "errors": {
             "unknown-error": "Sorry, er is een onbekende fout opgetreden. Dit wordt zo snel mogelijk onderzocht.",
-            "noNsSite": "Voor ik je glucose kan controleren, heb ik de URL van je Nightscout site nodig. Je kan deze invoeren op {{- homepageUrl}}",
+            "noNsSite": "Voor ik je glucose kan controleren, heb ik de URL van je Nightscout site nodig. Je kan deze ingeven op {{- homepageUrl}}",
             "noBgReading": "Hmmm. Ik kon geen recente glucosemeting vinden.",
             "invalidUrl": {
                 "p1": "Sorry, de Nightscout URL die je hebt opgegeven lijkt ongeldig. Kan je even nakijken op {{- homepageUrl}} ?",
