@@ -6,7 +6,7 @@
             "healthDisclaimer": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal."
         },
         "errors": {
-            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
+            "unknown-error": "Ledsen, ett oväntat fel har inträffat. Detta kommer undersökas så snart som möjligt.",
             "noNsSite": "Innan jag kan kolla din glukos behöver jag adressen till din Nightscout sida. Du kan ange det genom att besöka {{- homepageUrl}}",
             "noBgReading": "Hmmm. Jag kunde inte hitta något avläst blodsocker.",
             "invalidUrl": {
