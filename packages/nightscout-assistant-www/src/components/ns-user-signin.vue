@@ -9,7 +9,6 @@
 
 <script>
 import router from "@/router";
-import store from "@/store";
 export default {
   name: "ns-user-settings",
   mounted: initializeFirebaseUI
