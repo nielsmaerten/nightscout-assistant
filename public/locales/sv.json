@@ -3,12 +3,12 @@
         "google-tm": "Google Assistenten är ett varumärke av Google Inc.",
         "nightscout-no-affl": "Inte förknippad med {{0}}",
         "nightscout-project": "the Nightscout Project",
-        "invocation": "Nightscout Status",
+        "invocation": "Blodsocker status",
         "full-invocation": "Hey Google, prata med $t(common.invocation)"
     },
     "index": {
         "header": {
-            "title": "Nightscout Status",
+            "title": "Nightscout Status (Blodsocker status)",
             "subtitle": "Nightscout för Google Home & Google Assistenten (ej officiell)"
         },
         "example-conversation": {
@@ -50,7 +50,7 @@
             "collection-title": "Vilken information samlas in?",
             "collection-desc": "Tjänsten är beroende av 2 saker för att fungera: E-postadressen till ditt Googlekonto (för att veta att det är du som frågar), och adressen till din Nightscoutsida (för att hämta ditt blodsockervärde och läsa upp det för dig).",
             "use-title": "Hur behandlas informationen?",
-            "use-desc": "När du använder tjänsten via Google Assistenten (d.v.s genom att säga: 'Hey Google, prata med Nightscout Status), används din E-postadress för att se om det finns en Nightscoutsida kopplad till den. Om så är fallet, hämtas ditt blodsockervärde från din Nightscoutsida.",
+            "use-desc": "När du använder tjänsten via Google Assistenten (d.v.s genom att säga: 'Hey Google, prata med Blodsocker status), används din E-postadress för att se om det finns en Nightscoutsida kopplad till den. Om så är fallet, hämtas ditt blodsockervärde från din Nightscoutsida.",
             "sharing-title": "Spridning och delning av information",
             "sharing-desc": "Din E-postadress och/eller din Nightscoutsida (URL) kommer <strong>aldrig</strong> delas eller spridas till tredje part. Informationen används endast för att tjänsten ska veta från vilken Nightscoutsida informationen ska hämtas ifrån. Data från din Nightscoutsida sparas inte, inte ens i loggfiler. ",
             "deleting-title": "Radera dina uppgifter",
@@ -61,7 +61,7 @@
         },
         "health": {
             "title": "Friskrivningsklausul för sjukvård",
-            "disclaimer": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal. Om du har frågor om behandling eller behöver råd, kom ihåg att alltid fråga din läkare!"
+            "disclaimer": "Informationen som tillhandahålls av Blodsocker status är inte en ersättning för råd från medicinsk personal. Om du har frågor om behandling eller behöver råd, kom ihåg att alltid fråga din läkare!"
         },
         "license-and-tos": "Licens och Användarvillkor"
     }

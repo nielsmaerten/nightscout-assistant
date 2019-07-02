@@ -1,9 +1,9 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
+        "google-tm": "Google　Assistantはグーグルのトレードマークです。",
         "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "the Nightscout Project",
-        "invocation": "Nightscout Status",
+        "nightscout-project": "ナイトスコートプロジェクト",
+        "invocation": "ナイトスコート　ステータス",
         "full-invocation": "Hey Google, talk to $t(common.invocation)"
     },
     "index": {

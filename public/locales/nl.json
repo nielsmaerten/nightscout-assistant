@@ -1,68 +1,68 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
+        "google-tm": "Google Assistant is een handelsmerk van Google Inc.",
+        "nightscout-no-affl": "Niet geaffilieerd met {{0}}",
         "nightscout-project": "the Nightscout Project",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "full-invocation": "Hey Google, praat met $t(common.invocation)"
     },
     "index": {
         "header": {
             "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "subtitle": "Nightscout voor Google Home & Google Assistant (niet-officieel)"
         },
         "example-conversation": {
             "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
+            "ask-google": "vraag {{0}} wat mijn bloedsuiker is",
+            "nightscout-status-resp": "120 en langzaam stijgend sinds 4 minuten geleden"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
+            "connect": "Verbind je Nightscout site om te beginnen:",
+            "your-site": "Jouw Nightscout site",
+            "unit": "Eenheid",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "api-secret": "API geheim",
+            "optional": "(optioneel)",
+            "unchanged": "(ongewijzigd)",
+            "save": "Opslaan",
+            "sign-out": "Afmelden",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Moet ik mijn API-geheim invoeren?",
+                "info": "Dit is alleen nodig als je Nightscout site niet publiek is (read-protected). (Bijvoorbeeld als {{0}} is ingesteld op {{1}})"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
+            "done": "Klaar!",
+            "success-msg": "Probeer nu Google Assistant te vragen:",
+            "hint": "Tip: Gebruik {{0}} om de oproep korter te maken. {{1}}Bijvoorbeeld: 'Hey Google, check mijn bloedsuiker'",
             "hint-routines": "Routines"
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "help-faq": "Hulp en veelgestelde vragen",
+            "bugs": "Bugs melden; suggesties doen",
+            "tos": "Gebruiksvoorwaarden en privacybeleid"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Terug",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-            "use-title": "How is this information used?",
-            "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
-            "sharing-title": "Sharing of information",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
+            "title": "Privacybeleid",
+            "intro": "Dit document beschrijft de informatie die wordt verzameld door Nightscout Status, {{0}} (de \"Service\" of de \"Software\") en hoe deze informatie wordt gebruikt.",
+            "collection-title": "Welke informatie wordt verzameld?",
+            "collection-desc": "De Service heeft 2 dingen nodig om te werken: het email adres van je Google Account (zodat we weten dat jij het bent wanneer je een opdracht geeft), en de URL van je Nightscout site (zodat we je glucose kunnen opzoeken en voorlezen).",
+            "use-title": "Hoe wordt deze informatie gebruikt?",
+            "use-desc": "Wanneer je de Service oproept via Google Assistant (bv door te zeggen: 'Hey Google, praat met Nightscout Status'), kijken we naar je email adres, en controleren we of hier een Nightscout site mee verbonden is. Zo ja, dan lezen we de huidige glucosewaarde voor van je Nightscout site.",
+            "sharing-title": "Delen van informatie",
+            "sharing-desc": "Je email adres of Nightscout URL zullen <strong>nooit</strong> gedeeld worden met een derde partij. Ik heb dit enkel nodig zodat ik weet welke Nightscout site ik moet checken wanneer je de Actie aanroept. Data uit je Nightscout site wordt niet bewaard, zelfs niet in logs. ",
+            "deleting-title": "Je gegevens verwijderen",
+            "deleting-desc": "Je kan toegang op elk moment weer intrekken: Log gewoon in, verwijder je Nightscout URL, en klik op Opslaan. Je kan Nightscout Status ook verwijderen uit je {{0}}.",
+            "deleting-google-account": "Google account",
             "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "analytics-desc": "Nadat je bent ingelogd op deze site, worden enkele anonieme statistieken over je bezoek verzameld met behulp van een cookie (Google Analytics). De cookie is niet actief tot je deze privacyovereenkomst hebt aanvaard. Ik gebruik Analytics om beter te begrijpen hoe mijn site gebruikt wordt, hoe bezoekers hem vinden, en uit welke demografie ze komen. Dit is enkel van toepassing op {{0}}, niet op het gebruik van de Assistant Actie zelf. Als je liever geen gebruik maakt van de Google Analytics cookie, kan je deze uitschakelen door {{1}} te bezoeken."
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "Disclaimer i.v.m. medische informatie",
+            "disclaimer": "De informatie die Nightscout Status verstrekt is geen vervanging voor advies van een medische professional. Heb je vragen over een behandeling of advies nodig, praat dan met je arts!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Licentie en gebruiksvoorwaarden"
     }
 }
