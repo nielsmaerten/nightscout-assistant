@@ -52,12 +52,12 @@
             "use-title": "Come vengono utilizzate queste informazioni?",
             "use-desc": "Quando si invoca il Servizio attraverso Google Assistant (ad esempio: \"Hey Google, comunica con Nightscout), il Servizio legge il tuo indirizzo email e controlla se c'è un sito Nightscout associato a esso. Se è così, la tua glicemia è letta dal tuo sito Nightscout.",
             "sharing-title": "Condivisione delle informazioni",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
-            "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "sharing-desc": "Il tuo indirizzo email o il tuo URL di Nightscout non devono <strong>mai</strong> essere condivisi con terzi. Io ne ho bisogno per sapere quale sito di Nightscout controllare quando tu invochi un'azione. I dati presi dal sito Nightscout non sono salvati, nemmeno in file log. ",
+            "deleting-title": "Eliminazione dei tuoi dati",
+            "deleting-desc": "Puoi scegliere di revocare l'accesso in qualsiasi momento: loggati, rimuovi il tuo URL di Nightscout e fai clic su Salva. Puoi anche rimuovere lo stato di Nightscout dal tuo {{0}}.",
+            "deleting-google-account": "Account Google",
+            "analytics-title": "Cookie di Analisi",
+            "analytics-desc": "Dopo l'accesso a questo sito, alcune statistiche anonime sulla tua visita vengono raccolte utilizzando un cookie (Google Analytics). Il cookie non è abilitato fino a quando non hai accettato questa informativa sulla Privacy. Sto usando Analytics per capire meglio come le persone stanno utilizzando questo sito, come lo hanno trovato e in quale demografia sono presenti. Questo vale solo per {{0}}, non per l'utilizzo dell'azione assistita in quanto tale. Se desideri revocare il cookie Google Analytics, puoi farlo visitando {{1}}"
         },
         "health": {
             "title": "Healthcare information disclaimer",
