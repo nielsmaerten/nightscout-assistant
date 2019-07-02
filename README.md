@@ -24,3 +24,8 @@ https://nielsmaerten.github.io/nightscout-assistant/terms.html
 
 Google Assistant is a trademark of Google Inc.  
 This service is not affiliated to the Nightscout Project
+
+## Translations
+- Henrik Hernqvist (Swedish)
+
+Can you help us translate? Visit https://crowdin.com/project/nightscout-status
