@@ -60,7 +60,7 @@
             "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
+            "title": "Disclaimer Informazioni sanitarie",
             "disclaimer": "Le informazioni fornite da Nightscout non sostituiscono le indicazioni di un medico. Se hai domande riguardo le cure o hai bisogno di consulenza, ricorda di chiedere sempre al tuo medico!"
         },
         "license-and-tos": "Licenza e Termini di servizio"
