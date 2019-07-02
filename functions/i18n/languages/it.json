@@ -37,19 +37,19 @@
                 "Quanto in alto sono?",
                 "Qual è il mio stato?",
                 "Come sto andando?",
-                "Quale è la mia glicemia?",
-                "Quale è il mio zucchero nel sangue?",
+                "Qual è la mia glicemia?",
+                "Qual è il mio zucchero nel sangue?",
                 "Controlla la mia glicemia.",
                 "Controlla il mio zucchero nel sangue"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Controlla la tua glicemia da Nightscout",
-                    "full": "Chiedi all'Assistente Google la tua glicemia attuale."
+                    "short": "Controlla la tua glicemia attuale da Nightscout",
+                    "full": "Chiedi a Google Assistant la tua glicemia attuale."
                 },
                 "sample-invocations": [
                     "Ok Google, comunica con Nightscout",
-                    "Ok Google, chiedi a Nightscout quale è la mia glicemia"
+                    "Ok Google, chiedi a Nightscout qual è la mia glicemia"
                 ]
             }
         }
