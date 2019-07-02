@@ -56,13 +56,13 @@
             "deleting-title": "Eliminazione dei tuoi dati",
             "deleting-desc": "Puoi scegliere di revocare l'accesso in qualsiasi momento: loggati, rimuovi il tuo URL di Nightscout e fai clic su Salva. Puoi anche rimuovere lo stato di Nightscout dal tuo {{0}}.",
             "deleting-google-account": "Account Google",
-            "analytics-title": "Cookie di Analisi",
-            "analytics-desc": "Dopo l'accesso a questo sito, alcune statistiche anonime sulla tua visita vengono raccolte utilizzando un cookie (Google Analytics). Il cookie non è abilitato fino a quando non hai accettato questa informativa sulla Privacy. Sto usando Analytics per capire meglio come le persone stanno utilizzando questo sito, come lo hanno trovato e in quale demografia sono presenti. Questo vale solo per {{0}}, non per l'utilizzo dell'azione assistita in quanto tale. Se desideri revocare il cookie Google Analytics, puoi farlo visitando {{1}}"
+            "analytics-title": "Cookie di Analytics",
+            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
         },
         "health": {
             "title": "Healthcare information disclaimer",
-            "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "disclaimer": "Le informazioni fornite da Nightscout non sostituiscono le indicazioni di un medico. Se hai domande riguardo le cure o hai bisogno di consulenza, ricorda di chiedere sempre al tuo medico!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Licenza e Termini di servizio"
     }
 }
