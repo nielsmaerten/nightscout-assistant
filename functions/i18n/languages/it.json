@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Ora, puoi provare a chiedere: 'Hey Google, chiedi a Nightscout quale è la mia glicemia'.",
+            "completed": "Ora, puoi provare a chiedere: 'Hey Google, chiedi a Nightscout qual è la mia glicemia'.",
             "request": "Per accedere alla tua glicemia",
             "healthDisclaimer": "Ricorda: le informazioni fornite da Nightscout non sostituiscono le indicazioni del medico."
         },
@@ -32,10 +32,10 @@
         },
         "google-assistant": {
             "invocations": [
-                "Quanto è il mio zucchero?",
-                "Quanto sono basso?",
-                "Quanto sono alto?",
-                "Quale è il mio stato?",
+                "Come sta il mio zucchero?",
+                "Quanto in basso sono?",
+                "Quanto in alto sono?",
+                "Qual è il mio stato?",
                 "Come sto andando?",
                 "Quale è la mia glicemia?",
                 "Quale è il mio zucchero nel sangue?",
@@ -48,7 +48,7 @@
                     "full": "Chiedi all'Assistente Google la tua glicemia attuale."
                 },
                 "sample-invocations": [
-                    "Ok Google, parla con Nightscout",
+                    "Ok Google, comunica con Nightscout",
                     "Ok Google, chiedi a Nightscout quale è la mia glicemia"
                 ]
             }
