@@ -1,14 +1,14 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Ora, puoi provare a chiedere: 'Hey Google, chiedi a Nightscout quale è la mia glicemia'.",
             "request": "Per accedere alla tua glicemia",
             "healthDisclaimer": "Ricorda: le informazioni fornite da Nightscout non sostituiscono le indicazioni del medico."
         },
         "errors": {
-            "unknown-error": "Siamo spiacenti, si è verificato un errore sconosciuto. Sarà esaminato il prima possibile.",
+            "unknown-error": "Scusa, si è verificato un errore sconosciuto. Sarà esaminato il prima possibile.",
             "noNsSite": "Prima di controllare la tua glicemia, ho bisogno dell'URL del tuo sito Nightscout. Puoi inserirlo visitando questa pagina {{- homepageUrl}}",
-            "noBgReading": "Mmmm. Non riesco a trovare una lettura glicemica recente.",
+            "noBgReading": "Mmmm. Non riesco a trovare una lettura della glicemica recente.",
             "invalidUrl": {
                 "p1": "Scusa, l'URL di Nighscout che mi hai fornito sembra non essere valido. Puoi controllare qui {{- homepageUrl}} ?",
                 "p2": "Assicurati che il tuo url inizi con http."
@@ -32,24 +32,24 @@
         },
         "google-assistant": {
             "invocations": [
-                "Quale è la mia glicemia?",
-                "Quanto è bassa?",
-                "Quanto è alta?",
+                "Quanto è il mio zucchero?",
+                "Quanto sono basso?",
+                "Quanto sono alto?",
                 "Quale è il mio stato?",
                 "Come sto andando?",
-                "What's my glucose?",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Quale è la mia glicemia?",
+                "Quale è il mio zucchero nel sangue?",
+                "Controlla la mia glicemia.",
+                "Controlla il mio zucchero nel sangue"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Controlla la tua glicemia da Nightscout",
+                    "full": "Chiedi all'Assistente Google la tua glicemia attuale."
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, parla con Nightscout",
+                    "Ok Google, chiedi a Nightscout quale è la mia glicemia"
                 ]
             }
         }
