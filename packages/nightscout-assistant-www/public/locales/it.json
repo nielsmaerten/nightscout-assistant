@@ -1,20 +1,20 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "the Nightscout Project",
-        "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "google-tm": "Google Assistant è un marchio registrato di Google Inc.",
+        "nightscout-no-affl": "Non affiliato con {{0}}",
+        "nightscout-project": "il progetto Nightscout",
+        "invocation": "Stato di Nightscout",
+        "full-invocation": "Hey Google, parla con $t(comune.invocation)"
     },
     "index": {
         "header": {
-            "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "title": "Stato di Nightscout",
+            "subtitle": "Nightscout per Google Home & Google Assistant (non ufficiale)"
         },
         "example-conversation": {
             "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
+            "ask-google": "chiedi {{0}} qual è la mia glicemia",
+            "nightscout-status-resp": "120 e in lenta salita rispetto a 4 minuti fa"
         },
         "settings": {
             "connect": "Connect your Nightscout site to get started:",
