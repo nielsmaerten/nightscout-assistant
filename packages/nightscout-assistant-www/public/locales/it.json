@@ -17,37 +17,37 @@
             "nightscout-status-resp": "120 e in lenta salita rispetto a 4 minuti fa"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
-            "mg-dl": "mg/dl",
-            "mmol-l": "mmol/l",
+            "connect": "Collega il tuo sito Nightscout per iniziare:",
+            "your-site": "Il tuo sito Nightscout",
+            "unit": "Unità di misura",
+            "mg-dl": "mg/dL",
+            "mmol-l": "mmol/L",
             "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "optional": "(opzionale)",
+            "unchanged": "(invariato)",
+            "save": "Salva",
+            "sign-out": "Esci",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Devo inserire la mia API Secret ?",
+                "info": "Questo è necessario solo se il tuo sito di Nightscout è 'protetto da lettura'. (ad esempio se {{0}} è impostato su {{1}})"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
+            "done": "Fatto!",
+            "success-msg": "Ora prova a chiedere a Google Assistant:",
+            "hint": "Suggerimento: Usa {{0}} per creare un'invocazione più breve. {{1}}Ad esempio: 'Hey Google, controlla il mio zucchero'",
             "hint-routines": "Routines"
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "help-faq": "Aiuto & FAQ",
+            "bugs": "Segnalazione bug; richiesta di funzionalità",
+            "tos": "Termini di Servizio e Informativa sulla Privacy"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Indietro",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
+            "title": "Informativa sulla privacy",
+            "intro": "Questo documento descrive le informazioni raccolte da Nightscout, {{0}} (il \"Servizio\" o il \"Software\") e come vengono utilizzate queste informazioni.",
+            "collection-title": "Quali informazioni sono raccolte?",
             "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
             "use-title": "How is this information used?",
             "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
