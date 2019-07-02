@@ -8,12 +8,16 @@ assignees: ''
 ---
 
 ## Translations
-- [ ] New translations approved in Crowdin
+- [ ] New translations approved on Crowdin
 - [ ] Translations merged into _master_ and _www_ branch
-- [ ] If locale supports Routines, added to supportsRoutines array
+- [ ] If Routines are supported, locale code added to `lngsSupportingRoutines` array
 - [ ] _www_ branch deployed to GitHub Pages
+- [ ] Translator credit added to README / package.json
 
 ## Google Review requirements
+- [ ] [Prepare for deployment - Google's Checklist](https://developers.google.com/actions/distribute/#prepare_for_deployment)
+
+**Highlights:**
 - [ ] Privacy policy fully translated
 - [ ] Consistent Invocation and Display names
 - [ ] Directory information up-to-date
