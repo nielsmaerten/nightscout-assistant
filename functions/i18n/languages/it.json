@@ -2,16 +2,16 @@
     "translation": {
         "signIn": {
             "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose",
-            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+            "request": "Per accedere alla tua glicemia",
+            "healthDisclaimer": "Ricorda: le informazioni fornite da Nightscout non sostituiscono le indicazioni del medico."
         },
         "errors": {
-            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
-            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
-            "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+            "unknown-error": "Siamo spiacenti, si è verificato un errore sconosciuto. Sarà esaminato il prima possibile.",
+            "noNsSite": "Prima di controllare la tua glicemia, ho bisogno dell'URL del tuo sito Nightscout. Puoi inserirlo visitando questa pagina {{- homepageUrl}}",
+            "noBgReading": "Mmmm. Non riesco a trovare una lettura glicemica recente.",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "Scusa, l'URL di Nighscout che mi hai fornito sembra non essere valido. Puoi controllare qui {{- homepageUrl}} ?",
+                "p2": "Assicurati che il tuo url inizi con http."
             },
             "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
             "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
