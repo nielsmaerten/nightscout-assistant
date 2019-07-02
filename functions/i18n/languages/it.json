@@ -14,17 +14,17 @@
                 "p2": "Assicurati che il tuo url inizi con http."
             },
             "notFound": "Scusa, non riesco a trovare il tuo sito Nightscout. Assicurati di aver inserito l'URL corretto su {{- homepageUrl}}",
-            "unauthorized": "Scusa, sembra che io non abbia il permesso di accedere al tuo sito Nightscout. Prova a inserire la tua API secret su {{- homepageUrl}}",
+            "unauthorized": "Scusa, sembra che io non abbia il permesso di accedere al tuo sito Nightscout. Prova a inserire il tuo API secret su {{- homepageUrl}}",
             "nsSiteError": "Scusa, sembra esserci un problema con il tuo sito di Nightscout. Non sono riuscito a ottenere il tuo stato."
         },
         "trends": {
-            "DoubleUp": "in salita veloce",
+            "DoubleUp": "in rapida salita",
             "SingleUp": "in salita",
-            "FortyFiveUp": "in salita lenta",
+            "FortyFiveUp": "in lenta salita",
             "Flat": "stabile",
-            "FortyFiveDown": "in discesa lenta",
+            "FortyFiveDown": "in lenta discesa",
             "SingleDown": "in discesa",
-            "DoubleDown": "in caduta veloce"
+            "DoubleDown": "in repentina discesa"
         },
         "answers": {
             "noTrend": "{{bg}} come {{ago}}.",
