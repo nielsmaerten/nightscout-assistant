@@ -3,22 +3,22 @@
         "signIn": {
             "completed": "あなたは質問する事ができます。: 'Ok Google, Nightscoutの血糖値は'",
             "request": "血糖値を見る",
-            "healthDisclaimer": "注意：Nightscoutステータスによる情報は、医療機関等の診断に代わるものではありません。"
+            "healthDisclaimer": "注意：ナイトスカウトステータスによる情報は、医療機関等の診断に代わるものではありません。"
         },
         "errors": {
             "unknown-error": "不明なエラーが発生致しました。早急に調査します。",
-            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
+            "noNsSite": "あなたの血糖値を調べる前に、ナイトスカウトのURLが必要です。 {{- homepageUrl}} にアクセスすれば入力することが出来ます。",
             "noBgReading": "血糖値が読み取れません。",
             "invalidUrl": {
                 "p1": "申し訳ありません。指定されたNightscoutのURLは無効です。こちらを確認してください。{{- homepageUrl}}",
                 "p2": "Urlがhttpから始まっている事を確認してください。"
             },
             "notFound": "Nightscoutに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
-            "unauthorized": "Nightscoutにアクセスする権限がありません。APISECRETを{{- homepageUrl}} に入力してください。",
-            "nsSiteError": "Nightscoutに問題がある可能性があります。Nightscoutのステータスが取得できません。"
+            "unauthorized": "ナイトスカウトにアクセスする権限がありません。APISECRETを{{- homepageUrl}} に入力してください。",
+            "nsSiteError": "ナイトスカウトに問題がある可能性があります。ナイトスカウトのステータスが取得できません。"
         },
         "trends": {
-            "DoubleUp": "rising fast",
+            "DoubleUp": "急に上がっています",
             "SingleUp": "上がっています。",
             "FortyFiveUp": "ゆるやかに上がっています。",
             "Flat": "安定しています。",
@@ -27,20 +27,20 @@
             "DoubleDown": "急に下がっています。"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}.",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+            "noTrend": "{{ago}} 分前の時点で{{bg}} です。",
+            "withTrend": "{{ago}} 分前、血糖値は{{bg}}{{trend}} です。"
         },
         "google-assistant": {
             "invocations": [
-                "血糖値の値は？",
+                "血糖値は？",
                 "どれぐらい血糖値が低いですか？",
-                "どれぐらい血糖値が高いですか？",
+                "どれぐらい高い？",
                 "私のステータスは？",
                 "どうですか？",
                 "血糖値は？",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "血糖値は？",
+                "血糖値を教えて。",
+                "血糖値を確認"
             ],
             "actions-directory": {
                 "description": {
@@ -48,7 +48,7 @@
                     "full": "血糖値をGoogle　Assistantに確認してください。"
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
+                    "Ok　Google, ナイトスカウトステータスを教えて。",
                     "Ok Google, Nightscoutの血糖値は"
                 ]
             }
