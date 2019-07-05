@@ -23,18 +23,18 @@
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
             "api-secret": "API secret",
-            "optional": "(optional)",
+            "optional": "(オプション)",
             "unchanged": "(変更なし)",
             "save": "保存",
             "sign-out": "サインアウト",
             "api-secret-info": {
                 "title": "私はAPI Secretを入力する必要がありますか？",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "info": "これはナイトスカウトサイトが「読み取り保護」されている場合に必要です。(例：{{1}} が{{0}} に設定されている場合)"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
+            "done": "完了！",
+            "success-msg": "グーグルアシスタントに聞いてみて：",
             "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
-            "hint-routines": "Routines"
+            "hint-routines": "ルーチン"
         },
         "footer": {
             "help-faq": "Help & FAQ",
@@ -53,16 +53,16 @@
             "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
             "sharing-title": "Sharing of information",
             "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
+            "deleting-title": "データを削除しています",
             "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
-            "analytics-title": "Analytics Cookie",
+            "deleting-google-account": "グーグルアカウント",
+            "analytics-title": "クッキーを分析",
             "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
+            "title": "医療情報に関する免責事項",
             "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "ライセンスとサービス条件"
     }
 }
