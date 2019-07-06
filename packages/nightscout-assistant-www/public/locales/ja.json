@@ -39,15 +39,15 @@
         "footer": {
             "help-faq": "Help & FAQ",
             "bugs": "バグレポート；機能リクエスト",
-            "tos": "Terms of Service and Privacy Policy"
+            "tos": "利用規約とプライバシーポリシー"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "戻る",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
+            "title": "プライバシーポリシー",
+            "intro": "このドキュメントはナイトスカウトステイタス{{0}}(サービス、ソフトウェア) により収集される情報と使用方法を説明します。",
+            "collection-title": "どのような情報が収集されますか？",
             "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
             "use-title": "How is this information used?",
             "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
