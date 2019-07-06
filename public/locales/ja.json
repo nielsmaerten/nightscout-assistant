@@ -33,12 +33,12 @@
             },
             "done": "完了！",
             "success-msg": "グーグルアシスタントに聞いてみて：",
-            "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
+            "hint": "ヒント：短い呼び出しを作成するには{{0}}を使用してください。{{1}}たとえば：'Ok Google,私の血糖値は'",
             "hint-routines": "ルーチン"
         },
         "footer": {
             "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
+            "bugs": "バグレポート；機能リクエスト",
             "tos": "Terms of Service and Privacy Policy"
         }
     },
