@@ -1,7 +1,7 @@
 {
     "common": {
         "google-tm": "Google　Assistantはグーグルのトレードマークです。",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
+        "nightscout-no-affl": "{{0}} と提携していません。",
         "nightscout-project": "ナイトスカウトプロジェクト",
         "invocation": "ナイトスカウトステータス",
         "full-invocation": "Ok Google,話して$t(一般的な呼び方)"
@@ -52,16 +52,16 @@
             "use-title": "この情報の利用方法は？",
             "use-desc": "グーグルアシスタントで本サービスを起動(Ok Google,私のナイトスカウトステータスを教えて)すると、お客様のメールアドレスを確認後、ナイトスカウトサイトが登録されているか確認します。登録されていると、ナイトスカウトサイトから現在の血糖値を読み取ります。",
             "sharing-title": "情報の共有化",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
+            "sharing-desc": "あなたのメールアドレス及びナイトスカウトURLは他サービスと<strong>共有することはありません。</strong>サービスを起動したときにナイトスカウトサイトを確認する為に必要となります。又、ナイトスカウトサイトのデータはログも含めて保存されません。 ",
             "deleting-title": "データを削除しています",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
+            "deleting-desc": "いつでもアクセス情報を削除うする事が可能です。：ナイトスカウトURLを削除し保存ボタンを押すだけです。又、あたなの{{0}} からナイトスカウトステータスも削除する事が可能です。",
             "deleting-google-account": "グーグルアカウント",
             "analytics-title": "クッキーを分析",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "analytics-desc": "このサイトにサインインすると、クッキー(Googleアナリティクス) を使用して、お客様のアクセスに関する匿名の情報収集がされます。プライバシーポリシーに同意するまでクッキーは有効になりません。アナリティクスを利用し、利用者のこのサイトの利用方法、接続元、人口統計等の解析に利用されます。これは{{0}} のみに利用され、アシスタント・アクション自体の使用には利用されません。Googleアナリティクスのクッキーは{{1}} にアクセスすればオプトアウトできます。"
         },
         "health": {
             "title": "医療情報に関する免責事項",
-            "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "disclaimer": "ナイトスカウトステータスにより提供される情報は、医療専門家からのアドバイスに代わるものではありません。治療に関する質問やアドバイスが必要な場合は、必ず医師にご相談ください。"
         },
         "license-and-tos": "ライセンスとサービス条件"
     }
