@@ -48,7 +48,7 @@
             "title": "プライバシーポリシー",
             "intro": "このドキュメントはナイトスカウトステイタス{{0}}(サービス、ソフトウェア) により収集される情報と使用方法を説明します。",
             "collection-title": "どのような情報が収集されますか？",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
+            "collection-desc": "当サービスを利用するにはGoogleアカウントのメールアドレス(あなたを認証します。) と、ナイトスカウトのURL(血糖値を調べて読み上げます。) が必要となります。",
             "use-title": "How is this information used?",
             "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
             "sharing-title": "Sharing of information",
