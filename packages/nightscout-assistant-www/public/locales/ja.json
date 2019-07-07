@@ -4,7 +4,7 @@
         "nightscout-no-affl": "{{0}} と提携していません。",
         "nightscout-project": "ナイトスカウトプロジェクト",
         "invocation": "ナイトスカウトステータス",
-        "full-invocation": "Ok Google,話して$t(一般的な呼び方)"
+        "full-invocation": "Ok Google,話して$t(common.invocation)"
     },
     "index": {
         "header": {
