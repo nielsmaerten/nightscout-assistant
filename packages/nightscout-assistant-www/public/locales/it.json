@@ -4,7 +4,7 @@
         "nightscout-no-affl": "Non affiliato con {{0}}",
         "nightscout-project": "il progetto Nightscout",
         "invocation": "Stato di Nightscout",
-        "full-invocation": "Hey Google, parla con $t(comune.invocation)"
+        "full-invocation": "Hey Google, parla con $t(common.invocation)"
     },
     "index": {
         "header": {
@@ -46,7 +46,7 @@
         "back": "Indietro",
         "privacy-policy": {
             "title": "Informativa sulla privacy",
-            "intro": "Questo documento descrive le informazioni raccolte da Nightscout, {{0}} (il \"Servizio\" o il \"Software\") e come vengono utilizzate queste informazioni.",
+            "intro": "Questo documento descrive le informazioni raccolte da Nightscout Status, {{0}} (il \"Servizio\" o il \"Software\") e come vengono utilizzate queste informazioni.",
             "collection-title": "Quali informazioni sono raccolte?",
             "collection-desc": "Il Servizio ha bisogno di 2 cose per funzionare: l'indirizzo email del tuo account Google (così può sapere che sei tu quando fai una richiesta), e l'URL del tuo Nightscout (così può consultare la tua glicemia e leggerla per te).",
             "use-title": "Come vengono utilizzate queste informazioni?",
@@ -61,7 +61,7 @@
         },
         "health": {
             "title": "Disclaimer Informazioni sanitarie",
-            "disclaimer": "Le informazioni fornite da Nightscout non sostituiscono le indicazioni di un medico. Se hai domande riguardo le cure o hai bisogno di consulenza, ricorda di chiedere sempre al tuo medico!"
+            "disclaimer": "Le informazioni fornite da Nightscout Status non sostituiscono le indicazioni di un medico. Se hai domande riguardo le cure o hai bisogno di consulenza, ricorda di chiedere sempre al tuo medico!"
         },
         "license-and-tos": "Licenza e Termini di servizio"
     }
