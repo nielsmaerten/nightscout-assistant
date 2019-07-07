@@ -10,7 +10,7 @@
             "noNsSite": "Prima di controllare la tua glicemia, ho bisogno dell'URL del tuo sito Nightscout. Puoi inserirlo visitando questa pagina {{- homepageUrl}}",
             "noBgReading": "Mmmm. Non riesco a trovare una lettura della glicemica recente.",
             "invalidUrl": {
-                "p1": "Scusa, l'URL di Nighscout che mi hai fornito sembra non essere valido. Puoi controllare qui {{- homepageUrl}} ?",
+                "p1": "Scusa, l'URL di Nightscout che mi hai fornito sembra non essere valido. Puoi controllare qui {{- homepageUrl}} ?",
                 "p2": "Assicurati che il tuo url inizi con http."
             },
             "notFound": "Scusa, non riesco a trovare il tuo sito Nightscout. Assicurati di aver inserito l'URL corretto su {{- homepageUrl}}",
