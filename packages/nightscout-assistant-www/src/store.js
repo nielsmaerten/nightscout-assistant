@@ -13,7 +13,8 @@ const store = new Vuex.Store({
       active: undefined,
       available: [
         { name: "English", code: "en" },
-        { name: "Svenska", code: "sv" }
+        { name: "Svenska", code: "sv" },
+      //  { name: "Italiano", code: "it" }
       ],
       loaded: []
     },
