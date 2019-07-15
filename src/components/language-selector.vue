@@ -1,10 +1,11 @@
 <template>
   <div class="select is-small">
-    <select v-model="selectedLanguage">
+    <select @change="changeLanguage">
       <option
         v-for="lang in $store.state.languages.available"
         :key="lang.code"
         :value="lang.code"
+        :selected="lang.code === $store.state.languages.active"
         >{{ lang.name }}</option
       >
     </select>
@@ -14,16 +15,11 @@
 <script>
 export default {
   name: "language-selector",
-  data() {
-    return {
-      selectedLanguage: this.$store.state.languages.active
-    };
-  },
-  watch: {
-    selectedLanguage(newLanguage) {
-      this.$store.dispatch("changeLanguage", newLanguage);
+  methods: {
+    changeLanguage(e) {
+      // Changing the route will cause the router to update the langauge
+      this.$router.push(`/${e.target.value}/${this.$route.name}/`);
     }
-  },
-  methods: {}
+  }
 };
 </script>

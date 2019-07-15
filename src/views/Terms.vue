@@ -2,9 +2,11 @@
   <div>
     <div class="is-pulled-right mt-4">
       <language-selector></language-selector>
-      <router-link to="/" class="button mx-4 is-small">{{
-        $t("terms.back")
-      }}</router-link>
+      <router-link
+        :to="`/${$store.state.languages.active}/`"
+        class="button mx-4 is-small"
+        >{{ $t("terms.back") }}</router-link
+      >
     </div>
 
     <section id="tos" class="mx-4 mt-5 text-sm">

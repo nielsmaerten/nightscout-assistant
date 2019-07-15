@@ -21,7 +21,11 @@
           <label class="label">{{ $t("index.settings.unit") }}</label>
           <div class="control">
             <div class="select is-fullwidth">
-              <select id="nightscout-unit" v-model="user.settings.unit">
+              <select
+                required
+                id="nightscout-unit"
+                v-model="user.settings.unit"
+              >
                 <option value="mg/dl">{{ $t("index.settings.mg-dl") }}</option>
                 <option value="mmol/l">{{
                   $t("index.settings.mmol-l")
@@ -41,7 +45,7 @@
           </label>
           <div class="control">
             <input
-              placeholder="(unchanged)"
+              :placeholder="$t('index.settings.unchanged')"
               v-model="user.settings.apiSecret"
               @focus="showApiSecretInfo = true"
               class="input"
@@ -89,7 +93,10 @@
       <em>{{ $t("common.full-invocation") }}</em>
     </p>
 
-    <article class="message is-warning is-small mt-2">
+    <article
+      class="message is-warning is-small mt-2"
+      v-if="routinesSupported($i18n.i18next.language)"
+    >
       <div class="message-body">
         <i18next path="index.settings.hint">
           <a
@@ -134,6 +141,10 @@ export default {
     }
   },
   methods: {
+    routinesSupported(currentLng) {
+      const lngsSupportingRoutines = ["en"];
+      return lngsSupportingRoutines.indexOf(currentLng) !== -1;
+    },
     signOut() {
       firebase
         .auth()

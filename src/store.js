@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import i18next from "i18next";
-import detectLng from "./detect-language";
 
 Vue.use(Vuex);
 
@@ -11,7 +10,7 @@ const store = new Vuex.Store({
       gaEnabled: false
     },
     languages: {
-      active: detectLng(),
+      active: undefined,
       available: [
         { name: "English", code: "en" },
         { name: "Svenska", code: "sv" }
@@ -51,7 +50,6 @@ const store = new Vuex.Store({
     async changeLanguage(context, lng) {
       await i18next.changeLanguage(lng);
       context.commit("setLanguage", lng);
-      history.replaceState(undefined, undefined, "#lng=" + lng);
     }
   }
 });

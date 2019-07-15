@@ -9,7 +9,6 @@
 
 <script>
 import router from "@/router";
-import store from "@/store";
 export default {
   name: "ns-user-settings",
   mounted: initializeFirebaseUI
@@ -18,7 +17,7 @@ export default {
 function initializeFirebaseUI() {
   // FirebaseUI config.
   var uiConfig = {
-    signInSuccessUrl: `https://nielsmaerten.github.io/nightscout-assistant/#lng=${store.state.languages.active}`,
+    signInSuccessUrl: location.href,
     signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
     tosUrl: showTos,
     privacyPolicyUrl: showTos
