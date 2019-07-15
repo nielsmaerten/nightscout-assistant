@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Ora, puoi provare a chiedere: 'Hey Google, chiedi a Nightscout qual è la mia glicemia'.",
+            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
             "request": "Per accedere alla tua glicemia",
             "healthDisclaimer": "Ricorda: le informazioni fornite da Nightscout non sostituiscono le indicazioni del medico."
         },
