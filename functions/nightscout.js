@@ -2,6 +2,7 @@
 const fetch = require("node-fetch");
 const admin = require("firebase-admin");
 const URL = require("url").URL;
+const intl = require("intl");
 
 // Gets the current glucose for a user,
 // and returns it as a pronounceable response
@@ -77,6 +78,9 @@ function formatResponse(d, unit, t) {
   let moment = require("moment");
   moment.locale(t.lng);
 
+  // Get localized numberFormat
+  const nf = new intl.NumberFormat(t.lng).format;
+
   // Get components of the response
   const ago = moment(d.date).fromNow();
   const value = d.sgv || d.mbg;
@@ -90,9 +94,9 @@ function formatResponse(d, unit, t) {
 
   // Formulate response
   if (trend) {
-    return t("answers.withTrend", { bg, trend, ago });
+    return t("answers.withTrend", { bg: nf(bg), trend, ago });
   } else {
-    return t("answers.noTrend", { bg, ago });
+    return t("answers.noTrend", { bg: nf(bg), ago });
   }
 }
 

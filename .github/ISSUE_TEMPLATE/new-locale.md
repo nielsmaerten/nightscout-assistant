@@ -19,10 +19,14 @@ assignees: ''
 
 **Highlights:**
 - [ ] Privacy policy fully translated
-- [ ] Consistent Invocation and Display names
+- [ ] Display name and Invocation consistent across site, Action and Directory info
 - [ ] Directory information up-to-date
 - [ ] Testing instructions up-to-date
 
 ## Testing
 - [ ] Invocation works in the new language
 - [ ] Tested on real device in alpha
+
+## General deployment
+- [ ] _master_ branch deployed to Firebase
+- [ ] Dialogflow fullfilment url pointing to Firebase Function
