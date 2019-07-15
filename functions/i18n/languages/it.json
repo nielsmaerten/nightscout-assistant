@@ -1,9 +1,9 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Ora puoi provare a chiedere: \"Hey Google, chiedi a Lo Stato di Nightscout qual è la mia glicemia”.",
             "request": "Per accedere alla tua glicemia",
-            "healthDisclaimer": "Ricorda: le informazioni fornite da Nightscout non sostituiscono le indicazioni del medico."
+            "healthDisclaimer": "Ricorda: le informazioni fornite da Lo stato di Nightscout non sostituiscono le indicazioni del medico."
         },
         "errors": {
             "unknown-error": "Scusa, si è verificato un errore sconosciuto. Sarà esaminato il prima possibile.",
@@ -48,8 +48,8 @@
                     "full": "Chiedi a Google Assistant la tua glicemia attuale."
                 },
                 "sample-invocations": [
-                    "Ok Google, comunica con Nightscout",
-                    "Ok Google, chiedi a Nightscout qual è la mia glicemia"
+                    "Ok Google, comunica con Lo stato di Nightscout",
+                    "Ok Google, chiedi a Lo stato di Nightscout qual è la mia glicemia"
                 ]
             }
         }
