@@ -1,68 +1,68 @@
 {
     "common": {
         "google-tm": "Google　Assistantはグーグルのトレードマークです。",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "ナイトスコートプロジェクト",
-        "invocation": "ナイトスコート　ステータス",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "nightscout-no-affl": "{{0}} と提携していません。",
+        "nightscout-project": "ナイトスカウトプロジェクト",
+        "invocation": "ナイトスカウトステータス",
+        "full-invocation": "Ok Google,話して$t(common.invocation)"
     },
     "index": {
         "header": {
-            "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "title": "ナイトスカウトステータス",
+            "subtitle": "ナイトスカウトの為のグーグルホームとグーグルアシスタント(非公式)"
         },
         "example-conversation": {
-            "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
+            "hey-google": "Ok Google,",
+            "ask-google": "聞いて{{0}} 私の血糖値は",
+            "nightscout-status-resp": "4分前に血糖値は120です。ゆるやかに上がっています。"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "your-site": "Your Nightscout site",
+            "connect": "始めるには、あなたのナイトスカウトサイトに接続してください:",
+            "your-site": "あたなとナイトスカウトサイト",
             "unit": "Unit",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
             "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "optional": "(オプション)",
+            "unchanged": "(変更なし)",
+            "save": "保存",
+            "sign-out": "サインアウト",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "私はAPI Secretを入力する必要がありますか？",
+                "info": "これはナイトスカウトサイトが「読み取り保護」されている場合に必要です。(例：{{1}} が{{0}} に設定されている場合)"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
-            "hint-routines": "Routines"
+            "done": "完了！",
+            "success-msg": "グーグルアシスタントに聞いてみて：",
+            "hint": "ヒント：短い呼び出しを作成するには{{0}}を使用してください。{{1}}たとえば：'Ok Google,私の血糖値は'",
+            "hint-routines": "ルーチン"
         },
         "footer": {
             "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "bugs": "バグレポート；機能リクエスト",
+            "tos": "利用規約とプライバシーポリシー"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "戻る",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-            "use-title": "How is this information used?",
-            "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
-            "sharing-title": "Sharing of information",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
-            "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "title": "プライバシーポリシー",
+            "intro": "このドキュメントはナイトスカウトステイタス{{0}}(サービス、ソフトウェア) により収集される情報と使用方法を説明します。",
+            "collection-title": "どのような情報が収集されますか？",
+            "collection-desc": "当サービスを利用するにはGoogleアカウントのメールアドレス(あなたを認証します。) と、ナイトスカウトのURL(血糖値を調べて読み上げます。) が必要となります。",
+            "use-title": "この情報の利用方法は？",
+            "use-desc": "グーグルアシスタントで本サービスを起動(Ok Google,私のナイトスカウトステータスを教えて)すると、お客様のメールアドレスを確認後、ナイトスカウトサイトが登録されているか確認します。登録されていると、ナイトスカウトサイトから現在の血糖値を読み取ります。",
+            "sharing-title": "情報の共有化",
+            "sharing-desc": "あなたのメールアドレス及びナイトスカウトURLは他サービスと<strong>共有することはありません。</strong>サービスを起動したときにナイトスカウトサイトを確認する為に必要となります。又、ナイトスカウトサイトのデータはログも含めて保存されません。 ",
+            "deleting-title": "データを削除しています",
+            "deleting-desc": "いつでもアクセス情報を削除うする事が可能です。：ナイトスカウトURLを削除し保存ボタンを押すだけです。又、あたなの{{0}} からナイトスカウトステータスも削除する事が可能です。",
+            "deleting-google-account": "グーグルアカウント",
+            "analytics-title": "クッキーを分析",
+            "analytics-desc": "このサイトにサインインすると、クッキー(Googleアナリティクス) を使用して、お客様のアクセスに関する匿名の情報収集がされます。プライバシーポリシーに同意するまでクッキーは有効になりません。アナリティクスを利用し、利用者のこのサイトの利用方法、接続元、人口統計等の解析に利用されます。これは{{0}} のみに利用され、アシスタント・アクション自体の使用には利用されません。Googleアナリティクスのクッキーは{{1}} にアクセスすればオプトアウトできます。"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "医療情報に関する免責事項",
+            "disclaimer": "ナイトスカウトステータスにより提供される情報は、医療専門家からのアドバイスに代わるものではありません。治療に関する質問やアドバイスが必要な場合は、必ず医師にご相談ください。"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "ライセンスとサービス条件"
     }
 }
