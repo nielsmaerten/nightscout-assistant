@@ -3,7 +3,7 @@
         "google-tm": "Google Assistant è un marchio registrato di Google Inc.",
         "nightscout-no-affl": "Non affiliato con {{0}}",
         "nightscout-project": "il progetto Nightscout",
-        "invocation": "Stato di Nightscout",
+        "invocation": "Lo stato di Nightscout",
         "full-invocation": "Hey Google, parla con $t(common.invocation)"
     },
     "index": {
@@ -50,7 +50,7 @@
             "collection-title": "Quali informazioni sono raccolte?",
             "collection-desc": "Il Servizio ha bisogno di 2 cose per funzionare: l'indirizzo email del tuo account Google (così può sapere che sei tu quando fai una richiesta), e l'URL del tuo Nightscout (così può consultare la tua glicemia e leggerla per te).",
             "use-title": "Come vengono utilizzate queste informazioni?",
-            "use-desc": "Quando si invoca il Servizio attraverso Google Assistant (ad esempio: \"Hey Google, comunica con Nightscout), il Servizio legge il tuo indirizzo email e controlla se c'è un sito Nightscout associato a esso. Se è così, la tua glicemia è letta dal tuo sito Nightscout.",
+            "use-desc": "Quando si invoca il Servizio attraverso Google Assistant (ad esempio: \"Hey Google, comunica con Lo stato di Nightscout), il Servizio legge il tuo indirizzo email e controlla se c'è un sito Nightscout associato a esso. Se è così, la tua glicemia è letta dal tuo sito Nightscout.",
             "sharing-title": "Condivisione delle informazioni",
             "sharing-desc": "Il tuo indirizzo email o il tuo URL di Nightscout non devono <strong>mai</strong> essere condivisi con terzi. Io ne ho bisogno per sapere quale sito di Nightscout controllare quando tu invochi un'azione. I dati presi dal sito Nightscout non sono salvati, nemmeno in file log. ",
             "deleting-title": "Eliminazione dei tuoi dati",
