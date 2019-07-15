@@ -23,4 +23,5 @@ This service is not affiliated to the Nightscout Project
 
 ## Translations
 - Henrik Hernqvist (Swedish)
+- Marco Perrone (Italian)
 - Can you help us translate? Visit https://crowdin.com/project/nightscout-status
