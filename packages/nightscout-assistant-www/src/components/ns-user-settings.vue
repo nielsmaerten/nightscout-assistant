@@ -142,7 +142,7 @@ export default {
   },
   methods: {
     routinesSupported(currentLng) {
-      const lngsSupportingRoutines = ["en", "it"];
+      const lngsSupportingRoutines = ["en", "it", "nl"];
       return lngsSupportingRoutines.indexOf(currentLng) !== -1;
     },
     signOut() {
