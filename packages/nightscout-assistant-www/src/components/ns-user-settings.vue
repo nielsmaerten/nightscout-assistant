@@ -112,6 +112,7 @@
 </template>
 
 <script>
+const constants = require("@/constants.js");
 export default {
   name: "ns-user-settings",
   data() {
@@ -142,8 +143,7 @@ export default {
   },
   methods: {
     routinesSupported(currentLng) {
-      const lngsSupportingRoutines = ["en", "it", "nl"];
-      return lngsSupportingRoutines.indexOf(currentLng) !== -1;
+      return constants.languages.supportingRoutines.indexOf(currentLng) !== -1;
     },
     signOut() {
       firebase
