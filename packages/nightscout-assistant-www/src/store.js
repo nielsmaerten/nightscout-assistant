@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import i18next from "i18next";
+const constants = require("./constants");
 
 Vue.use(Vuex);
 
@@ -11,11 +12,7 @@ const store = new Vuex.Store({
     },
     languages: {
       active: undefined,
-      available: [
-        { name: "English", code: "en" },
-        { name: "Svenska", code: "sv" },
-      //  { name: "Italiano", code: "it" }
-      ],
+      available: constants.languages.available,
       loaded: []
     },
     user: {
