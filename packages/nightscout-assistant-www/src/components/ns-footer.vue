@@ -3,9 +3,7 @@
     <div class="columns">
       <div class="column">
         <p class="text-xs">
-          <a
-            href="https://www.reddit.com/r/diabetes/comments/b9zo2t/nightscout_for_google_homeassistant/?utm_source=share&utm_medium=web2x"
-          >
+          <a href="https://go.niels.me/nightscout-reddit">
             {{ $t("index.footer.help-faq") }}</a
           >
           <br />
