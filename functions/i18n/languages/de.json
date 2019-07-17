@@ -45,11 +45,11 @@
             "actions-directory": {
                 "description": {
                     "short": "Überprüfe deinen aktuellen Zuckerspiegel von Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "full": "Frage den Google Assistenten nach deinem aktuellen Blutzucker."
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, verbinde dich Nightscout Status",
+                    "Ok Google, frage Nightscout Status wie mein Blutzucker ist"
                 ]
             }
         }
