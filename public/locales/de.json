@@ -29,12 +29,12 @@
             "sign-out": "Ausloggen",
             "api-secret-info": {
                 "title": "Muss ich mein API Passwort eingeben?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "info": "Dies wird nur benötigt, wenn deine Nightscout Seite als \"lesegeschützt\" eingerichtet ist. (zum Beispiel wenn {{0}} auf {{1}} gesetzt ist)"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
-            "hint-routines": "Routines"
+            "done": "Erledigt!",
+            "success-msg": "Nun frage deinen Google Asisstant:",
+            "hint": "Tipp: Verwende {{0}} um einen kürzeren Aufruf zu erstellen. {{1}}Zum Beispiel: \"Ok Google, Prüfe meinen Zucker\"",
+            "hint-routines": "Routinen"
         },
         "footer": {
             "help-faq": "Hilfe & häufig gestellte Fragen",
@@ -48,7 +48,7 @@
             "title": "Datenschutzerklärung",
             "intro": "In diesem Dokument wird beschrieben, wie die Informationen von Nightscout Status {{0}} (folgend als der \"Service\" oder die \"Software\") erfasst und verwendet werden.",
             "collection-title": "Welche Daten werden erfasst?",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
+            "collection-desc": "Der Service benötigt für seine Arbeit zwei Dinge: Eine E-Mail-Adresse zu Deinem Google-Konto (zur Authentifizierung) und die URL Deiner Nightscout Instanz (damit der Blutzucker für Dich abgefragt werden kann).",
             "use-title": "Wie werden diese Informationen verwendet?",
             "use-desc": "Wenn Du den Service über Google Assistant aufrusft (z. B. mit: 'Ok Google, verbinde dich mit Nightscout Status), überprüft der Service Deine E-Mail-Adresse und prüft, ob eine Nightscout Site damit verknüpft ist. Ist dies der Fall, wird der aktuelle Zuckerwert von deiner Nightscout Seite abgefragt.",
             "sharing-title": "Weitergabe von Informationen an Dritte",
@@ -57,12 +57,12 @@
             "deleting-desc": "Du kannst die Zugriffsrechte jederzeit wieder aufheben: Einfach anmelden, Nightscou URL entfernen und auf Speichern klicken. Du kannst Nightscout Status auch von deinem {{0}} entfernen.",
             "deleting-google-account": "Google-Konto",
             "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "analytics-desc": "Nachdem Du dich auf dieser Website angemeldet hast, werden einige anonyme Statistiken über den Besuch mithilfe eines Cookies (Google Analytics) gesammelt. Dieser wird erst aktiviert, nachdem du die Datenschutzrichtlinie akzeptiert hast. Ich verwende Analytics, um den Service der Website zu verbessern, um herauszufinden wie Du sie gefunden hast und zu welcher demografischen Gruppe du gehörst. Dies gilt nur für {{0}}, nicht für den Assistenten selbst. Wenn du den Google Analytics-Cookie deaktivieren möchtest, können du dies unter {{1}} tun"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "Haftungsausschluss für Gesundheitsinformationen",
+            "disclaimer": "Die Informationen von Nightscout Status sind kein Ersatz für die Beratung durch einen Arzt. Wenn du Fragen zur Behandlung hast oder Rat benötigst, frage bitte immer deinen Arzt!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Lizenz und Nutzungsbedingungen"
     }
 }
