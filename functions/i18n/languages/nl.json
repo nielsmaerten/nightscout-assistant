@@ -49,7 +49,7 @@
                 },
                 "sample-invocations": [
                     "Ok Google, praat met Nightscout Status",
-                    "Ok Google, vraag de Nightscout Status wat mijn glucose is"
+                    "Ok Google, vraag Nightscout Status wat mijn glucose is"
                 ]
             }
         }
