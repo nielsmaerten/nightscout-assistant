@@ -1,55 +1,55 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose",
-            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+            "completed": "Nun kannst du folgendes ausprobieren und fragen: \"Ok Google, frag Nightscout-Status, wie mein Blutzucker ist\".",
+            "request": "Um auf deine Zuckerwerte zuzugreifen",
+            "healthDisclaimer": "Bitte berücksichtige: Die Informationen von Nightscout Status sind kein Ersatz für ärztlichen Rat."
         },
         "errors": {
-            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
-            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
-            "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+            "unknown-error": "Entschuldige, ein Fehler ist aufgetreten. Das Team wird sich so schnell wie möglich darum kümmern.",
+            "noNsSite": "Bevor ich Deine Blutzuckerwerte prüfen kann, benötige ich die URL deiner Nightscout Seite. Du kannst sie auf {{- homepageUrl}} eingeben",
+            "noBgReading": "Hmmm. Ich konnte keine aktuellen Blutzuckerwerte finden.",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "Entschudlige, die eingegebene Nightscout URL scheint nicht gültig zu sein. Könntest Du die Adresse {{- homepageUrl}} noch einmal überprüfen?",
+                "p2": "Bitte stelle sicher, dass deine URL mit http beginnt."
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "notFound": "Entschuldige, leider kann ich Deine Nightscout Seite nicht erreichen. Bitte überprüfe, ob Du für {{- homepageUrl}} die korrekte URL eingegeben hast",
+            "unauthorized": "Entschuldige, leider habe ich keine Berechtigung auf deine Nightscout Seite zuzugreifen. Versuche es mit Eingabe des API-Passwortes auf {{- homepageUrl}}",
+            "nsSiteError": "Entschuldige, es scheint ein Problem mit deiner Nightscout Seite zu geben. Ich konnte leider keine Daten emfpangen."
         },
         "trends": {
-            "DoubleUp": "rising fast",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
-            "Flat": "stable",
-            "FortyFiveDown": "decreasing slowly",
-            "SingleDown": "decreasing",
-            "DoubleDown": "dropping fast"
+            "DoubleUp": "schnell steigend",
+            "SingleUp": "steigend",
+            "FortyFiveUp": "langsam steigend",
+            "Flat": "gleichbleibend",
+            "FortyFiveDown": "langsam fallend",
+            "SingleDown": "fallend",
+            "DoubleDown": "schnell fallend"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}.",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+            "noTrend": "{{bg}} von vor {{ago}}.",
+            "withTrend": "{{bg}} und {{trend}} vor {{ago}}."
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
-                "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Wie ist mein Zucker?",
+                "Wie tief bin ich?",
+                "Wie hoch bin ich?",
+                "Wie ist mein Wert?",
+                "Wie geht es mir?",
+                "Wie ist mein Zucker?",
+                "Wo steht mein Blutzucker?",
+                "Prüfe meinen Zucker.",
+                "Prüfe meinen Blutzucker"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Überprüfe deinen aktuellen Zuckerspiegel von Nightscout",
+                    "full": "Frage den Google Assistenten nach deinem aktuellen Blutzucker."
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, verbinde dich Nightscout Status",
+                    "Ok Google, frage Nightscout Status wie mein Blutzucker ist"
                 ]
             }
         }
