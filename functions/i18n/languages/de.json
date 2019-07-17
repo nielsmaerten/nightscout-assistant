@@ -15,7 +15,7 @@
             },
             "notFound": "Entschuldige, leider kann ich Deine Nightscout Seite nicht erreichen. Bitte überprüfe, ob Du für {{- homepageUrl}} die korrekte URL eingegeben hast",
             "unauthorized": "Entschuldige, leider habe ich keine Berechtigung auf deine Nightscout Seite zuzugreifen. Versuche es mit Eingabe des API-Passwortes auf {{- homepageUrl}}",
-            "nsSiteError": "Entschuldige, es scheint ein Problem mit deiner Nightscout Seite zu geben. Ich konnte leider keine Daten emfpangen."
+            "nsSiteError": "Entschuldige, es scheint ein Problem mit deiner Nightscout Seite zu geben. Ich konnte leider keine Daten empfangen."
         },
         "trends": {
             "DoubleUp": "schnell steigend",
