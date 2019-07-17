@@ -1,34 +1,34 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "the Nightscout Project",
+        "google-tm": "Google Assistant ist eine Marke von Google Inc.",
+        "nightscout-no-affl": "Nicht im Zusammenhang mit {{0}}",
+        "nightscout-project": "Project Nightscout",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "full-invocation": "Hey Google, verbinde Dich mit $t(common.invocation)"
     },
     "index": {
         "header": {
             "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "subtitle": "Nightscout für Google Home und Google Assistant (nicht offiziell)"
         },
         "example-conversation": {
-            "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
+            "hey-google": "Ok Google,",
+            "ask-google": "frage {{0}} nach meinem Zucker",
+            "nightscout-status-resp": "120, leicht steigend von vor 4 Minuten"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
+            "connect": "Verbinde deine Nightscout-Seite damit es losgehen kann:",
+            "your-site": "Deine Nightscout Seite",
+            "unit": "Einheit",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
-            "api-secret": "API secret",
+            "api-secret": "API Secret",
             "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "unchanged": "(unverändert)",
+            "save": "Speichern",
+            "sign-out": "Ausloggen",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
+                "title": "Muss ich mein API Passwort eingeben?",
                 "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
             },
             "done": "Done!",
@@ -37,15 +37,15 @@
             "hint-routines": "Routines"
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
+            "help-faq": "Hilfe & häufig gestellte Fragen",
+            "bugs": "Fehlerberichte; Funktionsanfragen",
             "tos": "Terms of Service and Privacy Policy"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Zurück",
         "privacy-policy": {
-            "title": "Privacy Policy",
+            "title": "Datenschutzerklärung",
             "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
             "collection-title": "What information is collected?",
             "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
@@ -55,7 +55,7 @@
             "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
             "deleting-title": "Deleting your data",
             "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
+            "deleting-google-account": "Google-Konto",
             "analytics-title": "Analytics Cookie",
             "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
         },
