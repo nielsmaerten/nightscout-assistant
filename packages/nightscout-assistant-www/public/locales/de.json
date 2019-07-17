@@ -50,7 +50,7 @@
             "collection-title": "Welche Daten werden erfasst?",
             "collection-desc": "Der Service benötigt für seine Arbeit zwei Dinge: Eine E-Mail-Adresse zu Deinem Google-Konto (zur Authentifizierung) und die URL Deiner Nightscout Instanz (damit der Blutzucker für Dich abgefragt werden kann).",
             "use-title": "Wie werden diese Informationen verwendet?",
-            "use-desc": "Wenn Du den Service über Google Assistant aufrusft (z. B. mit: 'Ok Google, verbinde dich mit Nightscout Status), überprüft der Service Deine E-Mail-Adresse und prüft, ob eine Nightscout Site damit verknüpft ist. Ist dies der Fall, wird der aktuelle Zuckerwert von deiner Nightscout Seite abgefragt.",
+            "use-desc": "Wenn Du den Service über Google Assistant aufruft (z. B. mit: 'Ok Google, verbinde dich mit Nightscout Status), überprüft der Service Deine E-Mail-Adresse und prüft, ob eine Nightscout Site damit verknüpft ist. Ist dies der Fall, wird der aktuelle Zuckerwert von deiner Nightscout Seite abgefragt.",
             "sharing-title": "Weitergabe von Informationen an Dritte",
             "sharing-desc": "Deine E-Mail Adresse oder Nightscout URL wird <strong>niemals</strong> anderen Organisationen zur Verfügung gestellt. Ich muss lediglich wissen auf welche Nightscout Seite ich zugreifen muss. Daten von deiner Nightscout Seite werden nirgends gespeichert, auch nicht in Logfiles. ",
             "deleting-title": "Lösche deine Daten",
