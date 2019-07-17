@@ -10,7 +10,7 @@
             "noNsSite": "Bevor ich Deine Blutzuckerwerte prüfen kann, benötige ich die URL deiner Nightscout Seite. Du kannst sie auf {{- homepageUrl}} eingeben",
             "noBgReading": "Hmmm. Ich konnte keine aktuellen Blutzuckerwerte finden.",
             "invalidUrl": {
-                "p1": "Entschudlige, die eingegebene Nightscout URL scheint nicht gültig zu sein. Könntest Du die Adresse {{- homepageUrl}} noch einmal überprüfen?",
+                "p1": "Entschuldige, die eingegebene Nightscout URL scheint nicht gültig zu sein. Könntest Du die Adresse {{- homepageUrl}} noch einmal überprüfen?",
                 "p2": "Bitte stelle sicher, dass deine URL mit http beginnt."
             },
             "notFound": "Entschuldige, leider kann ich Deine Nightscout Seite nicht erreichen. Bitte überprüfe, ob Du für {{- homepageUrl}} die korrekte URL eingegeben hast",
