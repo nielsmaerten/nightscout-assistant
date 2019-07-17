@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Nun kannst du folgendes ausprobieren und fragen: \"Ok Google, frag Nightscout-Status, wie mein Blutzucker ist\".",
             "request": "Um auf deine Zuckerwerte zuzugreifen",
             "healthDisclaimer": "Bitte berücksichtige: Die Informationen von Nightscout Status sind kein Ersatz für ärztlichen Rat."
         },
@@ -27,7 +27,7 @@
             "DoubleDown": "schnell fallend"
         },
         "answers": {
-            "noTrend": "{{bg}} vor {{ago}}.",
+            "noTrend": "{{bg}} von vor {{ago}}.",
             "withTrend": "{{bg}} und {{trend}} vor {{ago}}."
         },
         "google-assistant": {
@@ -37,7 +37,7 @@
                 "Wie hoch bin ich?",
                 "Wie ist mein Wert?",
                 "Wie geht es mir?",
-                "Wo steht mein Zucker?",
+                "Wie ist mein Zucker?",
                 "Wo steht mein Blutzucker?",
                 "Prüfe meinen Zucker.",
                 "Prüfe meinen Blutzucker"
