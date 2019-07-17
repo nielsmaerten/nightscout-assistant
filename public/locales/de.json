@@ -39,22 +39,22 @@
         "footer": {
             "help-faq": "Hilfe & häufig gestellte Fragen",
             "bugs": "Fehlerberichte; Funktionsanfragen",
-            "tos": "Terms of Service and Privacy Policy"
+            "tos": "Nutzungsbedingungen und Datenschutzerklärung"
         }
     },
     "terms": {
         "back": "Zurück",
         "privacy-policy": {
             "title": "Datenschutzerklärung",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
+            "intro": "In diesem Dokument wird beschrieben, wie die Informationen von Nightscout Status {{0}} (folgend als der \"Service\" oder die \"Software\") erfasst und verwendet werden.",
+            "collection-title": "Welche Daten werden erfasst?",
             "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-            "use-title": "How is this information used?",
-            "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
-            "sharing-title": "Sharing of information",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
+            "use-title": "Wie werden diese Informationen verwendet?",
+            "use-desc": "Wenn Du den Service über Google Assistant aufrusft (z. B. mit: 'Ok Google, verbinde dich mit Nightscout Status), überprüft der Service Deine E-Mail-Adresse und prüft, ob eine Nightscout Site damit verknüpft ist. Ist dies der Fall, wird der aktuelle Zuckerwert von deiner Nightscout Seite abgefragt.",
+            "sharing-title": "Weitergabe von Informationen an Dritte",
+            "sharing-desc": "Deine E-Mail Adresse oder Nightscout URL wird <strong>niemals</strong> anderen Organisationen zur Verfügung gestellt. Ich muss lediglich wissen auf welche Nightscout Seite ich zugreifen muss. Daten von deiner Nightscout Seite werden nirgends gespeichert, auch nicht in Logfiles. ",
+            "deleting-title": "Lösche deine Daten",
+            "deleting-desc": "Du kannst die Zugriffsrechte jederzeit wieder aufheben: Einfach anmelden, Nightscou URL entfernen und auf Speichern klicken. Du kannst Nightscout Status auch von deinem {{0}} entfernen.",
             "deleting-google-account": "Google-Konto",
             "analytics-title": "Analytics Cookie",
             "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
