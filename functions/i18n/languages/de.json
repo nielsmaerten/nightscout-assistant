@@ -21,7 +21,7 @@
             "DoubleUp": "schnell steigend",
             "SingleUp": "steigend",
             "FortyFiveUp": "langsam steigend",
-            "Flat": "stable",
+            "Flat": "gleichbleibend",
             "FortyFiveDown": "langsam fallend",
             "SingleDown": "fallend",
             "DoubleDown": "schnell fallend"
