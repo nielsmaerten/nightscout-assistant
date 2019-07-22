@@ -27,8 +27,8 @@
             "DoubleDown": "schnell fallend"
         },
         "answers": {
-            "noTrend": "{{bg}} von vor {{ago}}.",
-            "withTrend": "{{bg}} und {{trend}} vor {{ago}}."
+            "noTrend": "{{bg}} von {{ago}}.",
+            "withTrend": "{{bg}} und {{trend}} {{ago}}."
         },
         "google-assistant": {
             "invocations": [
@@ -48,7 +48,7 @@
                     "full": "Frage den Google Assistenten nach deinem aktuellen Blutzucker."
                 },
                 "sample-invocations": [
-                    "Ok Google, verbinde dich Nightscout Status",
+                    "Ok Google, sprich mit Nightscout Status",
                     "Ok Google, frage Nightscout Status wie mein Blutzucker ist"
                 ]
             }
