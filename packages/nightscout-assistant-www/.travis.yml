@@ -2,4 +2,11 @@ language: node_js
 node_js:
   - "8.15"
 install: npm install
-script: npm run deploy
+script: npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+  on:
+    branch: www
