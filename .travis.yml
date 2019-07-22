@@ -1,6 +1,10 @@
 language: node_js
 node_js:
 - '8.15'
+branches:
+  only:
+  - master
+  - www
 before_install: npm i -g firebase-tools
 install:
 - cd functions
