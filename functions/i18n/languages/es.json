@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Ahora, puede intentar preguntando: Ok Google, pregunta a Nightscout Status cuál es mi nivel de glucosa.",
             "request": "Para acceder a su nivel de glucosa",
             "healthDisclaimer": "Recuerde: la información proporcionada por Nightscout Status no sustituye el consejo de un profesional médico."
         },
@@ -34,22 +34,22 @@
             "invocations": [
                 "¿Cómo está mi azúcar?",
                 "¿Cómo estoy de bajo?",
-                "How high am I?",
-                "What is my status?",
-                "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "¿Cómo estoy de alto?",
+                "¿Cuál es mi estado?",
+                "¿Cómo estoy?",
+                "¿Cuál es mi glucosa?",
+                "¿Cuál es mi azúcar en sangre?",
+                "Comprueba mi glucosa.",
+                "Revisa mi azúcar en la sangre"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Comprueba tu nivel de glucosa actual desde Nightscout",
+                    "full": "Pregunte al asistente de Google sobre su nivel actual de glucosa."
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, hablar con Nightscout Status",
+                    "Ok Google, pregunta a Nightscout Status cuál es mi nivel de glucosa"
                 ]
             }
         }
