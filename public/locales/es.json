@@ -1,10 +1,10 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "the Nightscout Project",
+        "google-tm": "Google Assistant es una marca registrada de Google Inc.",
+        "nightscout-no-affl": "No afiliado con {{0}}",
+        "nightscout-project": "el proyecto Nightscout",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "full-invocation": "Hola Google, hablar con $t(invocación común)"
     },
     "index": {
         "header": {
