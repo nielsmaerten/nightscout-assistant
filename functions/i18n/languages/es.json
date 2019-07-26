@@ -3,12 +3,12 @@
         "signIn": {
             "completed": "Ahora, puede intentar preguntando: Ok Google, pregunta a Nightscout Status cuál es mi nivel de glucosa.",
             "request": "Para acceder a su nivel de glucosa",
-            "healthDisclaimer": "Recuerde: la información proporcionada por Nightscout Status no sustituye el consejo de un profesional médico."
+            "healthDisclaimer": "."
         },
         "errors": {
             "unknown-error": "Lo sentimos, se produjo un error desconocido. Será investigado lo antes posible.",
             "noNsSite": "Antes de que pueda revisar tu glucosa, necesitaré la URL de su sitio de Nightscout. Puede ingresarlo visitando {{- homepageUrl}}",
-            "noBgReading": "Hmmm No pude encontrar una lectura reciente.",
+            "noBgReading": "No se ha encontrado una lectura reciente.",
             "invalidUrl": {
                 "p1": "Lo sentimos, la URL de Nightscout que nos dió no parece ser válida. ¿Se puede comprobar en {{- homepageUrl}}?",
                 "p2": "Asegúrese de que su url comienza con http."
