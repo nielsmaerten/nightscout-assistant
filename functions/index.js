@@ -6,9 +6,19 @@ const { dialogflow, SignIn } = require("actions-on-google");
 const { i18next, initLocale } = require("./i18n");
 const config = functions.config().dialogflow || require("./config");
 
-// Set dialogflow client ID
+// Build auth header
+const usernameAndPassword = `${config.auth.user}:${config.auth.password}`;
+const base64Auth = Buffer.from(usernameAndPassword, "ascii").toString("base64");
+const authHeader = `Basic ${base64Auth}`;
+
+// Set dialogflow client ID and verification
 const app = dialogflow({
-  clientId: config.clientid
+  clientId: config.clientid,
+  verification: {
+    headers: {
+      authorization: authHeader
+    }
+  }
 });
 
 // Initialize localization module
