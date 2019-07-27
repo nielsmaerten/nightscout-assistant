@@ -1,6 +1,7 @@
 # Nightscout for Google Home & Google Assistant
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/nightscout-status/localized.svg)](https://crowdin.com/project/nightscout-status)  
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/nightscout-status/localized.svg)](https://crowdin.com/project/nightscout-status)
+[![Build Status](https://travis-ci.com/nielsmaerten/nightscout-assistant.svg?branch=master)](https://travis-ci.com/nielsmaerten/nightscout-assistant)
 ### https://git.io/nightscoutstatus
 
 ## Ask Google about your glucose:
