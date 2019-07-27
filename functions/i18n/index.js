@@ -17,6 +17,7 @@ module.exports.initLocale = async function () {
             nl: require("./languages/nl.json"),
             de: require("./languages/de.json"),
             ja: require("./languages/ja.json"),
+            es: require("./languages/es.json"),
         }
     })
 }
