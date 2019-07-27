@@ -1,68 +1,68 @@
 {
     "common": {
-        "google-tm": "Google Assistant es una marca registrada de Google Inc.",
-        "nightscout-no-affl": "No afiliado con {{0}}",
-        "nightscout-project": "el proyecto Nightscout",
+        "google-tm": "Google Assistant is a trademark of Google Inc.",
+        "nightscout-no-affl": "Not affiliated with {{0}}",
+        "nightscout-project": "the Nightscout Project",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hola Google, hablar con $t(common.invocation)"
+        "full-invocation": "Hey Google, talk to $t(common.invocation)"
     },
     "index": {
         "header": {
             "title": "Nightscout Status",
-            "subtitle": "Nightscout para Google Home y Google Assistant (no oficial)"
+            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
         },
         "example-conversation": {
-            "hey-google": "Ok Google,",
-            "ask-google": "pregunta {{0}} cuál es mi nivel de glucosa",
-            "nightscout-status-resp": "120 y subiendo lentamente hace 4 minutos"
+            "hey-google": "Hey Google,",
+            "ask-google": "ask {{0}} what my glucose is",
+            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
         },
         "settings": {
-            "connect": "Conecta tu sitio Nightscout para empezar:",
-            "your-site": "Tu sitio Nightscout",
-            "unit": "Unidades",
+            "connect": "Connect your Nightscout site to get started:",
+            "your-site": "Your Nightscout site",
+            "unit": "Unit",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
-            "api-secret": "API Secret",
-            "optional": "(opcional)",
-            "unchanged": "(sin cambios)",
-            "save": "Guardar",
-            "sign-out": "Cerrar sesión",
+            "api-secret": "API secret",
+            "optional": "(optional)",
+            "unchanged": "(unchanged)",
+            "save": "Save",
+            "sign-out": "Sign out",
             "api-secret-info": {
-                "title": "¿Tengo que entrar en mi API Secret ?",
-                "info": "Esto solo es necesario si su sitio Nightscout está 'protegido contra lectura'. (por ejemplo, si {{0}} se establece en {{1}})"
+                "title": "Do I have to enter my API Secret ?",
+                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
             },
-            "done": "¡Hecho!",
-            "success-msg": "Ahora intenta preguntándole al Asistente de Google:",
-            "hint": "Consejo: Use {{0}} para crear una invocación más corta. {{1}}Por ejemplo: 'Ok Google, revisa mi azúcar'",
-            "hint-routines": "Rutinas"
+            "done": "Done!",
+            "success-msg": "Now try asking Google Assistant:",
+            "hint": "Tip: Use {{0}} to create a shorter invocation. {{1}}For example: 'Hey Google, check my sugar'",
+            "hint-routines": "Routines"
         },
         "footer": {
-            "help-faq": "Ayuda / Preguntas frecuentes",
-            "bugs": "Informes de errores; peticiones de características",
-            "tos": "Términos de uso y Política de Privacidad"
+            "help-faq": "Help & FAQ",
+            "bugs": "Bug reports; feature requests",
+            "tos": "Terms of Service and Privacy Policy"
         }
     },
     "terms": {
-        "back": "Regresar",
+        "back": "Go back",
         "privacy-policy": {
-            "title": "Política de privacidad",
-            "intro": "Este documento describe la información que recopila Nightscout Status, {{0}} (el \"Servicio\" o el \"Software\") y cómo se utiliza esta información.",
-            "collection-title": "¿Qué información recogemos?",
-            "collection-desc": "El Servicio necesita 2 cosas para funcionar: la dirección de correo electrónico de su cuenta de Google (para que pueda saber que es usted cuando realiza una solicitud) y la URL de su instancia de Nightscout (para que pueda buscar su glucosa y leerla en tú).",
-            "use-title": "Para qué se usa esta información?",
-            "use-desc": "Cuando invoca el Servicio a través de Google Assistant (es decir, diciendo: 'Ok Google, habla con el estado de Nightscout), el Servicio mira tu dirección de correo electrónico y comprueba si hay un sitio de Nightscout asociado. Si es así, su nivel actual de glucosa se lee desde su sitio Nightscout.",
-            "sharing-title": "Compartiendo información",
-            "sharing-desc": "Su dirección de correo electrónico o URL se Nightscout <strong>Nunca</strong> serán compartidos con un tercero. Solo lo necesito para saber qué sitio de Nightscout debo comprobar cuando invocas la Acción. Los datos de su sitio web de Nightscout no se guardan, ni siquiera en los archivos de registro. ",
-            "deleting-title": "Eliminando todos los datos",
-            "deleting-desc": "Puede elegir revocar el acceso en cualquier momento: Simplemente inicie sesión, elimine su URL de Nightscout y haga clic en Guardar. También puedes eliminar Nightscout Status de tu {{0}}.",
-            "deleting-google-account": "Cuenta de Google",
-            "analytics-title": "Código analítico",
-            "analytics-desc": "Después de iniciar sesión en este sitio, se recopilan algunas estadísticas anónimas sobre su visita mediante una cookie (Google Analytics). La cookie no está habilitada hasta después de que haya aceptado esta Política de privacidad. Estoy usando Analytics para comprender mejor cómo las personas usan este sitio, cómo lo encontraron y en qué demografía están. Esto solo se aplica a {{0}}, no al uso de la Acción auxiliar. Si desea excluirse de la cookie de Google Analytics, puede hacerlo visitando {{1}}"
+            "title": "Privacy Policy",
+            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
+            "collection-title": "What information is collected?",
+            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
+            "use-title": "How is this information used?",
+            "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
+            "sharing-title": "Sharing of information",
+            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
+            "deleting-title": "Deleting your data",
+            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
+            "deleting-google-account": "Google Account",
+            "analytics-title": "Analytics Cookie",
+            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
         },
         "health": {
-            "title": "Descargo de responsabilidad de información de salud",
-            "disclaimer": "La información proporcionada por el estado de Nightscout no es un sustituto del consejo de un profesional médico. Si tienes preguntas sobre el tratamiento o necesitas consejos, recuerda siempre preguntar a tu médico!"
+            "title": "Healthcare information disclaimer",
+            "disclaimer": "The information provided by Nightscout Status is not a substitute for advice from a medical professional. If you have questions about treatment or need advice, remember to always ask your doctor!"
         },
-        "license-and-tos": "Licencia y Términos de servicio"
+        "license-and-tos": "License and Terms of service"
     }
 }
