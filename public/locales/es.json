@@ -4,7 +4,7 @@
         "nightscout-no-affl": "No afiliado con {{0}}",
         "nightscout-project": "el proyecto Nightscout",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hola Google, hablar con $t(invocación común)"
+        "full-invocation": "Hola Google, hablar con $t(common.invocation)"
     },
     "index": {
         "header": {
