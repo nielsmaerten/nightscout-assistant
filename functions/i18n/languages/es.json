@@ -3,7 +3,7 @@
         "signIn": {
             "completed": "Ahora, puede intentar preguntando: Ok Google, pregunta a Nightscout Status cuál es mi nivel de glucosa.",
             "request": "Para acceder a su nivel de glucosa",
-            "healthDisclaimer": "."
+            "healthDisclaimer": "Recuerde: la información proporcionada por Nightscout Status no sustituye el consejo de un profesional médico."
         },
         "errors": {
             "unknown-error": "Lo sentimos, se produjo un error desconocido. Será investigado lo antes posible.",
