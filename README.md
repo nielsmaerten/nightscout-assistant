@@ -25,4 +25,6 @@ This service is not affiliated to the Nightscout Project
 - Henrik Hernqvist (Swedish)
 - Marco Perrone (Italian)
 - JonnyJohnson (German)
+- Davmartes (Spanish)
+- Nobuo Aoki (Japanese)
 - Can you help us translate? Visit https://crowdin.com/project/nightscout-status
