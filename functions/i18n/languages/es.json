@@ -27,8 +27,8 @@
             "DoubleDown": "bajando rápidamente"
         },
         "answers": {
-            "noTrend": "{{bg}} hace {{ago}}.",
-            "withTrend": "{{bg}} y {{trend}} hace {{ago}}."
+            "noTrend": "{{bg}} {{ago}}.",
+            "withTrend": "{{bg}} y {{trend}} {{ago}}."
         },
         "google-assistant": {
             "invocations": [
