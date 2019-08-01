@@ -11,7 +11,7 @@
             "noBgReading": "No se ha encontrado una lectura reciente.",
             "invalidUrl": {
                 "p1": "Lo sentimos, la URL de Nightscout que nos dió no parece ser válida. ¿Se puede comprobar en {{- homepageUrl}}?",
-                "p2": "Asegúrese de que su url comienza con http."
+                "p2": "Asegúrese de que su url comienza con http y no con https."
             },
             "notFound": "Lo sentimos, no pude encontrar su sitio Nightscout. Comprueba si has introducido la URL correcta en {{- homepageUrl}}",
             "unauthorized": "Lo sentimos, parece que no tengo permiso para acceder a su sitio de Nightscout. Intenta ingresar tu secreto API en {{- homepageUrl}}",
@@ -28,7 +28,7 @@
         },
         "answers": {
             "noTrend": "{{bg}} {{ago}}.",
-            "withTrend": "{{bg}} y {{trend}} {{ago}}."
+            "withTrend": "{{bg}} {{trend}} {{ago}}."
         },
         "google-assistant": {
             "invocations": [
@@ -37,7 +37,7 @@
                 "¿Cómo estoy de alto?",
                 "¿Cuál es mi estado?",
                 "¿Cómo estoy?",
-                "¿Cuál es mi glucosa?",
+                "¿Cuál es mi nivel de glucosa?",
                 "¿Cuál es mi azúcar en sangre?",
                 "Comprueba mi glucosa.",
                 "Revisa mi azúcar en la sangre"
