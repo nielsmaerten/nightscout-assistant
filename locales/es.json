@@ -8,13 +8,13 @@
     },
     "index": {
         "header": {
-            "title": "Nightscout Status",
+            "title": "Nightscout",
             "subtitle": "Nightscout para Google Home y Google Assistant (no oficial)"
         },
         "example-conversation": {
             "hey-google": "Ok Google,",
             "ask-google": "pregunta {{0}} cuál es mi nivel de glucosa",
-            "nightscout-status-resp": "120 y subiendo lentamente hace 4 minutos"
+            "nightscout-status-resp": "120 subiendo lentamente hace 4 minutos"
         },
         "settings": {
             "connect": "Conecta tu sitio Nightscout para empezar:",
@@ -56,7 +56,7 @@
             "deleting-title": "Eliminando todos los datos",
             "deleting-desc": "Puede elegir revocar el acceso en cualquier momento: Simplemente inicie sesión, elimine su URL de Nightscout y haga clic en Guardar. También puedes eliminar Nightscout Status de tu {{0}}.",
             "deleting-google-account": "Cuenta de Google",
-            "analytics-title": "Código analítico",
+            "analytics-title": "Cookie de análisis",
             "analytics-desc": "Después de iniciar sesión en este sitio, se recopilan algunas estadísticas anónimas sobre su visita mediante una cookie (Google Analytics). La cookie no está habilitada hasta después de que haya aceptado esta Política de privacidad. Estoy usando Analytics para comprender mejor cómo las personas usan este sitio, cómo lo encontraron y en qué demografía están. Esto solo se aplica a {{0}}, no al uso de la Acción auxiliar. Si desea excluirse de la cookie de Google Analytics, puede hacerlo visitando {{1}}"
         },
         "health": {
