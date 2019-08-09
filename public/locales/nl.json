@@ -41,9 +41,9 @@
                 "disclaimer": {
                     "1": "Deze disclaimer wordt <u>elke keer</u> dat je om je bloedsuiker spiegel vraagt herhaald",
                     "2": "Je kan dit uitschakelen door te klikken op de knop hieronder",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "3": "Als je ervoor kiest de disclaimer uit te schakelen, ga je ermee akkoord dat:<br/>- je de disclaimer hebt gelezen en begrijpt <br/>- je expliciet verkiest dat deze niet langer wordt herhaald",
+                    "enable": "Nee, herhaal disclaimer elke keer",
+                    "disable": "OK, zet disclaimer uit"
                 }
             }
         },
@@ -72,8 +72,8 @@
         },
         "health": {
             "title": "Disclaimer i.v.m. medische informatie",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "disclaimer-short": "De informatie die Nightscout Status verstrekt is geen vervanging voor het advies van een arts.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Heb je vragen over je behandeling of advies nodig, praat dan met je dokter!"
         },
         "license-and-tos": "Licentie en gebruiksvoorwaarden"
     }
