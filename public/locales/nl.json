@@ -34,13 +34,13 @@
             "done": "Klaar!",
             "success-msg": "Probeer nu Google Assistant te vragen:",
             "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "hint": "Je kan de oproep korter maken met {{0}}. {{1}} Bijvoorbeeld: \"Hey Google, check mijn suiker.\"",
             "hint-routines": "Routines",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Lees dit zeker!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
+                    "1": "Deze disclaimer wordt <u>elke keer</u> dat je om je bloedsuiker spiegel vraagt herhaald",
+                    "2": "Je kan dit uitschakelen door te klikken op de knop hieronder",
                     "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
                     "enable": "No, repeat disclaimer every time",
                     "disable": "OK, turn the disclaimer off"
