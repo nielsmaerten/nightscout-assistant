@@ -33,8 +33,19 @@
             },
             "done": "Klaar!",
             "success-msg": "Probeer nu Google Assistant te vragen:",
-            "hint": "Tip: Gebruik {{0}} om de oproep korter te maken. {{1}}Bijvoorbeeld: 'Hey Google, check mijn bloedsuiker'",
-            "hint-routines": "Routines"
+            "hint-header": "Tip:",
+            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "hint-routines": "Routines",
+            "modal": {
+                "read-this": "Make sure you read this!",
+                "disclaimer": {
+                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
+                    "2": "You can turn this off by clicking the button below",
+                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
+                    "enable": "No, repeat disclaimer every time",
+                    "disable": "OK, turn the disclaimer off"
+                }
+            }
         },
         "footer": {
             "help-faq": "Hulp en veelgestelde vragen",
@@ -61,7 +72,8 @@
         },
         "health": {
             "title": "Disclaimer i.v.m. medische informatie",
-            "disclaimer": "De informatie die Nightscout Status verstrekt is geen vervanging voor advies van een medische professional. Heb je vragen over een behandeling of advies nodig, praat dan met je arts!"
+            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
+            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
         },
         "license-and-tos": "Licentie en gebruiksvoorwaarden"
     }
