@@ -86,35 +86,21 @@
         {{ $t("index.settings.sign-out") }}
       </button>
     </form>
-    <p id="success" class="mt-4" v-show="saveSuccess">
-      <strong>{{ $t("index.settings.done") }}</strong>
-      {{ $t("index.settings.success-msg") }}
-      <br />
-      <em>{{ $t("common.full-invocation") }}</em>
-    </p>
-
-    <article
-      class="message is-warning is-small mt-2"
-      v-if="routinesSupported($i18n.i18next.language)"
-    >
-      <div class="message-body">
-        <i18next path="index.settings.hint">
-          <a
-            href="https://support.google.com/googlehome/answer/7029585?co=GENIE.Platform%3DAndroid&hl=en"
-          >
-            {{ $t("index.settings.hint-routines") }}</a
-          >
-          <br />
-        </i18next>
-      </div>
-    </article>
+    <ns-modal-saved
+      v-if="saveSuccess"
+      @closed="saveSuccess = false"
+      :nsUrl="user.settings.nsUrl"
+    ></ns-modal-saved>
   </section>
 </template>
 
 <script>
-const constants = require("@/constants.js");
+import nsModalSaved from "@/components/ns-modal-saved";
 export default {
   name: "ns-user-settings",
+  components: {
+    nsModalSaved
+  },
   data() {
     return {
       saveSuccess: false,
@@ -142,9 +128,6 @@ export default {
     }
   },
   methods: {
-    routinesSupported(currentLng) {
-      return constants.languages.supportingRoutines.indexOf(currentLng) !== -1;
-    },
     signOut() {
       firebase
         .auth()
