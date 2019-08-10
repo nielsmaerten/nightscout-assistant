@@ -57,7 +57,7 @@
         "back": "Indietro",
         "privacy-policy": {
             "title": "Informativa sulla privacy",
-            "intro": "Questo documento descrive le informazioni raccolte da Nightscout Status, {{0}} (il \"Servizio\" o il \"Software\") e come vengono utilizzate queste informazioni.",
+            "intro": "Questo documento descrive le informazioni raccolte da Nightscout Status (Lo stato di Nightscout), {{0}} (il \"Servizio\" o il \"Software\") e come vengono utilizzate queste informazioni.",
             "collection-title": "Quali informazioni sono raccolte?",
             "collection-desc": "Il Servizio ha bisogno di 2 cose per funzionare: l'indirizzo email del tuo account Google (così può sapere che sei tu quando fai una richiesta), e l'URL del tuo Nightscout (così può consultare la tua glicemia e leggerla per te).",
             "use-title": "Come vengono utilizzate queste informazioni?",
