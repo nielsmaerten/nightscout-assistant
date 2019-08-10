@@ -33,8 +33,8 @@
             },
             "done": "Fatto!",
             "success-msg": "Ora prova a chiedere a Google Assistant:",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "hint-header": "Suggerimento:",
+            "hint": "Usa {{0}} per creare un'invocazione più breve. {{1}} Ad esempio: \"Hey Google, controlla il mio zucchero\"",
             "hint-routines": "Routine",
             "modal": {
                 "read-this": "Make sure you read this!",
@@ -72,8 +72,8 @@
         },
         "health": {
             "title": "Disclaimer Informazioni sanitarie",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "disclaimer-short": "Le informazioni fornite da Lo stato di Nightscout non sostituiscono le indicazioni del medico.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Se hai domande riguardo le cure o hai bisogno di consulenza, ricorda di chiedere sempre al tuo medico!"
         },
         "license-and-tos": "Licenza e Termini di servizio"
     }
