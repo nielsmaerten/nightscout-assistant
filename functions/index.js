@@ -44,7 +44,7 @@ app.intent("Glucose Status", async conv => {
 
     // Should we speak the Health Disclaimer?
     let healthDisclaimer = null;
-    if (!userProfile.hasHeardHealthDisclaimer) {
+    if (userProfile && !userProfile.hasHeardHealthDisclaimer) {
       healthDisclaimer = t("signIn.healthDisclaimer");
     }
 
@@ -92,13 +92,7 @@ app.intent("Sign In", async (conv, params, signIn) => {
     } else {
       // 'Returning' user. Say health disclaimer again, and end conversation
       // by saying how to invoke it next time.
-      conv.close(
-        `<speak>
-      ${t("signIn.healthDisclaimer")}
-      <break time="500ms"/>
-      ${t("signIn.completed")}
-      </speak>`
-      );
+      conv.followup("Glucose Status")
       // userProfile.hasHeardHealthDisclaimer = true;
       // await nightscout.updateUserProfile(userProfile, userEmail);
     }
