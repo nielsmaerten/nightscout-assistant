@@ -33,8 +33,19 @@
             },
             "done": "完了！",
             "success-msg": "グーグルアシスタントに聞いてみて：",
-            "hint": "ヒント：短い呼び出しを作成するには{{0}}を使用してください。{{1}}たとえば：'Ok Google,私の血糖値は'",
-            "hint-routines": "ルーチン"
+            "hint-header": "Tip:",
+            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "hint-routines": "ルーチン",
+            "modal": {
+                "read-this": "Make sure you read this!",
+                "disclaimer": {
+                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
+                    "2": "You can turn this off by clicking the button below",
+                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
+                    "enable": "No, repeat disclaimer every time",
+                    "disable": "OK, turn the disclaimer off"
+                }
+            }
         },
         "footer": {
             "help-faq": "Help & FAQ",
@@ -61,7 +72,8 @@
         },
         "health": {
             "title": "医療情報に関する免責事項",
-            "disclaimer": "ナイトスカウトステータスにより提供される情報は、医療専門家からのアドバイスに代わるものではありません。治療に関する質問やアドバイスが必要な場合は、必ず医師にご相談ください。"
+            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
+            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
         },
         "license-and-tos": "ライセンスとサービス条件"
     }
