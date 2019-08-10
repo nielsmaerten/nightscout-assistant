@@ -72,8 +72,8 @@
         },
         "health": {
             "title": "Friskrivningsklausul för sjukvård",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "disclaimer-short": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Om du har frågor om behandling eller behöver råd, kom ihåg att alltid fråga din läkare!"
         },
         "license-and-tos": "Licens och Användarvillkor"
     }
