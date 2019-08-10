@@ -33,8 +33,19 @@
             },
             "done": "Fatto!",
             "success-msg": "Ora prova a chiedere a Google Assistant:",
-            "hint": "Suggerimento: Usa {{0}} per creare un'invocazione più breve. {{1}}Ad esempio: 'Hey Google, controlla il mio zucchero'",
-            "hint-routines": "Routine"
+            "hint-header": "Suggerimento:",
+            "hint": "Usa {{0}} per creare un'invocazione più breve. {{1}} Ad esempio: \"Hey Google, controlla il mio zucchero\"",
+            "hint-routines": "Routine",
+            "modal": {
+                "read-this": "Make sure you read this!",
+                "disclaimer": {
+                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
+                    "2": "You can turn this off by clicking the button below",
+                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
+                    "enable": "No, repeat disclaimer every time",
+                    "disable": "OK, turn the disclaimer off"
+                }
+            }
         },
         "footer": {
             "help-faq": "Aiuto & FAQ",
@@ -46,7 +57,7 @@
         "back": "Indietro",
         "privacy-policy": {
             "title": "Informativa sulla privacy",
-            "intro": "Questo documento descrive le informazioni raccolte da Nightscout Status, {{0}} (il \"Servizio\" o il \"Software\") e come vengono utilizzate queste informazioni.",
+            "intro": "Questo documento descrive le informazioni raccolte da Nightscout Status (Lo stato di Nightscout), {{0}} (il \"Servizio\" o il \"Software\") e come vengono utilizzate queste informazioni.",
             "collection-title": "Quali informazioni sono raccolte?",
             "collection-desc": "Il Servizio ha bisogno di 2 cose per funzionare: l'indirizzo email del tuo account Google (così può sapere che sei tu quando fai una richiesta), e l'URL del tuo Nightscout (così può consultare la tua glicemia e leggerla per te).",
             "use-title": "Come vengono utilizzate queste informazioni?",
@@ -61,7 +72,8 @@
         },
         "health": {
             "title": "Disclaimer Informazioni sanitarie",
-            "disclaimer": "Le informazioni fornite da Nightscout Status non sostituiscono le indicazioni di un medico. Se hai domande riguardo le cure o hai bisogno di consulenza, ricorda di chiedere sempre al tuo medico!"
+            "disclaimer-short": "Le informazioni fornite da Lo stato di Nightscout non sostituiscono le indicazioni del medico.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Se hai domande riguardo le cure o hai bisogno di consulenza, ricorda di chiedere sempre al tuo medico!"
         },
         "license-and-tos": "Licenza e Termini di servizio"
     }
