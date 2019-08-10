@@ -33,8 +33,8 @@
             },
             "done": "¡Hecho!",
             "success-msg": "Ahora intenta preguntándole al Asistente de Google:",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "hint-header": "Consejo:",
+            "hint": "Use {{0}} para crear una invocación más corta. {{1}} Por ejemplo: \"Ok Google, revisa mi azúcar\"",
             "hint-routines": "Rutinas",
             "modal": {
                 "read-this": "Make sure you read this!",
@@ -72,8 +72,8 @@
         },
         "health": {
             "title": "Descargo de responsabilidad de información de salud",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "disclaimer-short": "La información proporcionada por Nightscout Status no sustituye el consejo de un profesional médico.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Si tienes preguntas sobre el tratamiento o necesitas consejos, recuerda siempre preguntar a tu médico!"
         },
         "license-and-tos": "Licencia y Términos de servicio"
     }
