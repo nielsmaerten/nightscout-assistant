@@ -57,7 +57,7 @@
         "back": "Tillbaka",
         "privacy-policy": {
             "title": "Integritetspolicy",
-            "intro": "Detta dokument beskriver informationen som samlas in av Nightscout Status (Blodsocker status) (Blodsocker status), {{0}} (\"Tjänsten\" eller \"Mjukvaran\") och hur denna information behandlas.",
+            "intro": "Detta dokument beskriver informationen som samlas in av Nightscout Status (Blodsocker status), {{0}} (\"Tjänsten\" eller \"Mjukvaran\") och hur denna information behandlas.",
             "collection-title": "Vilken information samlas in?",
             "collection-desc": "Tjänsten är beroende av 2 saker för att fungera: E-postadressen till ditt Googlekonto (för att veta att det är du som frågar), och adressen till din Nightscoutsida (för att hämta ditt blodsockervärde och läsa upp det för dig).",
             "use-title": "Hur behandlas informationen?",
