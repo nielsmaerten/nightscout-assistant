@@ -72,7 +72,7 @@
         },
         "health": {
             "title": "Haftungsausschluss für Gesundheitsinformationen",
-            "disclaimer-short": "Die Informationen von Nightscout Status sind kein Ersatz für ärztlichen Rat.",
+            "disclaimer-short": "Die Informationen von Nightscout Status sind kein Ersatz für die Beratung durch einen Arzt.",
             "disclaimer": "$t(terms.health.disclaimer-short) Wenn du Fragen zur Behandlung hast oder Rat benötigst, frage bitte immer deinen Arzt!"
         },
         "license-and-tos": "Lizenz und Nutzungsbedingungen"
