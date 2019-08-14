@@ -2,7 +2,7 @@
     "translation": {
         "signIn": {
             "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose",
+            "request": "For at få adgang til dit blodsukker",
             "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
         },
         "errors": {
@@ -18,13 +18,13 @@
             "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
         },
         "trends": {
-            "DoubleUp": "rising fast",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
-            "Flat": "stable",
-            "FortyFiveDown": "decreasing slowly",
-            "SingleDown": "decreasing",
-            "DoubleDown": "dropping fast"
+            "DoubleUp": "stiger hurtigt",
+            "SingleUp": "stiger",
+            "FortyFiveUp": "stiger langsomt",
+            "Flat": "stabil",
+            "FortyFiveDown": "falder langsomt",
+            "SingleDown": "falder",
+            "DoubleDown": "falder hurtigt"
         },
         "answers": {
             "noTrend": "{{bg}} as of {{ago}}.",
@@ -32,15 +32,15 @@
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
-                "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Hvordan er mit blodsukker?",
+                "Hvor lav er jeg?",
+                "Hvor høj er jeg?",
+                "Hvad er min status?",
+                "Hvordan har jeg det?",
+                "Hvad er min glukose?",
+                "Hvad er mit blodsukker?",
+                "Kontrollér min glukose.",
+                "Kontrollér mit blodsukker"
             ],
             "actions-directory": {
                 "description": {
