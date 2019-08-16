@@ -37,10 +37,10 @@
             "hint": "Usa {{0}} per creare un'invocazione più breve. {{1}} Ad esempio: \"Hey Google, controlla il mio zucchero\"",
             "hint-routines": "Routine",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Assicurati di leggerlo!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
+                    "1": "Questo disclaimer viene <u>ripetuto ogni volta</u> che chiedi la tua glicemia",
+                    "2": "Puoi disattivarlo facendo click sul pulsante in basso",
                     "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
                     "enable": "No, repeat disclaimer every time",
                     "disable": "OK, turn the disclaimer off"
