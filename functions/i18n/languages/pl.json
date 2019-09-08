@@ -2,20 +2,20 @@
     "translation": {
         "signIn": {
             "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose",
-            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+            "request": "Aby uzyskać dostęp do glukozy",
+            "healthDisclaimer": "Pamiętaj: informacje dostarczone przez Nightscout Status nie zastępują porady lekarza."
         },
         "errors": {
-            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
-            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
-            "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+            "unknown-error": "Przepraszamy, wystąpił nieznany błąd. Zostanie to sprawdzone jak najszybciej.",
+            "noNsSite": "Zanim będę mógł sprawdzić poziom glukozy, potrzebuję adresu URL witryny Nightscout. Możesz go wprowadzić, odwiedzając {{- homepageUrl}}",
+            "noBgReading": "Hmmm. Nie mogłem znaleźć ostatniego odczytu glukozy.",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "Niestety, adres URL Nightscout, który mi podałeś, nie jest prawidłowy. Czy możesz sprawdzić na {{- homepageUrl}}?",
+                "p2": "Upewnij się, że Twój adres URL zaczyna się od http."
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "notFound": "Niestety nie udało mi się znaleźć Twojej witryny Nightscout. Sprawdź, czy wpisałeś poprawny adres URL na {{- homepageUrl}}",
+            "unauthorized": "Niestety wygląda na to, że nie mam uprawnień dostępu do Twojej witryny Nightscout. Spróbuj wprowadzić swój API secret na {{- homepageUrl}}",
+            "nsSiteError": "Wygląda na to, że wystąpił problem z witryną Nightscout. Nie mogłem uzyskać twojego statusu."
         },
         "trends": {
             "DoubleUp": "rising fast",
