@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Teraz możesz zapytać: „Hej, Google, zapytaj Nightscout, jaka jest moja glukoza”.",
             "request": "Aby uzyskać dostęp do glukozy",
             "healthDisclaimer": "Pamiętaj: informacje dostarczone przez Nightscout Status nie zastępują porady lekarza."
         },
@@ -18,38 +18,38 @@
             "nsSiteError": "Wygląda na to, że wystąpił problem z witryną Nightscout. Nie mogłem uzyskać twojego statusu."
         },
         "trends": {
-            "DoubleUp": "rising fast",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
-            "Flat": "stable",
-            "FortyFiveDown": "decreasing slowly",
-            "SingleDown": "decreasing",
-            "DoubleDown": "dropping fast"
+            "DoubleUp": "szybko rośnie",
+            "SingleUp": "rośnie",
+            "FortyFiveUp": "powoli rośnie",
+            "Flat": "stabilny",
+            "FortyFiveDown": "powoli spada",
+            "SingleDown": "spada",
+            "DoubleDown": "szybko spada"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}.",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+            "noTrend": "{{bg}} pomiar sprzed {{ago}}.",
+            "withTrend": "{{bg}} i {{trend}} pomiar sprzed {{ago}}."
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
-                "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Jak tam mój cukier?",
+                "Jak niski mam cukier?",
+                "Jak wysoki mam cukier?",
+                "Jaki jest mój cukier?",
+                "Jak mi idzie?",
+                "Jaki mam cukier?",
+                "Jaki mam poziom cukru?",
+                "Sprawdź mój cukier.",
+                "Sprawdź mój poziom cukru"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Sprawdź swój obecny poziom glukozy w Nightscout",
+                    "full": "Zapytaj Asystenta Google o obecny poziom glukozy."
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, porozmawiaj z Nightscout",
+                    "Ok Google, zapytaj Nightscout, jaka jest moja glukoza"
                 ]
             }
         }
