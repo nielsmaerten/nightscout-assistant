@@ -1,66 +1,66 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "the Nightscout Project",
-        "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "google-tm": "Google Assistant jest znakiem towarowym firmy Google Inc.",
+        "nightscout-no-affl": "Nie związany z {{0}}",
+        "nightscout-project": "projekt Nightscout",
+        "invocation": "Status Nightscout",
+        "full-invocation": "Hej Google, porozmawiaj z $t(common.invocation)"
     },
     "index": {
         "header": {
-            "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "title": "Status Nightscout",
+            "subtitle": "Nightscout dla Google Home i Google Assistant (nieoficjalne)"
         },
         "example-conversation": {
-            "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
+            "hey-google": "OK Google,",
+            "ask-google": "zapytaj {{0}} jaka jest moja glukoza",
+            "nightscout-status-resp": "120 i powoli rośnie pomiar z 4 minut temu"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
+            "connect": "Połącz swoją witrynę Nightscout, aby rozpocząć:",
+            "your-site": "Twoja strona Nightscout",
+            "unit": "Jedn.",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "api-secret": "API Secret",
+            "optional": "(opcjonalnie)",
+            "unchanged": "(bez zmian)",
+            "save": "Zapisz",
+            "sign-out": "Wyloguj się",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Czy muszę wprowadzić swój API Secret?",
+                "info": "Jest to potrzebne tylko wtedy, gdy witryna Nightscout jest „chroniona przed odczytem”. (na przykład jeśli {{0}} jest ustawione na {{1}})"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
-            "hint-routines": "Routines",
+            "done": "Gotowe!",
+            "success-msg": "Teraz spróbuj zapytać Asystenta Google:",
+            "hint-header": "Wskazówka:",
+            "hint": "Możesz skrócić wywołanie za pomocą {{0}}. {{1}} Na przykład: „Hej, Google, sprawdź mój cukier”.",
+            "hint-routines": "Rutyny",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Przeczytaj to!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "To wyłączenie odpowiedzialności powtarza się <u>za każdym razem</u>, gdy poprosisz o swój poziom glukozy",
+                    "2": "Możesz to wyłączyć, klikając przycisk poniżej",
+                    "3": "Jeśli zdecydujesz się wyłączyć wyłączenie odpowiedzialności, zgadzasz się, że:<br />- przeczytałeś i rozumiesz wyłączenie odpowiedzialności <br />- wyraźnie żądasz, aby nie było już powtarzane",
+                    "enable": "Nie, powtarzaj wyłączenia odpowiedzialności za każdym razem",
+                    "disable": "OK, wyłącz wyłączenie odpowiedzialności"
                 }
             }
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "help-faq": "Pomoc i FAQ",
+            "bugs": "Zgłoś błąd; zaproponuj nową funkcję",
+            "tos": "Warunki użytkowania oraz polityka prywatności"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Wstecz",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-            "use-title": "How is this information used?",
+            "title": "Polityka prywatności",
+            "intro": "W tym dokumencie opisano informacje gromadzone przez Nightscout Status, {{0}} („Usługa” lub „Oprogramowanie”) oraz sposób wykorzystania tych informacji.",
+            "collection-title": "Jakie informacje są gromadzone?",
+            "collection-desc": "Usługa wymaga 2 rzeczy, aby działać: adresu e-mail twojego konta Google (aby mógł wiedzieć, że to Ty, kiedy wysyłasz zapytanie) oraz adresu URL Twojej strony Nightscout (aby mógł sprawdzić poziom glukozy i przeczytać go Tobie).",
+            "use-title": "Jak wykorzystywane są te informacje?",
             "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
             "sharing-title": "Sharing of information",
             "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
