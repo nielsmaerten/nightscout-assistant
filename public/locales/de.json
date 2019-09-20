@@ -37,13 +37,13 @@
             "hint": "Verwende {{0}} um einen kürzeren Aufruf zu erstellen. {{1}} Zum Beispiel: \"Ok Google, Prüfe meinen Zucker\"",
             "hint-routines": "Routinen",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Bitte aufmerksam lesen!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "Dieser Haftungsausschluss wird <u>jedes Mal wiederholt</u> wenn Du den Glukosespiegel abfragst",
+                    "2": "Dies kann über den Button unten deaktiviert werden",
+                    "3": "Wenn Du den Haftungsausschluss deaktivierst, bist Du damit einverstanden, dass <br />-Du diesen gelesen und verstanden hast<br />-Du diesen explizit deaktiviert hast",
+                    "enable": "Den Haftungsausschluss jedes Mal wiederholen",
+                    "disable": "Den Haftungsausschluss deaktivieren"
                 }
             }
         },
