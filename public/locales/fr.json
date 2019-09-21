@@ -39,9 +39,9 @@
             "modal": {
                 "read-this": "Assurez-vous de lire ceci!",
                 "disclaimer": {
-                    "1": "Ce disclaimer sera <u>répété chaque fois que</u> vous demandez à votre niveau de glucose",
+                    "1": "Cet avertissement sera <u>répété chaque fois que</u> vous demandez à votre niveau de glucose",
                     "2": "Vous pouvez désactiver ceci en cliquant sur le bouton ci-dessous",
-                    "3": "Si vous choisissez de désactiver la clause de non-responsabilité, vous acceptez les conditions suivantes:<br />- vous avez lu et compris la clause de non-responsabilité <br />- vous demandez explicitement qu'elle ne soit plus répétée",
+                    "3": "Si vous choisissez de désactiver l'avertissement, vous acceptez les conditions suivantes:<br />- vous avez lu et compris la clause de non-responsabilité <br />- vous demandez explicitement qu'elle ne soit plus répétée",
                     "enable": "Non, répétez l'avertissement à chaque fois",
                     "disable": "OK, désactiver l'avertissement"
                 }
@@ -63,18 +63,18 @@
             "use-title": "Comment ces informations sont-elles utilisées?",
             "use-desc": "Lorsque vous appelez le service via Google Assistant (par exemple, en disant: \"Hé Google, parle à Nightscout Status), le service examine votre adresse e-mail et vérifie si un site Nightscout y est associé. Si tel est le cas, votre taux de glucose actuel est lu sur votre site Nightscout.",
             "sharing-title": "Partage d'informations",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
-            "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "sharing-desc": "Votre adresse e-mail ou votre URL Nightscout <strong>ne sera jamais</strong> partagée avec un tiers. J'en ai juste besoin pour savoir quel site Nightscout vérifier lorsque vous appelez l'Action. Les données de votre site Web Nightscout ne sont pas enregistrées, pas même dans les fichiers journaux. ",
+            "deleting-title": "Suppression de toutes les données",
+            "deleting-desc": "Vous pouvez choisir de révoquer l'accès à tout moment: il vous suffit de vous connecter, de supprimer votre URL Nightscout et de cliquer sur Enregistrer. Vous pouvez également supprimer le statut Nightscout de votre {{0}}.",
+            "deleting-google-account": "Compte Google",
+            "analytics-title": "Cookie analytique",
+            "analytics-desc": "Après vous être connecté à ce site, des statistiques anonymes sur votre visite sont collectées à l'aide d'un cookie (Google Analytics). Le cookie n'est activé qu'après avoir accepté cette politique de confidentialité. J'utilise Analytics pour mieux comprendre comment les gens utilisent ce site, comment ils l'ont trouvé et dans quel groupe démographique ils se trouvent. Cela s'applique uniquement à {{0}} et non à l'utilisation de l'action auxiliaire elle-même. Si vous souhaitez vous désinscrire du cookie Google Analytics, vous pouvez le faire en visitant {{1}}"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "Information sur les soins de santé",
+            "disclaimer-short": "Les informations fournies par Nightscout Status ne remplacent pas les conseils d'un professionnel de la santé.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Si vous avez des questions sur le traitement ou avez besoin de conseils, pensez à toujours demander à votre médecin!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Licence et conditions d'utilisation"
     }
 }
