@@ -17,52 +17,52 @@
             "nightscout-status-resp": "120 et augmente lentement depuis 4 minutes"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
+            "connect": "Connectez votre site Nightscout pour commencer:",
+            "your-site": "Votre site Nightscout",
+            "unit": "Unité",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "api-secret": "Secret API",
+            "optional": "(facultatif)",
+            "unchanged": "(aucune modification)",
+            "save": "Sauvegarder",
+            "sign-out": "Déconnexion",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Dois-je entrer mon API Secret ?",
+                "info": "Cela n'est nécessaire que si votre site Nightscout est \"protégé en lecture\". (par exemple si {{0}} est défini sur {{1}})"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "done": "Fini !",
+            "success-msg": "Maintenant, essayez de demander à Google Assistant:",
+            "hint-header": "Astuce :",
+            "hint": "Vous pouvez raccourcir l'invocation à l'aide de {{0}}. {{1}} Par exemple: \"Ok Google, vérifie ma glycémie.\"",
             "hint-routines": "Routines",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Assurez-vous de lire ceci!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "Ce disclaimer sera <u>répété chaque fois que</u> vous demandez à votre niveau de glucose",
+                    "2": "Vous pouvez désactiver ceci en cliquant sur le bouton ci-dessous",
+                    "3": "Si vous choisissez de désactiver la clause de non-responsabilité, vous acceptez les conditions suivantes:<br />- vous avez lu et compris la clause de non-responsabilité <br />- vous demandez explicitement qu'elle ne soit plus répétée",
+                    "enable": "Non, répétez l'avertissement à chaque fois",
+                    "disable": "OK, désactiver l'avertissement"
                 }
             }
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "help-faq": "Aide & FAQ",
+            "bugs": "Rapports de bugs; requêtes de nouvelles fonctionnalités",
+            "tos": "Conditions d'utilisation et Politique de confidentialité"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Précédent",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-            "use-title": "How is this information used?",
-            "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
-            "sharing-title": "Sharing of information",
+            "title": "Politique de confidentialité",
+            "intro": "Ce document décrit les informations collectées par Nightscout Status, {{0}} (le \"Service\" ou le \"Logiciel\") et comment ces informations sont utilisées.",
+            "collection-title": "Quelles informations recueillons-nous ?",
+            "collection-desc": "Pour fonctionner, le service nécessite 2 éléments: l'adresse e-mail de votre compte Google (afin qu'il puisse vous connaître lorsque vous faites une demande) et l'URL de votre instance Nightscout (afin qu'il puisse rechercher votre glycémie et la lire).",
+            "use-title": "Comment ces informations sont-elles utilisées?",
+            "use-desc": "Lorsque vous appelez le service via Google Assistant (par exemple, en disant: \"Hé Google, parle à Nightscout Status), le service examine votre adresse e-mail et vérifie si un site Nightscout y est associé. Si tel est le cas, votre taux de glucose actuel est lu sur votre site Nightscout.",
+            "sharing-title": "Partage d'informations",
             "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
             "deleting-title": "Deleting your data",
             "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
