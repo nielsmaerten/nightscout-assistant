@@ -2,37 +2,37 @@
     "translation": {
         "signIn": {
             "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose",
-            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+            "request": "Pour accéder à votre glycémie",
+            "healthDisclaimer": "N'oubliez pas: les informations fournies par Nightscout Status ne sauraient remplacer les conseils d'un professionnel de la santé."
         },
         "errors": {
-            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
-            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
-            "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+            "unknown-error": "Désolé, une erreur inconnue s'est produite. Elle sera examinée dès que possible.",
+            "noNsSite": "Avant de pouvoir vérifier votre glycémie, j'ai besoin de l'URL de votre site Nightscout. Vous pouvez l'entrer en visitant {{- homepageUrl}}",
+            "noBgReading": "Hmmm. Je n'ai pas trouvé de mesure de glycémie récente.",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "Désolé, l'URL Nightscout que vous m'avez donné ne semble pas être valide. Pouvez-vous vérifier sur {{- homepageUrl}}?",
+                "p2": "Assurez-vous que votre URL commence par http."
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "notFound": "Désolé, je n'ai pas trouvé votre site Nightscout. Vérifiez si vous avez entré l'URL correcte sur {{- homepageUrl}}",
+            "unauthorized": "Désolé, il semble que je n'ai pas la permission d'accéder à votre site Nightscout. Essayez d'entrer votre API Secret sur {{- homepageUrl}}",
+            "nsSiteError": "Désolé, il semble y avoir un problème avec votre site Nightscout. Je n'ai pas pu obtenir votre statut."
         },
         "trends": {
-            "DoubleUp": "rising fast",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
+            "DoubleUp": "Glycémie en augmentation rapide",
+            "SingleUp": "augmentation",
+            "FortyFiveUp": "augmentant lentement",
             "Flat": "stable",
-            "FortyFiveDown": "decreasing slowly",
-            "SingleDown": "decreasing",
-            "DoubleDown": "dropping fast"
+            "FortyFiveDown": "baissant lentement",
+            "SingleDown": "baissant",
+            "DoubleDown": "baissant rapidement"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}.",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+            "noTrend": "{{bg}} il y a {{ago}}.",
+            "withTrend": "{{bg}} et {{trend}} il y a {{ago}}."
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
+                "Quelle est ma glycémie ?",
                 "How low am I?",
                 "How high am I?",
                 "What is my status?",
