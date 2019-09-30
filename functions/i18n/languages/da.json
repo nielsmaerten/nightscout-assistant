@@ -27,8 +27,8 @@
             "DoubleDown": "falder hurtigt"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}.",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+            "noTrend": "{{bg}} pr. {{ago}}.",
+            "withTrend": "{{bg}} og {{trend}} pr. {{ago}}."
         },
         "google-assistant": {
             "invocations": [
