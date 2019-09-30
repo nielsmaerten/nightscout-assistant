@@ -22,43 +22,43 @@
             "unit": "Enhed",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "api-secret": "API nøgle",
+            "optional": "(valgfrit)",
+            "unchanged": "(uændret)",
+            "save": "Gem",
+            "sign-out": "Log ud",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Behøver jeg at indtaste min API nøgle?",
+                "info": "Dette er kun nødvendigt, hvis din Nightscout side er 'skrivebeskyttet'. (for eksempel hvis {{0}} er indstillet til {{1}})"
             },
-            "done": "Done!",
-            "success-msg": "Now try asking Google Assistant:",
+            "done": "Færdig!",
+            "success-msg": "Prøv nu at spørge Google Assistant:",
             "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
-            "hint-routines": "Routines",
+            "hint": "Du kan forkorte kommandoen vha. {{0}}. {{1}} For eksempel: \"Hej Google, tjek mit sukker.\"",
+            "hint-routines": "Rutiner",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Sørg for at læse dette!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "Denne ansvarsfraskrivelse bliver <u>gentaget hver gang</u> du beder om dit glukoseniveau",
+                    "2": "Du kan slå dette fra ved at klikke på knappen nedenfor",
+                    "3": "Hvis du vælger at slå ansvarsfraskrivelsen fra, accepterer du at:<br />- du har læst og forstået ansvarsfraskrivelsen <br />- du anmoder eksplicit om, at den ikke længere vil blive gentaget",
+                    "enable": "Nej, gentag ansvarsfraskrivelse hver gang",
+                    "disable": "OK, slå ansvarsfraskrivelsen fra"
                 }
             }
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "help-faq": "Hjælp og ofte stillede spørgsmål",
+            "bugs": "Fejlrapporter; funktionsanmodninger",
+            "tos": "Servicevilkår og Fortrolighedspolitik"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Gå tilbage",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
+            "title": "Fortrolighedspolitik",
+            "intro": "Dette dokument beskriver de oplysninger, der indsamles af Nightscout Status, {{0}} (\"Tjenesten\" eller \"Softwaren\"), og hvordan disse oplysninger bruges.",
+            "collection-title": "Hvilke oplysninger indsamles?",
             "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
             "use-title": "How is this information used?",
             "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
