@@ -3,19 +3,19 @@
         "signIn": {
             "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
             "request": "For at få adgang til dit blodsukker",
-            "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+            "healthDisclaimer": "Husk: informationer leveret af Nightscout Status er ikke en erstatning for lægelig rådgivning."
         },
         "errors": {
-            "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
-            "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
-            "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+            "unknown-error": "Beklager, der opstod en ukendt fejl. Det vil blive undersøgt så hurtigt som muligt.",
+            "noNsSite": "Inden jeg kan tjekke din glukose, har jeg brug for URL'en til din Nightscout side. Du kan indtaste det ved at besøge {{- homepageUrl}}",
+            "noBgReading": "Hmmm. Jeg kunne ikke finde en nylig glukoselæsning.",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "Beklager, den Nightscout URL, du gav mig, ser ikke ud til at være gyldig. Kan du tjekke på {{- homepageUrl}}?",
+                "p2": "Sørg for, at din url starter med http."
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "notFound": "Beklager, jeg kunne ikke finde din Nightscout side. Kontroller om du har indtastet den rigtige URL på {{- homepageUrl}}",
+            "unauthorized": "Beklager, det ser ud til, at jeg ikke har tilladelse til at få adgang til din Nightscout side. Prøv at indtaste din API kode på {{- homepageUrl}}",
+            "nsSiteError": "Beklager, der ser ud til at være et problem med din Nightscout side. Jeg kunne ikke få din status."
         },
         "trends": {
             "DoubleUp": "stiger hurtigt",
