@@ -71,10 +71,10 @@
             "analytics-desc": "Når du har logget ind på denne side, indsamles nogle anonyme statistikker om dit besøg ved hjælp af en cookie (Google Analytics). Cookien er først aktiveret, efter at du har accepteret denne Fortrolighedspolitik. Jeg bruger Analytics til bedre at forstå, hvordan folk bruger denne side, hvordan de fandt det, og hvilket demografisk område de befinder sig i. Dette gælder kun {{0}}, ikke for brug af selve assistenthandlingen. Hvis du gerne vil fravælge Google Analytics-cookien, kan du gøre det ved at besøge {{1}}"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "Ansvarsfraskrivelse om sundhedspleje",
+            "disclaimer-short": "Oplysningerne leveret af Nightscout Status kan ikke erstatte rådgivning fra en læge eller sygeplejerske.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Hvis du har spørgsmål om behandling eller har brug for rådgivning, så husk altid at spørge din læge!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Licens og Servicevilkår"
     }
 }
