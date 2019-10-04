@@ -18,13 +18,13 @@
             "nsSiteError": "Entschuldige, es scheint ein Problem mit deiner Nightscout Seite zu geben. Ich konnte leider keine Daten empfangen."
         },
         "trends": {
-            "DoubleUp": "schnell steigend",
+            "DoubleUp": "rising rapidly",
             "SingleUp": "steigend",
             "FortyFiveUp": "langsam steigend",
             "Flat": "gleichbleibend",
-            "FortyFiveDown": "langsam fallend",
-            "SingleDown": "fallend",
-            "DoubleDown": "schnell fallend"
+            "FortyFiveDown": "falling slowly",
+            "SingleDown": "falling",
+            "DoubleDown": "falling rapidly"
         },
         "answers": {
             "noTrend": "{{bg}} von {{ago}}.",
