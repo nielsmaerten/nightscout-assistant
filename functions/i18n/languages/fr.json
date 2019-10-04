@@ -18,8 +18,8 @@
             "nsSiteError": "Désolé, il semble y avoir un problème avec votre site Nightscout. Je n'ai pas pu obtenir votre statut."
         },
         "trends": {
-            "DoubleUp": "glycémie en augmentation rapide",
-            "SingleUp": "augmentation",
+            "DoubleUp": "en augmentation rapide",
+            "SingleUp": "en augmentation",
             "FortyFiveUp": "augmentant lentement",
             "Flat": "stable",
             "FortyFiveDown": "baissant lentement",
@@ -27,8 +27,8 @@
             "DoubleDown": "baissant rapidement"
         },
         "answers": {
-            "noTrend": "{{bg}} il y a {{ago}}.",
-            "withTrend": "{{bg}} et {{trend}} il y a {{ago}}."
+            "noTrend": "{{bg}} {{ago}}.",
+            "withTrend": "{{bg}} et {{trend}} {{ago}}."
         },
         "google-assistant": {
             "invocations": [
