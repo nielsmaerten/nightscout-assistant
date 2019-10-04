@@ -18,13 +18,13 @@
             "nsSiteError": "ナイトスカウトに問題がある可能性があります。ナイトスカウトのステータスが取得できません。"
         },
         "trends": {
-            "DoubleUp": "rising rapidly",
+            "DoubleUp": "急に上がっています",
             "SingleUp": "上がっています。",
             "FortyFiveUp": "ゆるやかに上がっています。",
             "Flat": "安定しています。",
-            "FortyFiveDown": "falling slowly",
-            "SingleDown": "falling",
-            "DoubleDown": "falling rapidly"
+            "FortyFiveDown": "ゆるやかに下がっています。",
+            "SingleDown": "下がっています。",
+            "DoubleDown": "急に下がっています。"
         },
         "answers": {
             "noTrend": "{{ago}} 分前の時点で{{bg}} です。",
