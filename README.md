@@ -28,4 +28,7 @@ This service is not affiliated to the Nightscout Project
 - JonnyJohnson (German)
 - Davmartes (Spanish)
 - Nobuo Aoki (Japanese)
+- Yann Bal (French)
+- Kasiawu (Polish)
+- Troldmanden (Danish)
 - Can you help us translate? Visit https://crowdin.com/project/nightscout-status
