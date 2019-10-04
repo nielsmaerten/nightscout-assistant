@@ -20,56 +20,46 @@ if (admin.apps.length === 0) {
 }
 
 app.intent("Glucose Status", async conv => {
-  // Get t function for this user's locale
+  // Get translation function for this user's locale
   await initializedLocale;
   const t = i18next.getFixedT(conv.user.locale);
 
-  // Check: does the user have an active account?
+  // Does the user have an active account?
   if (conv.user.profile.token === undefined) {
-    // NO: Ask them to sign in
+    // No? Ask them to sign in first
     conv.ask(new SignIn(t("signIn.request")));
-  } else {
-    // YES:
-
-    // Get user profile from db
-    const userEmail = conv.user.email;
-    const userProfile = await nightscout.getUserProfile(userEmail);
-
-    // Get current glucose from Nightscout
-    const nightscoutStatus = await nightscout.getNightscoutStatus(
-      userProfile,
-      userEmail,
-      t
-    );
-
-    // Should we speak the Health Disclaimer?
-    let healthDisclaimer = null;
-    if (userProfile && !userProfile.hasHeardHealthDisclaimer) {
-      healthDisclaimer = t("signIn.healthDisclaimer");
-    }
-
-    // Speak the response and end the conversation
-    conv.close(
-      `<speak>
-    ${nightscoutStatus.response}
-    <break time="500ms"/>
-    ${healthDisclaimer || ""}
-    </speak>`
-    );
-
-    // Update the profile if we said the health disclaimer
-    // We no longer automatically disable disclaimer.
-    // The user can still explicitly turn it off from the Web interface
-    /*if (healthDisclaimer) {
-      console.log("Marking health disclaimer said for", userEmail);
-      userProfile.hasHeardHealthDisclaimer = true;
-      await nightscout.updateUserProfile(userProfile, userEmail);
-    }*/
+    return;
   }
+
+  // Get user profile from db
+  const userEmail = conv.user.email;
+  const userProfile = await nightscout.getUserProfile(userEmail);
+
+  // Get current glucose from Nightscout
+  const nightscoutStatus = await nightscout.getNightscoutStatus(
+    userProfile,
+    userEmail,
+    t
+  );
+
+  // Should we speak the Health Disclaimer?
+  let healthDisclaimer = null;
+  if (userProfile && !userProfile.hasHeardHealthDisclaimer) {
+    healthDisclaimer = t("signIn.healthDisclaimer");
+  }
+
+  // Speak the response and end the conversation
+  conv.close(`
+      <speak>
+        ${nightscoutStatus.response}
+        <break time="500ms"/>
+        ${healthDisclaimer || ""}
+      </speak>
+    `);
 });
 
 app.intent("Sign In", async (conv, params, signIn) => {
-  // Get t function for this user's locale
+  // Get translation function for this user's locale
   await initializedLocale;
   const t = i18next.getFixedT(conv.user.locale);
 
@@ -77,25 +67,22 @@ app.intent("Sign In", async (conv, params, signIn) => {
   // Quit if user didn't sign in
   if (signIn.status !== "OK") {
     conv.close();
+    return;
+  }
+
+  // ASSISTANT SAYS: "Great, your new account is set up. You'll get a confirmation email soon."
+  // Get user's profile form db
+  const userEmail = conv.user.email;
+  const userProfile = await nightscout.getUserProfile(userEmail);
+
+  // Has the user already set up an account?
+  if (!userProfile) {
+    // No user profile yet, prompt user to visit site and set it up
+    // ASSISTANT SAYS: "Before I can get your glucose, you'll need to give me the url to your ns site..."
+    conv.close(t("errors.noNsSite"));
   } else {
-    // ASSISTANT SAYS: "Great, your new account is set up. You'll get a confirmation email soon."
-
-    // Get user's profile form db
-    const userEmail = conv.user.email;
-    const userProfile = await nightscout.getUserProfile(userEmail);
-
-    // Has the user already set up an account?
-    if (!userProfile) {
-      // No user profile yet, prompt user to visit site and set it up
-      // ASSISTANT SAYS: "Before I can get your glucose, you'll need to give me the url to your ns site..."
-      conv.close(t("errors.noNsSite"));
-    } else {
-      // 'Returning' user. Say health disclaimer again, and end conversation
-      // by saying how to invoke it next time.
-      conv.followup("Glucose Status")
-      // userProfile.hasHeardHealthDisclaimer = true;
-      // await nightscout.updateUserProfile(userProfile, userEmail);
-    }
+    // Returning user.
+    conv.followup("Glucose Status");
   }
 });
 

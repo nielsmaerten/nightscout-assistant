@@ -160,3 +160,4 @@ $RECYCLE.BIN/
 ## Project extras
 config.js
 dist/
+.history/
