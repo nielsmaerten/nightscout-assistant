@@ -18,13 +18,13 @@
             "nsSiteError": "Sorry, er lijkt een probleem te zijn met je Nightscout site. Ik kon je bloedsuiker niet ophalen."
         },
         "trends": {
-            "DoubleUp": "snel stijgend",
+            "DoubleUp": "rising rapidly",
             "SingleUp": "stijgend",
             "FortyFiveUp": "langzaam stijgend",
             "Flat": "stabiel",
-            "FortyFiveDown": "langzaam dalend",
-            "SingleDown": "dalend",
-            "DoubleDown": "snel dalend"
+            "FortyFiveDown": "falling slowly",
+            "SingleDown": "falling",
+            "DoubleDown": "falling rapidly"
         },
         "answers": {
             "noTrend": "{{bg}} sinds {{ago}}.",
