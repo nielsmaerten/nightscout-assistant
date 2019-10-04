@@ -4,7 +4,7 @@
         "nightscout-no-affl": "Ikke tilknyttet {{0}}",
         "nightscout-project": "Nightscout Projektet",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "full-invocation": "Ok Google, tal med $t(common.invocation)"
     },
     "index": {
         "header": {
