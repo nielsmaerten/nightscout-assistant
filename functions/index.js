@@ -5,6 +5,7 @@ const nightscout = require("./nightscout");
 const { dialogflow, SignIn } = require("actions-on-google");
 const { i18next, initLocale } = require("./i18n");
 const config = functions.config().dialogflow || require("./config");
+const productionNumber = 2;
 
 // Set dialogflow client ID
 const app = dialogflow({
@@ -42,10 +43,16 @@ app.intent("Glucose Status", async conv => {
     t
   );
 
-  // Should we speak the Health Disclaimer?
-  let healthDisclaimer = null;
-  if (userProfile && !userProfile.hasHeardHealthDisclaimer) {
-    healthDisclaimer = t("signIn.healthDisclaimer");
+  // Conversations using the latest API will always hear the disclaimer
+  const headerVersion = +conv.headers["x-nsstatus-api-version"];
+  const disclaimer = {
+    sayAlways: headerVersion >= productionNumber,
+    heardByUser: userProfile && userProfile.hasHeardHealthDisclaimer
+  };
+
+  // If the user should hear the disclaimer, set the variable
+  if (disclaimer.sayAlways || !disclaimer.heardByUser) {
+    disclaimer.text = t("signIn.healthDisclaimer");
   }
 
   // Speak the response and end the conversation
@@ -53,9 +60,16 @@ app.intent("Glucose Status", async conv => {
       <speak>
         ${nightscoutStatus.response}
         <break time="500ms"/>
-        ${healthDisclaimer || ""}
+        ${disclaimer.text || ""}
       </speak>
     `);
+
+  // If disclaimer was said, mark it as such
+  if (disclaimer.text) {
+    console.log("Marking health disclaimer said for", userEmail);
+    userProfile.hasHeardHealthDisclaimer = true;
+    await nightscout.updateUserProfile(userProfile, userEmail);
+  }
 });
 
 app.intent("Sign In", async (conv, params, signIn) => {
@@ -79,7 +93,13 @@ app.intent("Sign In", async (conv, params, signIn) => {
   if (!userProfile) {
     // No user profile yet, prompt user to visit site and set it up
     // ASSISTANT SAYS: "Before I can get your glucose, you'll need to give me the url to your ns site..."
-    conv.close(t("errors.noNsSite"));
+    conv.close(`
+      <speak>
+        ${t("errors.noNsSite")}
+        <break time="500ms"/>
+        ${t("signIn.healthDisclaimer")}
+      </speak>
+  `);
   } else {
     // Returning user.
     conv.followup("Glucose Status");
