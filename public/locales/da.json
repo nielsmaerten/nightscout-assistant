@@ -13,7 +13,7 @@
         },
         "example-conversation": {
             "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
+            "ask-google": "spørg {{0}} hvad min glukose er",
             "nightscout-status-resp": "120 og langsomt stigende for 4 minutter siden"
         },
         "settings": {
