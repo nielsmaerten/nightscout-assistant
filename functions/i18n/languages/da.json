@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Nu kan du prøve at spørge: 'Hej Google, spørg Nightscout Status hvad min glukose er'.",
             "request": "For at få adgang til dit blodsukker",
             "healthDisclaimer": "Husk: informationer leveret af Nightscout Status er ikke en erstatning for lægelig rådgivning."
         },
