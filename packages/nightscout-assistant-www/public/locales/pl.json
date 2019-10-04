@@ -34,7 +34,7 @@
             "done": "Gotowe!",
             "success-msg": "Teraz spróbuj zapytać Asystenta Google:",
             "hint-header": "Wskazówka:",
-            "hint": "Możesz skrócić wywołanie za pomocą {{0}}. {{1}} Na przykład: „Hej, Google, sprawdź mój cukier”.",
+            "hint": "Możesz skrócić wywołanie za pomocą {{0}}. {{1}} Na przykład: „Hej, Google, sprawdź mój cukier.”",
             "hint-routines": "Rutyny",
             "modal": {
                 "read-this": "Przeczytaj to!",
@@ -57,7 +57,7 @@
         "back": "Wstecz",
         "privacy-policy": {
             "title": "Polityka prywatności",
-            "intro": "W tym dokumencie opisano informacje gromadzone przez Nightscout Status, {{0}} („Usługa” lub „Oprogramowanie”) oraz sposób wykorzystania tych informacji.",
+            "intro": "W tym dokumencie opisano informacje gromadzone przez Nightscout Status (Status Nightscout), {{0}} („Usługa” lub „Oprogramowanie”) oraz sposób wykorzystania tych informacji.",
             "collection-title": "Jakie informacje są gromadzone?",
             "collection-desc": "Usługa wymaga 2 rzeczy, aby działać: adresu e-mail twojego konta Google (aby mógł wiedzieć, że to Ty, kiedy wysyłasz zapytanie) oraz adresu URL Twojej strony Nightscout (aby mógł sprawdzić poziom glukozy i przeczytać go Tobie).",
             "use-title": "Jak wykorzystywane są te informacje?",
@@ -72,7 +72,7 @@
         },
         "health": {
             "title": "Oświadczenie o danych dotyczących zdrowia",
-            "disclaimer-short": "Informacje przekazane przez Nightscout Status nie zastępują porady lekarza.",
+            "disclaimer-short": "Informacje przekazane przez Status Nightscout nie zastępują porady lekarza.",
             "disclaimer": "$t(terms.health.disclaimer-short) Jeśli masz pytania dotyczące leczenia lub potrzebujesz porady, pamiętaj, aby zawsze pytać lekarza!"
         },
         "license-and-tos": "Licencja i warunki usługi"

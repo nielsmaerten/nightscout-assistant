@@ -57,22 +57,22 @@
         "back": "Précédent",
         "privacy-policy": {
             "title": "Politique de confidentialité",
-            "intro": "Ce document décrit les informations collectées par Nightscout Status, {{0}} (le \"Service\" ou le \"Logiciel\") et comment ces informations sont utilisées.",
+            "intro": "Ce document décrit les informations collectées par Nightscout Status (Statut Nightscout), {{0}} (le \"Service\" ou le \"Logiciel\") et comment ces informations sont utilisées.",
             "collection-title": "Quelles informations recueillons-nous ?",
             "collection-desc": "Pour fonctionner, le service nécessite 2 éléments: l'adresse e-mail de votre compte Google (afin qu'il puisse vous connaître lorsque vous faites une demande) et l'URL de votre instance Nightscout (afin qu'il puisse rechercher votre glycémie et la lire).",
             "use-title": "Comment ces informations sont-elles utilisées?",
-            "use-desc": "Lorsque vous appelez le service via Google Assistant (par exemple, en disant: \"Hé Google, parle à Nightscout Status), le service examine votre adresse e-mail et vérifie si un site Nightscout y est associé. Si tel est le cas, votre taux de glucose actuel est lu sur votre site Nightscout.",
+            "use-desc": "Lorsque vous appelez le service via Google Assistant (par exemple, en disant: \"Hé Google, parle à Statut Nightscout), le service examine votre adresse e-mail et vérifie si un site Nightscout y est associé. Si tel est le cas, votre taux de glucose actuel est lu sur votre site Nightscout.",
             "sharing-title": "Partage d'informations",
             "sharing-desc": "Votre adresse e-mail ou votre URL Nightscout <strong>ne sera jamais</strong> partagée avec un tiers. J'en ai juste besoin pour savoir quel site Nightscout vérifier lorsque vous appelez l'Action. Les données de votre site Web Nightscout ne sont pas enregistrées, pas même dans les fichiers journaux. ",
             "deleting-title": "Suppression de toutes les données",
-            "deleting-desc": "Vous pouvez choisir de révoquer l'accès à tout moment: il vous suffit de vous connecter, de supprimer votre URL Nightscout et de cliquer sur Enregistrer. Vous pouvez également supprimer le statut Nightscout de votre {{0}}.",
+            "deleting-desc": "Vous pouvez choisir de révoquer l'accès à tout moment: il vous suffit de vous connecter, de supprimer votre URL Nightscout et de cliquer sur Enregistrer. Vous pouvez également supprimer le Statut Nightscout de votre {{0}}.",
             "deleting-google-account": "Compte Google",
             "analytics-title": "Cookie analytique",
             "analytics-desc": "Après vous être connecté à ce site, des statistiques anonymes sur votre visite sont collectées à l'aide d'un cookie (Google Analytics). Le cookie n'est activé qu'après avoir accepté cette politique de confidentialité. J'utilise Analytics pour mieux comprendre comment les gens utilisent ce site, comment ils l'ont trouvé et dans quel groupe démographique ils se trouvent. Cela s'applique uniquement à {{0}} et non à l'utilisation de l'action auxiliaire elle-même. Si vous souhaitez vous désinscrire du cookie Google Analytics, vous pouvez le faire en visitant {{1}}"
         },
         "health": {
             "title": "Information sur les soins de santé",
-            "disclaimer-short": "Les informations fournies par Nightscout Status ne remplacent pas les conseils d'un professionnel de la santé.",
+            "disclaimer-short": "Les informations fournies par Statut Nightscout ne remplacent pas les conseils d'un professionnel de la santé.",
             "disclaimer": "$t(terms.health.disclaimer-short) Si vous avez des questions sur le traitement ou avez besoin de conseils, pensez à toujours demander à votre médecin!"
         },
         "license-and-tos": "Licence et conditions d'utilisation"
