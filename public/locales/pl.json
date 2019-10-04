@@ -61,11 +61,11 @@
             "collection-title": "Jakie informacje są gromadzone?",
             "collection-desc": "Usługa wymaga 2 rzeczy, aby działać: adresu e-mail twojego konta Google (aby mógł wiedzieć, że to Ty, kiedy wysyłasz zapytanie) oraz adresu URL Twojej strony Nightscout (aby mógł sprawdzić poziom glukozy i przeczytać go Tobie).",
             "use-title": "Jak wykorzystywane są te informacje?",
-            "use-desc": "Gdy wywołujesz Usługę za pośrednictwem Asystenta Google (tj. Mówiąc: „OK, Google, rozmawiaj ze statusem Nightscout), usługa sprawdza Twój adres e-mail i sprawdza, czy jest z nią powiązana strona Nightscout. Jeśli tak, aktualny poziom glukozy jest odczytywany z witryny Nightscout.",
+            "use-desc": "Gdy wywołujesz Usługę za pośrednictwem Asystenta Google (tj. Mówiąc: „OK, Google, rozmawiaj ze Status Nightscout), usługa sprawdza Twój adres e-mail i sprawdza, czy jest z nią powiązana strona Nightscout. Jeśli tak, aktualny poziom glukozy jest odczytywany z witryny Nightscout.",
             "sharing-title": "Udostępnianie informacji",
             "sharing-desc": "Twój adres e-mail lub Nightscout URL nie będzie <strong>nigdy</strong> udostępniany osobom trzecim. Potrzebuję go tylko, aby wiedzieć, którą stronę Nightscout sprawdzić, kiedy wywołasz akcję. Dane z Twojej witryny Nightscout nie są zapisywane, nawet do plików dziennika. ",
             "deleting-title": "Usuwanie wszystkich danych",
-            "deleting-desc": "Możesz cofnąć dostęp w dowolnym momencie: po prostu zaloguj się, usuń adres URL Nightscout i kliknij Zapisz. Możesz także usunąć Nightscout Status ze swojego {{0}}.",
+            "deleting-desc": "Możesz cofnąć dostęp w dowolnym momencie: po prostu zaloguj się, usuń adres URL Nightscout i kliknij Zapisz. Możesz także usunąć Status Nightscout ze swojego {{0}}.",
             "deleting-google-account": "Konto Google",
             "analytics-title": "Pliki cookie",
             "analytics-desc": "Po zalogowaniu się na tej stronie niektóre anonimowe statystyki dotyczące Twojej wizyty są gromadzone za pomocą pliku cookie (Google Analytics). Pliki cookie są włączane dopiero po zaakceptowaniu niniejszej Polityki prywatności. Korzystam z Analytics, aby lepiej zrozumieć, w jaki sposób ludzie korzystają z tej witryny, jak ją znaleźli i w jakiej grupie demograficznej się znajdują. Dotyczy to tylko {{0}}, a nie samej akcji Assistant. Jeśli chcesz zrezygnować z pliku cookie Google Analytics, możesz to zrobić, odwiedzając stronę {{1}}"
