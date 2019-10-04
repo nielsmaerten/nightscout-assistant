@@ -1,6 +1,6 @@
 <template>
   <div class="modal is-active">
-    <div class="modal-background" @click="vw && close()"></div>
+    <div class="modal-background" @click="close()"></div>
     <div class="modal-card">
       <header class="modal-card-head">
         <p class="modal-card-title">{{ $t("index.settings.done") }}</p>
@@ -29,7 +29,7 @@
           </div>
         </article>
 
-        <article class="message is-danger mt-2" v-if="!vw">
+        <!-- <article class="message is-danger mt-2">
           <div class="message-header">{{$t("index.settings.modal.read-this")}}</div>
           <div class="message-body is-size-7">
             <strong>{{ $t("terms.health.disclaimer-short") }}</strong>
@@ -39,20 +39,19 @@
               <li v-html='$t("index.settings.modal.disclaimer.3")'></li>
             </ol>
           </div>
-        </article>
+        </article> -->
       </section>
       <footer class="modal-card-foot">
-        <button v-if="vw" class="button is-success" @click="close">OK</button>
-        <button
-          v-if="!vw"
+        <button class="button is-success" @click="close">OK</button>
+        <!-- <button
           class="button is-success"
           @click="disableDisclaimer(true)"
         >
           {{ $t("index.settings.modal.disclaimer.disable") }}
         </button>
-        <a v-if="!vw" class="is-small" @click="disableDisclaimer(false)">
+        <a class="is-small" @click="disableDisclaimer(false)">
           <small>{{ $t("index.settings.modal.disclaimer.enable") }}</small>
-        </a>
+        </a> -->
         <br />
       </footer>
     </div>
@@ -75,10 +74,6 @@ export default {
           this.$i18n.i18next.language
         ) !== -1
       );
-    },
-    vw() {
-      debugger;
-      return this.$store.state !== undefined
     }
   },
   methods: {
