@@ -18,13 +18,13 @@
             "nsSiteError": "Ledsen, det ser ut som att det var ett problem med din Nightscout sida. Jag kunde inte hämta din status."
         },
         "trends": {
-            "DoubleUp": "stiger fort",
+            "DoubleUp": "rising rapidly",
             "SingleUp": "stigande",
             "FortyFiveUp": "stiger långsamt",
             "Flat": "stabilt",
-            "FortyFiveDown": "sjunker långsamt",
-            "SingleDown": "sjunkande",
-            "DoubleDown": "sjunker snabbt"
+            "FortyFiveDown": "falling slowly",
+            "SingleDown": "falling",
+            "DoubleDown": "falling rapidly"
         },
         "answers": {
             "noTrend": "{{bg}} {{ago}}.",
