@@ -13,42 +13,43 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
     // Exit if no NS url has been provided yet
     if (!userProfile || !userProfile.nsUrl) {
       resolve({ response: t("errors.noNsSite"), success: false });
-    } else {
-      const nsUrl = userProfile.nsUrl;
-      try {
-        // Get settings
-        const unit = userProfile.unit || "mg/dl";
-        const apiSecret = userProfile.secretHash;
+      return;
+    }
 
-        // Build API request url
-        const apiUrl = new URL(nsUrl);
-        apiUrl.pathname = "/api/v1/entries/current.json";
+    const nsUrl = userProfile.nsUrl;
+    try {
+      // Get settings
+      const unit = userProfile.unit || "mg/dl";
+      const apiSecret = userProfile.secretHash;
 
-        // Call the API
-        // @ts-ignore
-        const response = await fetch(apiUrl, {
-          headers: {
-            "API-SECRET": apiSecret
-          }
-        });
+      // Build API request url
+      const apiUrl = new URL(nsUrl);
+      apiUrl.pathname = "/api/v1/entries/current.json";
 
-        // Exit if the request failed
-        if (!response.ok) {
-          throw new Error(
-            `HTTP ${response.status}: ${response.statusText} - ${apiUrl}`
-          );
+      // Call the API
+      // @ts-ignore
+      const response = await fetch(apiUrl, {
+        headers: {
+          "API-SECRET": apiSecret
         }
+      });
 
-        // Parse JSON response
-        const json = (await response.json())[0];
-
-        // Format the response into a pronounceable answer
-        const convResponse = formatResponse(json, unit, t);
-        resolve({ response: convResponse, success: true });
-      } catch (e) {
-        const errorResponse = handleError(e, userEmail, nsUrl, t);
-        resolve({ response: errorResponse, success: false });
+      // Exit if the request failed
+      if (!response.ok) {
+        throw new Error(
+          `HTTP ${response.status}: ${response.statusText} - ${apiUrl}`
+        );
       }
+
+      // Parse JSON response
+      const json = (await response.json())[0];
+
+      // Format the response into a pronounceable answer
+      const convResponse = formatResponse(json, unit, t);
+      resolve({ response: convResponse, success: true });
+    } catch (e) {
+      const errorResponse = handleError(e, userEmail, nsUrl, t);
+      resolve({ response: errorResponse, success: false });
     }
   });
 };
