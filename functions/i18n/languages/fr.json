@@ -1,9 +1,9 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Maintenant, vous pouvez essayer de demander: \"Hé Google, demande à Nightscout Status ce qu'est ma glycémie.",
+            "completed": "Maintenant, vous pouvez essayer de demander: \"Hé Google, demande à Statut Nightscout ce qu'est ma glycémie.",
             "request": "Pour accéder à votre glycémie",
-            "healthDisclaimer": "N'oubliez pas: les informations fournies par Nightscout Status ne sauraient remplacer les conseils d'un professionnel de la santé."
+            "healthDisclaimer": "N'oubliez pas: les informations fournies par Statut Nightscout ne sauraient remplacer les conseils d'un professionnel de la santé."
         },
         "errors": {
             "unknown-error": "Désolé, une erreur inconnue s'est produite. Elle sera examinée dès que possible.",
@@ -48,8 +48,8 @@
                     "full": "Demandez à Google Assistant votre glycémie actuel."
                 },
                 "sample-invocations": [
-                    "Ok Google, parle à Nightscout Status",
-                    "Ok Google, demande à Nightscout Status ma glycémie"
+                    "Ok Google, parle à Statut Nightscout",
+                    "Ok Google, demande à Statut Nightscout ma glycémie"
                 ]
             }
         }
