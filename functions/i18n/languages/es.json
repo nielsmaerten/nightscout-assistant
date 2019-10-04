@@ -18,13 +18,13 @@
             "nsSiteError": "Lo sentimos, parece haber un problema con su sitio Nightscout. No pude obtener tu estado."
         },
         "trends": {
-            "DoubleUp": "subiendo rapidamente",
+            "DoubleUp": "rising rapidly",
             "SingleUp": "subiendo",
             "FortyFiveUp": "subiendo lentamente",
             "Flat": "estando estable",
-            "FortyFiveDown": "bajando lentamente",
-            "SingleDown": "bajando",
-            "DoubleDown": "bajando rápidamente"
+            "FortyFiveDown": "falling slowly",
+            "SingleDown": "falling",
+            "DoubleDown": "falling rapidly"
         },
         "answers": {
             "noTrend": "{{bg}} {{ago}}.",
