@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Teraz możesz zapytać: „Hej, Google, zapytaj Nightscout, jaka jest moja glukoza”.",
+            "completed": "Teraz możesz zapytać: „Hej, Google, zapytaj Status Nightscout, jaka jest moja glukoza”.",
             "request": "Aby uzyskać dostęp do glukozy",
             "healthDisclaimer": "Pamiętaj: informacje dostarczone przez Nightscout Status nie zastępują porady lekarza."
         },
@@ -48,8 +48,8 @@
                     "full": "Zapytaj Asystenta Google o obecny poziom glukozy."
                 },
                 "sample-invocations": [
-                    "Ok Google, porozmawiaj z Nightscout",
-                    "Ok Google, zapytaj Nightscout, jaka jest moja glukoza"
+                    "Ok Google, porozmawiaj z Status Nightscout",
+                    "Ok Google, zapytaj Status Nightscout, jaka jest moja glukoza"
                 ]
             }
         }
