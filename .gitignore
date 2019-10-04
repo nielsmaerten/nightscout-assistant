@@ -3,6 +3,7 @@ node_modules
 /dist
 functions/config.js
 *.log
+.history/
 
 # local env files
 .env.local
