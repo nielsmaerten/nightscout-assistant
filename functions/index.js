@@ -65,7 +65,7 @@ app.intent("Glucose Status", async conv => {
     `);
 
   // If disclaimer was said, mark it as such
-  if (disclaimer.text) {
+  if (disclaimer.text && userProfile) {
     console.log("Marking health disclaimer said for", userEmail);
     userProfile.hasHeardHealthDisclaimer = true;
     await nightscout.updateUserProfile(userProfile, userEmail);
