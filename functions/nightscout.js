@@ -103,8 +103,18 @@ function formatResponse(d, unit, t) {
 
 function handleError(error, userEmail, nsUrl, t) {
   let errorMsg = String(error.message || "");
-  console.error("%s; User: %s; NightscoutUrl: %s", errorMsg, userEmail, nsUrl);
-  console.error(error);
+  console.log(
+    `
+    Error for user: %s
+    Nightscout url: %s
+    Error message : %s
+    Error details : %s
+  `,
+    userEmail,
+    nsUrl,
+    errorMsg,
+    error
+  );
 
   // Invalid URL format
   if (errorMsg.startsWith("Invalid URL:")) {
@@ -134,6 +144,7 @@ function handleError(error, userEmail, nsUrl, t) {
   }
 
   // Unknown error
+  console.error("UNKNOWN ERROR:", error);
   return t("errors.unknown-error");
 }
 
