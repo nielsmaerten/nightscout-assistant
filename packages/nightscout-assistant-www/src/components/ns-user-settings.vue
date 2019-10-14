@@ -8,12 +8,16 @@
           <div class="control">
             <input
               class="input"
+              :class="{ 'is-danger': !nsUrlIsValid }"
               type="text"
               id="nightscout-url"
               v-model="user.settings.nsUrl"
               placeholder="https://MY-NS-SITE.herokuapp.com"
             />
           </div>
+          <p v-if="!nsUrlIsValid" class="help is-danger">
+            {{ $t("index.settings.invalid-url") }}
+          </p>
         </div>
 
         <!-- Unit input -->
@@ -27,9 +31,9 @@
                 v-model="user.settings.unit"
               >
                 <option value="mg/dl">{{ $t("index.settings.mg-dl") }}</option>
-                <option value="mmol/l">{{
-                  $t("index.settings.mmol-l")
-                }}</option>
+                <option value="mmol/l">
+                  {{ $t("index.settings.mmol-l") }}
+                </option>
               </select>
             </div>
           </div>
@@ -39,9 +43,9 @@
         <div class="column">
           <label class="label">
             {{ $t("index.settings.api-secret") }}
-            <span class="text-xs has-text-grey-light">{{
-              $t("index.settings.optional")
-            }}</span>
+            <span class="text-xs has-text-grey-light">
+              {{ $t("index.settings.optional") }}
+            </span>
           </label>
           <div class="control">
             <input
@@ -100,6 +104,14 @@ export default {
   name: "ns-user-settings",
   components: {
     nsModalSaved
+  },
+  computed: {
+    nsUrlIsValid() {
+      if (!this.user.settings.nsUrl) return true;
+      var rex = RegExp(require("@/assets/url-regex.js"));
+      var match = this.user.settings.nsUrl.match(rex);
+      return match && match.length > 0;
+    }
   },
   data() {
     return {
