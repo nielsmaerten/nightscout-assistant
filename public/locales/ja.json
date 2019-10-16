@@ -18,6 +18,7 @@
         },
         "settings": {
             "connect": "始めるには、あなたのナイトスカウトサイトに接続してください:",
+            "invalid-url": "Are you sure this URL is correct?",
             "your-site": "あたなのナイトスカウトサイト",
             "unit": "Unit",
             "mg-dl": "mg/dl",
