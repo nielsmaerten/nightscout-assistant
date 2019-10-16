@@ -18,6 +18,7 @@
         },
         "settings": {
             "connect": "Anslut din Nightscoutsida för att komma igång:",
+            "invalid-url": "Are you sure this URL is correct?",
             "your-site": "Din Nightscoutsida",
             "unit": "Enhet",
             "mg-dl": "mg/dl",
