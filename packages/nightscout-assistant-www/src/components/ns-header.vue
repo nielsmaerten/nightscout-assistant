@@ -5,6 +5,15 @@
     <div class="has-text-right">
       <language-selector></language-selector>
     </div>
+     <article class="message is-danger has-text-centered mt-2">
+          <div class="message-header">SERVICE OUTAGE :-(
+          </div>
+          <div class="message-body">
+            <p>Nightscout Status is currently experiencing issues with Google Assistant, 
+            and might not available for you.</p>
+            <p>I'm doing my best to fix this as soon as possible.</p>
+          </div>
+        </article>
     <div
       v-if="comingSoon"
       class="is-offset-one-quarter column notification is-half"
