@@ -18,6 +18,7 @@
         },
         "settings": {
             "connect": "Verbind je Nightscout site om te beginnen:",
+            "invalid-url": "Are you sure this URL is correct?",
             "your-site": "Jouw Nightscout site",
             "unit": "Eenheid",
             "mg-dl": "mg/dl",
