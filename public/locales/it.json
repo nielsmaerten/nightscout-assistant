@@ -18,6 +18,7 @@
         },
         "settings": {
             "connect": "Collega il tuo sito Nightscout per iniziare:",
+            "invalid-url": "Are you sure this URL is correct?",
             "your-site": "Il tuo sito Nightscout",
             "unit": "Unità di misura",
             "mg-dl": "mg/dL",
