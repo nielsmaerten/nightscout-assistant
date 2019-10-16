@@ -18,6 +18,7 @@
         },
         "settings": {
             "connect": "Tilslut din Nightscout side for at komme i gang:",
+            "invalid-url": "Are you sure this URL is correct?",
             "your-site": "Din Nightscout side",
             "unit": "Enhed",
             "mg-dl": "mg/dl",
