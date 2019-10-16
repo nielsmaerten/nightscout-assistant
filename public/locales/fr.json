@@ -18,6 +18,7 @@
         },
         "settings": {
             "connect": "Connectez votre site Nightscout pour commencer:",
+            "invalid-url": "Are you sure this URL is correct?",
             "your-site": "Votre site Nightscout",
             "unit": "Unité",
             "mg-dl": "mg/dl",
