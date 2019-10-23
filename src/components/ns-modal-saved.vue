@@ -3,7 +3,9 @@
     <div class="modal-background" @click="close()"></div>
     <div class="modal-card">
       <header class="modal-card-head">
-        <p class="modal-card-title">Settings saved</p>
+        <p class="modal-card-title">
+          {{ $t("index.settings.settings-saved") }}
+        </p>
       </header>
       <section class="modal-card-body">
         <article
@@ -13,18 +15,25 @@
             'is-success': siteStatus > 0
           }"
         >
+          <div class="message-header" v-if="siteStatus === 0">
+            {{ $t("index.settings.one-moment-please") }}
+          </div>
           <div class="message-body" v-if="siteStatus === 0">
-            Testing:
+            {{ $t("index.settings.testing-your-site") }}:
             <br />
             <em class="ml-4">{{ $store.state.user.nsUrl }}</em>
 
-            <progress class="progress is-small is-dark mt-5" max="100"
-              >15%</progress
-            >
+            <progress
+              class="progress is-small is-dark mt-5"
+              max="100"
+            ></progress>
           </div>
 
+          <div class="message-header" v-if="siteStatus < 0">
+            {{ $t("index.settings.oops") }}
+          </div>
           <div class="message-body" v-if="siteStatus < 0">
-            Unable to get a glucose reading from:
+            {{ $t("index.settings.unable-to-get-reading") }}
             <br />
             <em class="ml-4">{{ $store.state.user.nsUrl }}</em>
             <br />
@@ -100,7 +109,8 @@ export default {
     document.getElementById("root").classList.add("is-clipped");
 
     setTimeout(() => {
-      this.siteStatus = -1;
+      // TODO: Replace with call to testing api
+      this.siteStatus = 1;
     }, 2500);
   }
 };

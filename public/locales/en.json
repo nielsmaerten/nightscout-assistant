@@ -32,7 +32,12 @@
                 "title": "Do I have to enter my API Secret ?",
                 "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
             },
-            "done": "Done!",
+            "done": "All done!",
+            "oops": "Oops!",
+            "one-moment-please": "One moment please...",
+            "testing-your-site": "We're testing your Nightscout site",
+            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+            "settings-saved": "Settings saved",
             "success-msg": "Now try asking Google Assistant:",
             "hint-header": "Tip:",
             "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
