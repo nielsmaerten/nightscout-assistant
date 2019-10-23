@@ -107,3 +107,6 @@ app.intent("Sign In", async (conv, params, signIn) => {
 });
 
 exports.glucoseStatus = functions.https.onRequest(app);
+exports.validateUrl = functions
+  .runWith({ timeoutSeconds: 20 })
+  .https.onCall(require("./validate-url"));

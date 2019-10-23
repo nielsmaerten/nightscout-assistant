@@ -5,7 +5,7 @@
     "serve": "firebase serve --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
-    "deploy": "firebase deploy --only functions:glucoseStatus",
+    "deploy": "firebase deploy --only functions:glucoseStatus,functions:validateUrl",
     "logs": "firebase functions:log",
     "prettier": "prettier --write *.js"
   },
