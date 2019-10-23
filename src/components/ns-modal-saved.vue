@@ -111,7 +111,7 @@ export default {
     setTimeout(() => {
       // TODO: Replace with call to testing api
       this.siteStatus = 1;
-    }, 2500);
+    }, 0);
   }
 };
 </script>
