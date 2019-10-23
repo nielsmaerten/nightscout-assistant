@@ -19,6 +19,7 @@
         "settings": {
             "connect": "Connect your Nightscout site to get started:",
             "invalid-url": "Are you sure this URL is correct?",
+            "use-token-url":"Try using a token-url or check your API secret",
             "your-site": "Your Nightscout site",
             "unit": "Unit",
             "mg-dl": "mg/dl",

@@ -19,10 +19,7 @@
             {{ $t("index.settings.one-moment-please") }}
           </div>
           <div class="message-body" v-if="siteStatus === 0">
-            {{ $t("index.settings.testing-your-site") }}:
-            <br />
-            <em class="ml-4">{{ $store.state.user.nsUrl }}</em>
-
+            {{ $t("index.settings.testing-your-site") }}
             <progress
               class="progress is-small is-dark mt-5"
               max="100"
@@ -35,9 +32,13 @@
           <div class="message-body" v-if="siteStatus < 0">
             {{ $t("index.settings.unable-to-get-reading") }}
             <br />
-            <em class="ml-4">{{ $store.state.user.nsUrl }}</em>
-            <br />
-            {{ $t("index.settings.invalid-url") }}
+            <em>{{ nsUrl }}</em>
+            <div class="content">
+              <ul>
+                <li>{{ $t("index.settings.invalid-url") }}</li>
+                <li>{{ $t("index.settings.use-token-url") }}</li>
+              </ul>
+            </div>
           </div>
 
           <div class="message-header" v-if="siteStatus > 0">
@@ -108,10 +109,17 @@ export default {
   mounted() {
     document.getElementById("root").classList.add("is-clipped");
 
-    setTimeout(() => {
-      // TODO: Replace with call to testing api
-      this.siteStatus = 1;
-    }, 0);
+    // Now that settings have been saved, ask backend to validate them
+    const validateUrl = firebase.functions().httpsCallable("validateUrl");
+
+    validateUrl()
+      .then(result => {
+        this.siteStatus = result.data.ok ? 1 : -1;
+      })
+      .catch(error => {
+        console.error("Network failure");
+        console.error(error);
+      });
   }
 };
 </script>
