@@ -6,6 +6,7 @@ const { dialogflow, SignIn } = require("actions-on-google");
 const { i18next, initLocale } = require("./i18n");
 const config = functions.config().dialogflow || require("./config");
 const productionNumber = 2;
+const { performance } = require("perf_hooks");
 
 // Set dialogflow client ID
 const app = dialogflow({
@@ -76,13 +77,14 @@ app.intent("Glucose Status", async conv => {
 
   // Stop the timer
   const tStop = performance.now();
-  console.log(
-    "Query for",
-    conv.user.email,
-    "completed in",
-    tStop - tStart,
-    "ms."
-  );
+  const runtimeMilliseconds = Math.floor(tStop - tStart);
+  const logEntry = {
+    event: "query-completed",
+    user: conv.user.email,
+    runtimeMilliseconds,
+    locale: conv.user.locale
+  };
+  console.log(logEntry);
 });
 
 app.intent("Sign In", async (conv, params, signIn) => {
