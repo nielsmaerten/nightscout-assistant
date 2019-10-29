@@ -21,6 +21,9 @@ if (admin.apps.length === 0) {
 }
 
 app.intent("Glucose Status", async conv => {
+  // Start a timer
+  const tStart = performance.now();
+
   // Get translation function for this user's locale
   await initializedLocale;
   const t = i18next.getFixedT(conv.user.locale);
@@ -70,6 +73,16 @@ app.intent("Glucose Status", async conv => {
     userProfile.hasHeardHealthDisclaimer = true;
     await nightscout.updateUserProfile(userProfile, userEmail);
   }
+
+  // Stop the timer
+  const tStop = performance.now();
+  console.log(
+    "Query for",
+    conv.user.email,
+    "completed in",
+    tStop - tStart,
+    "ms."
+  );
 });
 
 app.intent("Sign In", async (conv, params, signIn) => {
