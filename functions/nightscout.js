@@ -3,6 +3,7 @@ const fetch = require("node-fetch");
 const admin = require("firebase-admin");
 const URL = require("url").URL;
 const intl = require("intl");
+const { performance } = require("perf_hooks");
 
 // Gets the current glucose for a user,
 // and returns it as a pronounceable response
@@ -27,12 +28,14 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
       apiUrl.pathname = "/api/v1/entries/current.json";
 
       // Call the API
+      const tQueryStart = performance.now();
       // @ts-ignore
       const response = await fetch(apiUrl, {
         headers: {
           "API-SECRET": apiSecret
         }
       });
+      const tQueryTime = Math.floor(performance.now() - tQueryStart);
 
       // Exit if the request failed
       if (!response.ok) {
@@ -46,7 +49,7 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
 
       // Format the response into a pronounceable answer
       const convResponse = formatResponse(json, unit, t);
-      resolve({ response: convResponse, success: true });
+      resolve({ response: convResponse, success: true, tQueryTime });
     } catch (e) {
       const errorResponse = handleError(e, userEmail, nsUrl, t);
       resolve({ response: errorResponse, success: false });

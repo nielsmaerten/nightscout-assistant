@@ -79,10 +79,11 @@ app.intent("Glucose Status", async conv => {
   const tStop = performance.now();
   const runtimeMilliseconds = Math.floor(tStop - tStart);
   const logEntry = {
-    event: "query-completed",
     user: conv.user.email,
     runtimeMilliseconds,
-    locale: conv.user.locale
+    queryMilliseconds: nightscoutStatus.tQueryTime,
+    locale: conv.user.locale,
+    event: "query-completed"
   };
   console.log(logEntry);
 });
