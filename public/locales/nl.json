@@ -19,6 +19,7 @@
         "settings": {
             "connect": "Verbind je Nightscout site om te beginnen:",
             "invalid-url": "Are you sure this URL is correct?",
+            "use-token-url": "Try using a token-url or check your API secret",
             "your-site": "Jouw Nightscout site",
             "unit": "Eenheid",
             "mg-dl": "mg/dl",
@@ -32,7 +33,12 @@
                 "title": "Moet ik mijn API-geheim invoeren?",
                 "info": "Dit is alleen nodig als je Nightscout site niet publiek is (read-protected). (Bijvoorbeeld als {{0}} is ingesteld op {{1}})"
             },
-            "done": "Klaar!",
+            "done": "All done!",
+            "oops": "Oops!",
+            "one-moment-please": "One moment please...",
+            "testing-your-site": "We're testing your Nightscout site",
+            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+            "settings-saved": "Settings saved",
             "success-msg": "Probeer nu Google Assistant te vragen:",
             "hint-header": "Tip:",
             "hint": "Je kan de oproep korter maken met {{0}}. {{1}} Bijvoorbeeld: \"Hey Google, check mijn suiker.\"",
