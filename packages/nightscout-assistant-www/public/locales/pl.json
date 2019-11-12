@@ -18,6 +18,8 @@
         },
         "settings": {
             "connect": "Połącz swoją witrynę Nightscout, aby rozpocząć:",
+            "invalid-url": "Are you sure this URL is correct?",
+            "use-token-url": "Try using a token-url or check your API secret",
             "your-site": "Twoja strona Nightscout",
             "unit": "Jedn.",
             "mg-dl": "mg/dl",
@@ -31,7 +33,12 @@
                 "title": "Czy muszę wprowadzić swój API Secret?",
                 "info": "Jest to potrzebne tylko wtedy, gdy witryna Nightscout jest „chroniona przed odczytem”. (na przykład jeśli {{0}} jest ustawione na {{1}})"
             },
-            "done": "Gotowe!",
+            "done": "All done!",
+            "oops": "Oops!",
+            "one-moment-please": "One moment please...",
+            "testing-your-site": "We're testing your Nightscout site",
+            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+            "settings-saved": "Settings saved",
             "success-msg": "Teraz spróbuj zapytać Asystenta Google:",
             "hint-header": "Wskazówka:",
             "hint": "Możesz skrócić wywołanie za pomocą {{0}}. {{1}} Na przykład: „Hej, Google, sprawdź mój cukier.”",
