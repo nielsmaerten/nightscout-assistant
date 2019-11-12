@@ -18,6 +18,8 @@
         },
         "settings": {
             "connect": "Verbinde deine Nightscout-Seite damit es losgehen kann:",
+            "invalid-url": "Are you sure this URL is correct?",
+            "use-token-url": "Try using a token-url or check your API secret",
             "your-site": "Deine Nightscout Seite",
             "unit": "Einheit",
             "mg-dl": "mg/dl",
@@ -31,7 +33,12 @@
                 "title": "Muss ich mein API Passwort eingeben?",
                 "info": "Dies wird nur benötigt, wenn deine Nightscout Seite als \"lesegeschützt\" eingerichtet ist. (zum Beispiel wenn {{0}} auf {{1}} gesetzt ist)"
             },
-            "done": "Erledigt!",
+            "done": "All done!",
+            "oops": "Oops!",
+            "one-moment-please": "One moment please...",
+            "testing-your-site": "We're testing your Nightscout site",
+            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+            "settings-saved": "Settings saved",
             "success-msg": "Nun frage deinen Google Asisstant:",
             "hint-header": "Tipp:",
             "hint": "Verwende {{0}} um einen kürzeren Aufruf zu erstellen. {{1}} Zum Beispiel: \"Ok Google, Prüfe meinen Zucker\"",
