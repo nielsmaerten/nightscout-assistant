@@ -19,6 +19,7 @@
         "settings": {
             "connect": "Tilslut din Nightscout side for at komme i gang:",
             "invalid-url": "Are you sure this URL is correct?",
+            "use-token-url": "Try using a token-url or check your API secret",
             "your-site": "Din Nightscout side",
             "unit": "Enhed",
             "mg-dl": "mg/dl",
@@ -32,7 +33,12 @@
                 "title": "Behøver jeg at indtaste min API nøgle?",
                 "info": "Dette er kun nødvendigt, hvis din Nightscout side er 'skrivebeskyttet'. (for eksempel hvis {{0}} er indstillet til {{1}})"
             },
-            "done": "Færdig!",
+            "done": "All done!",
+            "oops": "Oops!",
+            "one-moment-please": "One moment please...",
+            "testing-your-site": "We're testing your Nightscout site",
+            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+            "settings-saved": "Settings saved",
             "success-msg": "Prøv nu at spørge Google Assistant:",
             "hint-header": "Tip:",
             "hint": "Du kan forkorte kommandoen vha. {{0}}. {{1}} For eksempel: \"Hej Google, tjek mit sukker.\"",
