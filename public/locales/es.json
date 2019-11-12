@@ -19,6 +19,7 @@
         "settings": {
             "connect": "Conecta tu sitio Nightscout para empezar:",
             "invalid-url": "Are you sure this URL is correct?",
+            "use-token-url": "Try using a token-url or check your API secret",
             "your-site": "Tu sitio Nightscout",
             "unit": "Unidades",
             "mg-dl": "mg/dl",
@@ -32,7 +33,12 @@
                 "title": "¿Tengo que entrar en mi API Secret ?",
                 "info": "Esto solo es necesario si su sitio Nightscout está 'protegido contra lectura'. (por ejemplo, si {{0}} se establece en {{1}})"
             },
-            "done": "¡Hecho!",
+            "done": "All done!",
+            "oops": "Oops!",
+            "one-moment-please": "One moment please...",
+            "testing-your-site": "We're testing your Nightscout site",
+            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+            "settings-saved": "Settings saved",
             "success-msg": "Ahora intenta preguntándole al Asistente de Google:",
             "hint-header": "Consejo:",
             "hint": "Use {{0}} para crear una invocación más corta. {{1}} Por ejemplo: \"Ok Google, revisa mi azúcar\"",
