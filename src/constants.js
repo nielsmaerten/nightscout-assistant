@@ -1,7 +1,7 @@
 module.exports = {
   languages: {
     supportingRoutines: ["en", "it", "nl", "de", "ja", "ko", "es", "fr"],
-    comingSoon: ["nl", "it", "de", "da", "fr", "ja", "pl", "es"],
+    comingSoon: ["ja"],
     available: [
       { name: "Dansk", code: "da" },
       { name: "Deutsch", code: "de" },
