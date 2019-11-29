@@ -2,7 +2,7 @@
     "translation": {
         "signIn": {
             "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
-            "request": "To access your glucose",
+            "request": "Para aceder á glucose",
             "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
         },
         "errors": {
