@@ -12,7 +12,7 @@
             "subtitle": "Nightscout para a Google Home e o Assistente do Google (não oficial)"
         },
         "example-conversation": {
-            "hey-google": "Hey google",
+            "hey-google": "Hey Google,",
             "ask-google": "pergunte {{0}} qual é a minha glicose",
             "nightscout-status-resp": "120 e aumentando lentamente como á 4 minutos atrás"
         },
