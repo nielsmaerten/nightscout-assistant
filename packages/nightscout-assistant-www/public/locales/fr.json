@@ -39,7 +39,6 @@
             "testing-your-site": "Nous testons votre site Nightscout",
             "unable-to-get-reading": "Nous n'avons pas été en mesure d'obtenir une lecture de glycémie à partir de:",
             "settings-saved": "Paramètres enregistrés",
-
             "success-msg": "Maintenant, essayez de demander à Google Assistant:",
             "hint-header": "Astuce :",
             "hint": "Vous pouvez raccourcir l'invocation à l'aide de {{0}}. {{1}} Par exemple: \"Ok Google, vérifie ma glycémie.\"",
