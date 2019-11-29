@@ -1,70 +1,70 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "the Nightscout Project",
+        "google-tm": "Google Assistant é uma marca comercial da Google Inc.",
+        "nightscout-no-affl": "Não afiliado com {{0}}",
+        "nightscout-project": "o Projeto Nightscout",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "full-invocation": "Hey Google, fale com $t(common.invocation)"
     },
     "index": {
         "header": {
             "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "subtitle": "Nightscout para a Google Home e o Assistente do Google (não oficial)"
         },
         "example-conversation": {
-            "hey-google": "Hey Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and slowly rising as of 4 minutes ago"
+            "hey-google": "Hey google",
+            "ask-google": "pergunte {{0}} qual é a minha glicose",
+            "nightscout-status-resp": "120 e aumentando lentamente como á 4 minutos atrás"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "invalid-url": "Are you sure this URL is correct?",
-            "use-token-url": "Try using a token-url or check your API secret",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
+            "connect": "Conecte seu site Nightscout para começar:",
+            "invalid-url": "Tem certeza de que este URL está correto?",
+            "use-token-url": "Tente usar um token-url ou verifique a sua chave secreta da API",
+            "your-site": "Seu site Nightscout",
+            "unit": "Unidades",
             "mg-dl": "mg/dl",
-            "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "mmol-l": "mmol/L",
+            "api-secret": "Chave secreta de API",
+            "optional": "(opcional)",
+            "unchanged": "(não alterado)",
+            "save": "Guardar",
+            "sign-out": "Terminar sessão",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Preciso inserir a chave secreta da API?",
+                "info": "Isso só é necessário se o site do Nightscout estiver 'protegido contra leitura'. (por exemplo, se {{0}} estiver definido como {{1}})"
             },
-            "done": "All done!",
+            "done": "Tudo concluído!",
             "oops": "Oops!",
-            "one-moment-please": "One moment please...",
-            "testing-your-site": "We're testing your Nightscout site",
-            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-            "settings-saved": "Settings saved",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
-            "hint-routines": "Routines",
+            "one-moment-please": "Um momento por favor...",
+            "testing-your-site": "Estamos a testar o seu site Nightscout",
+            "unable-to-get-reading": "Não foi possível obter uma leitura da glicose em:",
+            "settings-saved": "Configurações guardadas",
+            "success-msg": "Agora tente perguntar ao Google Assistant:",
+            "hint-header": "Dica:",
+            "hint": "Você pode encurtar a chamada usando {{0}}. {{1}} por exemplo: \"hey Google, verifique meu açúcar.\"",
+            "hint-routines": "Rotinas",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Certifique-se que lê isto!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "Este aviso repete-se <u>sempre</u> que você perguntar pelo seu nível de glicose",
+                    "2": "Você pode desativar isso clicando no botão abaixo",
+                    "3": "Se você optar por desativar o aviso, concorda que:<br />- você leu e entendeu o aviso <br />- solicita explicitamente que ele não será mais repetido",
+                    "enable": "Não, repita o aviso sempre",
+                    "disable": "OK, desligar o aviso"
                 }
             }
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "help-faq": "Ajuda / Perguntas frequentes",
+            "bugs": "Relatório de erros; solicitações de recursos",
+            "tos": "Termos de Serviço e Política de Privacidade"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Voltar",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
+            "title": "Política de Privacidade",
+            "intro": "Este documento descreve as informações que estão sendo coletadas pelo Nightscout Status, {{0}} (o \"Serviço\" ou o \"Software\") e como essas informações são usadas.",
             "collection-title": "What information is collected?",
             "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
             "use-title": "How is this information used?",
