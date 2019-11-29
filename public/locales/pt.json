@@ -72,16 +72,16 @@
             "sharing-title": "Informação da partilha",
             "sharing-desc": "O seu endereço de e-mail ou Nightscout URL <strong>nunca</strong> irá ser compartilhadas com terceiros. Eu só preciso dele para saber qual site do Nightscout verificar quando você o chama. Os dados do site do Nightscout não são salvos, nem mesmo arquivados. ",
             "deleting-title": "Apagando seus dados",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
+            "deleting-desc": "Você pode desligar o acesso a qualquer momento: basta fazer login, remover o URL do Nightscout e clicar em guardar. Você também pode remover o status Nightscout do seu {{0}}.",
+            "deleting-google-account": "Conta Google",
             "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "analytics-desc": "Depois de fazer login neste site, algumas estatísticas anônimas sobre sua visita são recolhidas usando um cookie (Google Analytics). O cookie não será ativado até que você aceite esta Política de Privacidade. Estou a usar o Google Analytics para entender melhor como as pessoas estão usando este site, como o encontraram e em qual região demográfica estão. Isso se aplica apenas a {{0}}, não ao uso da própria ação do assistente. Se você deseja desativar o cookie do Google Analytics, pode fazê-lo visitando {{1}}"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "Aviso da responsabilidade de informações de saúde",
+            "disclaimer-short": "As informações fornecidas pelo Nightscout Status não substituem os conselhos de um profissional médico.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Se você tiver dúvidas sobre o tratamento ou precisar de conselhos, lembre-se de sempre perguntar ao seu médico!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Licença e Termos de Serviço"
     }
 }
