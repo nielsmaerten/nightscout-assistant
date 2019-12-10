@@ -8,19 +8,9 @@ const config = functions.config().dialogflow || require("./config");
 const productionNumber = 3;
 const { performance } = require("perf_hooks");
 
-// Build auth header
-const usernameAndPassword = `${config.auth.user}:${config.auth.password}`;
-const base64Auth = Buffer.from(usernameAndPassword, "ascii").toString("base64");
-const authHeader = `Basic ${base64Auth}`;
-
-// Set dialogflow client ID and verification
+// Set dialogflow client ID
 const app = dialogflow({
-  clientId: config.clientid,
-  verification: {
-    headers: {
-      authorization: authHeader
-    }
-  }
+  clientId: config.clientid
 });
 
 // Initialize localization module
