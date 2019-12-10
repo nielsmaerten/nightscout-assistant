@@ -3,7 +3,7 @@
         "signIn": {
             "completed": "Agora, você pode tentar perguntar: 'hey, Google, pergunte ao Nightscout Status qual é minha glicose'.",
             "request": "Para aceder á glicose",
-            "healthDisclaimer": "Relembrar que a informação disponibilizada pelo Nightscout status não substitui o conselho de um profissional médico."
+            "healthDisclaimer": "Relembrar que a informação disponibilizada pelo Nightscout Status não substitui o conselho de um profissional médico."
         },
         "errors": {
             "unknown-error": "Desculpe, aconteceu um erro, será verificado assim que possível.",
