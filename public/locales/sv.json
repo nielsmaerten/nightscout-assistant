@@ -3,12 +3,12 @@
         "google-tm": "Google Assistenten är ett varumärke av Google Inc.",
         "nightscout-no-affl": "Inte förknippad med {{0}}",
         "nightscout-project": "the Nightscout Project",
-        "invocation": "Nightscout",
+        "invocation": "Blodsocker Status",
         "full-invocation": "Hey Google, prata med $t(common.invocation)"
     },
     "index": {
         "header": {
-            "title": "Nightscout status",
+            "title": "Nightscout Status (Blodsocker status)",
             "subtitle": "Nightscout för Google Home & Google Assistenten (ej officiell)"
         },
         "example-conversation": {
