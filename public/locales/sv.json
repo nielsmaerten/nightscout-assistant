@@ -3,12 +3,12 @@
         "google-tm": "Google Assistenten är ett varumärke av Google Inc.",
         "nightscout-no-affl": "Inte förknippad med {{0}}",
         "nightscout-project": "the Nightscout Project",
-        "invocation": "Blodsocker status",
+        "invocation": "Nightscout",
         "full-invocation": "Hey Google, prata med $t(common.invocation)"
     },
     "index": {
         "header": {
-            "title": "Nightscout Status (Blodsocker status)",
+            "title": "Nightscout status",
             "subtitle": "Nightscout för Google Home & Google Assistenten (ej officiell)"
         },
         "example-conversation": {
@@ -41,16 +41,16 @@
             "settings-saved": "Inställningar sparade",
             "success-msg": "Prova nu att fråga Google Assistenten:",
             "hint-header": "Tips:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "hint": "Du kan förkorta anropet med {{0}}. {{1}} Till exempel: \"Hej Google, kontrollera mitt socker.”",
             "hint-routines": "Routines",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Se till att du läser detta!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "Denna disclaimer kommer <u>upprepas varje gång</u> du frågar efter din glukosnivå",
+                    "2": "Du kan stänga av detta genom att klicka på knappen nedan",
+                    "3": "Om du väljer att stänga av ansvarsfriskrivningen, du godkänner att:<br />- du har läst och förstått ansvarsfriskrivningen <br />- du begär uttryckligen att den inte längre upprepas",
+                    "enable": "Nej, upprepa ansvarsfriskrivning varje gång",
+                    "disable": "OK, stäng av ansvarsfriskrivningen"
                 }
             }
         },
@@ -80,7 +80,7 @@
         "health": {
             "title": "Friskrivningsklausul för sjukvård",
             "disclaimer-short": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal.",
-            "disclaimer": "$t(terms.health.disclaimer-short) Om du har frågor om behandling eller behöver råd, kom ihåg att alltid fråga din läkare!"
+            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
         },
         "license-and-tos": "Licens och Användarvillkor"
     }
