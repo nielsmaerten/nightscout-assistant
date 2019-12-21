@@ -14,12 +14,12 @@
         "example-conversation": {
             "hey-google": "Hey Google,",
             "ask-google": "fråga {{0}} vad mitt blodsocker är",
-            "nightscout-status-resp": "120 and rising slowly as of 4 minutes ago"
+            "nightscout-status-resp": "120 för 4 minuter sedan stiger långsamt"
         },
         "settings": {
             "connect": "Anslut din Nightscoutsida för att komma igång:",
-            "invalid-url": "Are you sure this URL is correct?",
-            "use-token-url": "Try using a token-url or check your API secret",
+            "invalid-url": "Är du säker på att den här webbadressen är korrekt?",
+            "use-token-url": "Prova att använda en token-url eller kontrollera din API-secret",
             "your-site": "Din Nightscoutsida",
             "unit": "Enhet",
             "mg-dl": "mg/dl",
@@ -33,14 +33,14 @@
                 "title": "Måste jag ange min API Secret ?",
                 "info": "Detta behövs bara om din Nightscoutsida är läs skyddad (read protected). (t.ex. om {{0}} är satt till {{1}})"
             },
-            "done": "All done!",
-            "oops": "Oops!",
-            "one-moment-please": "One moment please...",
-            "testing-your-site": "We're testing your Nightscout site",
-            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-            "settings-saved": "Settings saved",
+            "done": "Allt klart!",
+            "oops": "Hoppsan!",
+            "one-moment-please": "Vänta ett ögonblick...",
+            "testing-your-site": "Vi testar din Nightscout-webbplats",
+            "unable-to-get-reading": "Vi kunde inte få ett glukosvärde från:",
+            "settings-saved": "Inställningar sparade",
             "success-msg": "Prova nu att fråga Google Assistenten:",
-            "hint-header": "Tip:",
+            "hint-header": "Tips:",
             "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
             "hint-routines": "Routines",
             "modal": {
