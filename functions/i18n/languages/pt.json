@@ -1,9 +1,9 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Agora, você pode tentar perguntar: 'hey, Google, pergunte ao Nightscout Status qual é minha glicose'.",
+            "completed": "Agora, você pode tentar perguntar: 'OK, Google, fale com o Estado da Glicémia'.",
             "request": "Para aceder á glicose",
-            "healthDisclaimer": "Relembrar que a informação disponibilizada pelo Nightscout Status não substitui o conselho de um profissional médico."
+            "healthDisclaimer": "Relembrar que a informação disponibilizada pelo Estado da Glicémia não substitui o conselho de um profissional médico."
         },
         "errors": {
             "unknown-error": "Desculpe, aconteceu um erro, será verificado assim que possível.",
@@ -49,7 +49,7 @@
                 },
                 "sample-invocations": [
                     "Ok Google, fale com o Nightscout Status",
-                    "Ok Google, pergunte ao Nightscout Status qual é minha glicose"
+                    "Ok Google, Fale com o Estado da Glicémia"
                 ]
             }
         }
