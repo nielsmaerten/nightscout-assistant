@@ -32,4 +32,5 @@ This service is not affiliated to the Nightscout Project
 - Idalio Reis (Portuguese)
 - Kasiawu (Polish)
 - Troldmanden (Danish)
+- Daniel Bjørnbakk (Norwegian)
 - Can you help us translate? Visit https://crowdin.com/project/nightscout-status
