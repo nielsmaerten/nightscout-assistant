@@ -3,12 +3,12 @@
         "google-tm": "Google Assistant é uma marca comercial da Google Inc.",
         "nightscout-no-affl": "Não afiliado com {{0}}",
         "nightscout-project": "o Projeto Nightscout",
-        "invocation": "Nightscout Status",
+        "invocation": "Estado da Glicémia",
         "full-invocation": "Hey Google, fale com $t(common.invocation)"
     },
     "index": {
         "header": {
-            "title": "Nightscout Status",
+            "title": "Nightscout Status (Estado da Glicémia)",
             "subtitle": "Nightscout para a Google Home e o Assistente do Google (não oficial)"
         },
         "example-conversation": {
@@ -64,22 +64,22 @@
         "back": "Voltar",
         "privacy-policy": {
             "title": "Política de Privacidade",
-            "intro": "Este documento descreve as informações que estão sendo coletadas pelo Nightscout Status, {{0}} (o \"Serviço\" ou o \"Software\") e como essas informações são usadas.",
+            "intro": "Este documento descreve as informações que estão sendo coletadas pelo Nightscout Status (Estado da Glicémia), {{0}} (o \"Serviço\" ou o \"Software\") e como essas informações são usadas.",
             "collection-title": "Quais as informações que são recolhidas?",
             "collection-desc": "O Serviço precisa de duas coisas para funcionar: o endereço de e-mail da sua Conta do Google (para que você saiba quando você faz uma solicitação) e o URL do seu site do Nightscout (para pesquisar sua glicose e lê-la para si).",
             "use-title": "Como é utilizada esta informação?",
-            "use-desc": "Quando você invoca o Serviço pelo Google Assistant (ou seja, dizendo: 'Ei, Google, fale com o Status do Nightscout), o Serviço verifica seu endereço de e-mail e verifica se há um site do Nightscout associado a ele. Nesse caso, o seu nível atual de glicose é lido no site do Nightscout.",
+            "use-desc": "Quando você invoca o Serviço pelo Google Assistant (ou seja, dizendo: 'OK, Google, fale com o Estado da Glicémia), o Serviço verifica seu endereço de e-mail e verifica se há um site do Nightscout associado a ele. Nesse caso, o seu nível atual de glicose é lido no site do Nightscout.",
             "sharing-title": "Informação da partilha",
             "sharing-desc": "O seu endereço de e-mail ou Nightscout URL <strong>nunca</strong> irá ser compartilhadas com terceiros. Eu só preciso dele para saber qual site do Nightscout verificar quando você o chama. Os dados do site do Nightscout não são salvos, nem mesmo arquivados. ",
             "deleting-title": "Apagando seus dados",
-            "deleting-desc": "Você pode desligar o acesso a qualquer momento: basta fazer login, remover o URL do Nightscout e clicar em guardar. Você também pode remover o status Nightscout do seu {{0}}.",
+            "deleting-desc": "Você pode desligar o acesso a qualquer momento: basta fazer login, remover o URL do Nightscout e clicar em guardar. Você também pode remover o Nightscout Status (Estado da Glicémia) do seu {{0}}.",
             "deleting-google-account": "Conta Google",
             "analytics-title": "Analytics Cookie",
             "analytics-desc": "Depois de fazer login neste site, algumas estatísticas anônimas sobre sua visita são recolhidas usando um cookie (Google Analytics). O cookie não será ativado até que você aceite esta Política de Privacidade. Estou a usar o Google Analytics para entender melhor como as pessoas estão usando este site, como o encontraram e em qual região demográfica estão. Isso se aplica apenas a {{0}}, não ao uso da própria ação do assistente. Se você deseja desativar o cookie do Google Analytics, pode fazê-lo visitando {{1}}"
         },
         "health": {
             "title": "Aviso da responsabilidade de informações de saúde",
-            "disclaimer-short": "As informações fornecidas pelo Nightscout Status não substituem os conselhos de um profissional médico.",
+            "disclaimer-short": "As informações fornecidas pelo Estado da Glicémia não substituem os conselhos de um profissional médico.",
             "disclaimer": "$t(terms.health.disclaimer-short) Se você tiver dúvidas sobre o tratamento ou precisar de conselhos, lembre-se de sempre perguntar ao seu médico!"
         },
         "license-and-tos": "Licença e Termos de Serviço"
