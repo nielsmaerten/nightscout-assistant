@@ -1,7 +1,7 @@
 {
     "translation": {
         "signIn": {
-            "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'",
+            "completed": "Nå kan du prøve å spørre: 'Hei Google, spør Nightscout Status hva blodsukkeret mitt er'.",
             "request": "For å få tilgang til blodsukkeret ditt",
             "healthDisclaimer": "Husk: informasjonen du får fra Nightscout Status er ikke en erstatning for råd du mottar av profesjonellt helsepersonell."
         },
@@ -10,46 +10,46 @@
             "noNsSite": "Før jeg kan sjekke blodsukkeret ditt, så trenger jeg URL til din Nightscout nettside. Du kan fylle den inn ved å besøke {{- homepageUrl}}",
             "noBgReading": "Hmmm. Jeg kunne ikke finne nylige blodsukkermålinger.",
             "invalidUrl": {
-                "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-                "p2": "Make sure your url starts with http."
+                "p1": "Beklager, Nightscout URL'en du ga meg ser ikke ut til å være gyldig. Kan du sjekke på {{- homepageUrl}} ?",
+                "p2": "Pass på at din url starter med http."
             },
-            "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-            "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-            "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+            "notFound": "Beklager, jeg kunne ikke finne Nightscout nettsiden din. Sjekk at du har skrevet rett URL på {{- homepageUrl}}",
+            "unauthorized": "Beklager, det ser ut som at jeg ikke har tilgang til å lese data fra Nightscout nettsiden. Prøv å skrive inn API secret på {{- homepageUrl}}",
+            "nsSiteError": "Beklager, det ser ut til å være et problem med din Nightscout nettside. Jeg kunne ikke hente ut statusen din."
         },
         "trends": {
-            "DoubleUp": "rising rapidly",
-            "SingleUp": "rising",
-            "FortyFiveUp": "rising slowly",
-            "Flat": "stable",
-            "FortyFiveDown": "falling slowly",
-            "SingleDown": "falling",
-            "DoubleDown": "falling rapidly"
+            "DoubleUp": "stiger raskt",
+            "SingleUp": "stiger",
+            "FortyFiveUp": "stiger sakte",
+            "Flat": "stabilt",
+            "FortyFiveDown": "synker sakte",
+            "SingleDown": "synker",
+            "DoubleDown": "synker raskt"
         },
         "answers": {
-            "noTrend": "{{bg}} as of {{ago}}.",
-            "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+            "noTrend": "{{bg}} for {{ago}}.",
+            "withTrend": "{{bg}} og {{trend}} for {{ago}}."
         },
         "google-assistant": {
             "invocations": [
-                "How is my sugar?",
-                "How low am I?",
-                "How high am I?",
-                "What is my status?",
-                "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Hvordan er sukkeret?",
+                "Hvor lav er jeg?",
+                "Hvor høy er jeg?",
+                "Hva er statusen min?",
+                "Hvordan har jeg det?",
+                "Hva er glukosen min?",
+                "Hvordan er blodsukkeret mitt?",
+                "Sjekk blodsukkeret mitt.",
+                "Sjekk blodsukkeret mitt"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Sjekk ditt nåværende blodsukker fra Nightscout",
+                    "full": "Spør Google Assistant om ditt nåværende blodsukker."
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, snakk med Nightscout Status",
+                    "Ok Google, spør Nightscout Status hvordan blodsukkeret mitt er"
                 ]
             }
         }
