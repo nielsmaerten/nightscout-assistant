@@ -36,20 +36,20 @@
                 "Hvor lav er jeg?",
                 "Hvor høy er jeg?",
                 "Hva er statusen min?",
-                "How am I doing?",
-                "What's my glucose?",
-                "What's my blood sugar?",
-                "Check my glucose.",
-                "Check my blood sugar"
+                "Hvordan har jeg det?",
+                "Hva er glukosen min?",
+                "Hvordan er blodsukkeret mitt?",
+                "Sjekk blodsukkeret mitt.",
+                "Sjekk blodsukkeret mitt"
             ],
             "actions-directory": {
                 "description": {
-                    "short": "Check your current glucose level from Nightscout",
-                    "full": "Ask the Google Assistant about your current glucose level."
+                    "short": "Sjekk ditt nåværende blodsukker fra Nightscout",
+                    "full": "Spør Google Assistant om ditt nåværende blodsukker."
                 },
                 "sample-invocations": [
-                    "Ok Google, talk to Nightscout Status",
-                    "Ok Google, ask Nightscout Status what my glucose is"
+                    "Ok Google, snakk med Nightscout Status",
+                    "Ok Google, spør Nightscout Status hvordan blodsukkeret mitt er"
                 ]
             }
         }
