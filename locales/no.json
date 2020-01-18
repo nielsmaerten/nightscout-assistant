@@ -1,87 +1,87 @@
 {
     "common": {
-        "google-tm": "Google Assistant is a trademark of Google Inc.",
-        "nightscout-no-affl": "Not affiliated with {{0}}",
-        "nightscout-project": "the Nightscout Project",
+        "google-tm": "Google Assistant er et varemerke for Google Inc.",
+        "nightscout-no-affl": "Ikke tilknyttet {{0}}",
+        "nightscout-project": "Nightscout-prosjektet",
         "invocation": "Nightscout Status",
-        "full-invocation": "Hey Google, talk to $t(common.invocation)"
+        "full-invocation": "Hei Google, snakk med $t(common.invocation)"
     },
     "index": {
         "header": {
             "title": "Nightscout Status",
-            "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+            "subtitle": "Nightscout for Google Home og Google Assistant (uoffisiell)"
         },
         "example-conversation": {
             "hey-google": "Hei Google,",
-            "ask-google": "ask {{0}} what my glucose is",
-            "nightscout-status-resp": "120 and rising slowly as of 4 minutes ago"
+            "ask-google": "spør {{0}} hva blodsukkeret mitt er",
+            "nightscout-status-resp": "120 og stiger sakte, for 4 minutter siden"
         },
         "settings": {
-            "connect": "Connect your Nightscout site to get started:",
-            "invalid-url": "Are you sure this URL is correct?",
-            "use-token-url": "Try using a token-url or check your API secret",
-            "your-site": "Your Nightscout site",
-            "unit": "Unit",
+            "connect": "Koble til Nightscout-siden for å komme i gang:",
+            "invalid-url": "Er du sikker på at denne URL er riktig?",
+            "use-token-url": "Prøv å bruke en token-url, eller sjekk din API secret",
+            "your-site": "Nightscout-nettstedet ditt",
+            "unit": "Enhet",
             "mg-dl": "mg/dl",
             "mmol-l": "mmol/l",
             "api-secret": "API secret",
-            "optional": "(optional)",
-            "unchanged": "(unchanged)",
-            "save": "Save",
-            "sign-out": "Sign out",
+            "optional": "(valgfritt)",
+            "unchanged": "(uendret)",
+            "save": "Lagre",
+            "sign-out": "Logg av",
             "api-secret-info": {
-                "title": "Do I have to enter my API Secret ?",
-                "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+                "title": "Må jeg oppgi min API-Secret?",
+                "info": "Dette trengs bare om din Nightscout nettside er 'read protected'. (for eksempel om {{0}} er satt til {{1}})"
             },
-            "done": "All done!",
+            "done": "Ferdig!",
             "oops": "Oops!",
-            "one-moment-please": "One moment please...",
-            "testing-your-site": "We're testing your Nightscout site",
-            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-            "settings-saved": "Settings saved",
-            "success-msg": "Now try asking Google Assistant:",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
-            "hint-routines": "Routines",
+            "one-moment-please": "Et øyeblikk...",
+            "testing-your-site": "Vi tester ditt Nightscout-nettsted",
+            "unable-to-get-reading": "Vi klarte ikke å få blodsukkermålinger fra:",
+            "settings-saved": "Innstillinger lagret",
+            "success-msg": "Prøv nå å spørre Google Assistant:",
+            "hint-header": "Tips:",
+            "hint": "Du kan forkorte forespørslen ved å bruke {{0}}. {{1}} For eksempel: \"Hei Google, sjekk blodsukkeret mitt.\"",
+            "hint-routines": "Rutiner",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Sørg for at du leser dette!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "Denne ansvarsfraskrivelsen blir <u>gjentas hver gang</u> du ber om blodsukkernivået",
+                    "2": "Du kan slå av dette ved å klikke på knappen nedenfor",
+                    "3": "Hvis du velger å slå av ansvarsfraskrivelsen, samtykker du i at:<br />- du har lest og forstår ansvarsfraskrivelsen <br />- du ber eksplisitt om at den ikke lenger vil bli gjentatt",
+                    "enable": "Nei, gjenta ansvarsfraskrivelse hver gang",
+                    "disable": "OK, slå av ansvarsfraskrivelsen"
                 }
             }
         },
         "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "Bug reports; feature requests",
-            "tos": "Terms of Service and Privacy Policy"
+            "help-faq": "Hjelp og vanlige spørsmål",
+            "bugs": "Feilrapporter; funksjonsforespørsler",
+            "tos": "Vilkår for bruk og personvern"
         }
     },
     "terms": {
-        "back": "Go back",
+        "back": "Gå tilbake",
         "privacy-policy": {
-            "title": "Privacy Policy",
-            "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-            "collection-title": "What information is collected?",
-            "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-            "use-title": "How is this information used?",
-            "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
-            "sharing-title": "Sharing of information",
-            "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-            "deleting-title": "Deleting your data",
-            "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-            "deleting-google-account": "Google Account",
-            "analytics-title": "Analytics Cookie",
-            "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+            "title": "Retningslinjer for personvern",
+            "intro": "Dette dokumentet beskriver informasjonen som blir samlet inn av Nightscout Status, {{0}} (\"Tjenesten\" eller \"Programvaren\") og hvordan denne informasjonen brukes.",
+            "collection-title": "Hvilken informasjon samles inn?",
+            "collection-desc": "Tjenesten trenger to ting for å fungere: e-postadressen til Google-kontoen din (slik at den kan vite at det er deg når du ber om en forespørsel), og nettadressen til Nightscout-forekomsten (slik at den kan slå opp glukosen din og lese den til du).",
+            "use-title": "Hvordan brukes denne informasjonen?",
+            "use-desc": "Når du påkaller tjenesten via Google Assistant (dvs. ved å si: 'Hei Google, snakk med Nightscout Status), ser tjenesten på e-postadressen din og sjekker om det er et Nightscout-nettsted tilknyttet den. I så fall leses det nåværende blodsukkernivået fra Nightscout-nettstedet.",
+            "sharing-title": "Deling av informasjon",
+            "sharing-desc": "E-postadressen din eller Nightscout URL vil <strong>aldri</strong> bli delt med en tredjepart. Jeg trenger det bare slik at jeg vet hvilket Nightscout-nettsted jeg skal sjekke når du påkaller handlingen. Data fra Nightscout-nettstedet ditt lagres ikke, ikke engang til loggfiler for feilsøk. ",
+            "deleting-title": "Slette dataene dine",
+            "deleting-desc": "Du kan når som helst velge å oppheve tilgangen: Bare logg inn, fjern Nightscout-URLen og klikk Lagre. Du kan også fjerne Nightscout Status fra {{0}}.",
+            "deleting-google-account": "Google-konto",
+            "analytics-title": "Analytics-informasjonskapsel",
+            "analytics-desc": "Etter at du har logget deg på dette nettstedet, blir noen anonym statistikk om besøket ditt samlet ved hjelp av en cookie (Google Analytics). Informasjonskapselen er ikke aktivert før etter at du har akseptert denne personvernregelen. Jeg bruker Analytics for å forstå hvordan folk bruker dette nettstedet, hvordan de fant det og hvilken demografisk de er i. Dette gjelder bare {{0}}, ikke for bruk av selve assistentaksjonen. Hvis du vil velge bort Google Analytics-informasjonskapselen, kan du gjøre det ved å gå til {{1}}"
         },
         "health": {
-            "title": "Healthcare information disclaimer",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+            "title": "Ansvarsfraskrivelse om helsevesenet",
+            "disclaimer-short": "Informasjonen gitt av Nightscout Status er ikke en erstatning for råd fra medisinsk fagperson.",
+            "disclaimer": "$t(terms.health.disclaimer-short) Hvis du har spørsmål om behandling eller trenger råd, husk å alltid spørre legen din!"
         },
-        "license-and-tos": "License and Terms of service"
+        "license-and-tos": "Lisens og vilkår for bruk"
     }
 }
