@@ -48,7 +48,7 @@
                     "full": "Pergunte ao Assistente do Google sobre seu nível atual de glicose."
                 },
                 "sample-invocations": [
-                    "Ok Google, fale com o Nightscout Status",
+                    "Ok Google, fale com o Estado da Glicémia",
                     "Ok Google, pergunte ao Estado da Glicémia qual é minha glicose"
                 ]
             }
