@@ -14,7 +14,7 @@
         "example-conversation": {
             "hey-google": "Hey Google,",
             "ask-google": "chiedi {{0}} qual è la mia glicemia",
-            "nightscout-status-resp": "120 and rising slowly as of 4 minutes ago"
+            "nightscout-status-resp": "120 e in lenta salita rispetto a 4 minuti fa"
         },
         "settings": {
             "connect": "Collega il tuo sito Nightscout per iniziare:",
