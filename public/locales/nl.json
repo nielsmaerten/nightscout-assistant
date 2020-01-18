@@ -14,7 +14,7 @@
         "example-conversation": {
             "hey-google": "Hey Google,",
             "ask-google": "vraag {{0}} wat mijn bloedsuiker is",
-            "nightscout-status-resp": "120 and rising slowly as of 4 minutes ago"
+            "nightscout-status-resp": "120 en langzaam stijgend sinds 4 minuten geleden"
         },
         "settings": {
             "connect": "Verbind je Nightscout site om te beginnen:",

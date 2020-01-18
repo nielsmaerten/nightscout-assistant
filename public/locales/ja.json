@@ -14,7 +14,7 @@
         "example-conversation": {
             "hey-google": "Ok Google,",
             "ask-google": "聞いて{{0}} 私の血糖値は",
-            "nightscout-status-resp": "120 and rising slowly as of 4 minutes ago"
+            "nightscout-status-resp": "4分前に血糖値は120です。ゆるやかに上がっています。"
         },
         "settings": {
             "connect": "始めるには、あなたのナイトスカウトサイトに接続してください:",
