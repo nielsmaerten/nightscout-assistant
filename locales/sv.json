@@ -3,7 +3,7 @@
         "google-tm": "Google Assistenten är ett varumärke av Google Inc.",
         "nightscout-no-affl": "Inte förknippad med {{0}}",
         "nightscout-project": "the Nightscout Project",
-        "invocation": "Blodsocker status",
+        "invocation": "Blodsocker Status",
         "full-invocation": "Hey Google, prata med $t(common.invocation)"
     },
     "index": {
@@ -18,8 +18,8 @@
         },
         "settings": {
             "connect": "Anslut din Nightscoutsida för att komma igång:",
-            "invalid-url": "Are you sure this URL is correct?",
-            "use-token-url": "Try using a token-url or check your API secret",
+            "invalid-url": "Är du säker på att den här webbadressen är korrekt?",
+            "use-token-url": "Prova att använda en token-url eller kontrollera din API-secret",
             "your-site": "Din Nightscoutsida",
             "unit": "Enhet",
             "mg-dl": "mg/dl",
@@ -33,24 +33,24 @@
                 "title": "Måste jag ange min API Secret ?",
                 "info": "Detta behövs bara om din Nightscoutsida är läs skyddad (read protected). (t.ex. om {{0}} är satt till {{1}})"
             },
-            "done": "All done!",
-            "oops": "Oops!",
-            "one-moment-please": "One moment please...",
-            "testing-your-site": "We're testing your Nightscout site",
-            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-            "settings-saved": "Settings saved",
+            "done": "Allt klart!",
+            "oops": "Hoppsan!",
+            "one-moment-please": "Vänta ett ögonblick...",
+            "testing-your-site": "Vi testar din Nightscout-webbplats",
+            "unable-to-get-reading": "Vi kunde inte få ett glukosvärde från:",
+            "settings-saved": "Inställningar sparade",
             "success-msg": "Prova nu att fråga Google Assistenten:",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+            "hint-header": "Tips:",
+            "hint": "Du kan förkorta anropet med {{0}}. {{1}} Till exempel: \"Hej Google, kontrollera mitt socker.”",
             "hint-routines": "Routines",
             "modal": {
-                "read-this": "Make sure you read this!",
+                "read-this": "Se till att du läser detta!",
                 "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
+                    "1": "Denna disclaimer kommer <u>upprepas varje gång</u> du frågar efter din glukosnivå",
+                    "2": "Du kan stänga av detta genom att klicka på knappen nedan",
+                    "3": "Om du väljer att stänga av ansvarsfriskrivningen, du godkänner att:<br />- du har läst och förstått ansvarsfriskrivningen <br />- du begär uttryckligen att den inte längre upprepas",
+                    "enable": "Nej, upprepa ansvarsfriskrivning varje gång",
+                    "disable": "OK, stäng av ansvarsfriskrivningen"
                 }
             }
         },
