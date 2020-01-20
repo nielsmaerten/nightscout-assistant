@@ -9,4 +9,6 @@ before_install: npm i -g firebase-tools
 install:
 - cd functions
 - npm install
-script: npm run deploy -- --token $FIREBASE_TOKEN
+script: 
+- npm test
+- npm run deploy -- --token $FIREBASE_TOKEN
