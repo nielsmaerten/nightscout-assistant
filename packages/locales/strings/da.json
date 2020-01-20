@@ -1,0 +1,142 @@
+{
+  "translation": {
+    "signIn": {
+      "completed": "Nu kan du prøve at spørge: 'Hej Google, spørg Nightscout Status hvad min glukose er'.",
+      "request": "For at få adgang til dit blodsukker",
+      "healthDisclaimer": "Husk: informationer leveret af Nightscout Status er ikke en erstatning for lægelig rådgivning."
+    },
+    "errors": {
+      "unknown-error": "Beklager, der opstod en ukendt fejl. Det vil blive undersøgt så hurtigt som muligt.",
+      "noNsSite": "Inden jeg kan tjekke din glukose, har jeg brug for URL'en til din Nightscout side. Du kan indtaste det ved at besøge {{- homepageUrl}}",
+      "noBgReading": "Hmmm. Jeg kunne ikke finde en nylig glukoselæsning.",
+      "invalidUrl": {
+        "p1": "Beklager, den Nightscout URL, du gav mig, ser ikke ud til at være gyldig. Kan du tjekke på {{- homepageUrl}}?",
+        "p2": "Sørg for, at din url starter med http."
+      },
+      "notFound": "Beklager, jeg kunne ikke finde din Nightscout side. Kontroller om du har indtastet den rigtige URL på {{- homepageUrl}}",
+      "unauthorized": "Beklager, det ser ud til, at jeg ikke har tilladelse til at få adgang til din Nightscout side. Prøv at indtaste din API kode på {{- homepageUrl}}",
+      "nsSiteError": "Beklager, der ser ud til at være et problem med din Nightscout side. Jeg kunne ikke få din status."
+    },
+    "trends": {
+      "DoubleUp": "stiger hurtigt",
+      "SingleUp": "stiger",
+      "FortyFiveUp": "stiger langsomt",
+      "Flat": "stabil",
+      "FortyFiveDown": "falder langsomt",
+      "SingleDown": "falder",
+      "DoubleDown": "falder hurtigt"
+    },
+    "answers": {
+      "noTrend": "{{bg}} pr. {{ago}}.",
+      "withTrend": "{{bg}} og {{trend}} pr. {{ago}}."
+    },
+    "google-assistant": {
+      "invocations": [
+        "Hvordan er mit blodsukker?",
+        "Hvor lav er jeg?",
+        "Hvor høj er jeg?",
+        "Hvad er min status?",
+        "Hvordan har jeg det?",
+        "Hvad er min glukose?",
+        "Hvad er mit blodsukker?",
+        "Kontrollér min glukose.",
+        "Kontrollér mit blodsukker"
+      ],
+      "actions-directory": {
+        "description": {
+          "short": "Kontrollér dit aktuelle glukoseniveau fra Nightscout",
+          "full": "Spørg Google Assistant om dit nuværende glukoseniveau."
+        },
+        "sample-invocations": [
+          "Ok Google, tal med Nightscout Status",
+          "Ok Google, spørg Nightscout Status hvad min glukose er"
+        ]
+      }
+    }
+  },
+  "common": {
+    "google-tm": "Google Assistant er et varemærke tilhørende Google Inc.",
+    "nightscout-no-affl": "Ikke tilknyttet {{0}}",
+    "nightscout-project": "Nightscout Projektet",
+    "invocation": "Nightscout Status",
+    "full-invocation": "Ok Google, tal med $t(common.invocation)"
+  },
+  "index": {
+    "header": {
+      "title": "Nightscout Status",
+      "subtitle": "Nightscout til Google Home og Google Assistant (uofficiel)"
+    },
+    "example-conversation": {
+      "hey-google": "Hey Google,",
+      "ask-google": "spørg {{0}} hvad min glukose er",
+      "nightscout-status-resp": "120 og langsomt stigende for 4 minutter siden"
+    },
+    "settings": {
+      "connect": "Tilslut din Nightscout side for at komme i gang:",
+      "invalid-url": "Are you sure this URL is correct?",
+      "use-token-url": "Try using a token-url or check your API secret",
+      "your-site": "Din Nightscout side",
+      "unit": "Enhed",
+      "mg-dl": "mg/dl",
+      "mmol-l": "mmol/l",
+      "api-secret": "API nøgle",
+      "optional": "(valgfrit)",
+      "unchanged": "(uændret)",
+      "save": "Gem",
+      "sign-out": "Log ud",
+      "api-secret-info": {
+        "title": "Behøver jeg at indtaste min API nøgle?",
+        "info": "Dette er kun nødvendigt, hvis din Nightscout side er 'skrivebeskyttet'. (for eksempel hvis {{0}} er indstillet til {{1}})"
+      },
+      "done": "All done!",
+      "oops": "Oops!",
+      "one-moment-please": "One moment please...",
+      "testing-your-site": "We're testing your Nightscout site",
+      "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+      "settings-saved": "Settings saved",
+      "success-msg": "Prøv nu at spørge Google Assistant:",
+      "hint-header": "Tip:",
+      "hint": "Du kan forkorte kommandoen vha. {{0}}. {{1}} For eksempel: \"Hej Google, tjek mit sukker.\"",
+      "hint-routines": "Rutiner",
+      "modal": {
+        "read-this": "Sørg for at læse dette!",
+        "disclaimer": {
+          "1": "Denne ansvarsfraskrivelse bliver <u>gentaget hver gang</u> du beder om dit glukoseniveau",
+          "2": "Du kan slå dette fra ved at klikke på knappen nedenfor",
+          "3": "Hvis du vælger at slå ansvarsfraskrivelsen fra, accepterer du at:<br />- du har læst og forstået ansvarsfraskrivelsen <br />- du anmoder eksplicit om, at den ikke længere vil blive gentaget",
+          "enable": "Nej, gentag ansvarsfraskrivelse hver gang",
+          "disable": "OK, slå ansvarsfraskrivelsen fra"
+        }
+      }
+    },
+    "footer": {
+      "help-faq": "Hjælp og ofte stillede spørgsmål",
+      "bugs": "Fejlrapporter; funktionsanmodninger",
+      "tos": "Servicevilkår og Fortrolighedspolitik"
+    }
+  },
+  "terms": {
+    "back": "Gå tilbage",
+    "privacy-policy": {
+      "title": "Fortrolighedspolitik",
+      "intro": "Dette dokument beskriver de oplysninger, der indsamles af Nightscout Status, {{0}} (\"Tjenesten\" eller \"Softwaren\"), og hvordan disse oplysninger bruges.",
+      "collection-title": "Hvilke oplysninger indsamles?",
+      "collection-desc": "Tjenesten har brug for to ting for at kunne fungere: emailadressen på din Google konto (så den kan vide, at det er dig, når du laver en anmodning), og URL'en til din Nightscout instans (så den kan slå din glukose op og læse den for dig).",
+      "use-title": "Hvordan bruges disse oplysninger?",
+      "use-desc": "Når du påberåber sig Tjenesten gennem Google Assistant (dvs. ved at sige: 'Hej Google, tal med Nightscout Status), ser Tjenesten på din emailadresse og kontrollerer, om der er en Nightscout side tilknyttet den. I så fald læses dit nuværende glukoseniveau fra din Nightscout side.",
+      "sharing-title": "Deling af information",
+      "sharing-desc": "Din emailadresse eller Nightscout URL vil <strong>aldrig</strong> blive delt med en tredjepart. Jeg har bare brug for det, så jeg ved, hvilken Nightscout side der skal kontrolleres, når du foretager handlingen. Data fra din Nightscout webside gemmes ikke, ikke engang i log filer. ",
+      "deleting-title": "Sletning af dine data",
+      "deleting-desc": "Du kan til enhver tid vælge at tilbagekalde adgang: Du skal blot logge ind, fjerne din Nightscout URL, og klikke på Gem. Du kan også fjerne Nightscout Status fra din {{0}}.",
+      "deleting-google-account": "Google konto",
+      "analytics-title": "Analyse Cookie",
+      "analytics-desc": "Når du har logget ind på denne side, indsamles nogle anonyme statistikker om dit besøg ved hjælp af en cookie (Google Analytics). Cookien er først aktiveret, efter at du har accepteret denne Fortrolighedspolitik. Jeg bruger Analytics til bedre at forstå, hvordan folk bruger denne side, hvordan de fandt det, og hvilket demografisk område de befinder sig i. Dette gælder kun {{0}}, ikke for brug af selve assistenthandlingen. Hvis du gerne vil fravælge Google Analytics-cookien, kan du gøre det ved at besøge {{1}}"
+    },
+    "health": {
+      "title": "Ansvarsfraskrivelse om sundhedspleje",
+      "disclaimer-short": "Oplysningerne leveret af Nightscout Status kan ikke erstatte rådgivning fra en læge eller sygeplejerske.",
+      "disclaimer": "$t(terms.health.disclaimer-short) Hvis du har spørgsmål om behandling eller har brug for rådgivning, så husk altid at spørge din læge!"
+    },
+    "license-and-tos": "Licens og Servicevilkår"
+  }
+}
