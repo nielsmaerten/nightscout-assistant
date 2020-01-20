@@ -80,7 +80,8 @@ const updateUserProfile = async (userProfile, userEmail) => {
 function formatResponse(d, unit, t) {
   // Init a localized version of moment
   let moment = require("moment");
-  moment.locale(t.lng);
+  let l = t.lng === "no-NO" ? "nb" : t.lng; // TODO: This feels... weird :/ Is there no other way?
+  moment.locale(l);
 
   // Get localized numberFormat
   const nf = new intl.NumberFormat(t.lng).format;
