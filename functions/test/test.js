@@ -10,11 +10,7 @@ let testUser = {
 
 const getAnswerInLanguage = async language => {
   let t = i18next.getFixedT(language);
-  return await Nightscout.getNightscoutStatus(
-    testUser,
-    testUser.email,
-    t
-  );
+  return await Nightscout.getNightscoutStatus(testUser, testUser.email, t);
 };
 
 describe("Nightscout Status", () => {

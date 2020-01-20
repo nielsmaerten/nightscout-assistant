@@ -79,12 +79,12 @@ const updateUserProfile = async (userProfile, userEmail) => {
 
 function formatResponse(d, unit, t) {
   // Init a localized version of moment
+  let locale = determineLocale(t.lng);
   let moment = require("moment");
-  let l = t.lng === "no-NO" ? "nb" : t.lng; // TODO: This feels... weird :/ Is there no other way?
-  moment.locale(l);
+  moment.locale(locale);
 
   // Get localized numberFormat
-  const nf = new intl.NumberFormat(t.lng).format;
+  const nf = new intl.NumberFormat(locale).format;
 
   // Get components of the response
   const ago = moment(d.date).fromNow();
@@ -102,6 +102,17 @@ function formatResponse(d, unit, t) {
     return t("answers.withTrend", { bg: nf(bg), trend, ago });
   } else {
     return t("answers.noTrend", { bg: nf(bg), ago });
+  }
+}
+
+function determineLocale(lnCode) {
+  switch (lnCode) {
+    // For Norwegian, fall back to Norwegian Bokmål
+    case "no-NO":
+      return "nb";
+
+    default:
+      return lnCode;
   }
 }
 
