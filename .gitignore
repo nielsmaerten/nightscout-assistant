@@ -1,5 +1,15 @@
-# Created by https://www.gitignore.io/api/node,macos,linux,windows
-# Edit at https://www.gitignore.io/?templates=node,macos,linux,windows
+
+# Created by https://www.gitignore.io/api/vue,node,linux,macos,windows,firebase
+# Edit at https://www.gitignore.io/?templates=vue,node,linux,macos,windows,firebase
+
+### Firebase ###
+.idea
+**/node_modules/*
+**/.firebaserc
+
+### Firebase Patch ###
+.runtimeconfig.json
+.firebase/
 
 ### Linux ###
 *~
@@ -67,6 +77,7 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+*.lcov
 
 # nyc test coverage
 .nyc_output
@@ -89,6 +100,9 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+
+# TypeScript cache
+*.tsbuildinfo
 
 # Optional npm cache directory
 .npm
@@ -118,6 +132,18 @@ typings/
 # nuxt.js build output
 .nuxt
 
+# rollup.js default build output
+dist/
+
+# Uncomment the public line if your project uses Gatsby
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# https://create-react-app.dev/docs/using-the-public-folder/#docsNav
+# public
+
+# Storybook build outputs
+.out
+.storybook-out
+
 # vuepress build output
 .vuepress/dist
 
@@ -130,9 +156,27 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
+# Temporary folders
+tmp/
+temp/
+
+### Vue ###
+.DS_*
+**/*.backup.*
+**/*.back.*
+
+node_modules
+
+*.sublime*
+
+psd
+thumb
+sketch
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
@@ -155,9 +199,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/node,macos,linux,windows
-
-## Project extras
-config.js
-dist/
-.history/
+# End of https://www.gitignore.io/api/vue,node,linux,macos,windows,firebase
