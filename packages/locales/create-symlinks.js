@@ -3,7 +3,7 @@ const fs = require("fs");
 
 const localePaths = {
   source: path.resolve("./strings"),
-  cloudFunctions: path.resolve("../cloud-functions/i18n/languages"),
+  cloudFunctions: path.resolve("../cloud-functions/i18n/locales"),
   webApp: path.resolve("../webapp/public/locales")
 };
 
