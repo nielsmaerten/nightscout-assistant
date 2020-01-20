@@ -7,13 +7,13 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Mocha Tests",
-            "program": "${workspaceFolder}/functions/node_modules/mocha/bin/_mocha",
+            "name": "Test Cloud Functions",
+            "program": "${workspaceFolder}/packages/cloud-functions/node_modules/mocha/bin/_mocha",
             "args": [
                 "--timeout",
                 "999999",
                 "--colors",
-                "${workspaceFolder}/functions/test"
+                "${workspaceFolder}/packages/cloud-functions/test"
             ],
             "internalConsoleOptions": "openOnSessionStart",
             "skipFiles": [
