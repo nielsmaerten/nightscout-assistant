@@ -1,0 +1,7 @@
+{
+  "name": "nightscout-status-locales",
+  "private": true,
+  "scripts": {
+    "postinstall": "node create-symlinks.js"
+  }
+}
