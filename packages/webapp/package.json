@@ -1,8 +1,6 @@
 {
-  "name": "nightscout-assistant-site",
-  "version": "0.1.0",
+  "name": "nightscout-assistant-webapp",
   "private": true,
-  "homepage": "https://nielsmaerten.github.io/nightscout-assistant",
   "scripts": {
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
