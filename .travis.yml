@@ -7,7 +7,6 @@ git:
 branches:
   only:
     - master
-    - travis #TODO: delete this one
 
 before_install:
   - npm i -g firebase-tools
