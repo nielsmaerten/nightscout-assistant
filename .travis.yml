@@ -18,6 +18,8 @@ script:
   - cd packages/cloud-functions
   - npm run test
   - npm run deploy -- --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT
+  - cd ../packages/webapp
+  - npm run build
 
 deploy:
   provider: pages
