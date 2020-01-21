@@ -1,87 +1,142 @@
 {
-    "common": {
-        "google-tm": "Google　Assistantはグーグルのトレードマークです。",
-        "nightscout-no-affl": "{{0}} と提携していません。",
-        "nightscout-project": "ナイトスカウトプロジェクト",
-        "invocation": "ナイトスカウトステータス",
-        "full-invocation": "Ok Google,話して$t(common.invocation)"
+  "translation": {
+    "signIn": {
+      "completed": "あなたは質問する事ができます。: 'Ok Google, Nightscoutの血糖値は'",
+      "request": "血糖値を見る",
+      "healthDisclaimer": "注意：ナイトスカウトステータスによる情報は、医療機関等の診断に代わるものではありません。"
     },
-    "index": {
-        "header": {
-            "title": "ナイトスカウトステータス",
-            "subtitle": "ナイトスカウトの為のグーグルホームとグーグルアシスタント(非公式)"
-        },
-        "example-conversation": {
-            "hey-google": "Ok Google,",
-            "ask-google": "聞いて{{0}} 私の血糖値は",
-            "nightscout-status-resp": "4分前に血糖値は120です。ゆるやかに上がっています。"
-        },
-        "settings": {
-            "connect": "始めるには、あなたのナイトスカウトサイトに接続してください:",
-            "invalid-url": "Are you sure this URL is correct?",
-            "use-token-url": "Try using a token-url or check your API secret",
-            "your-site": "あたなのナイトスカウトサイト",
-            "unit": "Unit",
-            "mg-dl": "mg/dl",
-            "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(オプション)",
-            "unchanged": "(変更なし)",
-            "save": "保存",
-            "sign-out": "サインアウト",
-            "api-secret-info": {
-                "title": "私はAPI Secretを入力する必要がありますか？",
-                "info": "これはナイトスカウトサイトが「読み取り保護」されている場合に必要です。(例：{{1}} が{{0}} に設定されている場合)"
-            },
-            "done": "All done!",
-            "oops": "Oops!",
-            "one-moment-please": "One moment please...",
-            "testing-your-site": "We're testing your Nightscout site",
-            "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-            "settings-saved": "Settings saved",
-            "success-msg": "グーグルアシスタントに聞いてみて：",
-            "hint-header": "Tip:",
-            "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
-            "hint-routines": "ルーチン",
-            "modal": {
-                "read-this": "Make sure you read this!",
-                "disclaimer": {
-                    "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-                    "2": "You can turn this off by clicking the button below",
-                    "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-                    "enable": "No, repeat disclaimer every time",
-                    "disable": "OK, turn the disclaimer off"
-                }
-            }
-        },
-        "footer": {
-            "help-faq": "Help & FAQ",
-            "bugs": "バグレポート；機能リクエスト",
-            "tos": "利用規約とプライバシーポリシー"
-        }
+    "errors": {
+      "unknown-error": "不明なエラーが発生致しました。早急に調査します。",
+      "noNsSite": "あなたの血糖値を調べる前に、ナイトスカウトのURLが必要です。 {{- homepageUrl}} にアクセスすれば入力することが出来ます。",
+      "noBgReading": "血糖値が読み取れません。",
+      "invalidUrl": {
+        "p1": "申し訳ありません。指定されたNightscoutのURLは無効です。こちらを確認してください。{{- homepageUrl}}",
+        "p2": "Urlがhttpから始まっている事を確認してください。"
+      },
+      "notFound": "Nightscoutに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
+      "unauthorized": "ナイトスカウトにアクセスする権限がありません。APISECRETを{{- homepageUrl}} に入力してください。",
+      "nsSiteError": "ナイトスカウトに問題がある可能性があります。ナイトスカウトのステータスが取得できません。"
     },
-    "terms": {
-        "back": "戻る",
-        "privacy-policy": {
-            "title": "プライバシーポリシー",
-            "intro": "このドキュメントはナイトスカウトステイタス{{0}}(サービス、ソフトウェア) により収集される情報と使用方法を説明します。",
-            "collection-title": "どのような情報が収集されますか？",
-            "collection-desc": "当サービスを利用するにはGoogleアカウントのメールアドレス(あなたを認証します。) と、ナイトスカウトのURL(血糖値を調べて読み上げます。) が必要となります。",
-            "use-title": "この情報の利用方法は？",
-            "use-desc": "グーグルアシスタントで本サービスを起動(Ok Google,私のナイトスカウトステータスを教えて)すると、お客様のメールアドレスを確認後、ナイトスカウトサイトが登録されているか確認します。登録されていると、ナイトスカウトサイトから現在の血糖値を読み取ります。",
-            "sharing-title": "情報の共有化",
-            "sharing-desc": "あなたのメールアドレス及びナイトスカウトURLは他サービスと<strong>共有することはありません。</strong>サービスを起動したときにナイトスカウトサイトを確認する為に必要となります。又、ナイトスカウトサイトのデータはログも含めて保存されません。 ",
-            "deleting-title": "データを削除しています",
-            "deleting-desc": "いつでもアクセス情報を削除うする事が可能です。：ナイトスカウトURLを削除し保存ボタンを押すだけです。又、あたなの{{0}} からナイトスカウトステータスも削除する事が可能です。",
-            "deleting-google-account": "グーグルアカウント",
-            "analytics-title": "クッキーを分析",
-            "analytics-desc": "このサイトにサインインすると、クッキー(Googleアナリティクス) を使用して、お客様のアクセスに関する匿名の情報収集がされます。プライバシーポリシーに同意するまでクッキーは有効になりません。アナリティクスを利用し、利用者のこのサイトの利用方法、接続元、人口統計等の解析に利用されます。これは{{0}} のみに利用され、アシスタント・アクション自体の使用には利用されません。Googleアナリティクスのクッキーは{{1}} にアクセスすればオプトアウトできます。"
+    "trends": {
+      "DoubleUp": "急に上がっています",
+      "SingleUp": "上がっています。",
+      "FortyFiveUp": "ゆるやかに上がっています。",
+      "Flat": "安定しています。",
+      "FortyFiveDown": "ゆるやかに下がっています。",
+      "SingleDown": "下がっています。",
+      "DoubleDown": "急に下がっています。"
+    },
+    "answers": {
+      "noTrend": "{{ago}} 分前の時点で{{bg}} です。",
+      "withTrend": "{{ago}} 分前、血糖値は{{bg}}{{trend}} です。"
+    },
+    "google-assistant": {
+      "invocations": [
+        "血糖値は？",
+        "どれぐらい低い？",
+        "どれぐらい高い？",
+        "私のステータスは？",
+        "どうですか？",
+        "血糖値は？",
+        "血糖値は？",
+        "血糖値を教えて。",
+        "血糖値を確認"
+      ],
+      "actions-directory": {
+        "description": {
+          "short": "Nightscoutから血糖値を確認してください。",
+          "full": "血糖値をGoogle　Assistantに確認してください。"
         },
-        "health": {
-            "title": "医療情報に関する免責事項",
-            "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-            "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
-        },
-        "license-and-tos": "ライセンスとサービス条件"
+        "sample-invocations": [
+          "Ok　Google, ナイトスカウトステータスを教えて。",
+          "Ok Google, Nightscoutの血糖値は"
+        ]
+      }
     }
+  },
+  "common": {
+    "google-tm": "Google　Assistantはグーグルのトレードマークです。",
+    "nightscout-no-affl": "{{0}} と提携していません。",
+    "nightscout-project": "ナイトスカウトプロジェクト",
+    "invocation": "ナイトスカウトステータス",
+    "full-invocation": "Ok Google,話して$t(common.invocation)"
+  },
+  "index": {
+    "header": {
+      "title": "ナイトスカウトステータス",
+      "subtitle": "ナイトスカウトの為のグーグルホームとグーグルアシスタント(非公式)"
+    },
+    "example-conversation": {
+      "hey-google": "Ok Google,",
+      "ask-google": "聞いて{{0}} 私の血糖値は",
+      "nightscout-status-resp": "4分前に血糖値は120です。ゆるやかに上がっています。"
+    },
+    "settings": {
+      "connect": "始めるには、あなたのナイトスカウトサイトに接続してください:",
+      "invalid-url": "Are you sure this URL is correct?",
+      "use-token-url": "Try using a token-url or check your API secret",
+      "your-site": "あたなのナイトスカウトサイト",
+      "unit": "Unit",
+      "mg-dl": "mg/dl",
+      "mmol-l": "mmol/l",
+      "api-secret": "API secret",
+      "optional": "(オプション)",
+      "unchanged": "(変更なし)",
+      "save": "保存",
+      "sign-out": "サインアウト",
+      "api-secret-info": {
+        "title": "私はAPI Secretを入力する必要がありますか？",
+        "info": "これはナイトスカウトサイトが「読み取り保護」されている場合に必要です。(例：{{1}} が{{0}} に設定されている場合)"
+      },
+      "done": "All done!",
+      "oops": "Oops!",
+      "one-moment-please": "One moment please...",
+      "testing-your-site": "We're testing your Nightscout site",
+      "unable-to-get-reading": "We weren't able to get a glucose reading from:",
+      "settings-saved": "Settings saved",
+      "success-msg": "グーグルアシスタントに聞いてみて：",
+      "hint-header": "Tip:",
+      "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
+      "hint-routines": "ルーチン",
+      "modal": {
+        "read-this": "Make sure you read this!",
+        "disclaimer": {
+          "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
+          "2": "You can turn this off by clicking the button below",
+          "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
+          "enable": "No, repeat disclaimer every time",
+          "disable": "OK, turn the disclaimer off"
+        }
+      }
+    },
+    "footer": {
+      "help-faq": "Help & FAQ",
+      "bugs": "バグレポート；機能リクエスト",
+      "tos": "利用規約とプライバシーポリシー"
+    }
+  },
+  "terms": {
+    "back": "戻る",
+    "privacy-policy": {
+      "title": "プライバシーポリシー",
+      "intro": "このドキュメントはナイトスカウトステイタス{{0}}(サービス、ソフトウェア) により収集される情報と使用方法を説明します。",
+      "collection-title": "どのような情報が収集されますか？",
+      "collection-desc": "当サービスを利用するにはGoogleアカウントのメールアドレス(あなたを認証します。) と、ナイトスカウトのURL(血糖値を調べて読み上げます。) が必要となります。",
+      "use-title": "この情報の利用方法は？",
+      "use-desc": "グーグルアシスタントで本サービスを起動(Ok Google,私のナイトスカウトステータスを教えて)すると、お客様のメールアドレスを確認後、ナイトスカウトサイトが登録されているか確認します。登録されていると、ナイトスカウトサイトから現在の血糖値を読み取ります。",
+      "sharing-title": "情報の共有化",
+      "sharing-desc": "あなたのメールアドレス及びナイトスカウトURLは他サービスと<strong>共有することはありません。</strong>サービスを起動したときにナイトスカウトサイトを確認する為に必要となります。又、ナイトスカウトサイトのデータはログも含めて保存されません。 ",
+      "deleting-title": "データを削除しています",
+      "deleting-desc": "いつでもアクセス情報を削除うする事が可能です。：ナイトスカウトURLを削除し保存ボタンを押すだけです。又、あたなの{{0}} からナイトスカウトステータスも削除する事が可能です。",
+      "deleting-google-account": "グーグルアカウント",
+      "analytics-title": "クッキーを分析",
+      "analytics-desc": "このサイトにサインインすると、クッキー(Googleアナリティクス) を使用して、お客様のアクセスに関する匿名の情報収集がされます。プライバシーポリシーに同意するまでクッキーは有効になりません。アナリティクスを利用し、利用者のこのサイトの利用方法、接続元、人口統計等の解析に利用されます。これは{{0}} のみに利用され、アシスタント・アクション自体の使用には利用されません。Googleアナリティクスのクッキーは{{1}} にアクセスすればオプトアウトできます。"
+    },
+    "health": {
+      "title": "医療情報に関する免責事項",
+      "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
+      "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+    },
+    "license-and-tos": "ライセンスとサービス条件"
+  }
 }

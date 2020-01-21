@@ -1,87 +1,142 @@
 {
-    "common": {
-        "google-tm": "Google Assistenten är ett varumärke av Google Inc.",
-        "nightscout-no-affl": "Inte förknippad med {{0}}",
-        "nightscout-project": "the Nightscout Project",
-        "invocation": "Blodsocker Status",
-        "full-invocation": "Hey Google, prata med $t(common.invocation)"
+  "translation": {
+    "signIn": {
+      "completed": "Nu kan du prova att fråga: 'Hey Google, fråga Blodsocker status vad mitt blodsocker är'.",
+      "request": "För att få reda på ditt blodsocker",
+      "healthDisclaimer": "Informationen som tillhandahålls av Blodsocker status är inte en ersättning för råd från medicinsk personal."
     },
-    "index": {
-        "header": {
-            "title": "Nightscout Status (Blodsocker status)",
-            "subtitle": "Nightscout för Google Home & Google Assistenten (ej officiell)"
-        },
-        "example-conversation": {
-            "hey-google": "Hey Google,",
-            "ask-google": "fråga {{0}} vad mitt blodsocker är",
-            "nightscout-status-resp": "6.7 och stiger längsamt för 4 minuter sedan"
-        },
-        "settings": {
-            "connect": "Anslut din Nightscoutsida för att komma igång:",
-            "invalid-url": "Är du säker på att den här webbadressen är korrekt?",
-            "use-token-url": "Prova att använda en token-url eller kontrollera din API-secret",
-            "your-site": "Din Nightscoutsida",
-            "unit": "Enhet",
-            "mg-dl": "mg/dl",
-            "mmol-l": "mmol/l",
-            "api-secret": "API secret",
-            "optional": "(valfritt)",
-            "unchanged": "(oförändrat)",
-            "save": "Spara",
-            "sign-out": "Logga ut",
-            "api-secret-info": {
-                "title": "Måste jag ange min API Secret ?",
-                "info": "Detta behövs bara om din Nightscoutsida är läs skyddad (read protected). (t.ex. om {{0}} är satt till {{1}})"
-            },
-            "done": "Allt klart!",
-            "oops": "Hoppsan!",
-            "one-moment-please": "Vänta ett ögonblick...",
-            "testing-your-site": "Vi testar din Nightscout-webbplats",
-            "unable-to-get-reading": "Vi kunde inte få ett glukosvärde från:",
-            "settings-saved": "Inställningar sparade",
-            "success-msg": "Prova nu att fråga Google Assistenten:",
-            "hint-header": "Tips:",
-            "hint": "Du kan förkorta anropet med {{0}}. {{1}} Till exempel: \"Hej Google, kontrollera mitt socker.”",
-            "hint-routines": "Routines",
-            "modal": {
-                "read-this": "Se till att du läser detta!",
-                "disclaimer": {
-                    "1": "Denna disclaimer kommer <u>upprepas varje gång</u> du frågar efter din glukosnivå",
-                    "2": "Du kan stänga av detta genom att klicka på knappen nedan",
-                    "3": "Om du väljer att stänga av ansvarsfriskrivningen, du godkänner att:<br />- du har läst och förstått ansvarsfriskrivningen <br />- du begär uttryckligen att den inte längre upprepas",
-                    "enable": "Nej, upprepa ansvarsfriskrivning varje gång",
-                    "disable": "OK, stäng av ansvarsfriskrivningen"
-                }
-            }
-        },
-        "footer": {
-            "help-faq": "Hjälp & FAQ",
-            "bugs": "Buggrapportering; önska funktioner",
-            "tos": "Användarvillkor och Integritetspolic"
-        }
+    "errors": {
+      "unknown-error": "Ledsen, ett oväntat fel har inträffat. Detta kommer undersökas så snart som möjligt.",
+      "noNsSite": "Innan jag kan kolla din glukos behöver jag adressen till din Nightscout sida. Du kan ange det genom att besöka {{- homepageUrl}}",
+      "noBgReading": "Hmmm. Jag kunde inte hitta något avläst blodsocker.",
+      "invalidUrl": {
+        "p1": "Ledsen, men Nightscout länken du angett verkar inte vara giltig. Kan du kontrollera länken på {{- homepageUrl}} ?",
+        "p2": "Kontrollera så att länken börjar med http."
+      },
+      "notFound": "Ledsen, men jag kunde inte hitta din Nightscout sida. Kontrollera att du har angivit rätt URL på {{- homepageUrl}}",
+      "unauthorized": "Ledsen, det ser ut som att jag inte har tillåtelse att kontakta din Nightscout sida. Prova att ange din API secret på {{- homepageUrl}}",
+      "nsSiteError": "Ledsen, det ser ut som att det var ett problem med din Nightscout sida. Jag kunde inte hämta din status."
     },
-    "terms": {
-        "back": "Tillbaka",
-        "privacy-policy": {
-            "title": "Integritetspolicy",
-            "intro": "Detta dokument beskriver informationen som samlas in av Nightscout Status (Blodsocker status), {{0}} (\"Tjänsten\" eller \"Mjukvaran\") och hur denna information behandlas.",
-            "collection-title": "Vilken information samlas in?",
-            "collection-desc": "Tjänsten är beroende av 2 saker för att fungera: E-postadressen till ditt Googlekonto (för att veta att det är du som frågar), och adressen till din Nightscoutsida (för att hämta ditt blodsockervärde och läsa upp det för dig).",
-            "use-title": "Hur behandlas informationen?",
-            "use-desc": "När du använder tjänsten via Google Assistenten (d.v.s genom att säga: 'Hey Google, prata med Blodsocker status), används din E-postadress för att se om det finns en Nightscoutsida kopplad till den. Om så är fallet, hämtas ditt blodsockervärde från din Nightscoutsida.",
-            "sharing-title": "Spridning och delning av information",
-            "sharing-desc": "Din E-postadress och/eller din Nightscoutsida (URL) kommer <strong>aldrig</strong> delas eller spridas till tredje part. Informationen används endast för att tjänsten ska veta från vilken Nightscoutsida informationen ska hämtas ifrån. Data från din Nightscoutsida sparas inte, inte ens i loggfiler. ",
-            "deleting-title": "Radera dina uppgifter",
-            "deleting-desc": "Du kan närsomhelst välja att neka åtkomst: Genom att logga in, ta bort din Nightscout URL och trycka på Spara. Du kan också radera Nightscout Status från ditt {{0}}.",
-            "deleting-google-account": "Googlekonto",
-            "analytics-title": "Analytics Cookie",
-            "analytics-desc": "När du har loggat in på denna sida, sparas anonym statistik om ditt besök med hjälp av en cookie (Google Analytics). Cookien aktiveras först efter att du har godkänt denna Integritetspolicy. Analytics används för att bättre förstå hur sidan används, hur den hittats och från vilket geografiskt område. Detta gäller endast {{0}}, inte användandet av tjänsten i sig. Om du vill välja bort (opt-out) från Google Analytics cookie, kan detta göras genom att besöka sidan {{1}}"
+    "trends": {
+      "DoubleUp": "stiger fort",
+      "SingleUp": "stigande",
+      "FortyFiveUp": "stiger långsamt",
+      "Flat": "stabilt",
+      "FortyFiveDown": "sjunker långsamt",
+      "SingleDown": "sjunkande",
+      "DoubleDown": "sjunker snabbt"
+    },
+    "answers": {
+      "noTrend": "{{bg}} {{ago}}.",
+      "withTrend": "{{bg}} och {{trend}} {{ago}}."
+    },
+    "google-assistant": {
+      "invocations": [
+        "Hur är sockret?",
+        "Hur lågt?",
+        "Hur högt?",
+        "Min status?",
+        "Hur ligger jag till?",
+        "Hur är mitt socker?",
+        "Hur är mitt blodsocker?",
+        "Kolla mitt socker.",
+        "Kontrollera mitt blodsocker"
+      ],
+      "actions-directory": {
+        "description": {
+          "short": "Ta reda på din aktuella blodsockernivå från Nightscout",
+          "full": "Fråga Google Assistant om din aktuella blodsockernivå."
         },
-        "health": {
-            "title": "Friskrivningsklausul för sjukvård",
-            "disclaimer-short": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal.",
-            "disclaimer": "$t(terms.health.disclaimer-short) Om du har frågor om behandling eller behöver råd, kom ihåg att alltid fråga din läkare!"
-        },
-        "license-and-tos": "Licens och Användarvillkor"
+        "sample-invocations": [
+          "Ok Google, prata med Blodsocker status",
+          "Ok Google, fråga Blodsocker status om mitt blodsocker"
+        ]
+      }
     }
+  },
+  "common": {
+    "google-tm": "Google Assistenten är ett varumärke av Google Inc.",
+    "nightscout-no-affl": "Inte förknippad med {{0}}",
+    "nightscout-project": "the Nightscout Project",
+    "invocation": "Blodsocker Status",
+    "full-invocation": "Hey Google, prata med $t(common.invocation)"
+  },
+  "index": {
+    "header": {
+      "title": "Nightscout Status (Blodsocker status)",
+      "subtitle": "Nightscout för Google Home & Google Assistenten (ej officiell)"
+    },
+    "example-conversation": {
+      "hey-google": "Hey Google,",
+      "ask-google": "fråga {{0}} vad mitt blodsocker är",
+      "nightscout-status-resp": "6.7 och stiger längsamt för 4 minuter sedan"
+    },
+    "settings": {
+      "connect": "Anslut din Nightscoutsida för att komma igång:",
+      "invalid-url": "Är du säker på att den här webbadressen är korrekt?",
+      "use-token-url": "Prova att använda en token-url eller kontrollera din API-secret",
+      "your-site": "Din Nightscoutsida",
+      "unit": "Enhet",
+      "mg-dl": "mg/dl",
+      "mmol-l": "mmol/l",
+      "api-secret": "API secret",
+      "optional": "(valfritt)",
+      "unchanged": "(oförändrat)",
+      "save": "Spara",
+      "sign-out": "Logga ut",
+      "api-secret-info": {
+        "title": "Måste jag ange min API Secret ?",
+        "info": "Detta behövs bara om din Nightscoutsida är läs skyddad (read protected). (t.ex. om {{0}} är satt till {{1}})"
+      },
+      "done": "Allt klart!",
+      "oops": "Hoppsan!",
+      "one-moment-please": "Vänta ett ögonblick...",
+      "testing-your-site": "Vi testar din Nightscout-webbplats",
+      "unable-to-get-reading": "Vi kunde inte få ett glukosvärde från:",
+      "settings-saved": "Inställningar sparade",
+      "success-msg": "Prova nu att fråga Google Assistenten:",
+      "hint-header": "Tips:",
+      "hint": "Du kan förkorta anropet med {{0}}. {{1}} Till exempel: \"Hej Google, kontrollera mitt socker.”",
+      "hint-routines": "Routines",
+      "modal": {
+        "read-this": "Se till att du läser detta!",
+        "disclaimer": {
+          "1": "Denna disclaimer kommer <u>upprepas varje gång</u> du frågar efter din glukosnivå",
+          "2": "Du kan stänga av detta genom att klicka på knappen nedan",
+          "3": "Om du väljer att stänga av ansvarsfriskrivningen, du godkänner att:<br />- du har läst och förstått ansvarsfriskrivningen <br />- du begär uttryckligen att den inte längre upprepas",
+          "enable": "Nej, upprepa ansvarsfriskrivning varje gång",
+          "disable": "OK, stäng av ansvarsfriskrivningen"
+        }
+      }
+    },
+    "footer": {
+      "help-faq": "Hjälp & FAQ",
+      "bugs": "Buggrapportering; önska funktioner",
+      "tos": "Användarvillkor och Integritetspolic"
+    }
+  },
+  "terms": {
+    "back": "Tillbaka",
+    "privacy-policy": {
+      "title": "Integritetspolicy",
+      "intro": "Detta dokument beskriver informationen som samlas in av Nightscout Status (Blodsocker status), {{0}} (\"Tjänsten\" eller \"Mjukvaran\") och hur denna information behandlas.",
+      "collection-title": "Vilken information samlas in?",
+      "collection-desc": "Tjänsten är beroende av 2 saker för att fungera: E-postadressen till ditt Googlekonto (för att veta att det är du som frågar), och adressen till din Nightscoutsida (för att hämta ditt blodsockervärde och läsa upp det för dig).",
+      "use-title": "Hur behandlas informationen?",
+      "use-desc": "När du använder tjänsten via Google Assistenten (d.v.s genom att säga: 'Hey Google, prata med Blodsocker status), används din E-postadress för att se om det finns en Nightscoutsida kopplad till den. Om så är fallet, hämtas ditt blodsockervärde från din Nightscoutsida.",
+      "sharing-title": "Spridning och delning av information",
+      "sharing-desc": "Din E-postadress och/eller din Nightscoutsida (URL) kommer <strong>aldrig</strong> delas eller spridas till tredje part. Informationen används endast för att tjänsten ska veta från vilken Nightscoutsida informationen ska hämtas ifrån. Data från din Nightscoutsida sparas inte, inte ens i loggfiler. ",
+      "deleting-title": "Radera dina uppgifter",
+      "deleting-desc": "Du kan närsomhelst välja att neka åtkomst: Genom att logga in, ta bort din Nightscout URL och trycka på Spara. Du kan också radera Nightscout Status från ditt {{0}}.",
+      "deleting-google-account": "Googlekonto",
+      "analytics-title": "Analytics Cookie",
+      "analytics-desc": "När du har loggat in på denna sida, sparas anonym statistik om ditt besök med hjälp av en cookie (Google Analytics). Cookien aktiveras först efter att du har godkänt denna Integritetspolicy. Analytics används för att bättre förstå hur sidan används, hur den hittats och från vilket geografiskt område. Detta gäller endast {{0}}, inte användandet av tjänsten i sig. Om du vill välja bort (opt-out) från Google Analytics cookie, kan detta göras genom att besöka sidan {{1}}"
+    },
+    "health": {
+      "title": "Friskrivningsklausul för sjukvård",
+      "disclaimer-short": "Informationen som tillhandahålls av Nightscout Status är inte en ersättning för råd från medicinsk personal.",
+      "disclaimer": "$t(terms.health.disclaimer-short) Om du har frågor om behandling eller behöver råd, kom ihåg att alltid fråga din läkare!"
+    },
+    "license-and-tos": "Licens och Användarvillkor"
+  }
 }

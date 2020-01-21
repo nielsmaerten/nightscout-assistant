@@ -1,87 +1,142 @@
 {
-    "common": {
-        "google-tm": "Google Assistant est une marque commerciale de Google Inc.",
-        "nightscout-no-affl": "Non affilié avec {{0}}",
-        "nightscout-project": "le projet Nightscout",
-        "invocation": "Statut Nightscout",
-        "full-invocation": "Hé Google, parle à $t(common.invocation)"
+  "translation": {
+    "signIn": {
+      "completed": "Maintenant, vous pouvez essayer de demander: \"Hé Google, demande à Statut Nightscout ce qu'est ma glycémie.",
+      "request": "Pour accéder à votre glycémie",
+      "healthDisclaimer": "N'oubliez pas: les informations fournies par Statut Nightscout ne sauraient remplacer les conseils d'un professionnel de la santé."
     },
-    "index": {
-        "header": {
-            "title": "Statut Nightscout",
-            "subtitle": "Nightscout pour Google Home et Google Assistant (non officiel)"
-        },
-        "example-conversation": {
-            "hey-google": "Ok Google,",
-            "ask-google": "demande à {{0}} le taux de mon glucose",
-            "nightscout-status-resp": "120 et augmente lentement depuis 4 minutes"
-        },
-        "settings": {
-            "connect": "Connectez votre site Nightscout pour commencer:",
-            "invalid-url": "Êtes-vous sûr que cette URL est correcte?",
-            "use-token-url": "Essayez d'utiliser un jeton URL ou vérifiez votre secret API",
-            "your-site": "Votre site Nightscout",
-            "unit": "Unité",
-            "mg-dl": "mg/dl",
-            "mmol-l": "mmol/l",
-            "api-secret": "Secret API",
-            "optional": "(facultatif)",
-            "unchanged": "(aucune modification)",
-            "save": "Sauvegarder",
-            "sign-out": "Déconnexion",
-            "api-secret-info": {
-                "title": "Dois-je entrer mon API Secret ?",
-                "info": "Cela n'est nécessaire que si votre site Nightscout est \"protégé en lecture\". (par exemple si {{0}} est défini sur {{1}})"
-            },
-            "done": "Terminé !",
-            "oops": "Oups !",
-            "one-moment-please": "Veuillez patienter...",
-            "testing-your-site": "Nous testons votre site Nightscout",
-            "unable-to-get-reading": "Nous n'avons pas été en mesure d'obtenir une lecture de glycémie à partir de:",
-            "settings-saved": "Paramètres enregistrés",
-            "success-msg": "Maintenant, essayez de demander à Google Assistant:",
-            "hint-header": "Astuce :",
-            "hint": "Vous pouvez raccourcir l'invocation à l'aide de {{0}}. {{1}} Par exemple: \"Ok Google, vérifie ma glycémie.\"",
-            "hint-routines": "Routines",
-            "modal": {
-                "read-this": "Assurez-vous de lire ceci!",
-                "disclaimer": {
-                    "1": "Cet avertissement sera <u>répété chaque fois que</u> vous demandez à votre niveau de glucose",
-                    "2": "Vous pouvez désactiver ceci en cliquant sur le bouton ci-dessous",
-                    "3": "Si vous choisissez de désactiver l'avertissement, vous acceptez les conditions suivantes:<br />- vous avez lu et compris la clause de non-responsabilité <br />- vous demandez explicitement qu'elle ne soit plus répétée",
-                    "enable": "Non, répétez l'avertissement à chaque fois",
-                    "disable": "OK, désactiver l'avertissement"
-                }
-            }
-        },
-        "footer": {
-            "help-faq": "Aide & FAQ",
-            "bugs": "Rapports de bugs; requêtes de nouvelles fonctionnalités",
-            "tos": "Conditions d'utilisation et Politique de confidentialité"
-        }
+    "errors": {
+      "unknown-error": "Désolé, une erreur inconnue s'est produite. Elle sera examinée dès que possible.",
+      "noNsSite": "Avant de pouvoir vérifier votre glycémie, j'ai besoin de l'URL de votre site Nightscout. Vous pouvez l'entrer en visitant {{- homepageUrl}}",
+      "noBgReading": "Hmmm. Je n'ai pas trouvé de mesure de glycémie récente.",
+      "invalidUrl": {
+        "p1": "Désolé, l'URL Nightscout que vous m'avez donné ne semble pas être valide. Pouvez-vous vérifier sur {{- homepageUrl}}?",
+        "p2": "Assurez-vous que votre URL commence par http."
+      },
+      "notFound": "Désolé, je n'ai pas trouvé votre site Nightscout. Vérifiez si vous avez entré l'URL correcte sur {{- homepageUrl}}",
+      "unauthorized": "Désolé, il semble que je n'ai pas la permission d'accéder à votre site Nightscout. Essayez d'entrer votre API Secret sur {{- homepageUrl}}",
+      "nsSiteError": "Désolé, il semble y avoir un problème avec votre site Nightscout. Je n'ai pas pu obtenir votre statut."
     },
-    "terms": {
-        "back": "Précédent",
-        "privacy-policy": {
-            "title": "Politique de confidentialité",
-            "intro": "Ce document décrit les informations collectées par Nightscout Status (Statut Nightscout), {{0}} (le \"Service\" ou le \"Logiciel\") et comment ces informations sont utilisées.",
-            "collection-title": "Quelles informations recueillons-nous ?",
-            "collection-desc": "Pour fonctionner, le service nécessite 2 éléments: l'adresse e-mail de votre compte Google (afin qu'il puisse vous connaître lorsque vous faites une demande) et l'URL de votre instance Nightscout (afin qu'il puisse rechercher votre glycémie et la lire).",
-            "use-title": "Comment ces informations sont-elles utilisées?",
-            "use-desc": "Lorsque vous appelez le service via Google Assistant (par exemple, en disant: \"Hé Google, parle à Statut Nightscout), le service examine votre adresse e-mail et vérifie si un site Nightscout y est associé. Si tel est le cas, votre taux de glucose actuel est lu sur votre site Nightscout.",
-            "sharing-title": "Partage d'informations",
-            "sharing-desc": "Votre adresse e-mail ou votre URL Nightscout <strong>ne sera jamais</strong> partagée avec un tiers. J'en ai juste besoin pour savoir quel site Nightscout vérifier lorsque vous appelez l'Action. Les données de votre site Web Nightscout ne sont pas enregistrées, pas même dans les fichiers journaux. ",
-            "deleting-title": "Suppression de toutes les données",
-            "deleting-desc": "Vous pouvez choisir de révoquer l'accès à tout moment: il vous suffit de vous connecter, de supprimer votre URL Nightscout et de cliquer sur Enregistrer. Vous pouvez également supprimer le Statut Nightscout de votre {{0}}.",
-            "deleting-google-account": "Compte Google",
-            "analytics-title": "Cookie analytique",
-            "analytics-desc": "Après vous être connecté à ce site, des statistiques anonymes sur votre visite sont collectées à l'aide d'un cookie (Google Analytics). Le cookie n'est activé qu'après avoir accepté cette politique de confidentialité. J'utilise Analytics pour mieux comprendre comment les gens utilisent ce site, comment ils l'ont trouvé et dans quel groupe démographique ils se trouvent. Cela s'applique uniquement à {{0}} et non à l'utilisation de l'action auxiliaire elle-même. Si vous souhaitez vous désinscrire du cookie Google Analytics, vous pouvez le faire en visitant {{1}}"
+    "trends": {
+      "DoubleUp": "en augmentation rapide",
+      "SingleUp": "en augmentation",
+      "FortyFiveUp": "augmentant lentement",
+      "Flat": "stable",
+      "FortyFiveDown": "baissant lentement",
+      "SingleDown": "baissant",
+      "DoubleDown": "baissant rapidement"
+    },
+    "answers": {
+      "noTrend": "{{bg}} {{ago}}.",
+      "withTrend": "{{bg}} et {{trend}} {{ago}}."
+    },
+    "google-assistant": {
+      "invocations": [
+        "Quelle est ma glycémie ?",
+        "À quel point suis-je bas ?",
+        "À quel point suis je haut ?",
+        "Quel est mon statut?",
+        "Comment je vais?",
+        "Quel est ma glycémie ?",
+        "Quel est ma glycémie ?",
+        "Vérifie ma glycémie.",
+        "Vérifie ma glycémie"
+      ],
+      "actions-directory": {
+        "description": {
+          "short": "Vérifie votre niveau actuel de glucose à partir de Nightscout",
+          "full": "Demandez à Google Assistant votre glycémie actuel."
         },
-        "health": {
-            "title": "Information sur les soins de santé",
-            "disclaimer-short": "Les informations fournies par Statut Nightscout ne remplacent pas les conseils d'un professionnel de la santé.",
-            "disclaimer": "$t(terms.health.disclaimer-short) Si vous avez des questions sur le traitement ou avez besoin de conseils, pensez à toujours demander à votre médecin!"
-        },
-        "license-and-tos": "Licence et conditions d'utilisation"
+        "sample-invocations": [
+          "Ok Google, parle à Statut Nightscout",
+          "Ok Google, demande à Statut Nightscout ma glycémie"
+        ]
+      }
     }
+  },
+  "common": {
+    "google-tm": "Google Assistant est une marque commerciale de Google Inc.",
+    "nightscout-no-affl": "Non affilié avec {{0}}",
+    "nightscout-project": "le projet Nightscout",
+    "invocation": "Statut Nightscout",
+    "full-invocation": "Hé Google, parle à $t(common.invocation)"
+  },
+  "index": {
+    "header": {
+      "title": "Statut Nightscout",
+      "subtitle": "Nightscout pour Google Home et Google Assistant (non officiel)"
+    },
+    "example-conversation": {
+      "hey-google": "Ok Google,",
+      "ask-google": "demande à {{0}} le taux de mon glucose",
+      "nightscout-status-resp": "120 et augmente lentement depuis 4 minutes"
+    },
+    "settings": {
+      "connect": "Connectez votre site Nightscout pour commencer:",
+      "invalid-url": "Êtes-vous sûr que cette URL est correcte?",
+      "use-token-url": "Essayez d'utiliser un jeton URL ou vérifiez votre secret API",
+      "your-site": "Votre site Nightscout",
+      "unit": "Unité",
+      "mg-dl": "mg/dl",
+      "mmol-l": "mmol/l",
+      "api-secret": "Secret API",
+      "optional": "(facultatif)",
+      "unchanged": "(aucune modification)",
+      "save": "Sauvegarder",
+      "sign-out": "Déconnexion",
+      "api-secret-info": {
+        "title": "Dois-je entrer mon API Secret ?",
+        "info": "Cela n'est nécessaire que si votre site Nightscout est \"protégé en lecture\". (par exemple si {{0}} est défini sur {{1}})"
+      },
+      "done": "Terminé !",
+      "oops": "Oups !",
+      "one-moment-please": "Veuillez patienter...",
+      "testing-your-site": "Nous testons votre site Nightscout",
+      "unable-to-get-reading": "Nous n'avons pas été en mesure d'obtenir une lecture de glycémie à partir de:",
+      "settings-saved": "Paramètres enregistrés",
+      "success-msg": "Maintenant, essayez de demander à Google Assistant:",
+      "hint-header": "Astuce :",
+      "hint": "Vous pouvez raccourcir l'invocation à l'aide de {{0}}. {{1}} Par exemple: \"Ok Google, vérifie ma glycémie.\"",
+      "hint-routines": "Routines",
+      "modal": {
+        "read-this": "Assurez-vous de lire ceci!",
+        "disclaimer": {
+          "1": "Cet avertissement sera <u>répété chaque fois que</u> vous demandez à votre niveau de glucose",
+          "2": "Vous pouvez désactiver ceci en cliquant sur le bouton ci-dessous",
+          "3": "Si vous choisissez de désactiver l'avertissement, vous acceptez les conditions suivantes:<br />- vous avez lu et compris la clause de non-responsabilité <br />- vous demandez explicitement qu'elle ne soit plus répétée",
+          "enable": "Non, répétez l'avertissement à chaque fois",
+          "disable": "OK, désactiver l'avertissement"
+        }
+      }
+    },
+    "footer": {
+      "help-faq": "Aide & FAQ",
+      "bugs": "Rapports de bugs; requêtes de nouvelles fonctionnalités",
+      "tos": "Conditions d'utilisation et Politique de confidentialité"
+    }
+  },
+  "terms": {
+    "back": "Précédent",
+    "privacy-policy": {
+      "title": "Politique de confidentialité",
+      "intro": "Ce document décrit les informations collectées par Nightscout Status (Statut Nightscout), {{0}} (le \"Service\" ou le \"Logiciel\") et comment ces informations sont utilisées.",
+      "collection-title": "Quelles informations recueillons-nous ?",
+      "collection-desc": "Pour fonctionner, le service nécessite 2 éléments: l'adresse e-mail de votre compte Google (afin qu'il puisse vous connaître lorsque vous faites une demande) et l'URL de votre instance Nightscout (afin qu'il puisse rechercher votre glycémie et la lire).",
+      "use-title": "Comment ces informations sont-elles utilisées?",
+      "use-desc": "Lorsque vous appelez le service via Google Assistant (par exemple, en disant: \"Hé Google, parle à Statut Nightscout), le service examine votre adresse e-mail et vérifie si un site Nightscout y est associé. Si tel est le cas, votre taux de glucose actuel est lu sur votre site Nightscout.",
+      "sharing-title": "Partage d'informations",
+      "sharing-desc": "Votre adresse e-mail ou votre URL Nightscout <strong>ne sera jamais</strong> partagée avec un tiers. J'en ai juste besoin pour savoir quel site Nightscout vérifier lorsque vous appelez l'Action. Les données de votre site Web Nightscout ne sont pas enregistrées, pas même dans les fichiers journaux. ",
+      "deleting-title": "Suppression de toutes les données",
+      "deleting-desc": "Vous pouvez choisir de révoquer l'accès à tout moment: il vous suffit de vous connecter, de supprimer votre URL Nightscout et de cliquer sur Enregistrer. Vous pouvez également supprimer le Statut Nightscout de votre {{0}}.",
+      "deleting-google-account": "Compte Google",
+      "analytics-title": "Cookie analytique",
+      "analytics-desc": "Après vous être connecté à ce site, des statistiques anonymes sur votre visite sont collectées à l'aide d'un cookie (Google Analytics). Le cookie n'est activé qu'après avoir accepté cette politique de confidentialité. J'utilise Analytics pour mieux comprendre comment les gens utilisent ce site, comment ils l'ont trouvé et dans quel groupe démographique ils se trouvent. Cela s'applique uniquement à {{0}} et non à l'utilisation de l'action auxiliaire elle-même. Si vous souhaitez vous désinscrire du cookie Google Analytics, vous pouvez le faire en visitant {{1}}"
+    },
+    "health": {
+      "title": "Information sur les soins de santé",
+      "disclaimer-short": "Les informations fournies par Statut Nightscout ne remplacent pas les conseils d'un professionnel de la santé.",
+      "disclaimer": "$t(terms.health.disclaimer-short) Si vous avez des questions sur le traitement ou avez besoin de conseils, pensez à toujours demander à votre médecin!"
+    },
+    "license-and-tos": "Licence et conditions d'utilisation"
+  }
 }
