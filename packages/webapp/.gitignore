@@ -1,1 +1,3 @@
-public/locales/
+# Do not commit locales in this folder
+# They are symlinked from packages/locales/strings
+locales/
