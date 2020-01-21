@@ -9,14 +9,20 @@ branches:
     - master
     - travis #TODO: delete this one
 
+before_install:
+  - npm i -g firebase-tools
+
 install:
   - npx lerna bootstrap
-  - npm i -g firebase-tools
 
 script:
   - cd packages/cloud-functions
   - npm run test
-  - npm run deploy -- --token $FIREBASE_TOKEN
-  - cd ../webapp
-  - npm run build
-  - npm run deploy
+  - npm run deploy -- --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+  local_dir: packages/webapp/dist
