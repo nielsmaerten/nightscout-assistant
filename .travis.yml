@@ -1,0 +1,27 @@
+language: node_js
+cache: npm
+node_js:
+  - 12.13
+git:
+  quiet: true
+branches:
+  only:
+    - master
+
+before_install:
+  - npm i -g firebase-tools
+
+install:
+  - npx lerna bootstrap
+
+script:
+  - cd packages/cloud-functions
+  - npm run test
+  - npm run deploy -- --token $FIREBASE_TOKEN --project $FIREBASE_PROJECT
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN 
+  keep_history: true
+  local_dir: packages/webapp/dist
