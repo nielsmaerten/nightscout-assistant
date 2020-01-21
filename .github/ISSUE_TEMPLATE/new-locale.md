@@ -24,6 +24,7 @@ assignees: ''
 - [ ] Testing instructions up-to-date
 
 ## Testing
+- [ ] Unit test added
 - [ ] Invocation works in the new language
 - [ ] Tested on real device in alpha
 
