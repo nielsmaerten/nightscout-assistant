@@ -82,6 +82,7 @@ app.intent("Glucose Status", async conv => {
     user: conv.user.email,
     runtimeMilliseconds,
     queryMilliseconds: nightscoutStatus.tQueryTime,
+    error: nightscoutStatus.error,
     locale: conv.user.locale,
     event: "query-completed"
   };

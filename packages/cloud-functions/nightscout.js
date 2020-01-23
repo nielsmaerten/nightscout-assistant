@@ -13,7 +13,7 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
   return new Promise(async resolve => {
     // Exit if no NS url has been provided yet
     if (!userProfile || !userProfile.nsUrl) {
-      resolve({ response: t("errors.noNsSite"), success: false });
+      resolve({ response: t("errors.noNsSite"), success: false, error: 'no-ns-site' });
       return;
     }
 
@@ -49,10 +49,10 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
 
       // Format the response into a pronounceable answer
       const convResponse = formatResponse(json, unit, t);
-      resolve({ response: convResponse, success: true, tQueryTime });
+      resolve({ response: convResponse, success: true, tQueryTime, error: 'none' });
     } catch (e) {
       const errorResponse = handleError(e, userEmail, nsUrl, t);
-      resolve({ response: errorResponse, success: false });
+      resolve({ response: errorResponse, success: false, error: 'api-error' });
     }
   });
 };
