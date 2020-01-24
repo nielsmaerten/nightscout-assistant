@@ -48,7 +48,7 @@
           "full": "Pergunte ao Assistente do Google sobre seu nível atual de glicose."
         },
         "sample-invocations": [
-          "Ok Google, fale com o Estado da Glicémia",
+          "Ok Google, falar com Estado da Glicémia",
           "Ok Google, pergunte ao Estado da Glicémia qual é minha glicose"
         ]
       }
@@ -59,7 +59,7 @@
     "nightscout-no-affl": "Não afiliado com {{0}}",
     "nightscout-project": "o Projeto Nightscout",
     "invocation": "Estado da Glicémia",
-    "full-invocation": "Hey Google, fale com $t(common.invocation)"
+    "full-invocation": "OK Google, falar com $t(common.invocation)"
   },
   "index": {
     "header": {
