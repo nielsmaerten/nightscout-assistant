@@ -1,7 +1,7 @@
 {
   "translation": {
     "signIn": {
-      "completed": "Maintenant, vous pouvez essayer de demander: \"Hé Google, demande à Statut Nightscout ce qu'est ma glycémie.",
+      "completed": "Maintenant, vous pouvez essayer de demander: \"Hé Google, demande à Statut Nightscout quelle est ma glycémie.",
       "request": "Pour accéder à votre glycémie",
       "healthDisclaimer": "N'oubliez pas: les informations fournies par Statut Nightscout ne sauraient remplacer les conseils d'un professionnel de la santé."
     },
@@ -27,25 +27,25 @@
       "DoubleDown": "baissant rapidement"
     },
     "answers": {
-      "noTrend": "{{bg}} {{ago}}.",
-      "withTrend": "{{bg}} et {{trend}} {{ago}}."
+      "noTrend": "{{bg}} à partir de {{ago}}.",
+      "withTrend": "{{bg}} et {{trend}} à partir de {{ago}}."
     },
     "google-assistant": {
       "invocations": [
         "Quelle est ma glycémie ?",
         "À quel point suis-je bas ?",
-        "À quel point suis je haut ?",
+        "À quel point suis-je haut ?",
         "Quel est mon statut?",
         "Comment je vais?",
-        "Quel est ma glycémie ?",
-        "Quel est ma glycémie ?",
+        "Quelle est ma glycémie ?",
+        "Quelle est mon taux de sucre ?",
         "Vérifie ma glycémie.",
-        "Vérifie ma glycémie"
+        "Vérifie mon taux de sucre"
       ],
       "actions-directory": {
         "description": {
           "short": "Vérifie votre niveau actuel de glucose à partir de Nightscout",
-          "full": "Demandez à Google Assistant votre glycémie actuel."
+          "full": "Demandez à Google Assistant votre glycémie actuelle."
         },
         "sample-invocations": [
           "Ok Google, parle à Statut Nightscout",
@@ -96,7 +96,7 @@
       "settings-saved": "Paramètres enregistrés",
       "success-msg": "Maintenant, essayez de demander à Google Assistant:",
       "hint-header": "Astuce :",
-      "hint": "Vous pouvez raccourcir l'invocation à l'aide de {{0}}. {{1}} Par exemple: \"Ok Google, vérifie ma glycémie.\"",
+      "hint": "Vous pouvez raccourcir la demande en utilisant {{0}}. {{1}} Par exemple: \"Ok Google, vérifie ma glycémie.\"",
       "hint-routines": "Routines",
       "modal": {
         "read-this": "Assurez-vous de lire ceci!",
