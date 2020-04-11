@@ -3,7 +3,7 @@
     "signIn": {
       "completed": "Agora, você pode tentar perguntar: 'OK, Google, fale com o Estado da Glicémia'.",
       "request": "Para aceder á glicose",
-      "healthDisclaimer": "Relembrar que a informação disponibilizada pelo Estado da Glicémia não substitui o conselho de um profissional médico."
+      "healthDisclaimer": "A informação disponibilizada não substitui o conselho de um profissional médico."
     },
     "errors": {
       "unknown-error": "Desculpe, aconteceu um erro, será verificado assim que possível.",
