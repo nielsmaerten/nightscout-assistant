@@ -7,21 +7,21 @@
     },
     "errors": {
       "unknown-error": "予期せぬエラーが発生しました。早急に調査させていただきます。",
-      "noNsSite": "あなたの血糖値を調べる前に、ナイトスカウトのURLが必要です。 {{- homepageUrl}} にアクセスすれば入力することが出来ます。",
-      "noBgReading": "血糖値が読み取れません。",
+      "noNsSite": "血糖値を調べる前に、あなた用のナイトスカウトの URL が必要です。 {{- homepageUrl}} にアクセスすれば入力できます。",
+      "noBgReading": "最近の血糖値の測定を見つけられませんでした。",
       "invalidUrl": {
-        "p1": "申し訳ありません。指定されたNightscoutのURLは無効です。こちらを確認してください。{{- homepageUrl}}",
-        "p2": "Urlがhttpから始まっている事を確認してください。"
+        "p1": "すみません。ご指定の Nightscout の URL が正しくありません。こちらで確認してください。{{- homepageUrl}}",
+        "p2": "URL が http で始まることを確認してください。"
       },
-      "notFound": "Nightscoutに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
-      "unauthorized": "ナイトスカウトにアクセスする権限がありません。APISECRETを{{- homepageUrl}} に入力してください。",
-      "nsSiteError": "ナイトスカウトに問題がある可能性があります。ナイトスカウトのステータスが取得できません。"
+      "notFound": "Nightscout のサイトに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
+      "unauthorized": "ナイトスカウトのサイトにアクセスする権限がありません。API secret を {{- homepageUrl}} に入力してください。",
+      "nsSiteError": "ナイトスカウトのサイトに問題があるようです。あなたのステータスが取得できません。"
     },
     "trends": {
-      "DoubleUp": "急に上がっています",
-      "SingleUp": "上がっています。",
-      "FortyFiveUp": "ゆるやかに上がっています。",
-      "Flat": "安定しています。",
+      "DoubleUp": "急上昇",
+      "SingleUp": "上昇中",
+      "FortyFiveUp": "ゆるやかに上昇中",
+      "Flat": "安定状態",
       "FortyFiveDown": "ゆるやかに下がっています。",
       "SingleDown": "下がっています。",
       "DoubleDown": "急に下がっています。"
@@ -92,7 +92,7 @@
       "oops": "おおっと！",
       "one-moment-please": "少々お待ちください...",
       "testing-your-site": "あなたの Nightscout のサイトをテスト中",
-      "unable-to-get-reading": "グルコースを読み取れませんでした:",
+      "unable-to-get-reading": "血糖値の測定を取得できませんでした:",
       "settings-saved": "設定を保存しました",
       "success-msg": "グーグルアシスタントに聞いてみて：",
       "hint-header": "ヒント:",
