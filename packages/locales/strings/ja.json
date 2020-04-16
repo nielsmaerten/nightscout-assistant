@@ -14,7 +14,7 @@
         "p2": "URL が http で始まることを確認してください。"
       },
       "notFound": "ナイトスカウトのサイトに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
-      "unauthorized": "ナイトスカウトのサイトにアクセスする権限がありません。API シークレットを {{- homepageUrl}} に入力してください。",
+      "unauthorized": "ナイトスカウトのサイトにアクセスする権限がありません。API 秘密鍵を {{- homepageUrl}} に入力してください。",
       "nsSiteError": "ナイトスカウトのサイトに問題があるようです。あなたの状態が取得できません。"
     },
     "trends": {
@@ -74,18 +74,18 @@
     "settings": {
       "connect": "開始するにはあなたのナイトスカウトのサイトに接続します:",
       "invalid-url": "この URLで間違いないですか？",
-      "use-token-url": "トークン URL を使用するか、あなたの API シークレットを確認",
+      "use-token-url": "トークン URL を使用するか、あなたの API 秘密鍵を確認",
       "your-site": "あたなのナイトスカウトサイト",
       "unit": "単位",
       "mg-dl": "mg/dl",
       "mmol-l": "mmol/l",
-      "api-secret": "API シークレット",
+      "api-secret": "API 秘密鍵",
       "optional": "(オプション)",
       "unchanged": "(変更なし)",
       "save": "保存",
       "sign-out": "サインアウト",
       "api-secret-info": {
-        "title": "私は API シークレットを入力する必要がありますか？",
+        "title": "私は API 秘密鍵を入力する必要がありますか？",
         "info": "これはナイトスカウトのサイトが「読み取り保護」されている場合にのみ必要です。(例: {{1}} が {{0}} に設定されている)"
       },
       "done": "完了！",
