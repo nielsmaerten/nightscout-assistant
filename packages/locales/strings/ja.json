@@ -1,12 +1,12 @@
 {
   "translation": {
     "signIn": {
-      "completed": "あなたは質問する事ができます。: 'Ok Google, Nightscoutの血糖値は'",
+      "completed": "あなたは質問できます。: 「Ok Google、Nightscoutの血糖値は」",
       "request": "血糖値を見る",
-      "healthDisclaimer": "注意：ナイトスカウトステータスによる情報は、医療機関等の診断に代わるものではありません。"
+      "healthDisclaimer": "注意: ナイトスカウトステータスによる情報は、医療専門家の診断に代わるものではありません。"
     },
     "errors": {
-      "unknown-error": "不明なエラーが発生致しました。早急に調査します。",
+      "unknown-error": "予期せぬエラーが発生しました。早急に調査させていただきます。",
       "noNsSite": "あなたの血糖値を調べる前に、ナイトスカウトのURLが必要です。 {{- homepageUrl}} にアクセスすれば入力することが出来ます。",
       "noBgReading": "血糖値が読み取れません。",
       "invalidUrl": {
@@ -73,7 +73,7 @@
     },
     "settings": {
       "connect": "始めるには、あなたのナイトスカウトサイトに接続してください:",
-      "invalid-url": "Are you sure this URL is correct?",
+      "invalid-url": "このURLで間違いないですか？",
       "use-token-url": "Try using a token-url or check your API secret",
       "your-site": "あたなのナイトスカウトサイト",
       "unit": "Unit",
@@ -88,14 +88,14 @@
         "title": "私はAPI Secretを入力する必要がありますか？",
         "info": "これはナイトスカウトサイトが「読み取り保護」されている場合に必要です。(例：{{1}} が{{0}} に設定されている場合)"
       },
-      "done": "All done!",
-      "oops": "Oops!",
-      "one-moment-please": "One moment please...",
-      "testing-your-site": "We're testing your Nightscout site",
-      "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-      "settings-saved": "Settings saved",
+      "done": "完了！",
+      "oops": "おおっと！",
+      "one-moment-please": "少々お待ちください...",
+      "testing-your-site": "あなたの Nightscout のサイトをテスト中",
+      "unable-to-get-reading": "グルコースを読み取れませんでした:",
+      "settings-saved": "設定を保存しました",
       "success-msg": "グーグルアシスタントに聞いてみて：",
-      "hint-header": "Tip:",
+      "hint-header": "ヒント:",
       "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
       "hint-routines": "ルーチン",
       "modal": {
@@ -110,7 +110,7 @@
       }
     },
     "footer": {
-      "help-faq": "Help & FAQ",
+      "help-faq": "ヘルプ& FAQ",
       "bugs": "バグレポート；機能リクエスト",
       "tos": "利用規約とプライバシーポリシー"
     }
