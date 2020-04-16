@@ -1,9 +1,9 @@
 {
   "translation": {
     "signIn": {
-      "completed": "あなたは質問できます。: 「Ok Google、Nightscoutの血糖値は」",
+      "completed": "あなたは質問できます: 「Ok Google、Nightscoutの血糖値は」",
       "request": "血糖値を見る",
-      "healthDisclaimer": "注意: ナイトスカウトの状態による情報は、医療専門家の診断に代わるものではありません。"
+      "healthDisclaimer": "注意: ナイトスカウトの状態が提供する情報は、医療専門家の診断に代わるものではありません。"
     },
     "errors": {
       "unknown-error": "予期せぬエラーが発生しました。早急に調査させていただきます。",
@@ -44,30 +44,30 @@
       ],
       "actions-directory": {
         "description": {
-          "short": "Nightscoutから血糖値を確認してください。",
-          "full": "血糖値をGoogle　Assistantに確認してください。"
+          "short": "Nightscout から血糖値を確認",
+          "full": "血糖値を Google Assistant に確認"
         },
         "sample-invocations": [
-          "Ok　Google, ナイトスカウトの状態を教えて。",
-          "Ok Google, Nightscoutの血糖値は"
+          "OK、Google,、ナイトスカウトの状態を教えて。",
+          "OK、Google、Nightscout の血糖値は"
         ]
       }
     }
   },
   "common": {
-    "google-tm": "Google　Assistantはグーグルのトレードマークです。",
+    "google-tm": "Google Assistant は Google 社の商標です。",
     "nightscout-no-affl": "{{0}} と提携していません。",
     "nightscout-project": "ナイトスカウトプロジェクト",
     "invocation": "ナイトスカウト状態",
-    "full-invocation": "Ok Google,話して$t(common.invocation)"
+    "full-invocation": "OK、Google、$t(common.invocation) に話して"
   },
   "index": {
     "header": {
       "title": "ナイトスカウト状態",
-      "subtitle": "ナイトスカウトの為のグーグルホームとグーグルアシスタント(非公式)"
+      "subtitle": "Google Home & Google Assistant 用ナイトスカウト  (非公式)"
     },
     "example-conversation": {
-      "hey-google": "Ok Google,",
+      "hey-google": "OK、Google、",
       "ask-google": "聞いて{{0}} 私の血糖値は",
       "nightscout-status-resp": "4分前に血糖値は120です。ゆるやかに上がっています。"
     },
@@ -104,7 +104,7 @@
           "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
           "2": "You can turn this off by clicking the button below",
           "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-          "enable": "No, repeat disclaimer every time",
+          "enable": "いいえ、毎回免責条項を繰り返す",
           "disable": "はい、免責条項をオフに"
         }
       }
@@ -127,15 +127,15 @@
       "sharing-title": "情報の共有化",
       "sharing-desc": "あなたのメールアドレス及びナイトスカウトURLは他サービスと<strong>共有することはありません。</strong>サービスを起動したときにナイトスカウトサイトを確認する為に必要となります。又、ナイトスカウトサイトのデータはログも含めて保存されません。 ",
       "deleting-title": "データを削除しています",
-      "deleting-desc": "いつでもアクセス情報を削除うする事が可能です。：ナイトスカウトURLを削除し保存ボタンを押すだけです。又、あたなの{{0}} からナイトスカウトステータスも削除する事が可能です。",
+      "deleting-desc": "いつでもアクセス情報を削除できます: ログインしてナイトスカウトの URL を削除し、保存を押すだけです。また、あなたの {{0}} からナイトスカウトの状態も削除できます。",
       "deleting-google-account": "グーグルアカウント",
       "analytics-title": "クッキーを分析",
       "analytics-desc": "このサイトにサインインすると、クッキー(Googleアナリティクス) を使用して、お客様のアクセスに関する匿名の情報収集がされます。プライバシーポリシーに同意するまでクッキーは有効になりません。アナリティクスを利用し、利用者のこのサイトの利用方法、接続元、人口統計等の解析に利用されます。これは{{0}} のみに利用され、アシスタント・アクション自体の使用には利用されません。Googleアナリティクスのクッキーは{{1}} にアクセスすればオプトアウトできます。"
     },
     "health": {
       "title": "医療情報に関する免責事項",
-      "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-      "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+      "disclaimer-short": "ナイトスカウトの状態が提供する情報は、医療専門家の診断に代わるものではありません。",
+      "disclaimer": "$t(terms.health.disclaimer-short) 治療について質問や助言が必要であれば、常に主治医に相談してください！"
     },
     "license-and-tos": "ライセンスとサービス条件"
   }
