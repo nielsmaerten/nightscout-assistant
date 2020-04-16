@@ -1,7 +1,7 @@
 {
   "translation": {
     "signIn": {
-      "completed": "あなたは質問できます: 「Ok Google、Nightscoutの血糖値は」",
+      "completed": "あなたは質問できます: 「OK、Google、ナイトスカウトの血糖値は」",
       "request": "血糖値を見る",
       "healthDisclaimer": "注意: ナイトスカウトの状態が提供する情報は、医療専門家の診断に代わるものではありません。"
     },
@@ -10,10 +10,10 @@
       "noNsSite": "血糖値を調べる前に、あなた用のナイトスカウトの URL が必要です。 {{- homepageUrl}} にアクセスすれば入力できます。",
       "noBgReading": "最近の血糖値の測定を見つけられませんでした。",
       "invalidUrl": {
-        "p1": "すみません。ご指定の Nightscout の URL が正しくありません。こちらで確認してください。{{- homepageUrl}}",
+        "p1": "すみません。ご指定のナイトスカウトの URL が正しくありません。こちらで確認してください。{{- homepageUrl}}",
         "p2": "URL が http で始まることを確認してください。"
       },
-      "notFound": "Nightscout のサイトに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
+      "notFound": "ナイトスカウトのサイトに接続できません。{{- homepageUrl}} に正しいURLを入力したかご確認ください。",
       "unauthorized": "ナイトスカウトのサイトにアクセスする権限がありません。API secret を {{- homepageUrl}} に入力してください。",
       "nsSiteError": "ナイトスカウトのサイトに問題があるようです。あなたの状態が取得できません。"
     },
@@ -44,12 +44,12 @@
       ],
       "actions-directory": {
         "description": {
-          "short": "Nightscout から血糖値を確認",
+          "short": "ナイトスカウトから血糖値を確認",
           "full": "血糖値を Google Assistant に確認"
         },
         "sample-invocations": [
           "OK、Google,、ナイトスカウトの状態を教えて。",
-          "OK、Google、Nightscout の血糖値は"
+          "OK、Google、ナイトスカウトの状態の血糖値は"
         ]
       }
     }
@@ -68,7 +68,7 @@
     },
     "example-conversation": {
       "hey-google": "OK、Google、",
-      "ask-google": "聞いて{{0}} 私の血糖値は",
+      "ask-google": "聞いて {{0}} 私の血糖値は",
       "nightscout-status-resp": "4分前に血糖値は120です。ゆるやかに上がっています。"
     },
     "settings": {
@@ -101,11 +101,11 @@
       "modal": {
         "read-this": "必ずお読みください！",
         "disclaimer": {
-          "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-          "2": "You can turn this off by clicking the button below",
-          "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-          "enable": "いいえ、毎回免責条項を繰り返す",
-          "disable": "はい、免責条項をオフに"
+          "1": "この免責事項の表示を <u>毎回繰り返します</u> 血糖値の確認時に",
+          "2": "以下のボタンを押して非表示にできます",
+          "3": "免責事項の非表示を選んだ場合、以下への同意となります:<br />- 免責事項を読み理解した<br />- 繰り返して表示されないよう明示的に要求した",
+          "enable": "いいえ、毎回免責事項を繰り返す",
+          "disable": "はい、免責事項を非表示に"
         }
       }
     },
