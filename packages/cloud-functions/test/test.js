@@ -19,9 +19,9 @@ describe("Nightscout Status", () => {
     expect(answer.response).to.eq("100 and stable as of a few seconds ago.");
   });
 
-  it("responds in French", async () => {
-    let answer = await getAnswerInLanguage("fr-FR");
-    expect(answer.response).to.eq("100 et stable il y a quelques secondes.");
+  it("responds in Dutch", async () => {
+    let answer = await getAnswerInLanguage("nl-BE");
+    expect(answer.response).to.eq("100 en stabiel sinds een paar seconden geleden.");
   });
 
   it("responds in Norwegian", async () => {
