@@ -5,7 +5,7 @@ const nightscout = require("./nightscout");
 const { dialogflow, SignIn } = require("actions-on-google");
 const { i18next, initLocale } = require("./i18n");
 const config = functions.config().dialogflow || require("./config");
-const productionNumber = 4;
+const productionNumber = 5;
 const { performance } = require("perf_hooks");
 
 // Set dialogflow client ID
