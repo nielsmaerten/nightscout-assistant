@@ -1,8 +1,8 @@
 {
   "translation": {
     "signIn": {
-      "completed": "Agora, você pode tentar perguntar: 'OK, Google, fale com o Estado da Glicémia'.",
-      "request": "Para aceder á glicose",
+      "completed": "Agora, você pode tentar perguntar: 'Ok Google, pergunte para o Nightscout qual é a minha glicose'.",
+      "request": "Para acessar sua glicose",
       "healthDisclaimer": "A informação disponibilizada não substitui o conselho de um profissional médico."
     },
     "errors": {
@@ -11,11 +11,11 @@
       "noBgReading": "Hummm. Não consegui encontrar uma leitura recente de glicose.",
       "invalidUrl": {
         "p1": "Desculpe, o URL do Nightscout que você me deu não parece ser válido. Você pode verificar {{- homepageUrl}}?",
-        "p2": "Verifique se o seu Url começa com http."
+        "p2": "Verifique se o sua Url começa com http."
       },
-      "notFound": "Não foi possível encontrar o site do Nightscout. Verifique se você inseriu o URL correto em {{- homepageUrl}}",
-      "unauthorized": "Desculpe, parece que não tenho permissão para aceder o site do Nightscout. Tente inserir a sua password da API em {{- homepageUrl}}",
-      "nsSiteError": "Desculpe, parece haver um problema com o seu site Nightscout. Não consegui ver seu status."
+      "notFound": "Não foi possível encontrar o site do Nightscout. Verifique se você inseriu a URL correta em {{- homepageUrl}}",
+      "unauthorized": "Desculpe, parece que não tenho permissão para acessar o site do Nightscout. Tente inserir a sua senha da API em {{- homepageUrl}}",
+      "nsSiteError": "Desculpe, parece haver um problema com o seu site Nightscout. Não consegui ver sua situação."
     },
     "trends": {
       "DoubleUp": "aumentando rapidamente",
@@ -27,8 +27,8 @@
       "DoubleDown": "descendo rapidamente"
     },
     "answers": {
-      "noTrend": "{{bg}} como á {{ago}}.",
-      "withTrend": "{{bg}} e {{trend}} como á {{ago}}."
+      "noTrend": "{{bg}} como há {{ago}}.",
+      "withTrend": "{{bg}} e {{trend}} como há {{ago}}."
     },
     "google-assistant": {
       "invocations": [
@@ -44,12 +44,12 @@
       ],
       "actions-directory": {
         "description": {
-          "short": "Verifique o nível atual de glicose no Nightscout",
+          "short": "Verifique o nível atual da glicose no Nightscout",
           "full": "Pergunte ao Assistente do Google sobre seu nível atual de glicose."
         },
         "sample-invocations": [
-          "Ok Google, falar com Estado da Glicémia",
-          "Ok Google, pergunte ao Estado da Glicémia qual é minha glicose"
+          "Ok Google,  o estado do Nightscout",
+          "Ok Google, pergunte ao Nightscout qual é minha glicose"
         ]
       }
     }
@@ -58,22 +58,22 @@
     "google-tm": "Google Assistant é uma marca comercial da Google Inc.",
     "nightscout-no-affl": "Não afiliado com {{0}}",
     "nightscout-project": "o Projeto Nightscout",
-    "invocation": "Estado da Glicémia",
+    "invocation": "Situação do Nightscout",
     "full-invocation": "OK Google, falar com $t(common.invocation)"
   },
   "index": {
     "header": {
-      "title": "Nightscout Status (Estado da Glicémia)",
+      "title": "Situação do Nightscout",
       "subtitle": "Nightscout para a Google Home e o Assistente do Google (não oficial)"
     },
     "example-conversation": {
       "hey-google": "Hey Google,",
       "ask-google": "pergunte {{0}} qual é a minha glicose",
-      "nightscout-status-resp": "120 e aumentando lentamente como á 4 minutos atrás"
+      "nightscout-status-resp": "120 e aumentando lentamente como há 4 minutos atrás"
     },
     "settings": {
       "connect": "Conecte seu site Nightscout para começar:",
-      "invalid-url": "Tem certeza de que este URL está correto?",
+      "invalid-url": "Tem certeza de que este URL está correta?",
       "use-token-url": "Tente usar um token-url ou verifique a sua chave secreta da API",
       "your-site": "Seu site Nightscout",
       "unit": "Unidades",
