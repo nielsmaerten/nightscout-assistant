@@ -97,7 +97,7 @@
       "success-msg": "Nun frage deinen Google Asisstant:",
       "hint-header": "Tipp:",
       "hint": "Verwende {{0}} um einen kürzeren Aufruf zu erstellen. {{1}} Zum Beispiel: \"Ok Google, Prüfe meinen Zucker\"",
-      "hint-routines": "Routinen",
+      "hint-routines": "Abläufe",
       "modal": {
         "read-this": "Bitte aufmerksam lesen!",
         "disclaimer": {
