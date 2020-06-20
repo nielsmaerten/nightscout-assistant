@@ -61,7 +61,11 @@
             <i18next path="index.settings.hint">
               <a
                 target="_blank"
-                href="https://support.google.com/googlehome/answer/7029585?co=GENIE.Platform%3DAndroid&hl=en"
+                v-bind:href="
+                  `https://support.google.com/googlehome/answer/7029585?co=GENIE.Platform%3DAndroid&hl=${
+                    this.$i18n.i18next.language
+                  }`
+                "
                 >{{ $t("index.settings.hint-routines") }}</a
               >
               <br />
