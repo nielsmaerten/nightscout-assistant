@@ -10,7 +10,7 @@
     "prettier": "prettier --write **/*.js"
   },
   "engines": {
-    "node": "8"
+    "node": "10"
   },
   "dependencies": {
     "actions-on-google": "^2.6.0",
