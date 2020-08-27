@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ns-notification></ns-notification>
     <ns-header></ns-header>
     <ns-example-conversation></ns-example-conversation>
     <ns-user-settings
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import nsNotification from "@/components/ns-notification.vue";
 import nsHeader from "@/components/ns-header.vue";
 import nsExampleConversation from "@/components/ns-example-conversation.vue";
 import nsUserSettings from "@/components/ns-user-settings.vue";
@@ -27,6 +29,7 @@ export default {
     nsUserSettings,
     nsUserSignin,
     nsFooter,
+    nsNotification,
     githubRibbon
   }
 };
