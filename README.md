@@ -1,8 +1,11 @@
 # Nightscout for Google Home & Google Assistant
+### (PS: I'm looking for a [React developer](https://github.com/nielsmaerten/nightscout-assistant/issues/111) to help build v2.0 😎)
 
 [![Crowdin](https://d322cqt584bo4o.cloudfront.net/nightscout-status/localized.svg)](https://crowdin.com/project/nightscout-status)
 [![Build Status](https://travis-ci.com/nielsmaerten/nightscout-assistant.svg?branch=master)](https://travis-ci.com/nielsmaerten/nightscout-assistant)
 ### https://git.io/nightscoutstatus
+
+
 
 ## Ask Google about your glucose:
 > "Hey Google, talk to Nightscout Status"  
