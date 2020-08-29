@@ -1,7 +1,7 @@
 {
   "translation": {
     "signIn": {
-      "completed": "Nu kan du prova att fråga: 'Hey Google, fråga Blodsocker status vad mitt blodsocker är'.",
+      "completed": "Nu kan du prova att fråga: 'Hey Google, vad är mitt blodsocker'.",
       "request": "För att få reda på ditt blodsocker",
       "healthDisclaimer": "Informationen som tillhandahålls av Blodsocker status är inte en ersättning för råd från medicinsk personal."
     },
