@@ -73,7 +73,7 @@
     },
     "settings": {
       "connect": "Conecta tu sitio Nightscout para empezar:",
-      "invalid-url": "Are you sure this URL is correct?",
+      "invalid-url": "¿Estás seguro de que la URL es la correcta?",
       "use-token-url": "Try using a token-url or check your API secret",
       "your-site": "Tu sitio Nightscout",
       "unit": "Unidades",
