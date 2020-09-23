@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ns-notification></ns-notification>
+    <!-- <ns-notification></ns-notification> -->
     <ns-header></ns-header>
     <ns-example-conversation></ns-example-conversation>
     <ns-user-settings
