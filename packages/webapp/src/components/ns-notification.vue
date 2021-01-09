@@ -1,12 +1,10 @@
 <template>
-  <div class="notification is-link">
-    Psst! I'm looking for a
-    <strong
-      ><a href="https://github.com/nielsmaerten/nightscout-assistant/issues/111"
-        >React Developer</a
-      ></strong
-    >
-    to help build v2.0!
+  <div class="notification is-warning">
+    We're getting reports of errors after updating to
+    <strong>Nightscout v14.1.0</strong>. The issue is being investigated
+    <a href="https://github.com/nielsmaerten/nightscout-assistant/issues/114"
+      >here</a
+    >.
   </div>
 </template>
 

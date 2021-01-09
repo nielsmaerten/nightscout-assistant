@@ -13,7 +13,11 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
   return new Promise(async resolve => {
     // Exit if no NS url has been provided yet
     if (!userProfile || !userProfile.nsUrl) {
-      resolve({ response: t("errors.noNsSite"), success: false, error: 'no-ns-site' });
+      resolve({
+        response: t("errors.noNsSite"),
+        success: false,
+        error: "no-ns-site"
+      });
       return;
     }
 
@@ -30,11 +34,18 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
       // Call the API
       const tQueryStart = performance.now();
       // @ts-ignore
-      const response = await fetch(apiUrl, {
+      let response = await fetch(apiUrl, {
         headers: {
           "API-SECRET": apiSecret
         }
       });
+      // Nightscout v14.1.0 rejects incorrect apiSecrets, even when not read protected
+      // Try again without the apiSecret if response came back unauthorized
+      // https://github.com/nielsmaerten/nightscout-assistant/issues/114
+      if (apiSecret && response.status === 401) {
+        // @ts-ignore
+        response = await fetch(apiUrl);
+      }
       const tQueryTime = Math.floor(performance.now() - tQueryStart);
 
       // Exit if the request failed
@@ -49,10 +60,15 @@ const getNightscoutStatus = async (userProfile, userEmail, t) => {
 
       // Format the response into a pronounceable answer
       const convResponse = formatResponse(json, unit, t);
-      resolve({ response: convResponse, success: true, tQueryTime, error: 'none' });
+      resolve({
+        response: convResponse,
+        success: true,
+        tQueryTime,
+        error: "none"
+      });
     } catch (e) {
       const errorResponse = handleError(e, userEmail, nsUrl, t);
-      resolve({ response: errorResponse, success: false, error: 'api-error' });
+      resolve({ response: errorResponse, success: false, error: "api-error" });
     }
   });
 };
