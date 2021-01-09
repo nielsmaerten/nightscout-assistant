@@ -33,7 +33,7 @@ module.exports = async (param, context) => {
     // Nightscout v14.1.0 rejects incorrect apiSecrets, even when not read protected
     // Try again without the apiSecret if response came back unauthorized
     // https://github.com/nielsmaerten/nightscout-assistant/issues/114
-    if (apiSecret && response.status === 401) {
+    if (response.status === 401) {
       // @ts-ignore
       response = await fetch(apiUrl);
     }
