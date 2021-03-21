@@ -3,7 +3,7 @@
     &nbsp;
     <strong>Gluco Check</strong> (aka <strong>Nightscout Status 2.0</strong>)
     is now available in bèta.
-    <a href="https://glucocheck.app/beta">Give it a try!</a>
+    <a href="https://glucocheck.app">Give it a try!</a>
     &nbsp;🎉
   </div>
 </template>
