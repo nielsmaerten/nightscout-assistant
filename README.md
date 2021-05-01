@@ -5,11 +5,7 @@ Gluco Check includes new features such as reading your Carbs on Board and when y
 We recommend you [upgrade to Gluco Check](https://glucocheck.app) if it's available in your preferred language.  
 Nightscout Status will keep working until Gluco Check until has been fully translated, but will receive no new features.
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/nightscout-status/localized.svg)](https://crowdin.com/project/nightscout-status)
-[![Build Status](https://travis-ci.com/nielsmaerten/nightscout-assistant.svg?branch=master)](https://travis-ci.com/nielsmaerten/nightscout-assistant)
-### https://git.io/nightscoutstatus
-
-
+---
 
 ## Ask Google about your glucose:
 > "Hey Google, talk to Nightscout Status"  
