@@ -1,36 +1,36 @@
+// @ts-check
 module.exports = async (user) => {
     // Imports
     const admin = require("firebase-admin");
+    
+    // Email envelope    
+    const given_name = user.profile.payload.given_name;
+    console.log(`Sending Gluco Check invite to: ${given_name} (${user.email})`);
 
-    // Parameters
-    const to_name = user.name;
-    const to_address = user.email;
-    console.log("Sending Gluco Check invite to:", to_address, to_name);
-
-    // Email template vars
+    // Construct email template
     const template = {
-        sender: 'Nightscout Status <hello@glucocheck.app>',
-        subject: 'Nightscout Status is now Gluco Check',
-        paragraph1: 'Hi {{first_name}}. Thank you for using Nightscout Status.',
-        paragraph2: 'I wanted to let you know about Gluco Check, the successor to Nightscout Status.',
-        from: 'from label',
-        footer: 'footer',
-        action_label: 'action label',
-        action_url: 'action url',
-        to_name: to_name,
-        to_address: to_address
+        subject: 'Nightscout Status is now: Gluco Check',
+        paragraph1: `Hi ${given_name},
+        Thank you for using Nightscout Status!
+        We wanted to let you know we've recently published **Gluco Check**,
+        the official successor to Nightscout Status.
+        `,
+        paragraph2: `**Gluco Check** includes new features (such as reading out your carbs on board, sensor age, etc)
+        and will soon replace Nightscout Status. We recommend you upgrade now. It's free and only takes a minute.`,
+        from: 'All the best! Niels & David, developers of Gluco Check',
+        footer: 'You received this email because you recently used Nightscout Status',
+        action_label: 'Upgrade to Gluco Check',
+        action_url: 'https://glucocheck.app?ref=invite-email',
     }
 
     // Build email message
     const message = {
-        to: to_address,
+        to: user.email,
         message: {
-            from: template.sender,
             subject: template.subject,
-            html: todo(template),
+            html: compileTemplate(template),
         },
     }
-    console.log('Queuing message:', message);
 
     // Send email
     return admin
@@ -41,14 +41,10 @@ module.exports = async (user) => {
         .then(() => console.log("Queued email for delivery!"));
 }
 
-function todo(template) {
-    // TODO: Render HTML for email here. Use handlebars template in glucocheck-invite.hbs
-    return `
-
-    Hello ${template.to_name},
-    json formatted template: ${JSON.stringify(template)}
-    
-    
-    `
-
+function compileTemplate(template) {
+    const hbs_source = require("fs").readFileSync("./glucocheck-invite.hbs").toString();
+    const Handlebars = require("handlebars");
+    const hbs_template = Handlebars.compile(hbs_source);
+    const html = hbs_template(template);
+    return html;
 }
