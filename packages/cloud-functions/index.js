@@ -39,6 +39,7 @@ app.intent("Glucose Status", async conv => {
   // Get user profile from db
   const userEmail = conv.user.email;
   const userProfile = await nightscout.getUserProfile(userEmail);
+  let shouldUpdateProfile = false;
 
   // Get current glucose from Nightscout
   const nightscoutStatus = await nightscout.getNightscoutStatus(
@@ -59,6 +60,33 @@ app.intent("Glucose Status", async conv => {
     disclaimer.text = t("signIn.healthDisclaimer");
   }
 
+  // Send GlucoCheck invitation
+  const userLanguage = conv.user.locale;
+  const userHash = require('crypto').createHash("sha1").update(conv.user.email).digest("hex")
+  const glucoCheck_constants = {
+    availableLanguages: ['en'],
+    sendInvitesTo: ['743b44eaeab6a5b4f2e869f2156df5a054f12ebf'],
+  }
+
+  const glucoCheck_thisUser = {
+    eligible: glucoCheck_constants.sendInvitesTo.length === 0 || glucoCheck_constants.sendInvitesTo.includes(userHash),
+    languageSupported: !!glucoCheck_constants.availableLanguages.find(ln => userLanguage.startsWith(ln)),
+    previouslyInvited: !!userProfile.glucoCheckInviteSent
+  }
+    
+
+  console.log("[Gluco Check Invite] Available in user's language:", glucoCheck_thisUser.languageSupported);
+  console.log("[Gluco Check Invite] Previously sent to this user:", glucoCheck_thisUser.previouslyInvited);
+  console.log("[Gluco Check Invite] User eligible:", glucoCheck_thisUser.eligible);
+
+
+  if (glucoCheck_thisUser.eligible && glucoCheck_thisUser.languageSupported && !glucoCheck_thisUser.previouslyInvited) {
+    userProfile.glucoCheckInviteSent = true
+    shouldUpdateProfile = true;
+    const sendGlucoCheckEmail = require("./send-email");
+    await sendGlucoCheckEmail(conv.user);
+  }
+
   // Speak the response and end the conversation
   conv.close(`
       <speak>
@@ -72,8 +100,11 @@ app.intent("Glucose Status", async conv => {
   if (disclaimer.text && userProfile) {
     console.log("Marking health disclaimer said for", userEmail);
     userProfile.hasHeardHealthDisclaimer = true;
-    await nightscout.updateUserProfile(userProfile, userEmail);
+    shouldUpdateProfile = true;
   }
+
+  // Update userProfile 
+  if (shouldUpdateProfile) await nightscout.updateUserProfile(userProfile, userEmail);
 
   // Stop the timer
   const tStop = performance.now();
