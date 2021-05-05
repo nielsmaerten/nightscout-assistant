@@ -1,142 +1,142 @@
 {
   "translation": {
     "signIn": {
-      "completed": "Now, you can try asking: 'Hey Google, ask Nightscout Status what my glucose is'.",
-      "request": "To access your glucose",
-      "healthDisclaimer": "Remember: the information provided by Nightscout Status is not a substitute for advice from a medical professional."
+      "completed": "Теперь вы можете попробовать спросить: «Окей, Google, спроси Nightscout, какой у меня уровень глюкозы».",
+      "request": "Что бы получить доступ к глюкозе крови",
+      "healthDisclaimer": "Помните: информация, предоставленная Nightscout Status, не заменяет консультацию медицинского работника."
     },
     "errors": {
-      "unknown-error": "Sorry, an unknown error occurred. It will be investigated as soon as possible.",
-      "noNsSite": "Before I can check your glucose, I'll need the URL of your Nightscout site. You can enter it by visiting {{- homepageUrl}}",
-      "noBgReading": "Hmmm. I could not find a recent glucose reading.",
+      "unknown-error": "Извините, произошла неизвестная ошибка. Она будет исправлена как можно скорее.",
+      "noNsSite": "Прежде чем я смогу проверить ваш уровень глюкозы, мне понадобится URL вашего сайта Nightscout. Вы можете ввести его, посетив {{- homepageUrl}}",
+      "noBgReading": "Хммм. Я не могла найти недавние показания глюкозы.",
       "invalidUrl": {
-        "p1": "Sorry, the Nightscout URL you gave me doesn't appear to be valid. Can you check on {{- homepageUrl}} ?",
-        "p2": "Make sure your url starts with http."
+        "p1": "Извините, URL-адрес Nightscout, который вы мне дали, недействителен. Вы можете проверить {{- homepageUrl}}?",
+        "p2": "Убедитесь, что ваш URL начинается с http."
       },
-      "notFound": "Sorry, I couldn't find your Nightscout site. Check if you've entered the correct URL on {{- homepageUrl}}",
-      "unauthorized": "Sorry, it looks like I don't have permission to access your Nightscout site. Try entering your API secret on {{- homepageUrl}}",
-      "nsSiteError": "Sorry, there seems to be a problem with your Nightscout site. I wasn't able to get your status."
+      "notFound": "Извините, мне не удалось найти ваш сайт Nightscout. Убедитесь, что вы ввели правильный URL на {{- homepageUrl}}",
+      "unauthorized": "Извините, похоже, у меня нет разрешения на доступ к вашему сайту Nightscout. Попробуйте ввести свой секрет API на {{- homepageUrl}}",
+      "nsSiteError": "Извините, похоже, проблема с вашим сайтом Nightscout. Мне не удалось получить ваши показания."
     },
     "trends": {
-      "DoubleUp": "rising rapidly",
-      "SingleUp": "rising",
-      "FortyFiveUp": "rising slowly",
-      "Flat": "stable",
-      "FortyFiveDown": "falling slowly",
-      "SingleDown": "falling",
-      "DoubleDown": "falling rapidly"
+      "DoubleUp": "быстрый рост",
+      "SingleUp": "рост",
+      "FortyFiveUp": "медленный рост",
+      "Flat": "стабильно",
+      "FortyFiveDown": "медленный рост",
+      "SingleDown": "падение",
+      "DoubleDown": "быстрое падение, вам лучше принять меры"
     },
     "answers": {
-      "noTrend": "{{bg}} as of {{ago}}.",
-      "withTrend": "{{bg}} and {{trend}} as of {{ago}}."
+      "noTrend": "{{bg}} с {{ago}}.",
+      "withTrend": "{{bg}} и {{trend}} на протяжении {{ago}}."
     },
     "google-assistant": {
       "invocations": [
-        "How is my sugar?",
-        "How low am I?",
-        "How high am I?",
-        "What is my status?",
-        "How am I doing?",
-        "What's my glucose?",
-        "What's my blood sugar?",
-        "Check my glucose.",
-        "Check my blood sugar"
+        "Как мой сахар?",
+        "Насколько низкий сахар?",
+        "Насколько высокий у меня сахар?",
+        "Какой у меня сахар?",
+        "Как я поживаю?",
+        "Какой у меня сахар в крови?",
+        "Какой у меня уровень глюкозы в крови?",
+        "Проверь мой сахар.",
+        "Проверь мой уровень глюкозы"
       ],
       "actions-directory": {
         "description": {
-          "short": "Check your current glucose level from Nightscout",
-          "full": "Ask the Google Assistant about your current glucose level."
+          "short": "Проверить ваш текущий уровень глюкозы крови из Nightscout",
+          "full": "Спросите Google Ассистента о вашем текущем уровне глюкозы."
         },
         "sample-invocations": [
-          "Ok Google, talk to Nightscout Status",
-          "Ok Google, ask Nightscout Status what my glucose is"
+          "Окей, Google, поговори с Nightscout Status",
+          "Окей, Google, спроси Nightscout Status, какой у меня уровень глюкозы"
         ]
       }
     }
   },
   "common": {
-    "google-tm": "Google Assistant is a trademark of Google Inc.",
-    "nightscout-no-affl": "Not affiliated with {{0}}",
-    "nightscout-project": "the Nightscout Project",
-    "invocation": "Nightscout Status",
-    "full-invocation": "Hey Google, talk to $t(common.invocation)"
+    "google-tm": "Google Assistant является товарным знаком Google Inc.",
+    "nightscout-no-affl": "Не связан с {{0}}",
+    "nightscout-project": "проект Nightscout",
+    "invocation": "Состояние Nightscout",
+    "full-invocation": "Привет, Google, обратись к $t(common.invocation)"
   },
   "index": {
     "header": {
-      "title": "Nightscout Status",
-      "subtitle": "Nightscout for Google Home & Google Assistant (unofficial)"
+      "title": "Состояние Nightscout",
+      "subtitle": "Nightscout для Google Home и Google Assistant (неофициально)"
     },
     "example-conversation": {
-      "hey-google": "Hey Google,",
-      "ask-google": "ask {{0}} what my glucose is",
-      "nightscout-status-resp": "120 and rising slowly as of 4 minutes ago"
+      "hey-google": "Окей, Google,",
+      "ask-google": "спроси {{0}} какой у меня сахар",
+      "nightscout-status-resp": "120 и медленно растет по данным 4 минуты назад"
     },
     "settings": {
-      "connect": "Connect your Nightscout site to get started:",
-      "invalid-url": "Are you sure this URL is correct?",
-      "use-token-url": "Try using a token-url or check your API secret",
-      "your-site": "Your Nightscout site",
-      "unit": "Unit",
-      "mg-dl": "mg/dl",
-      "mmol-l": "mmol/l",
-      "api-secret": "API secret",
-      "optional": "(optional)",
-      "unchanged": "(unchanged)",
-      "save": "Save",
-      "sign-out": "Sign out",
+      "connect": "Подключите свой сайт Nightscout, чтобы начать:",
+      "invalid-url": "Вы уверены, что это правильный URL?",
+      "use-token-url": "Попробуйте использовать URL-адрес токена или проверьте свой секрет API",
+      "your-site": "Ваш сайт Nightscout",
+      "unit": "Единица измерения",
+      "mg-dl": "мг/дл",
+      "mmol-l": "ммоль/л",
+      "api-secret": "Пароль (API Secret)",
+      "optional": "(необязательно)",
+      "unchanged": "(без изменений)",
+      "save": "Сохранить",
+      "sign-out": "Выйти",
       "api-secret-info": {
-        "title": "Do I have to enter my API Secret ?",
-        "info": "This is only needed if your Nightscout site is 'read protected'. (for example if {{0}} is set to {{1}})"
+        "title": "Должен ли я вводить свой секрет API?",
+        "info": "Это необходимо, только если ваш сайт Nightscout «защищен от чтения». (например, если {{0}} установлен на {{1}})"
       },
-      "done": "All done!",
-      "oops": "Oops!",
-      "one-moment-please": "One moment please...",
-      "testing-your-site": "We're testing your Nightscout site",
-      "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-      "settings-saved": "Settings saved",
-      "success-msg": "Now try asking Google Assistant:",
-      "hint-header": "Tip:",
-      "hint": "You can shorten the invocation using {{0}}. {{1}} For example: \"Hey Google, check my sugar.\"",
-      "hint-routines": "Routines",
+      "done": "Готово!",
+      "oops": "Упс!",
+      "one-moment-please": "Подождите, пожалуйста...",
+      "testing-your-site": "Мы тестируем ваш сайт Nightscout",
+      "unable-to-get-reading": "Нам не удалось получить показания глюкозы из:",
+      "settings-saved": "Настройки сохранены",
+      "success-msg": "Теперь попробуйте спросить Google Ассистент:",
+      "hint-header": "Совет:",
+      "hint": "Вы можете сократить вызов, используя {{0}}. {{1}} Например: «Окей, Google, проверь мой сахар»",
+      "hint-routines": "Шаблоны",
       "modal": {
-        "read-this": "Make sure you read this!",
+        "read-this": "Обязательно прочтите это!",
         "disclaimer": {
-          "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
-          "2": "You can turn this off by clicking the button below",
-          "3": "If you choose to turn the disclaimer off, you agree that:<br />- you have read and understand the disclaimer <br />- you explicitly request it will no longer be repeated",
-          "enable": "No, repeat disclaimer every time",
-          "disable": "OK, turn the disclaimer off"
+          "1": "Этот отказ от ответственности повторяется <u>каждый раз, когда</u> вы запрашиваете уровень глюкозы",
+          "2": "Вы можете отключить это, нажав кнопку ниже",
+          "3": "Если вы решите отключить отказ от ответственности, вы соглашаетесь с тем, что:<br />- вы прочитали и поняли отказ от ответственности <br />- вы прямо запрашиваете, что он больше не будет повторяться",
+          "enable": "Нет, повторяйте отказ от ответственности каждый раз",
+          "disable": "ОК, выключи отказ от ответственности"
         }
       }
     },
     "footer": {
-      "help-faq": "Help & FAQ",
-      "bugs": "Bug reports; feature requests",
-      "tos": "Terms of Service and Privacy Policy"
+      "help-faq": "Справка/FAQ",
+      "bugs": "Отчеты об ошибках; запросы функций",
+      "tos": "Условия Обслуживания и Политика Конфиденциальности"
     }
   },
   "terms": {
-    "back": "Go back",
+    "back": "Вернуться обратно",
     "privacy-policy": {
-      "title": "Privacy Policy",
-      "intro": "This document describes the information being collected by Nightscout Status, {{0}} (the \"Service\" or the \"Software\") and how this information is used.",
-      "collection-title": "What information is collected?",
-      "collection-desc": "The Service needs 2 things in order to work: the email address of your Google Account (so it can know it's you when you make a request), and the URL of your Nightscout instance (so it can look up your glucose and read it to you).",
-      "use-title": "How is this information used?",
-      "use-desc": "When you invoke the Service through Google Assistant (i.e.: by saying: 'Hey Google, talk to Nightscout Status), the Service looks at your email address, and checks if there's a Nightscout site associated with it. If so, your current glucose level is read from your Nightscout site.",
-      "sharing-title": "Sharing of information",
-      "sharing-desc": "Your email address or Nightscout URL will <strong>never</strong> be shared with a third party. I just need it so I know which Nightscout site to check when you invoke the Action. Data from your Nightscout website is not saved, not even to log files. ",
-      "deleting-title": "Deleting your data",
-      "deleting-desc": "You can choose to revoke access at any time: Simply via log in, remove your Nightscout URL, and click Save. You can also remove Nightscout Status from your {{0}}.",
-      "deleting-google-account": "Google Account",
-      "analytics-title": "Analytics Cookie",
-      "analytics-desc": "After you sign in to this site, some anonymous statistics about your visit are collected using a cookie (Google Analytics). The cookie is not enabled until after you've accepted this Privacy Policy. I'm using Analytics to better understand how people are using this site, how they found it, and which demographic they're in. This only applies to {{0}}, not to usage of the Assistant Action itself. If you'd like to opt-out of the Google Analytics cookie, you can do so by visiting {{1}}"
+      "title": "Политика конфиденциальности",
+      "intro": "В этом документе описывается информация, собираемая Nightscout Status, {{0}} («Служба» или «Программное обеспечение»), и способы использования этой информации.",
+      "collection-title": "Какую информацию мы храним?",
+      "collection-desc": "Для работы нам необходимы 2 вещи: адрес электронной почты вашей учетной записи Google (чтобы мы могли узнать вас, когда вы делаете запрос), и URL-адрес вашего сайта Nightscout (чтобы мы могли получить оттуда показания).",
+      "use-title": "Как эта информация используется?",
+      "use-desc": "Когда вы вызываете Сервис через Google Assistant (например, говоря: «Привет, Google, поговори со статусом Nightscout), Сервис просматривает ваш адрес электронной почты и проверяет, связан ли с ним сайт Nightscout. Если да, ваш текущий уровень глюкозы считывается с вашего сайта Nightscout.",
+      "sharing-title": "Обмен информацией",
+      "sharing-desc": "Ваш адрес электронной почты или URL Nightscout <strong>никогда</strong> не будет использован третьей стороной. Мне это просто нужно, чтобы я знал, какой сайт Nightscout проверять, когда вы вызываете действие. Данные с вашего веб-сайта Nightscout не сохраняются, даже в файлы журналов. ",
+      "deleting-title": "Удаление ваших данных",
+      "deleting-desc": "Вы можете отозвать доступ в любое время: просто войдите в систему, удалите URL-адрес Nightscout и нажмите «Сохранить». Вы также можете удалить статус Nightscout из своего {{0}}.",
+      "deleting-google-account": "Аккаунт Google",
+      "analytics-title": "Аналитические файлы cookie",
+      "analytics-desc": "После входа на этот сайт некоторая анонимная статистика о вашем посещении собирается с помощью файла cookie (Google Analytics). Файл cookie не включается до тех пор, пока вы не примете настоящую Политику конфиденциальности. Я использую Analytics, чтобы лучше понять, как люди используют этот сайт, как они его нашли и к какой демографии они относятся. Это относится только к {{0}}, а не к использованию самого действия Assistant Action. Если вы хотите отказаться от файлов cookie Google Analytics, вы можете сделать это, посетив {{1}}"
     },
     "health": {
-      "title": "Healthcare information disclaimer",
-      "disclaimer-short": "The information provided by Nightscout Status is not a substitute for advice from a medical professional.",
-      "disclaimer": "$t(terms.health.disclaimer-short) If you have questions about treatment or need advice, remember to always ask your doctor!"
+      "title": "Заявление об отказе от ответственности за медицинскую информацию",
+      "disclaimer-short": "Помните: информация, предоставленная Nightscout Status, не заменяет консультацию медицинского работника.",
+      "disclaimer": "$t(terms.health.disclaimer-short) Если у вас есть вопросы по лечению или вам нужен совет, не забывайте всегда спрашивать своего врача!"
     },
-    "license-and-tos": "License and Terms of service"
+    "license-and-tos": "Общие условия использования"
   }
 }

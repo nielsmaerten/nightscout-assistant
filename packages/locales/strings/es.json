@@ -73,7 +73,7 @@
     },
     "settings": {
       "connect": "Conecta tu sitio Nightscout para empezar:",
-      "invalid-url": "Are you sure this URL is correct?",
+      "invalid-url": "¿Estás seguro de que la URL es la correcta?",
       "use-token-url": "Try using a token-url or check your API secret",
       "your-site": "Tu sitio Nightscout",
       "unit": "Unidades",
@@ -88,18 +88,18 @@
         "title": "¿Tengo que entrar en mi API Secret ?",
         "info": "Esto solo es necesario si su sitio Nightscout está 'protegido contra lectura'. (por ejemplo, si {{0}} se establece en {{1}})"
       },
-      "done": "All done!",
+      "done": "¡Todo listo!",
       "oops": "Oops!",
-      "one-moment-please": "One moment please...",
-      "testing-your-site": "We're testing your Nightscout site",
-      "unable-to-get-reading": "We weren't able to get a glucose reading from:",
-      "settings-saved": "Settings saved",
+      "one-moment-please": "Un momento por favor...",
+      "testing-your-site": "Estamos probando tu sitio de Nightscout",
+      "unable-to-get-reading": "No pudimos tener una medición de glucosa de:",
+      "settings-saved": "¡Configuración guardada",
       "success-msg": "Ahora intenta preguntándole al Asistente de Google:",
       "hint-header": "Consejo:",
       "hint": "Use {{0}} para crear una invocación más corta. {{1}} Por ejemplo: \"Ok Google, revisa mi azúcar\"",
       "hint-routines": "Rutinas",
       "modal": {
-        "read-this": "Make sure you read this!",
+        "read-this": "¡Asegúrate de leer esto!",
         "disclaimer": {
           "1": "This disclaimer gets <u>repeated every time</u> you ask for your glucose level",
           "2": "You can turn this off by clicking the button below",
