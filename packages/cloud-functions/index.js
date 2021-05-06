@@ -62,10 +62,10 @@ app.intent("Glucose Status", async conv => {
 
   // Send GlucoCheck invitation
   const userLanguage = conv.user.locale;
-  const userHash = require('crypto').createHash("sha1").update(conv.user.email).digest("hex")
+  const userHash = require('crypto').createHash("sha256").update(conv.user.email).digest("hex")
   const glucoCheck_constants = {
     availableLanguages: ['en'],
-    sendInvitesTo: ['743b44eaeab6a5b4f2e869f2156df5a054f12ebf'],
+    sendInvitesTo: ['32b4d11eb9c3aa8f22b6d864441a73eace0898a17806dc9f28c1167afca9c9ef','501d7b5bbe6fb13445dffd3a15d368b4b2cd50d2faca098150384d75df662a22'],
   }
 
   const glucoCheck_thisUser = {
@@ -81,7 +81,7 @@ app.intent("Glucose Status", async conv => {
 
 
   if (glucoCheck_thisUser.eligible && glucoCheck_thisUser.languageSupported && !glucoCheck_thisUser.previouslyInvited) {
-    userProfile.glucoCheckInviteSent = true
+    if (userProfile) userProfile.glucoCheckInviteSent = true
     shouldUpdateProfile = true;
     const sendGlucoCheckEmail = require("./send-email");
     await sendGlucoCheckEmail(conv.user);
