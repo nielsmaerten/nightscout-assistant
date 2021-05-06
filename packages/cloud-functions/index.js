@@ -71,7 +71,7 @@ app.intent("Glucose Status", async conv => {
   const glucoCheck_thisUser = {
     eligible: glucoCheck_constants.sendInvitesTo.length === 0 || glucoCheck_constants.sendInvitesTo.includes(userHash),
     languageSupported: !!glucoCheck_constants.availableLanguages.find(ln => userLanguage.startsWith(ln)),
-    previouslyInvited: !!userProfile.glucoCheckInviteSent
+    previouslyInvited: !!userProfile && !!userProfile.glucoCheckInviteSent
   }
     
 
