@@ -39,6 +39,7 @@ app.intent("Glucose Status", async conv => {
   // Get user profile from db
   const userEmail = conv.user.email;
   const userProfile = await nightscout.getUserProfile(userEmail);
+  let shouldUpdateProfile = false;
 
   // Get current glucose from Nightscout
   const nightscoutStatus = await nightscout.getNightscoutStatus(
@@ -59,6 +60,33 @@ app.intent("Glucose Status", async conv => {
     disclaimer.text = t("signIn.healthDisclaimer");
   }
 
+  // Send GlucoCheck invitation
+  const userLanguage = conv.user.locale;
+  const userHash = require('crypto').createHash("sha256").update(conv.user.email).digest("hex")
+  const glucoCheck_constants = {
+    availableLanguages: ['en'],
+    sendInvitesTo: ['32b4d11eb9c3aa8f22b6d864441a73eace0898a17806dc9f28c1167afca9c9ef','501d7b5bbe6fb13445dffd3a15d368b4b2cd50d2faca098150384d75df662a22'],
+  }
+
+  const glucoCheck_thisUser = {
+    eligible: glucoCheck_constants.sendInvitesTo.length === 0 || glucoCheck_constants.sendInvitesTo.includes(userHash),
+    languageSupported: !!glucoCheck_constants.availableLanguages.find(ln => userLanguage.startsWith(ln)),
+    previouslyInvited: userProfile === undefined ? true : !!userProfile.glucoCheckInviteSent
+  }
+    
+
+  console.log("[Gluco Check Invite] Available in user's language:", glucoCheck_thisUser.languageSupported);
+  console.log("[Gluco Check Invite] Previously sent to this user:", glucoCheck_thisUser.previouslyInvited);
+  console.log("[Gluco Check Invite] User eligible:", glucoCheck_thisUser.eligible);
+
+
+  if (glucoCheck_thisUser.eligible && glucoCheck_thisUser.languageSupported && !glucoCheck_thisUser.previouslyInvited) {
+    if (userProfile) userProfile.glucoCheckInviteSent = true
+    shouldUpdateProfile = true;
+    const sendGlucoCheckEmail = require("./send-email");
+    await sendGlucoCheckEmail(conv.user);
+  }
+
   // Speak the response and end the conversation
   conv.close(`
       <speak>
@@ -72,8 +100,11 @@ app.intent("Glucose Status", async conv => {
   if (disclaimer.text && userProfile) {
     console.log("Marking health disclaimer said for", userEmail);
     userProfile.hasHeardHealthDisclaimer = true;
-    await nightscout.updateUserProfile(userProfile, userEmail);
+    shouldUpdateProfile = true;
   }
+
+  // Update userProfile 
+  if (shouldUpdateProfile) await nightscout.updateUserProfile(userProfile, userEmail);
 
   // Stop the timer
   const tStop = performance.now();
