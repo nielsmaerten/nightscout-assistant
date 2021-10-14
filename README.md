@@ -1,3 +1,5 @@
+*I'm aware Nightscout Status is currently down 🙁. [More info here](https://github.com/nielsmaerten/nightscout-assistant/discussions/118)*
+
 # Nightscout for Google Home & Google Assistant
 ### _Heads up!_ Nightscout Status has been succeeded by [Gluco Check](https://github.com/nielsmaerten/gluco-check).
 Gluco Check includes new features such as reading your Carbs on Board and when you last changed your sensor. 
