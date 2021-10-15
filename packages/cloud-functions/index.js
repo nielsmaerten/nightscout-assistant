@@ -48,9 +48,8 @@ app.intent("Glucose Status", async conv => {
   );
 
   // Conversations using the latest API will always hear the disclaimer
-  const headerVersion = +conv.headers["x-nsstatus-api-version"];
   const disclaimer = {
-    sayAlways: headerVersion >= productionNumber,
+    sayAlways: true,
     heardByUser: userProfile && userProfile.hasHeardHealthDisclaimer
   };
 
