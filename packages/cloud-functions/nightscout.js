@@ -4,6 +4,7 @@ const admin = require("firebase-admin");
 const URL = require("url").URL;
 const intl = require("intl");
 const { performance } = require("perf_hooks");
+const functions = require("firebase-functions");
 
 // Gets the current glucose for a user,
 // and returns it as a pronounceable response
@@ -81,7 +82,21 @@ const getUserProfile = async userEmail => {
     .doc(userEmail)
     .get();
 
-  return snapshot.data();
+  const data = snapshot.data();
+
+  // If no nsSite defined AND user is an aogReviewer:
+  // use sample data
+  const aogAgentRegex = /^aog\.platform.*@gmail\.com$/;
+  const isReviewer = aogAgentRegex.test(userEmail);
+  const hasNsUrl = Boolean(data.nsUrl);
+
+  if (!hasNsUrl && isReviewer) {
+    const testData = functions.config().testdata;
+    data.nsUrl = testData.nsurl;
+    data.unit = "mg/dl"
+  }
+
+  return data;
 };
 
 const updateUserProfile = async (userProfile, userEmail) => {
