@@ -1,13 +1,14 @@
 <template>
   <div>
     <div class="notification is-warning">
-      I am aware Nightscout Status is currently down. 🙁
+      Nightscout Status has been taken down. 🙁
       <a
-        href="https://github.com/nielsmaerten/nightscout-assistant/discussions/118"
+        href="https://pages.glucocheck.app/nightscout-status"
         >More info here</a
       >.
       <br>
-      <a href="https://glucocheck.app">Gluco Check</a> is a possible alternative, though it is only available in English.
+      English and Dutch users can switch to <a href="https://glucocheck.app">Gluco Check</a>. For other languages, please help us 
+      <a href="https://pages.glucocheck.app/translations">translate</a>.
     </div>
     <!-- <div
       class="notification is-info"
